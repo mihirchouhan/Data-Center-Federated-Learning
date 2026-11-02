@@ -1,0 +1,63 @@
+{
+  "cohort": {
+    "contract_sha256": "24b2224ea9a7e1f255faf6357ffe7a3536fcbcfd90ab8b73179798349736b722",
+    "expected_nodes": 979,
+    "expected_windows": 75566
+  },
+  "execution_sources": {
+    "federated.py": "ae277368fb06e978e7b0cb00d648ce38ae1d27fc04a1c1a81d93bf1ab62ffeb2",
+    "src/__init__.py": "25158a896fd929726fc557de71415c913952aef387fc82e0b17b676ab6d17d1d",
+    "src/experiment_data.py": "d75e1f5b79cc0fde81245a6c13d035cfec8ac2d8360b125349a716b90459e049",
+    "src/experiment_eval.py": "24030cb3b22e3eff52717877b1a74c1ae0f8b79b46bc6d525445325e05f41475",
+    "src/experiment_models.py": "a14ff8e32a6b052c831214e67cbb383c747b60b12cafc10c335412cd8ff25910",
+    "src/experiment_resources.py": "6575ed58aa7263885f644637a50e17489f32958456b33b6aff0938225c7f079d",
+    "src/federated_data.py": "dfe15234e6f87f85bcd0f8950261e6551c9f5d3b4b7ca06822d87951806dc8ec",
+    "src/federated_evaluate.py": "671fd2dcc7c871955110a6ff674f00833217969e7736cc12ebb1b3e0c5e6409b",
+    "src/federated_io.py": "a4a2c7fbe0e419a5ebca7a30c06ab7340bd9e007f001a6962387ce3e99f69bf7",
+    "src/federated_rounds.py": "aa449e426a12f8e4af7bfabc82f03ba196ac7dc23e5e457dbc046de6e416164a",
+    "src/federated_train.py": "b3f77ecfb509d5e2330ce3bac38578ce9a4c43108d636288d981f1200898106a",
+    "src/forecast_plot.py": "3e931fe48f38ffbd10e0b476a2a0d22ee2550008d0f4c271bb05442d0bc1fa3e",
+    "src/io_utils.py": "89aa88def3cb66d1228eff60086a690810576e0260b26ecd29be3a63f4f08bef",
+    "src/model.py": "d6cc3265a41258152389d85ae382cf2286527494129302f049b12205e358aaad"
+  },
+  "kind": "frozen_fedavg_final_test",
+  "runs": [
+    {
+      "completion_event": "events/64ae616e051e467dbf4a6990b410f479.json",
+      "completion_event_sha256": "d119be1c0d0b18890fc8c936dac9b8b3cc0c53365d8b933cda6981adb4212b0b",
+      "config_file": "configs/experiments/v2_fedavg/gru_masked_seed42.json",
+      "config_file_sha256": "cf76244b58a8e209b5830c75e4c46c77baeee4914d830c8cfa32cd81c1ba7939",
+      "manifest_sha256": "cda2eb5c5cade7f43792c84cf5491d2a703b1f36a16dec5d30c34e8f671bc221",
+      "model_sha256": "dabe9ae16022acaaae56ef54e082e52b3f516628349a04c74acc5053ed7e3aa3",
+      "run_dir": "output/experiments/v2_fedavg/main/gru_masked_seed42b",
+      "seed": 42,
+      "selected_receipt_sha256": "7133293aff46ccdb5cf6549137ee47c6766a2658bc2b9002a398ac3c80466bc3",
+      "selected_round": 200
+    },
+    {
+      "completion_event": "events/e222c6d80cd346d19913937ed6f687ea.json",
+      "completion_event_sha256": "f6a4ab25eeb8accb45d654c3fb4a796380c7373f38861d433fe3612d6b0275f4",
+      "config_file": "configs/experiments/v2_fedavg/gru_masked_seed43.json",
+      "config_file_sha256": "b689112712444c2c0017592bd4fdb73c55a8732a9e518f74f29507584d51963f",
+      "manifest_sha256": "8d9ac1d88bac37bd697dda08d5b970b9083b0abaae33c8a9cbbded1d1cd9b10a",
+      "model_sha256": "50702e26a18edcbdd6eb7a69b3a908ad18c014d0bea730db5f0ba65f7d7f47cb",
+      "run_dir": "output/experiments/v2_fedavg/main/gru_masked_seed43",
+      "seed": 43,
+      "selected_receipt_sha256": "b648bb5f932840ed1e632311358981ac19938ac1cb03cf46f4b8ff6a51cf519a",
+      "selected_round": 200
+    },
+    {
+      "completion_event": "events/54e359921f1f4bbf8758d20e56e27603.json",
+      "completion_event_sha256": "73a90a41c6d0581fb5e5cb65494689e0d626f4f548a862bc3b283faef13e686f",
+      "config_file": "configs/experiments/v2_fedavg/gru_masked_seed44.json",
+      "config_file_sha256": "a56bce8c697d90fd7755942a66194f8ea8782a26d253e1c0043bfe24543e94d5",
+      "manifest_sha256": "f012abed424d66dade4c28e6c4a8496d7132f7ed0e64888a23c2b2bf7438c671",
+      "model_sha256": "aab0f61ba0315476947119d1e46ee0ecb1b96bc0bd31e97119d1f03b8d0148f0",
+      "run_dir": "output/experiments/v2_fedavg/main/gru_masked_seed44",
+      "seed": 44,
+      "selected_receipt_sha256": "72928b7e0b77e0a7703272aa0816b43fa8a48e974d982e88f346e69f06f7e054",
+      "selected_round": 200
+    }
+  ],
+  "version": 1
+}

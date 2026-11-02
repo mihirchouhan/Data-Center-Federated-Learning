@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "fits": [
+    {
+      "id": "lstm_enabled_seed42",
+      "config": "configs/experiments/v1/lstm_enabled_seed42.json"
+    },
+    {
+      "id": "lstm_enabled_seed43",
+      "config": "configs/experiments/v1/lstm_enabled_seed43.json"
+    },
+    {
+      "id": "lstm_enabled_seed44",
+      "config": "configs/experiments/v1/lstm_enabled_seed44.json"
+    },
+    {
+      "id": "lstm_masked_seed42",
+      "config": "configs/experiments/v1/lstm_masked_seed42.json"
+    },
+    {
+      "id": "lstm_masked_seed43",
+      "config": "configs/experiments/v1/lstm_masked_seed43.json"
+    },
+    {
+      "id": "lstm_masked_seed44",
+      "config": "configs/experiments/v1/lstm_masked_seed44.json"
+    },
+    {
+      "id": "gru_enabled_seed42",
+      "config": "configs/experiments/v1/gru_enabled_seed42.json"
+    },
+    {
+      "id": "gru_enabled_seed43",
+      "config": "configs/experiments/v1/gru_enabled_seed43.json"
+    },
+    {
+      "id": "gru_enabled_seed44",
+      "config": "configs/experiments/v1/gru_enabled_seed44.json"
+    },
+    {
+      "id": "gru_masked_seed42",
+      "config": "configs/experiments/v1/gru_masked_seed42.json"
+    },
+    {
+      "id": "gru_masked_seed43",
+      "config": "configs/experiments/v1/gru_masked_seed43.json"
+    },
+    {
+      "id": "gru_masked_seed44",
+      "config": "configs/experiments/v1/gru_masked_seed44.json"
+    },
+    {
+      "id": "xgboost_enabled_seed42",
+      "config": "configs/experiments/v1/xgboost_enabled_seed42.json"
+    },
+    {
+      "id": "xgboost_enabled_seed43",
+      "config": "configs/experiments/v1/xgboost_enabled_seed43.json"
+    },
+    {
+      "id": "xgboost_enabled_seed44",
+      "config": "configs/experiments/v1/xgboost_enabled_seed44.json"
+    },
+    {
+      "id": "xgboost_masked_seed42",
+      "config": "configs/experiments/v1/xgboost_masked_seed42.json"
+    },
+    {
+      "id": "xgboost_masked_seed43",
+      "config": "configs/experiments/v1/xgboost_masked_seed43.json"
+    },
+    {
+      "id": "xgboost_masked_seed44",
+      "config": "configs/experiments/v1/xgboost_masked_seed44.json"
+    }
+  ]
+}

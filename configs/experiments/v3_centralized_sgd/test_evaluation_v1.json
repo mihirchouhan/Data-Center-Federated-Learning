@@ -1,0 +1,83 @@
+{
+  "cohort": {
+    "contract_sha256": "24b2224ea9a7e1f255faf6357ffe7a3536fcbcfd90ab8b73179798349736b722",
+    "expected_nodes": 979,
+    "expected_windows": 75566
+  },
+  "execution_sources": {
+    "federated.py": "ae277368fb06e978e7b0cb00d648ce38ae1d27fc04a1c1a81d93bf1ab62ffeb2",
+    "src/__init__.py": "25158a896fd929726fc557de71415c913952aef387fc82e0b17b676ab6d17d1d",
+    "src/centralized_evaluate.py": "a5c467bd822beaddd1101b43ab3a9759214e673507318d208beee6372de197f5",
+    "src/centralized_io.py": "88f7d6334473f1b9293285fc51d65eb9c7a146c0f62020fd0ff61f4e8b5caf63",
+    "src/centralized_sgd.py": "c251cd2b9bd41d972cc10483d57ec45852cba5fcf78c608f991a78d9fc64494b",
+    "src/experiment_data.py": "d75e1f5b79cc0fde81245a6c13d035cfec8ac2d8360b125349a716b90459e049",
+    "src/experiment_eval.py": "24030cb3b22e3eff52717877b1a74c1ae0f8b79b46bc6d525445325e05f41475",
+    "src/experiment_models.py": "a14ff8e32a6b052c831214e67cbb383c747b60b12cafc10c335412cd8ff25910",
+    "src/experiment_resources.py": "6575ed58aa7263885f644637a50e17489f32958456b33b6aff0938225c7f079d",
+    "src/federated_data.py": "dfe15234e6f87f85bcd0f8950261e6551c9f5d3b4b7ca06822d87951806dc8ec",
+    "src/federated_evaluate.py": "671fd2dcc7c871955110a6ff674f00833217969e7736cc12ebb1b3e0c5e6409b",
+    "src/federated_io.py": "a4a2c7fbe0e419a5ebca7a30c06ab7340bd9e007f001a6962387ce3e99f69bf7",
+    "src/federated_rounds.py": "aa449e426a12f8e4af7bfabc82f03ba196ac7dc23e5e457dbc046de6e416164a",
+    "src/federated_train.py": "b3f77ecfb509d5e2330ce3bac38578ce9a4c43108d636288d981f1200898106a",
+    "src/forecast_plot.py": "3e931fe48f38ffbd10e0b476a2a0d22ee2550008d0f4c271bb05442d0bc1fa3e",
+    "src/io_utils.py": "89aa88def3cb66d1228eff60086a690810576e0260b26ecd29be3a63f4f08bef",
+    "src/model.py": "d6cc3265a41258152389d85ae382cf2286527494129302f049b12205e358aaad"
+  },
+  "kind": "frozen_centralized_sgd_final_test",
+  "prior_fedavg": {
+    "completed_sha256": "0282777a98297b105ff8105f126601e286eb1bdbbd36227658ade5953e58cce9",
+    "directory": "output/experiments/v2_fedavg/test_evaluation/v1_retry1",
+    "plan_sha256": "ddc67fcc44c8e305e855cf1fdd94be98f883aa501ddacf51906029eb6b54967e",
+    "selection_lock_sha256": "e2949cf75508c51e59584f561a2ccb87474533ce69d65794c5eac49c0e39d0c9",
+    "window_identity": {
+      "count": 75566,
+      "identity": "(node string, forecast origin datetime64[ns])",
+      "ordered_sha256": "4f57d3c1d6b64d2bc7543804300a61a139eeb1080df365b70102ef759fcf2704",
+      "origin_timezone": "UTC",
+      "unique_count": 75566
+    }
+  },
+  "runs": [
+    {
+      "completed_sha256": "dea1ce574f77bfa3aa2fe941278dc11adf13e0750d4da5f04257ea82495c1e09",
+      "config_file": "configs/experiments/v3_centralized_sgd/gru_masked_seed42_schedule_matched.json",
+      "config_file_sha256": "b58d02713e12ffb80d1f01139ee367a8503c3a8c43b01c166d56c8f3e97c069e",
+      "configuration_sha256": "02a7b3dfb6847ec275a51a46046a134bb3645e29cfc58306df99e230edcced23",
+      "final_receipt_sha256": "5fa31e2d09ba732f206eaa9bb76d6fe6046df7a6067d1d3e95695cc525a45092",
+      "manifest_sha256": "430402e2d93aa7f7ef3dd36c4c4154080d91375c2338125731c415c8a877ac12",
+      "model_sha256": "a335deb6ec5ad916faf2c9fad561576ef8a6d7eef6b50a0299e74d22ff43c75d",
+      "run_dir": "output/experiments/v3_centralized_sgd/main/gru_masked_seed42_schedule_matched",
+      "seed": 42,
+      "selected_block": 190
+    },
+    {
+      "completed_sha256": "db91ca60cd4d2cc2e529ed14afaee7211d1df6cd2aec80cad637e67c5cb6332c",
+      "config_file": "configs/experiments/v3_centralized_sgd/gru_masked_seed43_schedule_matched.json",
+      "config_file_sha256": "f274253c4470503281cfb851ea988958fe01ba81da03b2d13c291c7c1f15f518",
+      "configuration_sha256": "537a64bc7de928b5bb7d2881c66033221ae786265447e2b6627180b518b1fd9b",
+      "final_receipt_sha256": "a6b35a6ba3eb31c2573d467a9adc1898af9126979e604ba2d484d342983be6c3",
+      "manifest_sha256": "86cd2ea2f00433959860719f2361377d3d7b8c26ae732299e6bf07d4f3221f41",
+      "model_sha256": "900a57fcb89aa7fd30afd81b8252dd69b687378d32bf9989628b3f23b9e9990d",
+      "run_dir": "output/experiments/v3_centralized_sgd/main/gru_masked_seed43_schedule_matched",
+      "seed": 43,
+      "selected_block": 190
+    },
+    {
+      "completed_sha256": "1a891ccc0a6f1c214c5a4088b5f2a4feaf4fb1086602727dfc9c6d8af58c9cda",
+      "config_file": "configs/experiments/v3_centralized_sgd/gru_masked_seed44_schedule_matched.json",
+      "config_file_sha256": "a139d06fb1ab4a8368f5b43b86fe863242c9065fa4a56c358945a813fbf13f88",
+      "configuration_sha256": "a7139338cc017a3ab3838986f6f004d0204654aaa8adca088e36e68ffa522d18",
+      "final_receipt_sha256": "13bc72efc8039b053ca36bd81298f4c2226963d450def106c726105f8d54873d",
+      "manifest_sha256": "0bf4a2d8ad640d29cf771376d6654508011f5e5c3f5008c1a0a4e37955e59591",
+      "model_sha256": "d870018169be7858a0ae4b2a8ac758f7347d776e7116c6f4886c85db5a0e24b9",
+      "run_dir": "output/experiments/v3_centralized_sgd/main/gru_masked_seed44_schedule_matched",
+      "seed": 44,
+      "selected_block": 180
+    }
+  ],
+  "schedule_proof": {
+    "path": "output/experiments/v3_centralized_sgd/implementation/v1/reference_preflight.json",
+    "sha256": "3ccff573c8596720e0890e6da33b2b7f9230b35337a8b5d8c1aeb91393849c2d"
+  },
+  "version": 1
+}

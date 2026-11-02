@@ -1,0 +1,34 @@
+{
+  "dataset": {
+    "record_url": "https://zenodo.org/records/7589942",
+    "archives": [
+      {
+        "month": "22-01",
+        "url": "https://zenodo.org/records/7589942/files/22-01.tar?download=1",
+        "md5": "127ce355ea476f3e9b9faeea3a7d1fbe"
+      },
+      {
+        "month": "22-02",
+        "url": "https://zenodo.org/records/7589942/files/22-02.tar?download=1",
+        "md5": "04fad708ac2e51492541364ad90daad0"
+      }
+    ]
+  },
+  "preprocessing": {
+    "node": "47",
+    "include_gpu_utilization": false,
+    "months": [
+      "22-01",
+      "22-02"
+    ],
+    "resample_minutes": 10,
+    "history_hours": 1,
+    "horizon_minutes": 60,
+    "train_fraction": 0.7,
+    "val_fraction": 0.15,
+    "min_bin_coverage": 0.5,
+    "weather_max_age_minutes": 30,
+    "max_hold_seconds": 300
+  },
+  "training_config": "configs/gpu.json"
+}

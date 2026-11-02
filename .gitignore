@@ -1,0 +1,17 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+output/
+outputs/
+data/
+*.npz
+*.npy
+*.parquet
+*.tar
+*.tar.gz
+*.zip
+*.pt
+*.pth
+.env

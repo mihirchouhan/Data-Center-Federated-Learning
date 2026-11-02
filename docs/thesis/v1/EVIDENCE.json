@@ -1,0 +1,1800 @@
+{
+  "architecture": {
+    "hidden_size": 64,
+    "node_count": 979,
+    "node_embedding_size": 8,
+    "num_layers": 2,
+    "recurrent_input_width": 21
+  },
+  "feature_names": [
+    "power_kw",
+    "cpu_user",
+    "cpu_system",
+    "cpu_idle",
+    "cpu_wio",
+    "memory_used_fraction",
+    "inlet_temperature_mean_c",
+    "outdoor_temperature_c",
+    "outdoor_humidity_percent",
+    "hour_sin",
+    "hour_cos",
+    "week_sin",
+    "week_cos",
+    "node_index"
+  ],
+  "feature_units": [
+    "kW",
+    "%",
+    "%",
+    "%",
+    "%",
+    "fraction",
+    "degC",
+    "degC",
+    "%",
+    "unitless",
+    "unitless",
+    "unitless",
+    "unitless",
+    "categorical index"
+  ],
+  "historical_receipts_checked": [
+    {
+      "artifacts_checked": 25,
+      "mismatches": [],
+      "receipt": "output/experiments/v3_centralized_sgd/reports/final_test_comparison_v1/report_completed.json"
+    },
+    {
+      "artifacts_checked": 5,
+      "mismatches": [],
+      "receipt": "output/experiments/v3_centralized_sgd/reports/validation_comparison_v1/report_completed.json"
+    },
+    {
+      "artifacts_checked": 44,
+      "mismatches": [],
+      "receipt": "output/experiments/v2_fedavg/test_evaluation/v1_retry1/completed.json"
+    },
+    {
+      "artifacts_checked": 48,
+      "mismatches": [],
+      "receipt": "output/experiments/v3_centralized_sgd/test_evaluation/v1/completed.json"
+    }
+  ],
+  "model_execution_performed": false,
+  "model_provenance": {
+    "centralized_sgd": {
+      "artifact_count": 48,
+      "directory": "output/experiments/v3_centralized_sgd/test_evaluation/v1",
+      "models": [
+        {
+          "checkpoint_receipts_checked": 201,
+          "config": {
+            "batch_size": 512,
+            "clients_per_round": 98,
+            "device": "cuda:0",
+            "drop_last": false,
+            "eval_batch_size": 1024,
+            "frozen_contract_sha256": "24b2224ea9a7e1f255faf6357ffe7a3536fcbcfd90ab8b73179798349736b722",
+            "hidden_size": 64,
+            "kind": "main",
+            "learning_rate": 0.01,
+            "local_epochs": 1,
+            "minimum_days": 7,
+            "minimum_windows": 1024,
+            "model": "gru",
+            "momentum": 0.0,
+            "node_embedding_size": 8,
+            "num_layers": 2,
+            "num_threads": 1,
+            "optimizer": "sgd",
+            "reference_manifest_sha256": "cda2eb5c5cade7f43792c84cf5491d2a703b1f36a16dec5d30c34e8f671bc221",
+            "reference_run": "output/experiments/v2_fedavg/main/gru_masked_seed42b",
+            "rounds": 200,
+            "seed": 42,
+            "validation_every": 10,
+            "version": 3,
+            "weather": "masked",
+            "weight_decay": 0.0
+          },
+          "configuration_path": "configs/experiments/v3_centralized_sgd/gru_masked_seed42_schedule_matched.json",
+          "configuration_sha256": "b58d02713e12ffb80d1f01139ee367a8503c3a8c43b01c166d56c8f3e97c069e",
+          "manifest_sha256": "430402e2d93aa7f7ef3dd36c4c4154080d91375c2338125731c415c8a877ac12",
+          "model_path": "output/experiments/v3_centralized_sgd/main/gru_masked_seed42_schedule_matched/final/model.pt",
+          "model_sha256": "a335deb6ec5ad916faf2c9fad561576ef8a6d7eef6b50a0299e74d22ff43c75d",
+          "run_dir": "output/experiments/v3_centralized_sgd/main/gru_masked_seed42_schedule_matched",
+          "seed": 42,
+          "selected_index": 190,
+          "validation_mae_w": 36.492286697891814,
+          "validation_rmse_w": 66.42651604306914
+        },
+        {
+          "checkpoint_receipts_checked": 201,
+          "config": {
+            "batch_size": 512,
+            "clients_per_round": 98,
+            "device": "cuda:0",
+            "drop_last": false,
+            "eval_batch_size": 1024,
+            "frozen_contract_sha256": "24b2224ea9a7e1f255faf6357ffe7a3536fcbcfd90ab8b73179798349736b722",
+            "hidden_size": 64,
+            "kind": "main",
+            "learning_rate": 0.01,
+            "local_epochs": 1,
+            "minimum_days": 7,
+            "minimum_windows": 1024,
+            "model": "gru",
+            "momentum": 0.0,
+            "node_embedding_size": 8,
+            "num_layers": 2,
+            "num_threads": 1,
+            "optimizer": "sgd",
+            "reference_manifest_sha256": "8d9ac1d88bac37bd697dda08d5b970b9083b0abaae33c8a9cbbded1d1cd9b10a",
+            "reference_run": "output/experiments/v2_fedavg/main/gru_masked_seed43",
+            "rounds": 200,
+            "seed": 43,
+            "validation_every": 10,
+            "version": 3,
+            "weather": "masked",
+            "weight_decay": 0.0
+          },
+          "configuration_path": "configs/experiments/v3_centralized_sgd/gru_masked_seed43_schedule_matched.json",
+          "configuration_sha256": "f274253c4470503281cfb851ea988958fe01ba81da03b2d13c291c7c1f15f518",
+          "manifest_sha256": "86cd2ea2f00433959860719f2361377d3d7b8c26ae732299e6bf07d4f3221f41",
+          "model_path": "output/experiments/v3_centralized_sgd/main/gru_masked_seed43_schedule_matched/final/model.pt",
+          "model_sha256": "900a57fcb89aa7fd30afd81b8252dd69b687378d32bf9989628b3f23b9e9990d",
+          "run_dir": "output/experiments/v3_centralized_sgd/main/gru_masked_seed43_schedule_matched",
+          "seed": 43,
+          "selected_index": 190,
+          "validation_mae_w": 34.89988623083293,
+          "validation_rmse_w": 66.21554746388601
+        },
+        {
+          "checkpoint_receipts_checked": 201,
+          "config": {
+            "batch_size": 512,
+            "clients_per_round": 98,
+            "device": "cuda:0",
+            "drop_last": false,
+            "eval_batch_size": 1024,
+            "frozen_contract_sha256": "24b2224ea9a7e1f255faf6357ffe7a3536fcbcfd90ab8b73179798349736b722",
+            "hidden_size": 64,
+            "kind": "main",
+            "learning_rate": 0.01,
+            "local_epochs": 1,
+            "minimum_days": 7,
+            "minimum_windows": 1024,
+            "model": "gru",
+            "momentum": 0.0,
+            "node_embedding_size": 8,
+            "num_layers": 2,
+            "num_threads": 1,
+            "optimizer": "sgd",
+            "reference_manifest_sha256": "f012abed424d66dade4c28e6c4a8496d7132f7ed0e64888a23c2b2bf7438c671",
+            "reference_run": "output/experiments/v2_fedavg/main/gru_masked_seed44",
+            "rounds": 200,
+            "seed": 44,
+            "validation_every": 10,
+            "version": 3,
+            "weather": "masked",
+            "weight_decay": 0.0
+          },
+          "configuration_path": "configs/experiments/v3_centralized_sgd/gru_masked_seed44_schedule_matched.json",
+          "configuration_sha256": "a139d06fb1ab4a8368f5b43b86fe863242c9065fa4a56c358945a813fbf13f88",
+          "manifest_sha256": "0bf4a2d8ad640d29cf771376d6654508011f5e5c3f5008c1a0a4e37955e59591",
+          "model_path": "output/experiments/v3_centralized_sgd/main/gru_masked_seed44_schedule_matched/final/model.pt",
+          "model_sha256": "d870018169be7858a0ae4b2a8ac758f7347d776e7116c6f4886c85db5a0e24b9",
+          "run_dir": "output/experiments/v3_centralized_sgd/main/gru_masked_seed44_schedule_matched",
+          "seed": 44,
+          "selected_index": 180,
+          "validation_mae_w": 34.33882445970124,
+          "validation_rmse_w": 66.2709969573154
+        }
+      ],
+      "reported_results_path": "output/experiments/v3_centralized_sgd/test_evaluation/v1/results.json"
+    },
+    "fedavg": {
+      "artifact_count": 44,
+      "directory": "output/experiments/v2_fedavg/test_evaluation/v1_retry1",
+      "models": [
+        {
+          "checkpoint_receipts_checked": 201,
+          "config": {
+            "batch_size": 512,
+            "clients_per_round": 98,
+            "device": "cuda:0",
+            "drop_last": false,
+            "eval_batch_size": 1024,
+            "frozen_contract_sha256": "24b2224ea9a7e1f255faf6357ffe7a3536fcbcfd90ab8b73179798349736b722",
+            "hidden_size": 64,
+            "kind": "main",
+            "learning_rate": 0.01,
+            "local_epochs": 1,
+            "minimum_days": 7,
+            "minimum_windows": 1024,
+            "model": "gru",
+            "momentum": 0.0,
+            "node_embedding_size": 8,
+            "num_layers": 2,
+            "num_threads": 1,
+            "optimizer": "sgd",
+            "rounds": 200,
+            "seed": 42,
+            "validation_every": 10,
+            "version": 2,
+            "weather": "masked",
+            "weight_decay": 0.0
+          },
+          "configuration_path": "configs/experiments/v2_fedavg/gru_masked_seed42.json",
+          "configuration_sha256": "cf76244b58a8e209b5830c75e4c46c77baeee4914d830c8cfa32cd81c1ba7939",
+          "manifest_sha256": "cda2eb5c5cade7f43792c84cf5491d2a703b1f36a16dec5d30c34e8f671bc221",
+          "model_path": "output/experiments/v2_fedavg/main/gru_masked_seed42b/selected/model.pt",
+          "model_sha256": "dabe9ae16022acaaae56ef54e082e52b3f516628349a04c74acc5053ed7e3aa3",
+          "run_dir": "output/experiments/v2_fedavg/main/gru_masked_seed42b",
+          "seed": 42,
+          "selected_index": 200,
+          "validation_mae_w": 34.63693756326223,
+          "validation_rmse_w": 68.48928487743382
+        },
+        {
+          "checkpoint_receipts_checked": 201,
+          "config": {
+            "batch_size": 512,
+            "clients_per_round": 98,
+            "device": "cuda:0",
+            "drop_last": false,
+            "eval_batch_size": 1024,
+            "frozen_contract_sha256": "24b2224ea9a7e1f255faf6357ffe7a3536fcbcfd90ab8b73179798349736b722",
+            "hidden_size": 64,
+            "kind": "main",
+            "learning_rate": 0.01,
+            "local_epochs": 1,
+            "minimum_days": 7,
+            "minimum_windows": 1024,
+            "model": "gru",
+            "momentum": 0.0,
+            "node_embedding_size": 8,
+            "num_layers": 2,
+            "num_threads": 1,
+            "optimizer": "sgd",
+            "rounds": 200,
+            "seed": 43,
+            "validation_every": 10,
+            "version": 2,
+            "weather": "masked",
+            "weight_decay": 0.0
+          },
+          "configuration_path": "configs/experiments/v2_fedavg/gru_masked_seed43.json",
+          "configuration_sha256": "b689112712444c2c0017592bd4fdb73c55a8732a9e518f74f29507584d51963f",
+          "manifest_sha256": "8d9ac1d88bac37bd697dda08d5b970b9083b0abaae33c8a9cbbded1d1cd9b10a",
+          "model_path": "output/experiments/v2_fedavg/main/gru_masked_seed43/selected/model.pt",
+          "model_sha256": "50702e26a18edcbdd6eb7a69b3a908ad18c014d0bea730db5f0ba65f7d7f47cb",
+          "run_dir": "output/experiments/v2_fedavg/main/gru_masked_seed43",
+          "seed": 43,
+          "selected_index": 200,
+          "validation_mae_w": 34.695020069937065,
+          "validation_rmse_w": 68.51875045063808
+        },
+        {
+          "checkpoint_receipts_checked": 201,
+          "config": {
+            "batch_size": 512,
+            "clients_per_round": 98,
+            "device": "cuda:0",
+            "drop_last": false,
+            "eval_batch_size": 1024,
+            "frozen_contract_sha256": "24b2224ea9a7e1f255faf6357ffe7a3536fcbcfd90ab8b73179798349736b722",
+            "hidden_size": 64,
+            "kind": "main",
+            "learning_rate": 0.01,
+            "local_epochs": 1,
+            "minimum_days": 7,
+            "minimum_windows": 1024,
+            "model": "gru",
+            "momentum": 0.0,
+            "node_embedding_size": 8,
+            "num_layers": 2,
+            "num_threads": 1,
+            "optimizer": "sgd",
+            "rounds": 200,
+            "seed": 44,
+            "validation_every": 10,
+            "version": 2,
+            "weather": "masked",
+            "weight_decay": 0.0
+          },
+          "configuration_path": "configs/experiments/v2_fedavg/gru_masked_seed44.json",
+          "configuration_sha256": "a56bce8c697d90fd7755942a66194f8ea8782a26d253e1c0043bfe24543e94d5",
+          "manifest_sha256": "f012abed424d66dade4c28e6c4a8496d7132f7ed0e64888a23c2b2bf7438c671",
+          "model_path": "output/experiments/v2_fedavg/main/gru_masked_seed44/selected/model.pt",
+          "model_sha256": "aab0f61ba0315476947119d1e46ee0ecb1b96bc0bd31e97119d1f03b8d0148f0",
+          "run_dir": "output/experiments/v2_fedavg/main/gru_masked_seed44",
+          "seed": 44,
+          "selected_index": 200,
+          "validation_mae_w": 34.682672030298946,
+          "validation_rmse_w": 68.5585905054291
+        }
+      ],
+      "reported_results_path": "output/experiments/v2_fedavg/test_evaluation/v1_retry1/results.json"
+    }
+  },
+  "numeric_tables": {
+    "architecture": {
+      "headers": [
+        "Component",
+        "Verified implementation"
+      ],
+      "rows": [
+        [
+          "Saved input",
+          "Six time steps, fourteen channels"
+        ],
+        [
+          "Node identity",
+          "Categorical index at channel 13; frozen mapping of 979 nodes"
+        ],
+        [
+          "Embedding",
+          "Learned 979 \u00d7 8 table; replaces the index inside the network"
+        ],
+        [
+          "Recurrent input width",
+          "13 non-ID channels + 8 embedding values = 21"
+        ],
+        [
+          "Recurrent model",
+          "torch.nn.GRU, two layers, hidden size 64, batch_first=True"
+        ],
+        [
+          "Sequence reduction",
+          "Final output time step of the top recurrent layer"
+        ],
+        [
+          "Regression head",
+          "Linear 64 \u2192 1"
+        ],
+        [
+          "Residual reference",
+          "Fixed two-element baseline_coefficients buffer"
+        ],
+        [
+          "Initial correction",
+          "Linear head weight and bias initialized to zero"
+        ]
+      ],
+      "source_ids": [
+        "S27",
+        "S34",
+        "S45"
+      ]
+    },
+    "budgets": {
+      "headers": [
+        "Seed",
+        "Example exposures per method",
+        "Local/central SGD steps per method",
+        "FedAvg selected round",
+        "Central selected block"
+      ],
+      "rows": [
+        [
+          "42",
+          "90,220,299",
+          "186,208",
+          "200",
+          "190"
+        ],
+        [
+          "43",
+          "90,210,631",
+          "186,192",
+          "200",
+          "190"
+        ],
+        [
+          "44",
+          "90,221,096",
+          "186,254",
+          "200",
+          "180"
+        ]
+      ],
+      "source_ids": [
+        "S08",
+        "S02"
+      ]
+    },
+    "cohort": {
+      "headers": [
+        "Split",
+        "Accepted windows",
+        "Input shape per window",
+        "Target"
+      ],
+      "rows": [
+        [
+          "Training",
+          "4,506,133",
+          "6 \u00d7 14",
+          "One next-hour mean"
+        ],
+        [
+          "Validation",
+          "199,670",
+          "6 \u00d7 14",
+          "One next-hour mean"
+        ],
+        [
+          "Test",
+          "75,566",
+          "6 \u00d7 14",
+          "One next-hour mean"
+        ]
+      ],
+      "source_ids": [
+        "S22",
+        "S23"
+      ]
+    },
+    "coverage": {
+      "headers": [
+        "Date",
+        "Accepted windows",
+        "Distinct origins on date"
+      ],
+      "rows": [
+        [
+          "2022-02-20",
+          "1,671",
+          "2"
+        ],
+        [
+          "2022-02-23",
+          "14,519",
+          "18"
+        ],
+        [
+          "2022-02-24",
+          "35,211",
+          "44"
+        ],
+        [
+          "2022-02-25",
+          "10,351",
+          "13"
+        ],
+        [
+          "2022-02-27",
+          "8,150",
+          "10"
+        ],
+        [
+          "2022-02-28",
+          "5,664",
+          "7"
+        ]
+      ],
+      "source_ids": [
+        "S25"
+      ]
+    },
+    "directories": {
+      "headers": [
+        "Role",
+        "Repository-relative path"
+      ],
+      "rows": [
+        [
+          "Frozen cohort",
+          "output/experiments/v1/frozen"
+        ],
+        [
+          "FedAvg training",
+          "output/experiments/v2_fedavg/main/gru_masked_seed42b; gru_masked_seed43; gru_masked_seed44"
+        ],
+        [
+          "FedAvg test",
+          "output/experiments/v2_fedavg/test_evaluation/v1_retry1"
+        ],
+        [
+          "Central training",
+          "output/experiments/v3_centralized_sgd/main/gru_masked_seed{42,43,44}_schedule_matched"
+        ],
+        [
+          "Central test",
+          "output/experiments/v3_centralized_sgd/test_evaluation/v1"
+        ],
+        [
+          "Validation comparison",
+          "output/experiments/v3_centralized_sgd/reports/validation_comparison_v1"
+        ],
+        [
+          "Final test/node comparison",
+          "output/experiments/v3_centralized_sgd/reports/final_test_comparison_v1"
+        ]
+      ],
+      "source_ids": [
+        "S02",
+        "S08",
+        "S22"
+      ]
+    },
+    "environment": {
+      "headers": [
+        "Field",
+        "Recorded value"
+      ],
+      "rows": [
+        [
+          "Python",
+          "3.14.7"
+        ],
+        [
+          "PyTorch",
+          "2.14.1+cu130"
+        ],
+        [
+          "NumPy",
+          "2.5.3"
+        ],
+        [
+          "CUDA build",
+          "13.0"
+        ],
+        [
+          "Device",
+          "cuda:0"
+        ],
+        [
+          "GPU",
+          "NVIDIA RTX 6000 Ada Generation"
+        ]
+      ],
+      "source_ids": [
+        "S45"
+      ]
+    },
+    "features": {
+      "headers": [
+        "Index",
+        "Exact feature name",
+        "Source or transformation",
+        "Unit",
+        "Category",
+        "Masked"
+      ],
+      "rows": [
+        [
+          "0",
+          "power_kw",
+          "IPMI total_power bin estimate divided by 1000",
+          "kW",
+          "operational",
+          "No"
+        ],
+        [
+          "1",
+          "cpu_user",
+          "Ganglia cpu_user bin estimate",
+          "%",
+          "operational",
+          "No"
+        ],
+        [
+          "2",
+          "cpu_system",
+          "Ganglia cpu_system bin estimate",
+          "%",
+          "operational",
+          "No"
+        ],
+        [
+          "3",
+          "cpu_idle",
+          "Ganglia cpu_idle bin estimate",
+          "%",
+          "operational",
+          "No"
+        ],
+        [
+          "4",
+          "cpu_wio",
+          "Ganglia cpu_wio bin estimate",
+          "%",
+          "operational",
+          "No"
+        ],
+        [
+          "5",
+          "memory_used_fraction",
+          "1 \u2212 binned(mem_free)/binned(mem_total)",
+          "fraction",
+          "operational",
+          "No"
+        ],
+        [
+          "6",
+          "inlet_temperature_mean_c",
+          "Binned IPMI ambient; historical feature name, not a verified spatial average of multiple inlets",
+          "degC",
+          "environmental",
+          "No"
+        ],
+        [
+          "7",
+          "outdoor_temperature_c",
+          "As-of weather temp before bin right edge",
+          "degC",
+          "environmental",
+          "Yes"
+        ],
+        [
+          "8",
+          "outdoor_humidity_percent",
+          "As-of weather humidity before bin right edge",
+          "%",
+          "environmental",
+          "Yes"
+        ],
+        [
+          "9",
+          "hour_sin",
+          "sin of UTC daily phase at bin right edge",
+          "unitless",
+          "time-derived",
+          "No"
+        ],
+        [
+          "10",
+          "hour_cos",
+          "cos of UTC daily phase at bin right edge",
+          "unitless",
+          "time-derived",
+          "No"
+        ],
+        [
+          "11",
+          "week_sin",
+          "sin of weekly phase at bin right edge",
+          "unitless",
+          "time-derived",
+          "No"
+        ],
+        [
+          "12",
+          "week_cos",
+          "cos of weekly phase at bin right edge",
+          "unitless",
+          "time-derived",
+          "No"
+        ],
+        [
+          "13",
+          "node_index",
+          "Position in frozen node_names mapping",
+          "categorical index",
+          "other: categorical",
+          "No"
+        ]
+      ],
+      "source_ids": [
+        "S23",
+        "S22",
+        "S28",
+        "S29"
+      ]
+    },
+    "macro": {
+      "headers": [
+        "Metric",
+        "Central",
+        "FedAvg",
+        "Persistence"
+      ],
+      "rows": [
+        [
+          "RMSE",
+          "47.425109",
+          "54.160553",
+          "53.842224"
+        ],
+        [
+          "MAE",
+          "30.219473",
+          "33.647441",
+          "30.703514"
+        ]
+      ],
+      "source_ids": [
+        "S01"
+      ]
+    },
+    "nodewins": {
+      "headers": [
+        "Metric",
+        "Central better",
+        "FedAvg better",
+        "Exact ties",
+        "Central better in all 3 seeds",
+        "Median central\u2212FedAvg W"
+      ],
+      "rows": [
+        [
+          "RMSE",
+          "843",
+          "136",
+          "0",
+          "701",
+          "-5.833295"
+        ],
+        [
+          "MAE",
+          "788",
+          "191",
+          "0",
+          "542",
+          "-3.245006"
+        ]
+      ],
+      "source_ids": [
+        "S01"
+      ]
+    },
+    "protocol": {
+      "headers": [
+        "Setting",
+        "Recorded value"
+      ],
+      "rows": [
+        [
+          "Seeds",
+          "42, 43, 44"
+        ],
+        [
+          "Initialization",
+          "Fresh seeded GRU/embedding; zero correction head; matched initial state"
+        ],
+        [
+          "Optimizer",
+          "SGD; learning rate 0.01; momentum 0; weight decay 0"
+        ],
+        [
+          "Objective",
+          "Mean squared error of standardized target predictions"
+        ],
+        [
+          "Batch size",
+          "512; final partial batch retained (drop_last=False)"
+        ],
+        [
+          "Client population",
+          "979 simulated compute-node clients"
+        ],
+        [
+          "Selected clients per round/block",
+          "98, uniformly sampled without replacement"
+        ],
+        [
+          "Local passes",
+          "One epoch per selected client session"
+        ],
+        [
+          "Training cap",
+          "200 communication rounds / 200 central schedule blocks"
+        ],
+        [
+          "Validation schedule",
+          "Initial candidate, then every ten rounds/blocks, including 200"
+        ],
+        [
+          "Selection rule",
+          "Earliest minimum pooled validation RMSE in W"
+        ],
+        [
+          "Evaluation batch size",
+          "1024"
+        ],
+        [
+          "Training tensor dtype",
+          "float32"
+        ]
+      ],
+      "source_ids": [
+        "S45",
+        "S63",
+        "S34",
+        "S36"
+      ]
+    },
+    "reductions": {
+      "headers": [
+        "Metric",
+        "Central vs FedAvg",
+        "Central vs persistence",
+        "FedAvg vs persistence"
+      ],
+      "rows": [
+        [
+          "RMSE",
+          "11.409286",
+          "13.040722",
+          "1.841543"
+        ],
+        [
+          "MAE",
+          "10.045500",
+          "1.326241",
+          "-9.692966"
+        ]
+      ],
+      "source_ids": [
+        "S01"
+      ]
+    },
+    "sources": {
+      "headers": [
+        "ID",
+        "Repository-relative path",
+        "Role"
+      ],
+      "rows": [
+        [
+          "S01",
+          "output/experiments/v3_centralized_sgd/reports/final_test_comparison_v1/analysis.json",
+          "Verified pooled and per-node test summaries"
+        ],
+        [
+          "S02",
+          "output/experiments/v3_centralized_sgd/reports/final_test_comparison_v1/provenance.json",
+          "Exact test model/configuration and 2652-input hash provenance"
+        ],
+        [
+          "S03",
+          "output/experiments/v3_centralized_sgd/reports/final_test_comparison_v1/verification.json",
+          "Completed report-only tests and preservation results"
+        ],
+        [
+          "S04",
+          "output/experiments/v3_centralized_sgd/reports/final_test_comparison_v1/REPORT.md",
+          "Verified final comparison and per-node interpretation"
+        ],
+        [
+          "S05",
+          "output/experiments/v3_centralized_sgd/reports/final_test_comparison_v1/report_completed.json",
+          "Immutable final-report completion inventory"
+        ],
+        [
+          "S06",
+          "output/experiments/v3_centralized_sgd/reports/final_test_comparison_v1/per_node_summary.csv",
+          "All 979 node summaries"
+        ],
+        [
+          "S07",
+          "output/experiments/v3_centralized_sgd/reports/final_test_comparison_v1/per_node_by_seed.csv",
+          "All 2937 node-seed comparisons"
+        ],
+        [
+          "S08",
+          "output/experiments/v3_centralized_sgd/reports/validation_comparison_v1/comparison.json",
+          "Saved selected validation metrics and budgets"
+        ],
+        [
+          "S09",
+          "output/experiments/v3_centralized_sgd/reports/validation_comparison_v1/REPORT.md",
+          "Historical validation comparison snapshot before central test reporting"
+        ],
+        [
+          "S10",
+          "output/experiments/v3_centralized_sgd/reports/validation_comparison_v1/artifact_provenance.json",
+          "Validation artifact/config/model provenance"
+        ],
+        [
+          "S11",
+          "output/experiments/v3_centralized_sgd/reports/validation_comparison_v1/report_completed.json",
+          "Validation-report completion inventory"
+        ],
+        [
+          "S12",
+          "output/experiments/v2_fedavg/test_evaluation/v1_retry1/results.json",
+          "Original completed fedavg test scores"
+        ],
+        [
+          "S13",
+          "output/experiments/v2_fedavg/test_evaluation/v1_retry1/selection_lock.json",
+          "Pre-test model selections and raw export hashes"
+        ],
+        [
+          "S14",
+          "output/experiments/v2_fedavg/test_evaluation/v1_retry1/manifest.json",
+          "Test protocol, environment and selection lock binding"
+        ],
+        [
+          "S15",
+          "output/experiments/v2_fedavg/test_evaluation/v1_retry1/plan.json",
+          "Locked test plan and source fingerprints"
+        ],
+        [
+          "S16",
+          "output/experiments/v2_fedavg/test_evaluation/v1_retry1/completed.json",
+          "Original test artifact receipt"
+        ],
+        [
+          "S17",
+          "output/experiments/v3_centralized_sgd/test_evaluation/v1/results.json",
+          "Original completed centralized_sgd test scores"
+        ],
+        [
+          "S18",
+          "output/experiments/v3_centralized_sgd/test_evaluation/v1/selection_lock.json",
+          "Pre-test model selections and raw export hashes"
+        ],
+        [
+          "S19",
+          "output/experiments/v3_centralized_sgd/test_evaluation/v1/manifest.json",
+          "Test protocol, environment and selection lock binding"
+        ],
+        [
+          "S20",
+          "output/experiments/v3_centralized_sgd/test_evaluation/v1/plan.json",
+          "Locked test plan and source fingerprints"
+        ],
+        [
+          "S21",
+          "output/experiments/v3_centralized_sgd/test_evaluation/v1/completed.json",
+          "Original test artifact receipt"
+        ],
+        [
+          "S22",
+          "output/experiments/v1/frozen/contract.json",
+          "Frozen arrays, splits, feature order, scalers and hashes"
+        ],
+        [
+          "S23",
+          "output/experiments/v1/frozen/preprocessing.json",
+          "Exact forecast target, feature units and preprocessing settings"
+        ],
+        [
+          "S24",
+          "output/m100_all_nodes/results/data_audit.json",
+          "Candidate/usable node cohort and coverage audit"
+        ],
+        [
+          "S25",
+          "output/experiments/v3_centralized_sgd/test_evaluation/v1/seed42/coverage.json",
+          "Actual test-origin/day coverage"
+        ],
+        [
+          "S26",
+          "configs/m100_all_nodes.json",
+          "Recorded dataset months, source record and preprocessing configuration"
+        ],
+        [
+          "S27",
+          "src/model.py",
+          "SequenceRegressor.__init__/forward: embedding, GRU, head and residual baseline"
+        ],
+        [
+          "S28",
+          "src/multinode.py",
+          "weighted_bins, node_windows and prepare_multinode: feature construction and chronology"
+        ],
+        [
+          "S29",
+          "src/preprocess.py",
+          "Metric schema, units, range checks and _weather_asof"
+        ],
+        [
+          "S30",
+          "src/experiment_data.py",
+          "FEATURES, weather_view, frozen contract and scaler/persistence interface"
+        ],
+        [
+          "S31",
+          "src/experiment_eval.py",
+          "metric_pair/evaluate: original physical-unit metrics and persistence"
+        ],
+        [
+          "S32",
+          "src/federated_data.py",
+          "Training-only client memberships and coordinator validation capabilities"
+        ],
+        [
+          "S33",
+          "src/federated_train.py",
+          "GlobalModelState and aggregate_fedavg, including fixed buffers and embeddings"
+        ],
+        [
+          "S34",
+          "src/federated_rounds.py",
+          "Initialization, RNG streams, sampling, local SGD and communication rounds"
+        ],
+        [
+          "S35",
+          "src/federated_io.py",
+          "Manifest, atomic commit, receipt and export protocol"
+        ],
+        [
+          "S36",
+          "src/centralized_sgd.py",
+          "Reference verification, plan_block/train_block and continuing central model"
+        ],
+        [
+          "S37",
+          "src/centralized_io.py",
+          "Central block commits, reference verification and selected export integrity"
+        ],
+        [
+          "S38",
+          "src/federated_evaluate.py",
+          "Locked final-test contract, seed aggregation and finite/alignment guards"
+        ],
+        [
+          "S39",
+          "src/centralized_evaluate.py",
+          "Locked central block selections and comparison with stored FedAvg"
+        ],
+        [
+          "S40",
+          "src/experiment_models.py",
+          "neural_predict: batch-copy weather masking during existing inference"
+        ],
+        [
+          "S41",
+          "README.md",
+          "General project history, dataset identification and operational context"
+        ],
+        [
+          "S42",
+          "EXPERIMENTS.md",
+          "Historical v1 frozen-data and common-evaluation documentation"
+        ],
+        [
+          "S43",
+          "configs/experiments/v2_fedavg/README.md",
+          "Approved FedAvg protocol and workflow"
+        ],
+        [
+          "S44",
+          "configs/experiments/v3_centralized_sgd/README.md",
+          "Matched control and schedule-replay limitations"
+        ],
+        [
+          "S45",
+          "output/experiments/v2_fedavg/main/gru_masked_seed42b/manifest.json",
+          "Completed fedavg seed42 training manifest"
+        ],
+        [
+          "S46",
+          "configs/experiments/v2_fedavg/gru_masked_seed42.json",
+          "Exact completed training configuration"
+        ],
+        [
+          "S47",
+          "output/experiments/v2_fedavg/main/gru_masked_seed42b/selected/receipt.json",
+          "Selected export receipt"
+        ],
+        [
+          "S48",
+          "output/experiments/v2_fedavg/main/gru_masked_seed42b/selected/model.pt",
+          "Raw selected model export, hashed only; never loaded"
+        ],
+        [
+          "S49",
+          "output/experiments/v2_fedavg/main/gru_masked_seed42b/events/64ae616e051e467dbf4a6990b410f479.json",
+          "Completed training counters and selected-checkpoint metadata"
+        ],
+        [
+          "S50",
+          "output/experiments/v2_fedavg/main/gru_masked_seed42b/rounds/0200/receipt.json",
+          "Saved selected validation score and checkpoint fingerprint"
+        ],
+        [
+          "S51",
+          "output/experiments/v2_fedavg/main/gru_masked_seed43/manifest.json",
+          "Completed fedavg seed43 training manifest"
+        ],
+        [
+          "S52",
+          "configs/experiments/v2_fedavg/gru_masked_seed43.json",
+          "Exact completed training configuration"
+        ],
+        [
+          "S53",
+          "output/experiments/v2_fedavg/main/gru_masked_seed43/selected/receipt.json",
+          "Selected export receipt"
+        ],
+        [
+          "S54",
+          "output/experiments/v2_fedavg/main/gru_masked_seed43/selected/model.pt",
+          "Raw selected model export, hashed only; never loaded"
+        ],
+        [
+          "S55",
+          "output/experiments/v2_fedavg/main/gru_masked_seed43/events/e222c6d80cd346d19913937ed6f687ea.json",
+          "Completed training counters and selected-checkpoint metadata"
+        ],
+        [
+          "S56",
+          "output/experiments/v2_fedavg/main/gru_masked_seed43/rounds/0200/receipt.json",
+          "Saved selected validation score and checkpoint fingerprint"
+        ],
+        [
+          "S57",
+          "output/experiments/v2_fedavg/main/gru_masked_seed44/manifest.json",
+          "Completed fedavg seed44 training manifest"
+        ],
+        [
+          "S58",
+          "configs/experiments/v2_fedavg/gru_masked_seed44.json",
+          "Exact completed training configuration"
+        ],
+        [
+          "S59",
+          "output/experiments/v2_fedavg/main/gru_masked_seed44/selected/receipt.json",
+          "Selected export receipt"
+        ],
+        [
+          "S60",
+          "output/experiments/v2_fedavg/main/gru_masked_seed44/selected/model.pt",
+          "Raw selected model export, hashed only; never loaded"
+        ],
+        [
+          "S61",
+          "output/experiments/v2_fedavg/main/gru_masked_seed44/events/54e359921f1f4bbf8758d20e56e27603.json",
+          "Completed training counters and selected-checkpoint metadata"
+        ],
+        [
+          "S62",
+          "output/experiments/v2_fedavg/main/gru_masked_seed44/rounds/0200/receipt.json",
+          "Saved selected validation score and checkpoint fingerprint"
+        ],
+        [
+          "S63",
+          "output/experiments/v3_centralized_sgd/main/gru_masked_seed42_schedule_matched/manifest.json",
+          "Completed centralized_sgd seed42 training manifest"
+        ],
+        [
+          "S64",
+          "configs/experiments/v3_centralized_sgd/gru_masked_seed42_schedule_matched.json",
+          "Exact completed training configuration"
+        ],
+        [
+          "S65",
+          "output/experiments/v3_centralized_sgd/main/gru_masked_seed42_schedule_matched/final/receipt.json",
+          "Selected export receipt"
+        ],
+        [
+          "S66",
+          "output/experiments/v3_centralized_sgd/main/gru_masked_seed42_schedule_matched/final/model.pt",
+          "Raw selected model export, hashed only; never loaded"
+        ],
+        [
+          "S67",
+          "output/experiments/v3_centralized_sgd/main/gru_masked_seed42_schedule_matched/completed.json",
+          "Completed training counters and selected-checkpoint metadata"
+        ],
+        [
+          "S68",
+          "output/experiments/v3_centralized_sgd/main/gru_masked_seed42_schedule_matched/blocks/0190/receipt.json",
+          "Saved selected validation score and checkpoint fingerprint"
+        ],
+        [
+          "S69",
+          "output/experiments/v3_centralized_sgd/main/gru_masked_seed43_schedule_matched/manifest.json",
+          "Completed centralized_sgd seed43 training manifest"
+        ],
+        [
+          "S70",
+          "configs/experiments/v3_centralized_sgd/gru_masked_seed43_schedule_matched.json",
+          "Exact completed training configuration"
+        ],
+        [
+          "S71",
+          "output/experiments/v3_centralized_sgd/main/gru_masked_seed43_schedule_matched/final/receipt.json",
+          "Selected export receipt"
+        ],
+        [
+          "S72",
+          "output/experiments/v3_centralized_sgd/main/gru_masked_seed43_schedule_matched/final/model.pt",
+          "Raw selected model export, hashed only; never loaded"
+        ],
+        [
+          "S73",
+          "output/experiments/v3_centralized_sgd/main/gru_masked_seed43_schedule_matched/completed.json",
+          "Completed training counters and selected-checkpoint metadata"
+        ],
+        [
+          "S74",
+          "output/experiments/v3_centralized_sgd/main/gru_masked_seed43_schedule_matched/blocks/0190/receipt.json",
+          "Saved selected validation score and checkpoint fingerprint"
+        ],
+        [
+          "S75",
+          "output/experiments/v3_centralized_sgd/main/gru_masked_seed44_schedule_matched/manifest.json",
+          "Completed centralized_sgd seed44 training manifest"
+        ],
+        [
+          "S76",
+          "configs/experiments/v3_centralized_sgd/gru_masked_seed44_schedule_matched.json",
+          "Exact completed training configuration"
+        ],
+        [
+          "S77",
+          "output/experiments/v3_centralized_sgd/main/gru_masked_seed44_schedule_matched/final/receipt.json",
+          "Selected export receipt"
+        ],
+        [
+          "S78",
+          "output/experiments/v3_centralized_sgd/main/gru_masked_seed44_schedule_matched/final/model.pt",
+          "Raw selected model export, hashed only; never loaded"
+        ],
+        [
+          "S79",
+          "output/experiments/v3_centralized_sgd/main/gru_masked_seed44_schedule_matched/completed.json",
+          "Completed training counters and selected-checkpoint metadata"
+        ],
+        [
+          "S80",
+          "output/experiments/v3_centralized_sgd/main/gru_masked_seed44_schedule_matched/blocks/0180/receipt.json",
+          "Saved selected validation score and checkpoint fingerprint"
+        ],
+        [
+          "S81",
+          "output/experiments/v3_centralized_sgd/reports/validation_comparison_v1/validation_curves.png",
+          "Existing validation figure, copied without regeneration"
+        ],
+        [
+          "S82",
+          "output/experiments/v3_centralized_sgd/reports/final_test_comparison_v1/per_node_comparison.png",
+          "Existing per-node test figure, copied without regeneration"
+        ]
+      ],
+      "source_ids": []
+    },
+    "splits": {
+      "headers": [
+        "Split",
+        "Lower boundary, inclusive UTC",
+        "Upper boundary, exclusive UTC"
+      ],
+      "rows": [
+        [
+          "Training",
+          "2022-01-01 00:00:00",
+          "2022-02-11 07:10:00"
+        ],
+        [
+          "Validation",
+          "2022-02-11 07:10:00",
+          "2022-02-20 03:30:00"
+        ],
+        [
+          "Test",
+          "2022-02-20 03:30:00",
+          "2022-03-01 00:00:00"
+        ]
+      ],
+      "source_ids": [
+        "S22",
+        "S23"
+      ]
+    },
+    "test_seeds": {
+      "headers": [
+        "Seed",
+        "Central block",
+        "Central RMSE",
+        "Central MAE",
+        "FedAvg round",
+        "FedAvg RMSE",
+        "FedAvg MAE"
+      ],
+      "rows": [
+        [
+          "42",
+          "190",
+          "56.970821",
+          "32.757930",
+          "200",
+          "63.107024",
+          "33.681455"
+        ],
+        [
+          "43",
+          "190",
+          "55.328756",
+          "29.428369",
+          "200",
+          "63.358001",
+          "34.239143"
+        ],
+        [
+          "44",
+          "180",
+          "55.751282",
+          "29.363914",
+          "200",
+          "63.228511",
+          "33.853313"
+        ]
+      ],
+      "source_ids": [
+        "S17",
+        "S12"
+      ]
+    },
+    "test_summary": {
+      "headers": [
+        "Method",
+        "RMSE",
+        "MAE"
+      ],
+      "rows": [
+        [
+          "centralized_sgd",
+          "56.016953 \u00b1 0.852660",
+          "30.516738 \u00b1 1.941197"
+        ],
+        [
+          "fedavg",
+          "63.231179 \u00b1 0.125510",
+          "33.924637 \u00b1 0.285604"
+        ],
+        [
+          "persistence",
+          "64.417454 \u00b1 0.000000",
+          "30.926903 \u00b1 0.000000"
+        ]
+      ],
+      "source_ids": [
+        "S01",
+        "S17",
+        "S12"
+      ]
+    },
+    "validation_seeds": {
+      "headers": [
+        "Seed",
+        "Central block",
+        "Central RMSE",
+        "Central MAE",
+        "FedAvg round",
+        "FedAvg RMSE",
+        "FedAvg MAE"
+      ],
+      "rows": [
+        [
+          "42",
+          "190",
+          "66.426516",
+          "36.492287",
+          "200",
+          "68.489285",
+          "34.636938"
+        ],
+        [
+          "43",
+          "190",
+          "66.215547",
+          "34.899886",
+          "200",
+          "68.518750",
+          "34.695020"
+        ],
+        [
+          "44",
+          "180",
+          "66.270997",
+          "34.338824",
+          "200",
+          "68.558591",
+          "34.682672"
+        ]
+      ],
+      "source_ids": [
+        "S08"
+      ]
+    },
+    "validation_summary": {
+      "headers": [
+        "Method",
+        "RMSE",
+        "MAE"
+      ],
+      "rows": [
+        [
+          "centralized_sgd",
+          "66.304353 \u00b1 0.109368",
+          "35.243666 \u00b1 1.117134"
+        ],
+        [
+          "fedavg",
+          "68.522209 \u00b1 0.034782",
+          "34.671543 \u00b1 0.030599"
+        ],
+        [
+          "persistence",
+          "70.369741 \u00b1 0.000000",
+          "30.969863 \u00b1 0.000000"
+        ]
+      ],
+      "source_ids": [
+        "S08"
+      ]
+    }
+  },
+  "sample_counts": {
+    "test": 75566,
+    "train": 4506133,
+    "val": 199670
+  },
+  "test": {
+    "aggregation": "Each seed pools all windows; arithmetic mean and sample SD (ddof=1) of three seed scores, not an ensemble",
+    "chronological_cuts": {
+      "train_end_val_start": "2022-02-11T07:10:00+00:00",
+      "val_end_test_start": "2022-02-20T03:30:00+00:00"
+    },
+    "comparisons": {
+      "mae_w": {
+        "centralized_reduction_vs_fedavg_percent": 10.045500233277293,
+        "centralized_reduction_vs_persistence_percent": 1.3262409211257542,
+        "fedavg_reduction_vs_persistence_percent": -9.692966260457258
+      },
+      "rmse_w": {
+        "centralized_reduction_vs_fedavg_percent": 11.409285573694872,
+        "centralized_reduction_vs_persistence_percent": 13.040721580682712,
+        "fedavg_reduction_vs_persistence_percent": 1.8415428948199364
+      }
+    },
+    "evaluated_nodes": 979,
+    "origin_max_utc": "2022-02-28T01:00:00.000000000",
+    "origin_min_utc": "2022-02-20T23:30:00.000000000",
+    "per_node_analysis": {
+      "mae_w": {
+        "centralized_better_all_three_seeds": 542,
+        "centralized_better_nodes": 788,
+        "delta_mean_quantiles_w": {
+          "max": 19.041855818217684,
+          "median": -3.245006395271592,
+          "min": -38.74099428392111,
+          "p25": -5.9254438453005225,
+          "p75": -0.8198973551504816
+        },
+        "exact_ties": 0,
+        "fedavg_better_nodes": 191,
+        "macro_node_errors_mean_across_seeds_w": {
+          "centralized": 30.21947269209145,
+          "fedavg": 33.647440819469324,
+          "persistence": 30.70351391963602
+        },
+        "per_seed": {
+          "42": {
+            "centralized_beats_persistence_nodes": 429,
+            "centralized_better_nodes": 559,
+            "fedavg_beats_persistence_nodes": 268
+          },
+          "43": {
+            "centralized_beats_persistence_nodes": 649,
+            "centralized_better_nodes": 830,
+            "fedavg_beats_persistence_nodes": 260
+          },
+          "44": {
+            "centralized_beats_persistence_nodes": 668,
+            "centralized_better_nodes": 843,
+            "fedavg_beats_persistence_nodes": 265
+          }
+        }
+      },
+      "rmse_w": {
+        "centralized_better_all_three_seeds": 701,
+        "centralized_better_nodes": 843,
+        "delta_mean_quantiles_w": {
+          "max": 19.63335330350028,
+          "median": -5.8332946766942415,
+          "min": -46.232650631303834,
+          "p25": -10.871378664407905,
+          "p75": -2.04318172675113
+        },
+        "exact_ties": 0,
+        "fedavg_better_nodes": 136,
+        "macro_node_errors_mean_across_seeds_w": {
+          "centralized": 47.425109283717944,
+          "fedavg": 54.16055265279065,
+          "persistence": 53.84222387814767
+        },
+        "per_seed": {
+          "42": {
+            "centralized_beats_persistence_nodes": 716,
+            "centralized_better_nodes": 725,
+            "fedavg_beats_persistence_nodes": 580
+          },
+          "43": {
+            "centralized_beats_persistence_nodes": 842,
+            "centralized_better_nodes": 861,
+            "fedavg_beats_persistence_nodes": 556
+          },
+          "44": {
+            "centralized_beats_persistence_nodes": 844,
+            "centralized_better_nodes": 865,
+            "fedavg_beats_persistence_nodes": 570
+          }
+        }
+      }
+    },
+    "per_seed": {
+      "centralized_sgd": [
+        {
+          "mae_w": 32.7579295159677,
+          "persistence_mae_w": 30.92690275492673,
+          "persistence_rmse_w": 64.41745378571402,
+          "rmse_w": 56.970820535526855,
+          "samples": 75566,
+          "seed": 42
+        },
+        {
+          "mae_w": 29.428369076835263,
+          "persistence_mae_w": 30.92690275492673,
+          "persistence_rmse_w": 64.41745378571402,
+          "rmse_w": 55.32875608408049,
+          "samples": 75566,
+          "seed": 43
+        },
+        {
+          "mae_w": 29.363913952059406,
+          "persistence_mae_w": 30.92690275492673,
+          "persistence_rmse_w": 64.41745378571402,
+          "rmse_w": 55.75128234485494,
+          "samples": 75566,
+          "seed": 44
+        }
+      ],
+      "fedavg": [
+        {
+          "mae_w": 33.68145451854077,
+          "persistence_mae_w": 30.92690275492673,
+          "persistence_rmse_w": 64.41745378571402,
+          "rmse_w": 63.10702423300162,
+          "samples": 75566,
+          "seed": 42
+        },
+        {
+          "mae_w": 34.23914312736974,
+          "persistence_mae_w": 30.92690275492673,
+          "persistence_rmse_w": 64.41745378571402,
+          "rmse_w": 63.358001151496715,
+          "samples": 75566,
+          "seed": 43
+        },
+        {
+          "mae_w": 33.85331336718809,
+          "persistence_mae_w": 30.92690275492673,
+          "persistence_rmse_w": 64.41745378571402,
+          "rmse_w": 63.228510842999505,
+          "samples": 75566,
+          "seed": 44
+        }
+      ]
+    },
+    "samples_per_seed": 75566,
+    "seed_interpretation": "Same dataset; seeds are not independent datasets and SD is not a confidence interval",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "split": "test",
+    "summary": {
+      "centralized_sgd": {
+        "mean_mae_w": 30.516737514954123,
+        "mean_persistence_mae_w": 30.92690275492673,
+        "mean_persistence_rmse_w": 64.41745378571402,
+        "mean_rmse_w": 56.016952988154095,
+        "std_mae_w": 1.9411967455239836,
+        "std_persistence_mae_w": 0.0,
+        "std_persistence_rmse_w": 0.0,
+        "std_rmse_w": 0.8526602979552894
+      },
+      "fedavg": {
+        "mean_mae_w": 33.924637004366204,
+        "mean_persistence_mae_w": 30.92690275492673,
+        "mean_persistence_rmse_w": 64.41745378571402,
+        "mean_rmse_w": 63.23117874249928,
+        "std_mae_w": 0.2856036449690993,
+        "std_persistence_mae_w": 0.0,
+        "std_persistence_rmse_w": 0.0,
+        "std_rmse_w": 0.1255097273924594
+      }
+    },
+    "test_based_selection": false,
+    "test_status": "Previously observed development benchmark; not untouched confirmatory data",
+    "test_windows_per_node_max": 93,
+    "test_windows_per_node_min": 46,
+    "unit": "W"
+  },
+  "validation": {
+    "aggregation": "mean of individual scores, not ensemble predictions",
+    "centralized_mae_deterioration_vs_persistence_percent": 13.799875876925904,
+    "centralized_rmse_improvement_vs_persistence_percent": 5.777181408873123,
+    "centralized_sgd": [
+      {
+        "evaluated_nodes": 979,
+        "examples_processed": 90220299,
+        "macro_node_mae_w": 36.573390573462596,
+        "macro_node_persistence_mae_w": 30.967863126735566,
+        "mae_w": 36.492286697891814,
+        "optimizer_steps": 186208,
+        "persistence_mae_w": 30.969863125560767,
+        "persistence_rmse_w": 70.36974108767977,
+        "resources": {
+          "gpu_scope": "nvidia-smi process total across GPUs, sampled every 0.5s; may miss short peaks",
+          "peak_process_rss_bytes": 3129987072,
+          "rss_scope": "Linux process lifetime high-water mark; includes loading/imports",
+          "sampled_peak_process_gpu_mib": 682.0,
+          "wall_seconds": 19693.50934001105
+        },
+        "rmse_w": 66.42651604306914,
+        "samples": 199670,
+        "seed": 42,
+        "selected_block": 190,
+        "split": "val",
+        "unit": "W"
+      },
+      {
+        "evaluated_nodes": 979,
+        "examples_processed": 90210631,
+        "macro_node_mae_w": 34.98806772100573,
+        "macro_node_persistence_mae_w": 30.967863126735566,
+        "mae_w": 34.89988623083293,
+        "optimizer_steps": 186192,
+        "persistence_mae_w": 30.969863125560767,
+        "persistence_rmse_w": 70.36974108767977,
+        "resources": {
+          "gpu_scope": "nvidia-smi process total across GPUs, sampled every 0.5s; may miss short peaks",
+          "peak_process_rss_bytes": 3139850240,
+          "rss_scope": "Linux process lifetime high-water mark; includes loading/imports",
+          "sampled_peak_process_gpu_mib": 682.0,
+          "wall_seconds": 979.9460976428818
+        },
+        "rmse_w": 66.21554746388601,
+        "samples": 199670,
+        "seed": 43,
+        "selected_block": 190,
+        "split": "val",
+        "unit": "W"
+      },
+      {
+        "evaluated_nodes": 979,
+        "examples_processed": 90221096,
+        "macro_node_mae_w": 34.42391548300363,
+        "macro_node_persistence_mae_w": 30.967863126735566,
+        "mae_w": 34.33882445970124,
+        "optimizer_steps": 186254,
+        "persistence_mae_w": 30.969863125560767,
+        "persistence_rmse_w": 70.36974108767977,
+        "resources": {
+          "gpu_scope": "nvidia-smi process total across GPUs, sampled every 0.5s; may miss short peaks",
+          "peak_process_rss_bytes": 3137863680,
+          "rss_scope": "Linux process lifetime high-water mark; includes loading/imports",
+          "sampled_peak_process_gpu_mib": 682.0,
+          "wall_seconds": 960.6337984309066
+        },
+        "rmse_w": 66.2709969573154,
+        "samples": 199670,
+        "seed": 44,
+        "selected_block": 180,
+        "split": "val",
+        "unit": "W"
+      }
+    ],
+    "evaluated_nodes": 979,
+    "fedavg": [
+      {
+        "evaluated_nodes": 979,
+        "finite_predictions": true,
+        "mae_w": 34.63693756326223,
+        "persistence_mae_w": 30.969863125560767,
+        "persistence_rmse_w": 70.36974108767977,
+        "predictions_sha256": "d57b8adebb21c197221aa2c87f7ab558293a727e3f066d3ec45b748860befa84",
+        "rmse_w": 68.48928487743382,
+        "samples": 199670,
+        "seed": 42,
+        "selected_round": 200,
+        "split": "val",
+        "unit": "W"
+      },
+      {
+        "evaluated_nodes": 979,
+        "finite_predictions": true,
+        "mae_w": 34.695020069937065,
+        "persistence_mae_w": 30.969863125560767,
+        "persistence_rmse_w": 70.36974108767977,
+        "predictions_sha256": "0123d9b9750fff332150e55dfa804938823543176262a3313d7ebbeb56e6c816",
+        "rmse_w": 68.51875045063808,
+        "samples": 199670,
+        "seed": 43,
+        "selected_round": 200,
+        "split": "val",
+        "unit": "W"
+      },
+      {
+        "evaluated_nodes": 979,
+        "finite_predictions": true,
+        "mae_w": 34.682672030298946,
+        "persistence_mae_w": 30.969863125560767,
+        "persistence_rmse_w": 70.36974108767977,
+        "predictions_sha256": "71873d44f2d3420be6c1b717329db7d9bfd71fb794c4bcb53e3dd1fe510174f5",
+        "rmse_w": 68.5585905054291,
+        "samples": 199670,
+        "seed": 44,
+        "selected_round": 200,
+        "split": "val",
+        "unit": "W"
+      }
+    ],
+    "paired_differences": [
+      {
+        "mae_centralized_minus_fedavg_w": 1.8553491346295843,
+        "rmse_centralized_minus_fedavg_w": -2.0627688343646753,
+        "seed": 42
+      },
+      {
+        "mae_centralized_minus_fedavg_w": 0.20486616089586107,
+        "rmse_centralized_minus_fedavg_w": -2.303202986752069,
+        "seed": 43
+      },
+      {
+        "mae_centralized_minus_fedavg_w": -0.34384757059770266,
+        "rmse_centralized_minus_fedavg_w": -2.2875935481136906,
+        "seed": 44
+      }
+    ],
+    "samples_per_seed": 199670,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "split": "val",
+    "standard_deviation": "sample SD across seed metrics, ddof=1; same dataset, not independent datasets or a confidence interval",
+    "summary": {
+      "centralized_sgd": {
+        "mae": {
+          "mean_w": 35.243665796142,
+          "sample_sd_w": 1.1171339198911
+        },
+        "rmse": {
+          "mean_w": 66.30435348809019,
+          "sample_sd_w": 0.10936831789706737
+        }
+      },
+      "fedavg": {
+        "mae": {
+          "mean_w": 34.67154322116608,
+          "sample_sd_w": 0.030598728567456972
+        },
+        "rmse": {
+          "mean_w": 68.522208611167,
+          "sample_sd_w": 0.03478198777582663
+        }
+      },
+      "persistence": {
+        "mae": {
+          "mean_w": 30.969863125560767,
+          "sample_sd_w": 0.0
+        },
+        "rmse": {
+          "mean_w": 70.36974108767977,
+          "sample_sd_w": 0.0
+        }
+      }
+    },
+    "test_inference_executed": false,
+    "unit": "W"
+  },
+  "window_identity": {
+    "count": 75566,
+    "identity": "(node string, forecast origin datetime64[ns])",
+    "ordered_sha256": "4f57d3c1d6b64d2bc7543804300a61a139eeb1080df365b70102ef759fcf2704",
+    "origin_timezone": "UTC",
+    "unique_count": 75566
+  }
+}

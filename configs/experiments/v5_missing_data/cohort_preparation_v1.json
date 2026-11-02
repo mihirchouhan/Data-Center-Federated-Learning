@@ -1,0 +1,151 @@
+{
+  "baseline_diagnostic_dir": "output/experiments/v5_missing_data/diagnostic/v1",
+  "budget_protocol": {
+    "batch_size": 512,
+    "clients_per_round": 98,
+    "rounds": 200,
+    "seeds": [
+      42,
+      43,
+      44
+    ]
+  },
+  "evidence_files": {
+    "docs/experiments/v5_missing_data/NO_FILL_FORWARD_FILL_PROTOCOL_v1.md": {
+      "sha256": "dc5a65609156a5c218efc242e1e7f116bff5903449c51d0a095a29c15868a09c"
+    },
+    "output/experiments/v5_missing_data/diagnostic/v1/masked_coverage_by_node.csv": {
+      "sha256": "82e71554c4a8483edbe729227e1921e0591d03201773db38079d2847a57c86e1"
+    },
+    "output/experiments/v5_missing_data/diagnostic/v1/summary.json": {
+      "sha256": "3e2ace973fec31d4d5e41b440620e44a6a38654aaebbdaa3db69f534efe20c40"
+    },
+    "output/experiments/v5_missing_data/forward_fill_audit/v1/completed.json": {
+      "sha256": "57382bc361ef5c35dc055dbe659b392ebbfcfde45657d691d37ef54f99652d97"
+    },
+    "output/experiments/v5_missing_data/forward_fill_audit/v1/manifest.json": {
+      "sha256": "d6ceb4fea3af2fc539a818fe22d89f0e1857e1ca6bed49c2cfceac238dac811b"
+    }
+  },
+  "execution_sources": {
+    "src/__init__.py": {
+      "sha256": "25158a896fd929726fc557de71415c913952aef387fc82e0b17b676ab6d17d1d"
+    },
+    "src/experiment_data.py": {
+      "sha256": "d75e1f5b79cc0fde81245a6c13d035cfec8ac2d8360b125349a716b90459e049"
+    },
+    "src/history_coverage_v4.py": {
+      "sha256": "396e8497d0955433c6a326e71c53f5d13c30efafece13b5e39cea26ecf1f065e"
+    },
+    "src/history_data_v4.py": {
+      "sha256": "dff15362b1b5cc5d78e1cf40918f089790b88cf14b7fa5f5ee86a1de6a18ca0c"
+    },
+    "src/io_utils.py": {
+      "sha256": "89aa88def3cb66d1228eff60086a690810576e0260b26ecd29be3a63f4f08bef"
+    },
+    "src/multinode.py": {
+      "sha256": "bd6e8d1d26af4603f01f950d91c707ede4bc0996c17ead1d35205825c8b01ee5"
+    },
+    "src/preprocess.py": {
+      "sha256": "a0567a07f8cef60f7df85e03da34646c0a47ef97a465680fdb021701c6918d64"
+    },
+    "src/v5_missing_data/build_training_cohorts.py": {
+      "sha256": "7b1192ccf20a8b6198e893abd7e9e4e3a5ba0da7055ea99d46fb1a97770623b1"
+    },
+    "src/v5_missing_data/diagnose.py": {
+      "sha256": "8072dcf0fc9eaca72cc7391d7e76e75423d5e8319431e0ee3dde733f215e589b"
+    },
+    "src/v5_missing_data/eligibility.py": {
+      "sha256": "b8394368a68cbc6a3eed16da1adb0d3ea3d367e8d51cb6d2ce6c7c42959ffb81"
+    },
+    "src/v5_missing_data/forward_fill_audit.py": {
+      "sha256": "6177203259a29844951e2cf428c15dc132508839a8acdd2a23368b13c1a833b3"
+    },
+    "src/v5_missing_data/test_build_training_cohorts.py": {
+      "sha256": "2ae74ae21afe77c4f9d796396b7b60aa7afe15e5401e93f7e4f90cb68b70f8d2"
+    },
+    "src/v5_missing_data/test_forward_fill_audit.py": {
+      "sha256": "a3beb29f187dc3cb3ac6b1a0e415e08f19d0d1a96b8ae863f5efa3a791e4e16c"
+    },
+    "tests/test_history_coverage_v4.py": {
+      "sha256": "1eafe069389bc7e205dc89f61fe1663fafd7d9e156be0ae3e300417bfcad9718"
+    }
+  },
+  "expected_budget_totals": {
+    "42": {
+      "examples_processed_per_method_policy": 46268600,
+      "optimizer_steps_per_method_policy": 100038
+    },
+    "43": {
+      "examples_processed_per_method_policy": 46238350,
+      "optimizer_steps_per_method_policy": 100014
+    },
+    "44": {
+      "examples_processed_per_method_policy": 46275837,
+      "optimizer_steps_per_method_policy": 100074
+    }
+  },
+  "expected_counts": {
+    "ff10": {
+      "test": 10379,
+      "train": 2996160,
+      "val": 80679
+    },
+    "ff20": {
+      "test": 11821,
+      "train": 3459118,
+      "val": 139874
+    },
+    "ff30": {
+      "test": 13184,
+      "train": 3867660,
+      "val": 196149
+    },
+    "no_fill": {
+      "test": 6590,
+      "train": 2310256,
+      "val": 31448
+    }
+  },
+  "expected_covered_nodes": {
+    "ff10": {
+      "test": 762,
+      "train": 979,
+      "val": 979
+    },
+    "ff20": {
+      "test": 802,
+      "train": 979,
+      "val": 979
+    },
+    "ff30": {
+      "test": 827,
+      "train": 979,
+      "val": 979
+    },
+    "no_fill": {
+      "test": 570,
+      "train": 979,
+      "val": 929
+    }
+  },
+  "expected_nodes": 979,
+  "history_steps": 36,
+  "horizon_steps": 6,
+  "minimum_days": 7,
+  "minimum_windows": 1024,
+  "policies": {
+    "ff10": 1,
+    "ff20": 2,
+    "ff30": 3,
+    "no_fill": 0
+  },
+  "preparation_config": {
+    "path": "configs/experiments/v4_history/coverage_audit_v1.json",
+    "sha256": "778fa2aedb4d43711ff60f2b0b7d523d0f189bd8b47496ddfc5158c03367b8d9"
+  },
+  "resample_minutes": 10,
+  "scaler_policy": "reuse_original_training_window_scalers",
+  "stage": "cohort_preparation_only",
+  "version": 1
+}

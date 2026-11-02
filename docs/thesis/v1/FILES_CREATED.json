@@ -1,0 +1,28 @@
+{
+  "created_files": [
+    "docs/thesis/v1/DOCUMENT.json",
+    "docs/thesis/v1/DOCUMENTATION_CHECKS.json",
+    "docs/thesis/v1/DOCUMENTATION_CHECKS.log",
+    "docs/thesis/v1/DOCUMENTATION_CHECKS_STAGED.log",
+    "docs/thesis/v1/EVIDENCE.json",
+    "docs/thesis/v1/FILES_CREATED.json",
+    "docs/thesis/v1/INTEGRITY_AFTER.log",
+    "docs/thesis/v1/INTEGRITY_BEFORE.log",
+    "docs/thesis/v1/PRESERVATION.json",
+    "docs/thesis/v1/PRESERVATION_BASELINE.json",
+    "docs/thesis/v1/README.md",
+    "docs/thesis/v1/SOURCES.json",
+    "docs/thesis/v1/SOURCES.md",
+    "docs/thesis/v1/THESIS_COMPLETED.json",
+    "docs/thesis/v1/THESIS_METHODS_RESULTS.docx",
+    "docs/thesis/v1/THESIS_METHODS_RESULTS.html",
+    "docs/thesis/v1/THESIS_METHODS_RESULTS.md",
+    "docs/thesis/v1/THESIS_METHODS_RESULTS.pdf",
+    "docs/thesis/v1/code/build_documents.py",
+    "docs/thesis/v1/code/check_documentation.py",
+    "docs/thesis/v1/code/verify_thesis.py",
+    "docs/thesis/v1/figures/per_node_comparison.png",
+    "docs/thesis/v1/figures/validation_curves.png"
+  ],
+  "modified_existing_files": []
+}

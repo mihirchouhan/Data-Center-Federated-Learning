@@ -1,0 +1,325 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Reproducible Node-Level Power Forecasting on M100</title><style>@page {size:A4; margin:20mm 17mm 20mm; @bottom-center {content:counter(page);font-size:9pt;}}
+ body{font-family:"Times New Roman","Liberation Serif",serif;font-size:11pt;line-height:1.4;color:#111;}
+ h1{font-size:17pt;margin-top:22pt;break-after:avoid;}h2{font-size:13pt;margin-top:16pt;break-after:avoid;}
+ p{text-align:justify;orphans:3;widows:3;margin:7pt 0;}table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:8.5pt;line-height:1.22;margin:8pt 0 14pt;}
+ th,td{border:1px solid #999;padding:5px;vertical-align:top;overflow-wrap:anywhere;}th{background:#eceff1;}thead{display:table-header-group;}tr{break-inside:avoid;}
+ .caption{font-size:10pt;font-weight:bold;break-after:avoid;text-align:left;}.equation{font-family:"Times New Roman",serif;text-align:center;white-space:pre-wrap;break-inside:avoid;margin:12pt 0;}
+ figure{margin:14pt 0;break-inside:avoid;}img{display:block;width:100%;height:auto;}figcaption{font-size:9pt;text-align:left;margin-top:5pt;}
+ .title{font-size:22pt;text-align:center;margin-top:45pt;}a{color:inherit;text-decoration:none;}</style></head><body>
+<h1 class="title">Reproducible Node-Level Power Forecasting on M100</h1>
+<p>Methodology and Results: FedAvg-GRU and a Matched Centralized-SGD Control</p>
+<p>M.Tech Major Project • Methodology and Results • Documentation version 1 • Evidence snapshot: 24 October 2026</p>
+<h2>Abstract</h2>
+<p>This study investigates one-hour-ahead, node-level electrical-power forecasting using the M100 telemetry dataset. A residual gated recurrent unit (GRU) model is trained using simulated federated averaging (FedAvg) and compared with a matched centralized stochastic-gradient-descent (SGD) control and persistence. The common frozen cohort comprises 979 compute-node identifiers, 4,506,133 training windows, 199,670 validation windows and 75,566 test windows. The measured comparison uses one hour of input history and masks standardized outdoor temperature and humidity while retaining indoor inlet temperature. [S23] [S01] [S24]</p>
+<p>Across seeds 42, 43 and 44, centralized SGD obtains test RMSE 56.016953 ± 0.852660 W and MAE 30.516738 ± 1.941197 W; FedAvg obtains RMSE 63.231179 ± 0.125510 W and MAE 33.924637 ± 0.285604 W. Persistence gives RMSE 64.417454 W and MAE 30.926903 W. The deviations are sample standard deviations of three individual seed scores on the same dataset, not confidence intervals or independent-dataset estimates. Centralized SGD has lower measured test errors under this protocol; the results do not establish a general ranking of learning paradigms. The test period was already observed, and neither energy savings nor a fully privacy-preserving deployment has been demonstrated. [S01] [S12] [S17]</p>
+<h2>Document scope and evidence convention</h2>
+<p>This document supplies methodology, results, interpretation and future-work material for an M.Tech thesis. It does not invent a literature review or external bibliographic citations. Bracketed S-identifiers refer to the exact repository evidence listed in Appendix C and SOURCES.md/SOURCES.json, including SHA-256 hashes. Measured findings are separated from the unexecuted proposals in Section 9. Historical documentation is interpreted according to its original stage; later completed artifacts take precedence over statements that training or test reporting had not yet occurred.</p>
+<h1>1. Research problem, objectives and scope</h1>
+<p>The research problem is to forecast each monitored compute node’s average electrical power over the next hour from its recent operational, thermal and calendar context. Such forecasts may support later capacity or energy-management research, but forecasting accuracy alone does not measure the effect of any control policy. The present task is continuous regression in watts, not workload classification, carbon-emission prediction, total-facility-power prediction or an operational energy-optimization experiment. [S23] [S31]</p>
+<p>The objectives are to establish a reproducible chronological forecasting cohort; implement a shared residual GRU with node identity; compare FedAvg with a centralized control that matches initialization, optimizer settings and reconstructed training exposures; quantify pooled and per-node errors against persistence; and preserve the provenance of validation selection and final test reporting. The comparison concerns already-known nodes from one facility, with one simulated client per node. It is not an independent-data-center federation or an unseen-node generalization study. [S24] [S32] [S43] [S44]</p>
+<p>All measurements in this document are taken from existing completed artifacts. Documentation preparation performed no training, checkpoint inference or evaluation rerun. The existing final report had already reconciled the saved prediction archives with the frozen reference and found zero discrepancy in the checked W metrics. This document uses those saved summaries and verifies their integrity and arithmetic only. [S03] [S02]</p>
+<h1>2. Dataset, cohort and forecast formulation</h1>
+<h2>2.1 Dataset identity and unit of observation</h2>
+<p>The repository identifies the source as M100 Dataset 5 and records January–February 2022 archives under Zenodo record 7589942. The prepared audit describes a shared-model cohort from one facility. Node strings are compute-node identifiers; they must not be relabeled as separate sites or data centers. The audit discovers 980 candidate identifiers and retains 979. Identifier 0 is excluded because it has insufficient complete windows in a chronological split: its audit records 3,210 training windows and zero validation/test windows. Node eligibility requires the relevant sensor records and at least ten complete windows in each split. [S41] [S26] [S24]</p>
+<p class="caption">Table 2.1. Frozen benchmark cohort [S22] [S23]</p>
+<table><colgroup><col style="width:25.0%"><col style="width:25.0%"><col style="width:25.0%"><col style="width:25.0%"></colgroup><thead><tr><th>Split</th><th>Accepted windows</th><th>Input shape per window</th><th>Target</th></tr></thead><tbody>
+<tr><td>Training</td><td>4,506,133</td><td>6 × 14</td><td>One next-hour mean</td></tr>
+<tr><td>Validation</td><td>199,670</td><td>6 × 14</td><td>One next-hour mean</td></tr>
+<tr><td>Test</td><td>75,566</td><td>6 × 14</td><td>One next-hour mean</td></tr>
+</tbody></table>
+<p>The full calendar grid runs from 2022-01-01 00:00 UTC to 2022-03-01 00:00 UTC exclusive. Accepted windows are incomplete in time and uneven across nodes. In the test set, 94 distinct forecast origins occur on six calendar dates; individual nodes have 46–93 accepted test windows. These counts describe filtered forecasting windows, not a continuously observed test trace. No cause of every coverage gap is inferred from aggregate counts. [S24] [S25] [S01]</p>
+<p class="caption">Table 2.2. Recorded test coverage by UTC date [S25]</p>
+<table><colgroup><col style="width:33.333333333333336%"><col style="width:33.333333333333336%"><col style="width:33.333333333333336%"></colgroup><thead><tr><th>Date</th><th>Accepted windows</th><th>Distinct origins on date</th></tr></thead><tbody>
+<tr><td>2022-02-20</td><td>1,671</td><td>2</td></tr>
+<tr><td>2022-02-23</td><td>14,519</td><td>18</td></tr>
+<tr><td>2022-02-24</td><td>35,211</td><td>44</td></tr>
+<tr><td>2022-02-25</td><td>10,351</td><td>13</td></tr>
+<tr><td>2022-02-27</td><td>8,150</td><td>10</td></tr>
+<tr><td>2022-02-28</td><td>5,664</td><td>7</td></tr>
+</tbody></table>
+<h2>2.2 History and next-hour average-power target</h2>
+<p>At forecast origin t, six completed ten-minute input bins span [t−60 min, t). The scalar target is the arithmetic mean of six valid future ten-minute node-power bins spanning [t, t+60 min). Thus the horizon denotes the next hour’s mean power, not the instantaneous power exactly sixty minutes later. A candidate origin is tested on the ten-minute grid; overlapping histories and target intervals create temporal dependence between adjacent windows. All target bins and all required input features must be valid. [S28] [S23]</p>
+<p class="equation">y_n(t) = (1/6) ∑(j=0,…,5) p_n([t+10j min, t+10(j+1) min)) .     (1)</p>
+<p>Here p_n denotes the prepared ten-minute power estimate in kW. The exact saved target name is next_horizon_mean_node_it_power_kw. Predictions and targets are converted to W for reporting by inverse target scaling followed by multiplication by 1000. The target is node-level IT power as defined by the recorded total_power metric, not measured cooling power, PUE or energy consumption. [S23] [S31] [S29]</p>
+<h2>2.3 Causal preprocessing and missing data</h2>
+<p>Node metric records are stably sorted and deduplicated by node/time, retaining the last occurrence in the recorded ordering. Invalid finite/range observations are rejected: percentages must lie in [0,100], power and free memory are nonnegative, and total memory must be positive. Temperature channels require finite values without speculative temperature cutoffs. Local sensor bins use causal time-weighted sample holds capped at 300 s. A bin requires at least 50% time coverage. Consequently, the target averages valid coverage-controlled bin estimates; it is not a guarantee that every second of the future hour had a sensor observation. [S28] [S29] [S23]</p>
+<p>Outdoor weather is joined using the latest observation strictly before the input bin’s right edge, with a maximum age of 30 minutes. Missing/stale weather remains invalid rather than being filled from a future observation. Memory-used fraction is 1 − binned(mem_free)/binned(mem_total), and fractions outside [0,1] become invalid. A window is omitted if any required history feature or future power bin is invalid. Windows do not concatenate across node identities or missing temporal bins. These causal holds are distinct from arbitrary interpolation or backward filling. [S28] [S29]</p>
+<h2>2.4 Exact feature order, units and weather mask</h2>
+<p class="caption">Table 2.3. Exact frozen input channels [S23] [S22] [S28] [S29]</p>
+<table><colgroup><col style="width:6%"><col style="width:25%"><col style="width:40%"><col style="width:8%"><col style="width:14%"><col style="width:7%"></colgroup><thead><tr><th>Index</th><th>Exact feature name</th><th>Source or transformation</th><th>Unit</th><th>Category</th><th>Masked</th></tr></thead><tbody>
+<tr><td>0</td><td>power_kw</td><td>IPMI total_power bin estimate divided by 1000</td><td>kW</td><td>operational</td><td>No</td></tr>
+<tr><td>1</td><td>cpu_user</td><td>Ganglia cpu_user bin estimate</td><td>%</td><td>operational</td><td>No</td></tr>
+<tr><td>2</td><td>cpu_system</td><td>Ganglia cpu_system bin estimate</td><td>%</td><td>operational</td><td>No</td></tr>
+<tr><td>3</td><td>cpu_idle</td><td>Ganglia cpu_idle bin estimate</td><td>%</td><td>operational</td><td>No</td></tr>
+<tr><td>4</td><td>cpu_wio</td><td>Ganglia cpu_wio bin estimate</td><td>%</td><td>operational</td><td>No</td></tr>
+<tr><td>5</td><td>memory_used_fraction</td><td>1 − binned(mem_free)/binned(mem_total)</td><td>fraction</td><td>operational</td><td>No</td></tr>
+<tr><td>6</td><td>inlet_temperature_mean_c</td><td>Binned IPMI ambient; historical feature name, not a verified spatial average of multiple inlets</td><td>degC</td><td>environmental</td><td>No</td></tr>
+<tr><td>7</td><td>outdoor_temperature_c</td><td>As-of weather temp before bin right edge</td><td>degC</td><td>environmental</td><td>Yes</td></tr>
+<tr><td>8</td><td>outdoor_humidity_percent</td><td>As-of weather humidity before bin right edge</td><td>%</td><td>environmental</td><td>Yes</td></tr>
+<tr><td>9</td><td>hour_sin</td><td>sin of UTC daily phase at bin right edge</td><td>unitless</td><td>time-derived</td><td>No</td></tr>
+<tr><td>10</td><td>hour_cos</td><td>cos of UTC daily phase at bin right edge</td><td>unitless</td><td>time-derived</td><td>No</td></tr>
+<tr><td>11</td><td>week_sin</td><td>sin of weekly phase at bin right edge</td><td>unitless</td><td>time-derived</td><td>No</td></tr>
+<tr><td>12</td><td>week_cos</td><td>cos of weekly phase at bin right edge</td><td>unitless</td><td>time-derived</td><td>No</td></tr>
+<tr><td>13</td><td>node_index</td><td>Position in frozen node_names mapping</td><td>categorical index</td><td>other: categorical</td><td>No</td></tr>
+</tbody></table>
+<p>For the calendar channels, with s equal to the UTC bin-right-edge Unix time in seconds, daily phase is 2π(s mod 86400)/86400. Weekly phase is 2π((s+3×86400) mod 604800)/604800, as implemented. All thirteen non-ID channels are standardized with pooled training-window means and standard deviations; near-zero standard deviations are replaced by one. The target has its own training-only mean and standard deviation. Node index 13 is categorical and retains mean 0 and scale 1 rather than being standardized. The frozen scalers are reused without fitting on validation or test. [S28] [S23]</p>
+<p>Both measured methods use weather=&quot;masked&quot;: standardized channels 7 and 8 are set to zero on batch copies, representing their respective training means. This preserves all fourteen input slots, node IDs, calendar values, targets, window identities and scalers. Index 6, indoor inlet temperature, remains available; therefore this is outdoor-weather masking, not removal of every environmental feature. Because complete windows were frozen before masking, the mask does not recover windows previously lost to missing weather. GPU-utilization sensor channels are excluded by the preprocessing configuration; this does not imply that model training ran on a CPU. [S30] [S40] [S23]</p>
+<h2>2.5 Chronological split protocol and eligibility caveat</h2>
+<p class="caption">Table 2.4. Shared calendar split boundaries [S22] [S23]</p>
+<table><colgroup><col style="width:33.333333333333336%"><col style="width:33.333333333333336%"><col style="width:33.333333333333336%"></colgroup><thead><tr><th>Split</th><th>Lower boundary, inclusive UTC</th><th>Upper boundary, exclusive UTC</th></tr></thead><tbody>
+<tr><td>Training</td><td>2022-01-01 00:00:00</td><td>2022-02-11 07:10:00</td></tr>
+<tr><td>Validation</td><td>2022-02-11 07:10:00</td><td>2022-02-20 03:30:00</td></tr>
+<tr><td>Test</td><td>2022-02-20 03:30:00</td><td>2022-03-01 00:00:00</td></tr>
+</tbody></table>
+<p>The cut indices are obtained from 70% and 85% of the common calendar-bin grid, with integer truncation; the remaining interval is test. These are calendar proportions, not guaranteed 70/15/15 proportions of accepted windows. Every target interval must lie wholly inside its assigned split. Validation/test history may reach into the preceding split because it contains only observations available before the new forecast origin. The same node mapping and calendar cuts are used by both methods. [S28] [S23]</p>
+<p>The training workers’ API exposes client-local training examples only, while the coordinator owns a separate complete-validation capability. Final test access occurs through explicitly locked evaluation adapters. However, original cohort admission uses completeness in all splits, including test-period availability. This retrospective coverage-based selection is a limitation even though future target values were not fitted into the training scalers. The benchmark describes forecasting for this selected cohort, not arbitrary missing-data or unseen-node deployment. [S24] [S32] [S38] [S39]</p>
+<h1>3. Model architecture and persistence reference</h1>
+<p class="caption">Table 3.1. Shared residual-GRU architecture [S27] [S34] [S45]</p>
+<table><colgroup><col style="width:50.0%"><col style="width:50.0%"></colgroup><thead><tr><th>Component</th><th>Verified implementation</th></tr></thead><tbody>
+<tr><td>Saved input</td><td>Six time steps, fourteen channels</td></tr>
+<tr><td>Node identity</td><td>Categorical index at channel 13; frozen mapping of 979 nodes</td></tr>
+<tr><td>Embedding</td><td>Learned 979 × 8 table; replaces the index inside the network</td></tr>
+<tr><td>Recurrent input width</td><td>13 non-ID channels + 8 embedding values = 21</td></tr>
+<tr><td>Recurrent model</td><td>torch.nn.GRU, two layers, hidden size 64, batch_first=True</td></tr>
+<tr><td>Sequence reduction</td><td>Final output time step of the top recurrent layer</td></tr>
+<tr><td>Regression head</td><td>Linear 64 → 1</td></tr>
+<tr><td>Residual reference</td><td>Fixed two-element baseline_coefficients buffer</td></tr>
+<tr><td>Initial correction</td><td>Linear head weight and bias initialized to zero</td></tr>
+</tbody></table>
+<p>The stored node index is one of the fourteen input channels; the eight-dimensional embedding is a separate learned parameter table, not eight additional saved feature channels. It is repeated at every history step after the categorical index is removed from the numerical input. The architecture therefore consumes a 21-dimensional recurrent vector. The code defines a standard many-to-one GRU and linear residual head; no attention mechanism, exogenous forecast decoder or additional undocumented layer is asserted. [S27]</p>
+<p class="equation">ẑ_y = Linear(GRU([z_0,…,z_12, embedding(node)] at the final history step)) + a z_power,last + b .     (2)</p>
+<p class="equation">a = σ_x,power / σ_y ;     b = (μ_x,power − μ_y) / σ_y ;     ŷ_W = 1000(σ_y ẑ_y + μ_y) .     (3)</p>
+<p>The zero-initialized correction makes the initial candidate mathematically persistence. Recurrent and embedding weights are freshly seeded rather than loaded from a centrally trained checkpoint. The model stores baseline coefficients as float32, whereas the physical persistence vector is reconstructed in float64 by the common evaluator; the initial neural candidate need not be bit-identical to the float64 reference. baseline_coefficients remain fixed during both training and aggregation. [S27] [S28] [S31] [S33] [S34]</p>
+<p>Persistence predicts the last completed ten-minute power-bin mean for the entire next-hour average-power target. It uses the last input step, channel 0. It is neither the preceding hour’s average nor a fitted regression model, and it has no training seed. It is included as the initial validation-selection candidate as well as a separately reported physical-unit baseline. [S31] [S34] [S36]</p>
+<h1>4. Experimental methodology</h1>
+<h2>4.1 Common settings and training objective</h2>
+<p class="caption">Table 4.1. Fixed measured comparison protocol [S45] [S63] [S34] [S36]</p>
+<table><colgroup><col style="width:50.0%"><col style="width:50.0%"></colgroup><thead><tr><th>Setting</th><th>Recorded value</th></tr></thead><tbody>
+<tr><td>Seeds</td><td>42, 43, 44</td></tr>
+<tr><td>Initialization</td><td>Fresh seeded GRU/embedding; zero correction head; matched initial state</td></tr>
+<tr><td>Optimizer</td><td>SGD; learning rate 0.01; momentum 0; weight decay 0</td></tr>
+<tr><td>Objective</td><td>Mean squared error of standardized target predictions</td></tr>
+<tr><td>Batch size</td><td>512; final partial batch retained (drop_last=False)</td></tr>
+<tr><td>Client population</td><td>979 simulated compute-node clients</td></tr>
+<tr><td>Selected clients per round/block</td><td>98, uniformly sampled without replacement</td></tr>
+<tr><td>Local passes</td><td>One epoch per selected client session</td></tr>
+<tr><td>Training cap</td><td>200 communication rounds / 200 central schedule blocks</td></tr>
+<tr><td>Validation schedule</td><td>Initial candidate, then every ten rounds/blocks, including 200</td></tr>
+<tr><td>Selection rule</td><td>Earliest minimum pooled validation RMSE in W</td></tr>
+<tr><td>Evaluation batch size</td><td>1024</td></tr>
+<tr><td>Training tensor dtype</td><td>float32</td></tr>
+</tbody></table>
+<p class="equation">L_B(θ) = (1/|B|) ∑(i∈B) (ẑ_y,i − z_y,i)² .     (4)</p>
+<p>Optimization minimizes scaled MSE, while checkpoint selection uses complete-cohort validation RMSE after conversion to W. Thus MAE is a secondary reported criterion rather than the checkpoint-selection objective. A strict-improvement rule retains the earliest tied candidate, including the initial persistence candidate. There are twenty-one scheduled validation candidates at indices 0,10,…,200; no test score chooses a seed, round, block or hyperparameter. [S34] [S36] [S38] [S39]</p>
+<h2>4.2 FedAvg training and client structure</h2>
+<p>One client comprises all frozen training windows for one recorded node. Membership is disjoint and exhaustive over 4,506,133 training windows. The client interface preserves sequence order, frozen normalization and categorical IDs. The approved main protocol requires at least 1,024 training windows across at least seven distinct training days per client. The recorded seed42 client manifest contains 979 clients with 2,570–4,907 training windows each; clients are not filtered anew during rounds. [S32] [S45]</p>
+<p>At each round, the coordinator samples 98 clients without replacement. Every selected client receives a clone of the same immutable global state, creates a fresh stateless SGD optimizer, shuffles its own training windows deterministically and processes one complete local epoch. Local losses, gradients and returned states must be finite. Invalid counts, stale snapshots or incompatible updates abort a round rather than silently changing the participants or weights. [S34] [S33]</p>
+<p class="equation">θ_(r+1) = ∑(k∈S_r) [n_k / ∑(j∈S_r)n_j] θ_(r,k) ,     for trainable parameters.     (5)</p>
+<p>Here n_k is the participating client’s local training-window count. The implementation accumulates weighted trainable tensors in float64 on the CPU and casts back to the recorded dtype; fixed buffers retain their original values. Standard FedAvg applies to the entire shared embedding table. A client normally changes its own node row, while unchanged rows enter the same weighted average. Consequently, a client-specific embedding correction is diluted by that client’s participation weight. This is a documented mechanism, not an experimentally isolated explanation of the measured accuracy gap. [S33] [S27]</p>
+<p>Initialization, client sampling and local shuffling use separate deterministic SeedSequence domains 0, 1 and 2. Sampling is indexed by seed and round; local shuffle additionally uses node index. Atomic round commits and previous-state fingerprints support complete-round replay after interruption. This describes the implementation and its saved provenance; documentation preparation did not repeat a resume experiment. [S34] [S35]</p>
+<h2>4.3 Matched centralized-SGD control</h2>
+<p>The control starts from the same fresh initialization as its paired FedAvg seed and uses the same architecture, weather mask, frozen cohort, loss, nominal learning rate and batch size. It reconstructs the original ordered client sessions, shuffle seeds, row-order hashes and batch sizes. One continuing central model processes those node-grouped batches sequentially; there is no averaging or reset to a common global state between nodes. A stateless SGD optimizer is initialized for each central block; zero momentum and decay mean no persistent optimizer history is carried between blocks. [S36] [S37] [S44]</p>
+<p>The matching evidence consists of source/configuration binding, recorded FedAvg receipts, fresh-state fingerprints and deterministic reconstruction over frozen row IDs. An independent historical trace of every original FedAvg batch was not saved. The control is therefore a schedule-replay centralized control, not unrestricted pooled random mixing, and common settings do not imply identical effective optimization trajectories. All runs completed their 200-index cap; validation may select an earlier exported model. [S10] [S02] [S36]</p>
+<p class="caption">Table 4.2. Recorded matched completed training budgets [S08] [S02]</p>
+<table><colgroup><col style="width:20.0%"><col style="width:20.0%"><col style="width:20.0%"><col style="width:20.0%"><col style="width:20.0%"></colgroup><thead><tr><th>Seed</th><th>Example exposures per method</th><th>Local/central SGD steps per method</th><th>FedAvg selected round</th><th>Central selected block</th></tr></thead><tbody>
+<tr><td>42</td><td>90,220,299</td><td>186,208</td><td>200</td><td>190</td></tr>
+<tr><td>43</td><td>90,210,631</td><td>186,192</td><td>200</td><td>190</td></tr>
+<tr><td>44</td><td>90,221,096</td><td>186,254</td><td>200</td><td>180</td></tr>
+</tbody></table>
+<p>Each completed run comprises 19,600 client sessions (98 × 200). Example exposures count repeated visits to training windows, not distinct observations or global epochs. Matching the completed cap does not match the effective training budget of differently selected earlier checkpoints. Recorded wall times vary substantially across seeds, and saved measurements do not resolve historical resource contention or utilization. No runtime-speedup or energy-efficiency conclusion is drawn from those timings. [S08] [S09]</p>
+<h2>4.4 Validation selection, locked test reporting and metrics</h2>
+<p>The coordinator evaluates the complete 199,670-window validation cohort and selects the earliest minimum pooled validation RMSE. The selected FedAvg round is 200 for every seed; central blocks are 190,190,180 for seeds 42,43,44. Final test plans bind these selections, model/configuration hashes and execution-source snapshots before test examples are opened. The completed central evaluator references the earlier FedAvg test evaluation instead of rerunning it. [S13] [S18] [S38] [S39]</p>
+<p class="equation">MAE_s = (1/N) ∑|ŷ_i,s − y_i| ;     RMSE_s = √[(1/N) ∑(ŷ_i,s − y_i)²] .     (6)</p>
+<p class="equation">Mean = (q_42 + q_43 + q_44)/3 ;     sample SD = √[∑(q_s − Mean)²/(3−1)] .     (7)</p>
+<p>Each seed’s pooled error uses all accepted windows. Across-seed summaries average the individual scores, not prediction vectors. The three seeds are stochastic repeats on one shared dataset, not independent datasets; their SD is not a confidence interval or a significance test. Overlapping windows, shared timestamps and common facility conditions also limit assumptions of independent observations. All seeds are retained and no best test seed is selected. [S31] [S38] [S01]</p>
+<h1>5. Validation results</h1>
+<p class="caption">Table 5.1. Selected validation errors in W [S08]</p>
+<table><colgroup><col style="width:14.285714285714286%"><col style="width:14.285714285714286%"><col style="width:14.285714285714286%"><col style="width:14.285714285714286%"><col style="width:14.285714285714286%"><col style="width:14.285714285714286%"><col style="width:14.285714285714286%"></colgroup><thead><tr><th>Seed</th><th>Central block</th><th>Central RMSE</th><th>Central MAE</th><th>FedAvg round</th><th>FedAvg RMSE</th><th>FedAvg MAE</th></tr></thead><tbody>
+<tr><td>42</td><td>190</td><td>66.426516</td><td>36.492287</td><td>200</td><td>68.489285</td><td>34.636938</td></tr>
+<tr><td>43</td><td>190</td><td>66.215547</td><td>34.899886</td><td>200</td><td>68.518750</td><td>34.695020</td></tr>
+<tr><td>44</td><td>180</td><td>66.270997</td><td>34.338824</td><td>200</td><td>68.558591</td><td>34.682672</td></tr>
+</tbody></table>
+<p class="caption">Table 5.2. Validation mean ± sample SD in W [S08]</p>
+<table><colgroup><col style="width:33.333333333333336%"><col style="width:33.333333333333336%"><col style="width:33.333333333333336%"></colgroup><thead><tr><th>Method</th><th>RMSE</th><th>MAE</th></tr></thead><tbody>
+<tr><td>centralized_sgd</td><td>66.304353 ± 0.109368</td><td>35.243666 ± 1.117134</td></tr>
+<tr><td>fedavg</td><td>68.522209 ± 0.034782</td><td>34.671543 ± 0.030599</td></tr>
+<tr><td>persistence</td><td>70.369741 ± 0.000000</td><td>30.969863 ± 0.000000</td></tr>
+</tbody></table>
+<p>All validation results refer to the same 199,670 windows and 979 nodes. Centralized SGD lowers mean validation RMSE relative to FedAvg but has a higher mean validation MAE. Both models have lower validation RMSE and higher validation MAE than persistence. This trade-off is consistent with RMSE-based selection and MSE optimization; it does not demonstrate a specific causal mechanism. Persistence has zero across-seed SD because its prediction vector and cohort are fixed. [S08]</p>
+<figure><img alt="Figure 5.1. Existing saved validation trajectories for the three seeds; copied without regeneration. [S09]" src="figures/validation_curves.png"><figcaption>Figure 5.1. Existing saved validation trajectories for the three seeds; copied without regeneration. [S09]</figcaption></figure>
+<p>The validation report was produced before the central test-evaluation stage and states that central test metrics were not yet available. That historical statement is preserved in the original report. The later completed central test artifacts and final comparison supply Section 6; no historical report was rewritten to conceal this progression. [S09] [S21] [S04]</p>
+<h1>6. Test results and per-node error analysis</h1>
+<p class="caption">Table 6.1. Locked selected-model test errors in W [S17] [S12]</p>
+<table><colgroup><col style="width:14.285714285714286%"><col style="width:14.285714285714286%"><col style="width:14.285714285714286%"><col style="width:14.285714285714286%"><col style="width:14.285714285714286%"><col style="width:14.285714285714286%"><col style="width:14.285714285714286%"></colgroup><thead><tr><th>Seed</th><th>Central block</th><th>Central RMSE</th><th>Central MAE</th><th>FedAvg round</th><th>FedAvg RMSE</th><th>FedAvg MAE</th></tr></thead><tbody>
+<tr><td>42</td><td>190</td><td>56.970821</td><td>32.757930</td><td>200</td><td>63.107024</td><td>33.681455</td></tr>
+<tr><td>43</td><td>190</td><td>55.328756</td><td>29.428369</td><td>200</td><td>63.358001</td><td>34.239143</td></tr>
+<tr><td>44</td><td>180</td><td>55.751282</td><td>29.363914</td><td>200</td><td>63.228511</td><td>33.853313</td></tr>
+</tbody></table>
+<p class="caption">Table 6.2. Test mean ± sample SD in W [S01] [S17] [S12]</p>
+<table><colgroup><col style="width:33.333333333333336%"><col style="width:33.333333333333336%"><col style="width:33.333333333333336%"></colgroup><thead><tr><th>Method</th><th>RMSE</th><th>MAE</th></tr></thead><tbody>
+<tr><td>centralized_sgd</td><td>56.016953 ± 0.852660</td><td>30.516738 ± 1.941197</td></tr>
+<tr><td>fedavg</td><td>63.231179 ± 0.125510</td><td>33.924637 ± 0.285604</td></tr>
+<tr><td>persistence</td><td>64.417454 ± 0.000000</td><td>30.926903 ± 0.000000</td></tr>
+</tbody></table>
+<p>The quoted FedAvg test metrics, 63.23 ± 0.13 W RMSE and 33.92 ± 0.29 W MAE when rounded, originate from output/experiments/v2_fedavg/test_evaluation/v1_retry1. Its authoritative seed42 export is in gru_masked_seed42b; seeds43/44 use their corresponding recorded directories. They are not validation scores, macro-node averages or the earlier v1 centralized benchmark. The prior final-report audit reconciles every individual and per-node score from all six saved prediction archives with zero checked metric discrepancy and verifies 44 FedAvg and 48 central test artifacts. [S02] [S03] [S12]</p>
+<p class="caption">Table 6.3. Reductions in mean test error, percent; positive is better [S01]</p>
+<table><colgroup><col style="width:25.0%"><col style="width:25.0%"><col style="width:25.0%"><col style="width:25.0%"></colgroup><thead><tr><th>Metric</th><th>Central vs FedAvg</th><th>Central vs persistence</th><th>FedAvg vs persistence</th></tr></thead><tbody>
+<tr><td>RMSE</td><td>11.409286</td><td>13.040722</td><td>1.841543</td></tr>
+<tr><td>MAE</td><td>10.045500</td><td>1.326241</td><td>-9.692966</td></tr>
+</tbody></table>
+<p>Error reduction is 100 × (reference error − model error)/reference error; it is not a percentage of predictions classified as correct. Centralized SGD improves both test errors relative to FedAvg in every paired seed. Its mean MAE gain over persistence is modest, and seed42 central MAE is worse than persistence, while seeds43/44 are better. FedAvg reduces pooled test RMSE relative to persistence but increases pooled MAE. Validation and test describe different periods, so the mean MAE ordering observed during validation must not be substituted for the test ordering. [S01] [S08]</p>
+<h2>6.1 Pooled errors versus equal-node averages</h2>
+<p class="equation">Pooled MAE = ∑_n (N_n/N) MAE_n ;     pooled RMSE = √[∑_n (N_n/N) RMSE_n²] .     (8)</p>
+<p class="equation">Equal-node mean MAE = (1/K)∑_n MAE_n ;     equal-node mean RMSE = (1/K)∑_n RMSE_n .     (9)</p>
+<p>Pooled metrics weight every forecasting window equally. Equal-node averages weight each node equally regardless of its accepted-window count. Moreover, an average of node RMSEs does not equal the square root of pooled MSE. The primary headline comparison uses pooled metrics; equal-node summaries characterize the distribution of performance across clients. [S31] [S01]</p>
+<p class="caption">Table 6.4. Equal-node errors averaged across the three seeds, W [S01]</p>
+<table><colgroup><col style="width:25.0%"><col style="width:25.0%"><col style="width:25.0%"><col style="width:25.0%"></colgroup><thead><tr><th>Metric</th><th>Central</th><th>FedAvg</th><th>Persistence</th></tr></thead><tbody>
+<tr><td>RMSE</td><td>47.425109</td><td>54.160553</td><td>53.842224</td></tr>
+<tr><td>MAE</td><td>30.219473</td><td>33.647441</td><td>30.703514</td></tr>
+</tbody></table>
+<p>FedAvg’s equal-node mean RMSE is slightly above persistence even though its pooled RMSE is below persistence. This is consistent with different weighting and nonlinear averaging, rather than an inconsistency in the saved scores. Centralized SGD improves both forms of summary here. Neither pooled averages nor macro averages imply uniformly better performance at every node. [S01]</p>
+<h2>6.2 Paired per-node differences</h2>
+<p>For each node and seed, the signed difference is central error minus FedAvg error in W, so a negative value favors the centralized control. Each node’s summary difference averages its three paired seed differences. All 979 nodes and 2,937 node–seed pairs are retained, including regressions. The existing CSVs include sample counts, per-seed errors, persistence comparisons, paired-difference SDs and node-target variability; no node is removed because of poor performance. [S06] [S07] [S01]</p>
+<p class="caption">Table 6.5. Counts based on each node’s across-seed mean error [S01]</p>
+<table><colgroup><col style="width:16.666666666666668%"><col style="width:16.666666666666668%"><col style="width:16.666666666666668%"><col style="width:16.666666666666668%"><col style="width:16.666666666666668%"><col style="width:16.666666666666668%"></colgroup><thead><tr><th>Metric</th><th>Central better</th><th>FedAvg better</th><th>Exact ties</th><th>Central better in all 3 seeds</th><th>Median central−FedAvg W</th></tr></thead><tbody>
+<tr><td>RMSE</td><td>843</td><td>136</td><td>0</td><td>701</td><td>-5.833295</td></tr>
+<tr><td>MAE</td><td>788</td><td>191</td><td>0</td><td>542</td><td>-3.245006</td></tr>
+</tbody></table>
+<figure><img alt="Figure 6.1. Existing paired node-error plots: points below the diagonal and negative deltas favor centralized SGD. All nodes are retained; copied without regeneration. [S04] [S01]" src="figures/per_node_comparison.png"><figcaption>Figure 6.1. Existing paired node-error plots: points below the diagonal and negative deltas favor centralized SGD. All nodes are retained; copied without regeneration. [S04] [S01]</figcaption></figure>
+<p>The node-level results demonstrate heterogeneity within the measured cohort: the centralized advantage in pooled error coexists with nodes favoring FedAvg. These descriptive counts do not establish independent-client statistical significance or authorize choosing a client subset after seeing test scores. Error heterogeneity should motivate separately designed diagnostic studies rather than retrospective alteration of the reported cohort. [S01]</p>
+<h1>7. Interpretation and threats to validity</h1>
+<p>RMSE penalizes large deviations more strongly than MAE. A model can lower RMSE while increasing typical absolute error; the observed FedAvg–persistence comparison illustrates this distinction. The chosen checkpoint criterion directly targets RMSE, not MAE. Reports should therefore present both metrics, per-node distributions and the baseline rather than compressing forecasting performance into an unsupported single accuracy percentage. The metric pattern is consistent with differing error distributions, but an exact causal account requires a controlled diagnostic experiment. [S01] [S34] [S36]</p>
+<p>Under this fixed simulated-node, schedule-replay protocol, the centralized control has lower measured test RMSE and MAE than FedAvg. The experiments do not show that federated learning outperforms centralized learning, nor do they show that every centralized approach will outperform every federated approach. Learning-rate equivalence, aggregation, node embedding updates, heterogeneous client histories and selected checkpoints can influence the gap; no causal ablation isolating these factors was performed. [S01] [S33] [S36]</p>
+<p>First, the test period has already been observed in previous project stages, including earlier model comparisons and FedAvg reporting. It is an observed development benchmark, not untouched confirmatory data. Later checkpoint selections were locked on validation, but this does not erase historical test exposure. Future confirmatory claims require a genuinely independent period or cohort reserved before further method selection. [S22] [S04] [S13] [S18]</p>
+<p>Second, seeds share one dataset and one test cohort; their sample SD quantifies this limited optimization/sampling variation, not population uncertainty. Overlapping forecasts and shared environmental conditions create dependencies. The evidence spans two months at one facility and only known nodes; it does not establish cross-facility, unseen-client, long-term or season-wide generalization. Sparse accepted coverage and test-availability-based cohort admission constrain external validity. [S23] [S24] [S25] [S01]</p>
+<p>Third, prediction does not prove energy savings. The experiments contain no implemented scheduler or cooling controller, no causal intervention, no measured kWh reduction and no PUE optimization outcome. Node power in W differs from energy integrated over time and from total facility power. No measured carbon savings or carbon-emission prediction result is reported. Any such claim would require additional measurements, boundary definitions and an independent optimization/control study.</p>
+<p>Fourth, the experiments simulate federated clients in a centrally accessible process and use centrally prepared pooled-training scalers. The local-data API restricts which arrays a worker receives, but it is not an operating-system isolation or cryptographic boundary. Secure aggregation, differential privacy, protected network transport, attack resistance and a fully privacy-preserving deployment were not established. Shared parameters and node identities should not be interpreted as a privacy guarantee. [S32] [S33] [S45]</p>
+<h1>8. Reproducibility and artifact integrity</h1>
+<p class="caption">Table 8.1. Historical training environment recorded in the run manifest [S45]</p>
+<table><colgroup><col style="width:50.0%"><col style="width:50.0%"></colgroup><thead><tr><th>Field</th><th>Recorded value</th></tr></thead><tbody>
+<tr><td>Python</td><td>3.14.7</td></tr>
+<tr><td>PyTorch</td><td>2.14.1+cu130</td></tr>
+<tr><td>NumPy</td><td>2.5.3</td></tr>
+<tr><td>CUDA build</td><td>13.0</td></tr>
+<tr><td>Device</td><td>cuda:0</td></tr>
+<tr><td>GPU</td><td>NVIDIA RTX 6000 Ada Generation</td></tr>
+</tbody></table>
+<p>The runs record software versions, deterministic-algorithm settings, seeds, source snapshots, frozen-contract fingerprints, selected exports and receipt chains. Deterministic cuDNN/CUBLAS settings and disabled TF32 are implemented for these runs; exact cross-hardware bit identity is not promised. Checkpoints and interrupted-round recovery are governed by immutable commits and fingerprints. Recorded validation export/reload checks are historical evidence, not checks rerun while preparing this document. [S34] [S35] [S37] [S02]</p>
+<p class="caption">Table 8.2. Authoritative experiment directories [S02] [S08] [S22]</p>
+<table><colgroup><col style="width:50.0%"><col style="width:50.0%"></colgroup><thead><tr><th>Role</th><th>Repository-relative path</th></tr></thead><tbody>
+<tr><td>Frozen cohort</td><td>output/experiments/v1/frozen</td></tr>
+<tr><td>FedAvg training</td><td>output/experiments/v2_fedavg/main/gru_masked_seed42b; gru_masked_seed43; gru_masked_seed44</td></tr>
+<tr><td>FedAvg test</td><td>output/experiments/v2_fedavg/test_evaluation/v1_retry1</td></tr>
+<tr><td>Central training</td><td>output/experiments/v3_centralized_sgd/main/gru_masked_seed{42,43,44}_schedule_matched</td></tr>
+<tr><td>Central test</td><td>output/experiments/v3_centralized_sgd/test_evaluation/v1</td></tr>
+<tr><td>Validation comparison</td><td>output/experiments/v3_centralized_sgd/reports/validation_comparison_v1</td></tr>
+<tr><td>Final test/node comparison</td><td>output/experiments/v3_centralized_sgd/reports/final_test_comparison_v1</td></tr>
+</tbody></table>
+<p>The frozen-contract SHA-256 is 24b2224ea9a7e1f255faf6357ffe7a3536fcbcfd90ab8b73179798349736b722. The ordered test-window identity SHA-256 is 4f57d3c1d6b64d2bc7543804300a61a139eeb1080df365b70102ef759fcf2704. Exact original model and configuration hashes are preserved in the existing final-report provenance and repeated in the machine-readable evidence accompanying this document. The partial earlier FedAvg test_evaluation/v1 attempt is not the completed evaluation; v1_retry1 is authoritative. No directory was renamed to replace seed42b with a missing alternative path. [S02] [S13]</p>
+<p>Before writing the thesis package, the existing final-report verifier was run read-only. It passed 3,687 pre-existing-file checks, 25 final-report-artifact checks and 2,652 recorded input hashes with no mismatches. A fresh baseline for this documentation task inventories every pre-existing non-venv file. The new documentation receipt, source inventory, documentation-check log and before/after preservation records are additive records only; no historical expected hash or receipt is changed. Non-venv scope and the omission of access-time comparisons are explicit in the preservation record. [S03]</p>
+<h1>9. Proposed future work — not executed</h1>
+<p>The following sequence is a research plan, not a report of completed experiments. No result, improved accuracy, retained-window count, energy saving or deployment outcome is claimed for these proposals. All new code, frozen arrays, configurations and outputs must use separate versioned directories and preserve the verified one-hour benchmark.</p>
+<h2>9.1 Coverage-audited 1-, 6- and 24-hour history comparison</h2>
+<p>Keep the sampling interval at ten minutes and the next-hour average-power target fixed. The proposed histories correspond to 6, 36 and 144 input steps. First audit complete-history availability separately for every node, split and forecast origin, recording why each candidate is retained or lost. Longer histories must never be assembled by joining across temporal gaps. Report attrition, retained node counts, targets, origin distributions and estimated resource requirements before fitting models.</p>
+<p>Define a primary common-cohort comparison using the intersection of eligible node/origin target identities across all three histories in training, validation and test. Preserve chronological boundaries and freeze training-only preprocessing for the comparison. Report a separate native-coverage sensitivity analysis if each history also uses its own available cohort; do not attribute availability-driven differences to history length alone. If the shared cohort is too small or unrepresentative, disclose that limitation before deciding a revised protocol. The current frozen contract and v2/v3 loaders explicitly require six history steps, so this study requires additive versioned preparation, loader and validation changes rather than changing the existing configuration in place. [S32] [S22]</p>
+<p>Use paired seeds, common architecture and target definitions, controlled budgets and validation-only selection. Treat the already-observed test period as a development comparison; reserve additional independent data prospectively for confirmation if suitable data become available. An improvement from longer history is a hypothesis, not an established outcome.</p>
+<h2>9.2 Controlled environmental-feature ablation</h2>
+<p>After the history protocol and coverage have been audited, compare environmental inputs on an identical predeclared cohort. Distinguish indoor inlet temperature (index 6) from outdoor temperature (7) and humidity (8). A proposed factorial or staged ablation may compare all available environmental channels, the existing outdoor-only mask, an indoor-only mask and an all-environment mask. Preserve the remaining input shape, node mapping, calendar channels, raw target windows and frozen training scalers. Mask standardized copies without expanding the cohort when a feature is removed. Any causal interpretation is conditional on this controlled representation and coverage; it is not proof that environmental conditions have no physical effect.</p>
+<p>Predeclare validation-based selection, paired seeds and reporting of RMSE, MAE and per-node errors. Keep model complexity and optimization budgets controlled, and avoid weather-specific test-based tuning. Existing v1 weather experiments may provide historical context, but the current matched v2/v3 results alone do not constitute this proposed environmental ablation. [S42] [S23]</p>
+<h2>9.3 Separate energy-management optimization study</h2>
+<p>Only after forecasting validity is established should forecasts be connected to an explicitly defined scheduling, power-capping or cooling decision problem. Specify controllable actions, workload demand, operational constraints and service-level requirements. Compare a baseline policy and a forecast-informed policy under controlled conditions, including uncertainty and forecast failures. Measure electrical energy over matched intervals by integrating relevant measured power, and separately measure any claimed cooling or whole-facility boundary. Report performance and constraint violations alongside energy outcomes.</p>
+<p>Any future savings claim must come from that independent optimization/intervention study, not from a reduction in forecast RMSE. Carbon accounting would require separately justified emissions factors and boundaries; no current carbon-prediction task or result is asserted. A real federated deployment would also require a separately specified privacy/security threat model and tested protection mechanisms before privacy-preserving claims are made.</p>
+<h1>10. Conclusions</h1>
+<p>The verified repository establishes a reproducible node-level power-forecasting comparison over a frozen M100 cohort. Under the measured protocol, centralized SGD has lower pooled test RMSE and MAE than FedAvg, while FedAvg provides a modest pooled RMSE improvement over persistence and a deterioration in MAE. Node-level analysis shows substantial heterogeneity, and the validation/test MAE trade-off depends on the evaluated period. These findings support careful reporting of multiple metrics and coverage rather than a claim that federated learning generally outperforms centralized training. The observed test history, correlated samples, simulated privacy setting and absence of an operational energy-control study define the limits of the present contribution. [S01] [S08] [S02]</p>
+<h1>Appendix A. Reading and reproducing the evidence</h1>
+<p>THESIS_METHODS_RESULTS.md, THESIS_METHODS_RESULTS.docx, THESIS_METHODS_RESULTS.html and THESIS_METHODS_RESULTS.pdf are generated from the same structured document content. SOURCES.md/SOURCES.json list exact paths, purposes and hashes. EVIDENCE.json records the numerical table inputs and original model/configuration provenance. DOCUMENTATION_CHECKS.json and PRESERVATION.json describe checks performed in this documentation task; the completion receipt inventories all additions. No command in this package launches training or evaluation.</p>
+<h1>Appendix B. Interpretation of historical source status</h1>
+<p>Root README.md and EXPERIMENTS.md retain historical implementation-stage text and accidental prefixes. They are useful for context but are not substituted for completed receipts and saved results. The validation report’s pre-test wording is likewise a preserved snapshot. Evidence priority for this document is: verified saved results and receipts; frozen metadata and source snapshots; inspected implementation; then historical explanatory documentation. This hierarchy avoids inventing outcomes from planned commands or rewriting old provenance.</p>
+<h1>Appendix C. Repository evidence references</h1>
+<p>The following are repository evidence identifiers, not invented external literature citations. Full SHA-256 values are provided in SOURCES.md/SOURCES.json. The dataset source record is reproduced as recorded in the download configuration; no external bibliographic authors, publication details or hardware specifications are inferred.</p>
+<p class="caption">Table C.1. Exact direct sources </p>
+<table><colgroup><col style="width:6%"><col style="width:59%"><col style="width:35%"></colgroup><thead><tr><th>ID</th><th>Repository-relative path</th><th>Role</th></tr></thead><tbody>
+<tr><td>S01</td><td>output/experiments/v3_centralized_sgd/reports/final_test_comparison_v1/analysis.json</td><td>Verified pooled and per-node test summaries</td></tr>
+<tr><td>S02</td><td>output/experiments/v3_centralized_sgd/reports/final_test_comparison_v1/provenance.json</td><td>Exact test model/configuration and 2652-input hash provenance</td></tr>
+<tr><td>S03</td><td>output/experiments/v3_centralized_sgd/reports/final_test_comparison_v1/verification.json</td><td>Completed report-only tests and preservation results</td></tr>
+<tr><td>S04</td><td>output/experiments/v3_centralized_sgd/reports/final_test_comparison_v1/REPORT.md</td><td>Verified final comparison and per-node interpretation</td></tr>
+<tr><td>S05</td><td>output/experiments/v3_centralized_sgd/reports/final_test_comparison_v1/report_completed.json</td><td>Immutable final-report completion inventory</td></tr>
+<tr><td>S06</td><td>output/experiments/v3_centralized_sgd/reports/final_test_comparison_v1/per_node_summary.csv</td><td>All 979 node summaries</td></tr>
+<tr><td>S07</td><td>output/experiments/v3_centralized_sgd/reports/final_test_comparison_v1/per_node_by_seed.csv</td><td>All 2937 node-seed comparisons</td></tr>
+<tr><td>S08</td><td>output/experiments/v3_centralized_sgd/reports/validation_comparison_v1/comparison.json</td><td>Saved selected validation metrics and budgets</td></tr>
+<tr><td>S09</td><td>output/experiments/v3_centralized_sgd/reports/validation_comparison_v1/REPORT.md</td><td>Historical validation comparison snapshot before central test reporting</td></tr>
+<tr><td>S10</td><td>output/experiments/v3_centralized_sgd/reports/validation_comparison_v1/artifact_provenance.json</td><td>Validation artifact/config/model provenance</td></tr>
+<tr><td>S11</td><td>output/experiments/v3_centralized_sgd/reports/validation_comparison_v1/report_completed.json</td><td>Validation-report completion inventory</td></tr>
+<tr><td>S12</td><td>output/experiments/v2_fedavg/test_evaluation/v1_retry1/results.json</td><td>Original completed fedavg test scores</td></tr>
+<tr><td>S13</td><td>output/experiments/v2_fedavg/test_evaluation/v1_retry1/selection_lock.json</td><td>Pre-test model selections and raw export hashes</td></tr>
+<tr><td>S14</td><td>output/experiments/v2_fedavg/test_evaluation/v1_retry1/manifest.json</td><td>Test protocol, environment and selection lock binding</td></tr>
+<tr><td>S15</td><td>output/experiments/v2_fedavg/test_evaluation/v1_retry1/plan.json</td><td>Locked test plan and source fingerprints</td></tr>
+<tr><td>S16</td><td>output/experiments/v2_fedavg/test_evaluation/v1_retry1/completed.json</td><td>Original test artifact receipt</td></tr>
+<tr><td>S17</td><td>output/experiments/v3_centralized_sgd/test_evaluation/v1/results.json</td><td>Original completed centralized_sgd test scores</td></tr>
+<tr><td>S18</td><td>output/experiments/v3_centralized_sgd/test_evaluation/v1/selection_lock.json</td><td>Pre-test model selections and raw export hashes</td></tr>
+<tr><td>S19</td><td>output/experiments/v3_centralized_sgd/test_evaluation/v1/manifest.json</td><td>Test protocol, environment and selection lock binding</td></tr>
+<tr><td>S20</td><td>output/experiments/v3_centralized_sgd/test_evaluation/v1/plan.json</td><td>Locked test plan and source fingerprints</td></tr>
+<tr><td>S21</td><td>output/experiments/v3_centralized_sgd/test_evaluation/v1/completed.json</td><td>Original test artifact receipt</td></tr>
+<tr><td>S22</td><td>output/experiments/v1/frozen/contract.json</td><td>Frozen arrays, splits, feature order, scalers and hashes</td></tr>
+<tr><td>S23</td><td>output/experiments/v1/frozen/preprocessing.json</td><td>Exact forecast target, feature units and preprocessing settings</td></tr>
+<tr><td>S24</td><td>output/m100_all_nodes/results/data_audit.json</td><td>Candidate/usable node cohort and coverage audit</td></tr>
+<tr><td>S25</td><td>output/experiments/v3_centralized_sgd/test_evaluation/v1/seed42/coverage.json</td><td>Actual test-origin/day coverage</td></tr>
+<tr><td>S26</td><td>configs/m100_all_nodes.json</td><td>Recorded dataset months, source record and preprocessing configuration</td></tr>
+<tr><td>S27</td><td>src/model.py</td><td>SequenceRegressor.__init__/forward: embedding, GRU, head and residual baseline</td></tr>
+<tr><td>S28</td><td>src/multinode.py</td><td>weighted_bins, node_windows and prepare_multinode: feature construction and chronology</td></tr>
+<tr><td>S29</td><td>src/preprocess.py</td><td>Metric schema, units, range checks and _weather_asof</td></tr>
+<tr><td>S30</td><td>src/experiment_data.py</td><td>FEATURES, weather_view, frozen contract and scaler/persistence interface</td></tr>
+<tr><td>S31</td><td>src/experiment_eval.py</td><td>metric_pair/evaluate: original physical-unit metrics and persistence</td></tr>
+<tr><td>S32</td><td>src/federated_data.py</td><td>Training-only client memberships and coordinator validation capabilities</td></tr>
+<tr><td>S33</td><td>src/federated_train.py</td><td>GlobalModelState and aggregate_fedavg, including fixed buffers and embeddings</td></tr>
+<tr><td>S34</td><td>src/federated_rounds.py</td><td>Initialization, RNG streams, sampling, local SGD and communication rounds</td></tr>
+<tr><td>S35</td><td>src/federated_io.py</td><td>Manifest, atomic commit, receipt and export protocol</td></tr>
+<tr><td>S36</td><td>src/centralized_sgd.py</td><td>Reference verification, plan_block/train_block and continuing central model</td></tr>
+<tr><td>S37</td><td>src/centralized_io.py</td><td>Central block commits, reference verification and selected export integrity</td></tr>
+<tr><td>S38</td><td>src/federated_evaluate.py</td><td>Locked final-test contract, seed aggregation and finite/alignment guards</td></tr>
+<tr><td>S39</td><td>src/centralized_evaluate.py</td><td>Locked central block selections and comparison with stored FedAvg</td></tr>
+<tr><td>S40</td><td>src/experiment_models.py</td><td>neural_predict: batch-copy weather masking during existing inference</td></tr>
+<tr><td>S41</td><td>README.md</td><td>General project history, dataset identification and operational context</td></tr>
+<tr><td>S42</td><td>EXPERIMENTS.md</td><td>Historical v1 frozen-data and common-evaluation documentation</td></tr>
+<tr><td>S43</td><td>configs/experiments/v2_fedavg/README.md</td><td>Approved FedAvg protocol and workflow</td></tr>
+<tr><td>S44</td><td>configs/experiments/v3_centralized_sgd/README.md</td><td>Matched control and schedule-replay limitations</td></tr>
+<tr><td>S45</td><td>output/experiments/v2_fedavg/main/gru_masked_seed42b/manifest.json</td><td>Completed fedavg seed42 training manifest</td></tr>
+<tr><td>S46</td><td>configs/experiments/v2_fedavg/gru_masked_seed42.json</td><td>Exact completed training configuration</td></tr>
+<tr><td>S47</td><td>output/experiments/v2_fedavg/main/gru_masked_seed42b/selected/receipt.json</td><td>Selected export receipt</td></tr>
+<tr><td>S48</td><td>output/experiments/v2_fedavg/main/gru_masked_seed42b/selected/model.pt</td><td>Raw selected model export, hashed only; never loaded</td></tr>
+<tr><td>S49</td><td>output/experiments/v2_fedavg/main/gru_masked_seed42b/events/64ae616e051e467dbf4a6990b410f479.json</td><td>Completed training counters and selected-checkpoint metadata</td></tr>
+<tr><td>S50</td><td>output/experiments/v2_fedavg/main/gru_masked_seed42b/rounds/0200/receipt.json</td><td>Saved selected validation score and checkpoint fingerprint</td></tr>
+<tr><td>S51</td><td>output/experiments/v2_fedavg/main/gru_masked_seed43/manifest.json</td><td>Completed fedavg seed43 training manifest</td></tr>
+<tr><td>S52</td><td>configs/experiments/v2_fedavg/gru_masked_seed43.json</td><td>Exact completed training configuration</td></tr>
+<tr><td>S53</td><td>output/experiments/v2_fedavg/main/gru_masked_seed43/selected/receipt.json</td><td>Selected export receipt</td></tr>
+<tr><td>S54</td><td>output/experiments/v2_fedavg/main/gru_masked_seed43/selected/model.pt</td><td>Raw selected model export, hashed only; never loaded</td></tr>
+<tr><td>S55</td><td>output/experiments/v2_fedavg/main/gru_masked_seed43/events/e222c6d80cd346d19913937ed6f687ea.json</td><td>Completed training counters and selected-checkpoint metadata</td></tr>
+<tr><td>S56</td><td>output/experiments/v2_fedavg/main/gru_masked_seed43/rounds/0200/receipt.json</td><td>Saved selected validation score and checkpoint fingerprint</td></tr>
+<tr><td>S57</td><td>output/experiments/v2_fedavg/main/gru_masked_seed44/manifest.json</td><td>Completed fedavg seed44 training manifest</td></tr>
+<tr><td>S58</td><td>configs/experiments/v2_fedavg/gru_masked_seed44.json</td><td>Exact completed training configuration</td></tr>
+<tr><td>S59</td><td>output/experiments/v2_fedavg/main/gru_masked_seed44/selected/receipt.json</td><td>Selected export receipt</td></tr>
+<tr><td>S60</td><td>output/experiments/v2_fedavg/main/gru_masked_seed44/selected/model.pt</td><td>Raw selected model export, hashed only; never loaded</td></tr>
+<tr><td>S61</td><td>output/experiments/v2_fedavg/main/gru_masked_seed44/events/54e359921f1f4bbf8758d20e56e27603.json</td><td>Completed training counters and selected-checkpoint metadata</td></tr>
+<tr><td>S62</td><td>output/experiments/v2_fedavg/main/gru_masked_seed44/rounds/0200/receipt.json</td><td>Saved selected validation score and checkpoint fingerprint</td></tr>
+<tr><td>S63</td><td>output/experiments/v3_centralized_sgd/main/gru_masked_seed42_schedule_matched/manifest.json</td><td>Completed centralized_sgd seed42 training manifest</td></tr>
+<tr><td>S64</td><td>configs/experiments/v3_centralized_sgd/gru_masked_seed42_schedule_matched.json</td><td>Exact completed training configuration</td></tr>
+<tr><td>S65</td><td>output/experiments/v3_centralized_sgd/main/gru_masked_seed42_schedule_matched/final/receipt.json</td><td>Selected export receipt</td></tr>
+<tr><td>S66</td><td>output/experiments/v3_centralized_sgd/main/gru_masked_seed42_schedule_matched/final/model.pt</td><td>Raw selected model export, hashed only; never loaded</td></tr>
+<tr><td>S67</td><td>output/experiments/v3_centralized_sgd/main/gru_masked_seed42_schedule_matched/completed.json</td><td>Completed training counters and selected-checkpoint metadata</td></tr>
+<tr><td>S68</td><td>output/experiments/v3_centralized_sgd/main/gru_masked_seed42_schedule_matched/blocks/0190/receipt.json</td><td>Saved selected validation score and checkpoint fingerprint</td></tr>
+<tr><td>S69</td><td>output/experiments/v3_centralized_sgd/main/gru_masked_seed43_schedule_matched/manifest.json</td><td>Completed centralized_sgd seed43 training manifest</td></tr>
+<tr><td>S70</td><td>configs/experiments/v3_centralized_sgd/gru_masked_seed43_schedule_matched.json</td><td>Exact completed training configuration</td></tr>
+<tr><td>S71</td><td>output/experiments/v3_centralized_sgd/main/gru_masked_seed43_schedule_matched/final/receipt.json</td><td>Selected export receipt</td></tr>
+<tr><td>S72</td><td>output/experiments/v3_centralized_sgd/main/gru_masked_seed43_schedule_matched/final/model.pt</td><td>Raw selected model export, hashed only; never loaded</td></tr>
+<tr><td>S73</td><td>output/experiments/v3_centralized_sgd/main/gru_masked_seed43_schedule_matched/completed.json</td><td>Completed training counters and selected-checkpoint metadata</td></tr>
+<tr><td>S74</td><td>output/experiments/v3_centralized_sgd/main/gru_masked_seed43_schedule_matched/blocks/0190/receipt.json</td><td>Saved selected validation score and checkpoint fingerprint</td></tr>
+<tr><td>S75</td><td>output/experiments/v3_centralized_sgd/main/gru_masked_seed44_schedule_matched/manifest.json</td><td>Completed centralized_sgd seed44 training manifest</td></tr>
+<tr><td>S76</td><td>configs/experiments/v3_centralized_sgd/gru_masked_seed44_schedule_matched.json</td><td>Exact completed training configuration</td></tr>
+<tr><td>S77</td><td>output/experiments/v3_centralized_sgd/main/gru_masked_seed44_schedule_matched/final/receipt.json</td><td>Selected export receipt</td></tr>
+<tr><td>S78</td><td>output/experiments/v3_centralized_sgd/main/gru_masked_seed44_schedule_matched/final/model.pt</td><td>Raw selected model export, hashed only; never loaded</td></tr>
+<tr><td>S79</td><td>output/experiments/v3_centralized_sgd/main/gru_masked_seed44_schedule_matched/completed.json</td><td>Completed training counters and selected-checkpoint metadata</td></tr>
+<tr><td>S80</td><td>output/experiments/v3_centralized_sgd/main/gru_masked_seed44_schedule_matched/blocks/0180/receipt.json</td><td>Saved selected validation score and checkpoint fingerprint</td></tr>
+<tr><td>S81</td><td>output/experiments/v3_centralized_sgd/reports/validation_comparison_v1/validation_curves.png</td><td>Existing validation figure, copied without regeneration</td></tr>
+<tr><td>S82</td><td>output/experiments/v3_centralized_sgd/reports/final_test_comparison_v1/per_node_comparison.png</td><td>Existing per-node test figure, copied without regeneration</td></tr>
+</tbody></table>
+</body></html>

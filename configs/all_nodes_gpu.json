@@ -1,0 +1,21 @@
+{
+  "seed": 42,
+  "epochs": 30,
+  "batch_size": 512,
+  "learning_rate": 0.001,
+  "model": "lstm",
+  "hidden_size": 64,
+  "num_layers": 2,
+  "num_threads": 1,
+  "device": "cuda",
+  "checkpoint_every_steps": 1000,
+  "checkpoint_every_epochs": 1,
+  "synthetic_samples": 512,
+  "sequence_length": 6,
+  "input_size": 14,
+  "target_size": 1,
+  "prediction_weights": "best",
+  "forecast_mode": "residual",
+  "node_embedding_size": 8,
+  "early_stopping_patience": 5
+}

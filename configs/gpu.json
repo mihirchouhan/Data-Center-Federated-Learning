@@ -1,0 +1,17 @@
+{
+  "seed": 42,
+  "epochs": 10,
+  "batch_size": 32,
+  "learning_rate": 0.001,
+  "model": "lstm",
+  "hidden_size": 32,
+  "num_layers": 1,
+  "num_threads": 1,
+  "device": "cuda",
+  "checkpoint_every_steps": 100,
+  "checkpoint_every_epochs": 1,
+  "synthetic_samples": 512,
+  "sequence_length": 6,
+  "input_size": 9,
+  "target_size": 1
+}

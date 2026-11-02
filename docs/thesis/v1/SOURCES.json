@@ -1,0 +1,498 @@
+{
+  "external_literature_citations_added": false,
+  "project_root": "/media/csedept/cse2014/Project/m100_training_template",
+  "sources": [
+    {
+      "id": "S01",
+      "path": "output/experiments/v3_centralized_sgd/reports/final_test_comparison_v1/analysis.json",
+      "purpose": "Verified pooled and per-node test summaries",
+      "sha256": "fb5ce98771e39870dce15b0f82ad1173fc07fcc282bb76c384f0839f90e2de18"
+    },
+    {
+      "id": "S02",
+      "path": "output/experiments/v3_centralized_sgd/reports/final_test_comparison_v1/provenance.json",
+      "purpose": "Exact test model/configuration and 2652-input hash provenance",
+      "sha256": "1a2db461a5b559a2734b622c925d06c26cd2bfcadd4f2fa5854c418d3f600bfb"
+    },
+    {
+      "id": "S03",
+      "path": "output/experiments/v3_centralized_sgd/reports/final_test_comparison_v1/verification.json",
+      "purpose": "Completed report-only tests and preservation results",
+      "sha256": "4129d5303d33395798fae6ca81bee1a62ac56e419a4c4e6753b3232f82bb8703"
+    },
+    {
+      "id": "S04",
+      "path": "output/experiments/v3_centralized_sgd/reports/final_test_comparison_v1/REPORT.md",
+      "purpose": "Verified final comparison and per-node interpretation",
+      "sha256": "298280c51fd6a941ec4e5b9accae3cd8b0b3dcfde2b1f9be08ff614d7b36afdb"
+    },
+    {
+      "id": "S05",
+      "path": "output/experiments/v3_centralized_sgd/reports/final_test_comparison_v1/report_completed.json",
+      "purpose": "Immutable final-report completion inventory",
+      "sha256": "2d571abb19e5f298169aa3c1018b45bfa51ee96666ef8b685bb05c92e47e1192"
+    },
+    {
+      "id": "S06",
+      "path": "output/experiments/v3_centralized_sgd/reports/final_test_comparison_v1/per_node_summary.csv",
+      "purpose": "All 979 node summaries",
+      "sha256": "4d2028a765e0f61e5e6740d4237b94da5f77f7c989a9fdb58b977a7a419bccf4"
+    },
+    {
+      "id": "S07",
+      "path": "output/experiments/v3_centralized_sgd/reports/final_test_comparison_v1/per_node_by_seed.csv",
+      "purpose": "All 2937 node-seed comparisons",
+      "sha256": "625f130b33e2dadc7b89b3a4b869c370ed2faf952cec5b73a0aef7401cc8a36f"
+    },
+    {
+      "id": "S08",
+      "path": "output/experiments/v3_centralized_sgd/reports/validation_comparison_v1/comparison.json",
+      "purpose": "Saved selected validation metrics and budgets",
+      "sha256": "5f79a162aad950149858b8c8f4b9afbb52a9c5b53c9bdbb4853127449affa92e"
+    },
+    {
+      "id": "S09",
+      "path": "output/experiments/v3_centralized_sgd/reports/validation_comparison_v1/REPORT.md",
+      "purpose": "Historical validation comparison snapshot before central test reporting",
+      "sha256": "12c025e8a6ec1f9b6df1158bcc1cbc2eb0109c8c2f7c3a33c524cf4cd92a884d"
+    },
+    {
+      "id": "S10",
+      "path": "output/experiments/v3_centralized_sgd/reports/validation_comparison_v1/artifact_provenance.json",
+      "purpose": "Validation artifact/config/model provenance",
+      "sha256": "144433c8425ccdee5ea46b42b9406877a56b100eef1bd9081d4ff60a0706ff40"
+    },
+    {
+      "id": "S11",
+      "path": "output/experiments/v3_centralized_sgd/reports/validation_comparison_v1/report_completed.json",
+      "purpose": "Validation-report completion inventory",
+      "sha256": "aebace8fd80fb6bad185e251cb085984ec8f5cce199bda67ce35394f9c032bf3"
+    },
+    {
+      "id": "S12",
+      "path": "output/experiments/v2_fedavg/test_evaluation/v1_retry1/results.json",
+      "purpose": "Original completed fedavg test scores",
+      "sha256": "d8804255e13b2a7caa015be18921678e0272f340ab0ee92e104ccddc1fd464e6"
+    },
+    {
+      "id": "S13",
+      "path": "output/experiments/v2_fedavg/test_evaluation/v1_retry1/selection_lock.json",
+      "purpose": "Pre-test model selections and raw export hashes",
+      "sha256": "e2949cf75508c51e59584f561a2ccb87474533ce69d65794c5eac49c0e39d0c9"
+    },
+    {
+      "id": "S14",
+      "path": "output/experiments/v2_fedavg/test_evaluation/v1_retry1/manifest.json",
+      "purpose": "Test protocol, environment and selection lock binding",
+      "sha256": "3326263208a512e3421ce4fe5409c65d99027d07aee9b25312d2dc754a733c24"
+    },
+    {
+      "id": "S15",
+      "path": "output/experiments/v2_fedavg/test_evaluation/v1_retry1/plan.json",
+      "purpose": "Locked test plan and source fingerprints",
+      "sha256": "ddc67fcc44c8e305e855cf1fdd94be98f883aa501ddacf51906029eb6b54967e"
+    },
+    {
+      "id": "S16",
+      "path": "output/experiments/v2_fedavg/test_evaluation/v1_retry1/completed.json",
+      "purpose": "Original test artifact receipt",
+      "sha256": "0282777a98297b105ff8105f126601e286eb1bdbbd36227658ade5953e58cce9"
+    },
+    {
+      "id": "S17",
+      "path": "output/experiments/v3_centralized_sgd/test_evaluation/v1/results.json",
+      "purpose": "Original completed centralized_sgd test scores",
+      "sha256": "c019af54d5248f9511575d326556a149ceb4cb77e9693bf3dd6f3797b6a71e15"
+    },
+    {
+      "id": "S18",
+      "path": "output/experiments/v3_centralized_sgd/test_evaluation/v1/selection_lock.json",
+      "purpose": "Pre-test model selections and raw export hashes",
+      "sha256": "7078726a0fede06ae7296ba336beb427bc03a6169b5fabb67758b029f5e2d922"
+    },
+    {
+      "id": "S19",
+      "path": "output/experiments/v3_centralized_sgd/test_evaluation/v1/manifest.json",
+      "purpose": "Test protocol, environment and selection lock binding",
+      "sha256": "285548fa1ab3919b6eb59f0f16e3b43584703f6155174ea8bdeeda2cdea178d0"
+    },
+    {
+      "id": "S20",
+      "path": "output/experiments/v3_centralized_sgd/test_evaluation/v1/plan.json",
+      "purpose": "Locked test plan and source fingerprints",
+      "sha256": "ecdb657006df76cd3460950a4dc74a3ddfc3f9b9d4306f21660d9dfb45c15d57"
+    },
+    {
+      "id": "S21",
+      "path": "output/experiments/v3_centralized_sgd/test_evaluation/v1/completed.json",
+      "purpose": "Original test artifact receipt",
+      "sha256": "fb7186c64f0cabcb18fb3216327a2b6f969614854b3ff470ca61dfade91bb86f"
+    },
+    {
+      "id": "S22",
+      "path": "output/experiments/v1/frozen/contract.json",
+      "purpose": "Frozen arrays, splits, feature order, scalers and hashes",
+      "sha256": "24b2224ea9a7e1f255faf6357ffe7a3536fcbcfd90ab8b73179798349736b722"
+    },
+    {
+      "id": "S23",
+      "path": "output/experiments/v1/frozen/preprocessing.json",
+      "purpose": "Exact forecast target, feature units and preprocessing settings",
+      "sha256": "2fef4ebc6fb80bf85a1cd4d75f7e2ff39e34006a77f83a0c4fd96a466ff14585"
+    },
+    {
+      "id": "S24",
+      "path": "output/m100_all_nodes/results/data_audit.json",
+      "purpose": "Candidate/usable node cohort and coverage audit",
+      "sha256": "d029e90a3d58267ef5bf7ca818c305b3c05e5bc3397d626defdd081f28cd5874"
+    },
+    {
+      "id": "S25",
+      "path": "output/experiments/v3_centralized_sgd/test_evaluation/v1/seed42/coverage.json",
+      "purpose": "Actual test-origin/day coverage",
+      "sha256": "40481a3c101e2e2bcf46bf510183656086b96a38d11e368e2d353ba207b59859"
+    },
+    {
+      "id": "S26",
+      "path": "configs/m100_all_nodes.json",
+      "purpose": "Recorded dataset months, source record and preprocessing configuration",
+      "sha256": "59067ba31dcfa1dec7cf076f70e3c835280491a177a5665a1835d4353c5b5af4"
+    },
+    {
+      "id": "S27",
+      "path": "src/model.py",
+      "purpose": "SequenceRegressor.__init__/forward: embedding, GRU, head and residual baseline",
+      "sha256": "d6cc3265a41258152389d85ae382cf2286527494129302f049b12205e358aaad"
+    },
+    {
+      "id": "S28",
+      "path": "src/multinode.py",
+      "purpose": "weighted_bins, node_windows and prepare_multinode: feature construction and chronology",
+      "sha256": "bd6e8d1d26af4603f01f950d91c707ede4bc0996c17ead1d35205825c8b01ee5"
+    },
+    {
+      "id": "S29",
+      "path": "src/preprocess.py",
+      "purpose": "Metric schema, units, range checks and _weather_asof",
+      "sha256": "a0567a07f8cef60f7df85e03da34646c0a47ef97a465680fdb021701c6918d64"
+    },
+    {
+      "id": "S30",
+      "path": "src/experiment_data.py",
+      "purpose": "FEATURES, weather_view, frozen contract and scaler/persistence interface",
+      "sha256": "d75e1f5b79cc0fde81245a6c13d035cfec8ac2d8360b125349a716b90459e049"
+    },
+    {
+      "id": "S31",
+      "path": "src/experiment_eval.py",
+      "purpose": "metric_pair/evaluate: original physical-unit metrics and persistence",
+      "sha256": "24030cb3b22e3eff52717877b1a74c1ae0f8b79b46bc6d525445325e05f41475"
+    },
+    {
+      "id": "S32",
+      "path": "src/federated_data.py",
+      "purpose": "Training-only client memberships and coordinator validation capabilities",
+      "sha256": "dfe15234e6f87f85bcd0f8950261e6551c9f5d3b4b7ca06822d87951806dc8ec"
+    },
+    {
+      "id": "S33",
+      "path": "src/federated_train.py",
+      "purpose": "GlobalModelState and aggregate_fedavg, including fixed buffers and embeddings",
+      "sha256": "b3f77ecfb509d5e2330ce3bac38578ce9a4c43108d636288d981f1200898106a"
+    },
+    {
+      "id": "S34",
+      "path": "src/federated_rounds.py",
+      "purpose": "Initialization, RNG streams, sampling, local SGD and communication rounds",
+      "sha256": "aa449e426a12f8e4af7bfabc82f03ba196ac7dc23e5e457dbc046de6e416164a"
+    },
+    {
+      "id": "S35",
+      "path": "src/federated_io.py",
+      "purpose": "Manifest, atomic commit, receipt and export protocol",
+      "sha256": "a4a2c7fbe0e419a5ebca7a30c06ab7340bd9e007f001a6962387ce3e99f69bf7"
+    },
+    {
+      "id": "S36",
+      "path": "src/centralized_sgd.py",
+      "purpose": "Reference verification, plan_block/train_block and continuing central model",
+      "sha256": "c251cd2b9bd41d972cc10483d57ec45852cba5fcf78c608f991a78d9fc64494b"
+    },
+    {
+      "id": "S37",
+      "path": "src/centralized_io.py",
+      "purpose": "Central block commits, reference verification and selected export integrity",
+      "sha256": "88f7d6334473f1b9293285fc51d65eb9c7a146c0f62020fd0ff61f4e8b5caf63"
+    },
+    {
+      "id": "S38",
+      "path": "src/federated_evaluate.py",
+      "purpose": "Locked final-test contract, seed aggregation and finite/alignment guards",
+      "sha256": "671fd2dcc7c871955110a6ff674f00833217969e7736cc12ebb1b3e0c5e6409b"
+    },
+    {
+      "id": "S39",
+      "path": "src/centralized_evaluate.py",
+      "purpose": "Locked central block selections and comparison with stored FedAvg",
+      "sha256": "a5c467bd822beaddd1101b43ab3a9759214e673507318d208beee6372de197f5"
+    },
+    {
+      "id": "S40",
+      "path": "src/experiment_models.py",
+      "purpose": "neural_predict: batch-copy weather masking during existing inference",
+      "sha256": "a14ff8e32a6b052c831214e67cbb383c747b60b12cafc10c335412cd8ff25910"
+    },
+    {
+      "id": "S41",
+      "path": "README.md",
+      "purpose": "General project history, dataset identification and operational context",
+      "sha256": "7405d9b9a938ce7798a2cc931898931d81152675cc6160114ed4e7961d267d84"
+    },
+    {
+      "id": "S42",
+      "path": "EXPERIMENTS.md",
+      "purpose": "Historical v1 frozen-data and common-evaluation documentation",
+      "sha256": "d94f671ec5b040a79ddd3f1183f6d655ab8975cbb30408d4896a79d0b73a65d4"
+    },
+    {
+      "id": "S43",
+      "path": "configs/experiments/v2_fedavg/README.md",
+      "purpose": "Approved FedAvg protocol and workflow",
+      "sha256": "e1ba018075c7cb8b5e2db1dbf1e430d0d8dc5c560e22f2cf5a36e0b657fc3bd3"
+    },
+    {
+      "id": "S44",
+      "path": "configs/experiments/v3_centralized_sgd/README.md",
+      "purpose": "Matched control and schedule-replay limitations",
+      "sha256": "930dd42cd7a27defb73f1242b9fc06cb32989a8b995f5407e3336cb22fd48279"
+    },
+    {
+      "id": "S45",
+      "path": "output/experiments/v2_fedavg/main/gru_masked_seed42b/manifest.json",
+      "purpose": "Completed fedavg seed42 training manifest",
+      "sha256": "cda2eb5c5cade7f43792c84cf5491d2a703b1f36a16dec5d30c34e8f671bc221"
+    },
+    {
+      "id": "S46",
+      "path": "configs/experiments/v2_fedavg/gru_masked_seed42.json",
+      "purpose": "Exact completed training configuration",
+      "sha256": "cf76244b58a8e209b5830c75e4c46c77baeee4914d830c8cfa32cd81c1ba7939"
+    },
+    {
+      "id": "S47",
+      "path": "output/experiments/v2_fedavg/main/gru_masked_seed42b/selected/receipt.json",
+      "purpose": "Selected export receipt",
+      "sha256": "7133293aff46ccdb5cf6549137ee47c6766a2658bc2b9002a398ac3c80466bc3"
+    },
+    {
+      "id": "S48",
+      "path": "output/experiments/v2_fedavg/main/gru_masked_seed42b/selected/model.pt",
+      "purpose": "Raw selected model export, hashed only; never loaded",
+      "sha256": "dabe9ae16022acaaae56ef54e082e52b3f516628349a04c74acc5053ed7e3aa3"
+    },
+    {
+      "id": "S49",
+      "path": "output/experiments/v2_fedavg/main/gru_masked_seed42b/events/64ae616e051e467dbf4a6990b410f479.json",
+      "purpose": "Completed training counters and selected-checkpoint metadata",
+      "sha256": "d119be1c0d0b18890fc8c936dac9b8b3cc0c53365d8b933cda6981adb4212b0b"
+    },
+    {
+      "id": "S50",
+      "path": "output/experiments/v2_fedavg/main/gru_masked_seed42b/rounds/0200/receipt.json",
+      "purpose": "Saved selected validation score and checkpoint fingerprint",
+      "sha256": "93a0baa8c1a9a984d2f38a4fdfc28110b10222ec33187e33adc2a7de0f519563"
+    },
+    {
+      "id": "S51",
+      "path": "output/experiments/v2_fedavg/main/gru_masked_seed43/manifest.json",
+      "purpose": "Completed fedavg seed43 training manifest",
+      "sha256": "8d9ac1d88bac37bd697dda08d5b970b9083b0abaae33c8a9cbbded1d1cd9b10a"
+    },
+    {
+      "id": "S52",
+      "path": "configs/experiments/v2_fedavg/gru_masked_seed43.json",
+      "purpose": "Exact completed training configuration",
+      "sha256": "b689112712444c2c0017592bd4fdb73c55a8732a9e518f74f29507584d51963f"
+    },
+    {
+      "id": "S53",
+      "path": "output/experiments/v2_fedavg/main/gru_masked_seed43/selected/receipt.json",
+      "purpose": "Selected export receipt",
+      "sha256": "b648bb5f932840ed1e632311358981ac19938ac1cb03cf46f4b8ff6a51cf519a"
+    },
+    {
+      "id": "S54",
+      "path": "output/experiments/v2_fedavg/main/gru_masked_seed43/selected/model.pt",
+      "purpose": "Raw selected model export, hashed only; never loaded",
+      "sha256": "50702e26a18edcbdd6eb7a69b3a908ad18c014d0bea730db5f0ba65f7d7f47cb"
+    },
+    {
+      "id": "S55",
+      "path": "output/experiments/v2_fedavg/main/gru_masked_seed43/events/e222c6d80cd346d19913937ed6f687ea.json",
+      "purpose": "Completed training counters and selected-checkpoint metadata",
+      "sha256": "f6a4ab25eeb8accb45d654c3fb4a796380c7373f38861d433fe3612d6b0275f4"
+    },
+    {
+      "id": "S56",
+      "path": "output/experiments/v2_fedavg/main/gru_masked_seed43/rounds/0200/receipt.json",
+      "purpose": "Saved selected validation score and checkpoint fingerprint",
+      "sha256": "74eb99513ed5d5b3a83ce0d73e219e670a3996363091a3aa2316962e0978ec65"
+    },
+    {
+      "id": "S57",
+      "path": "output/experiments/v2_fedavg/main/gru_masked_seed44/manifest.json",
+      "purpose": "Completed fedavg seed44 training manifest",
+      "sha256": "f012abed424d66dade4c28e6c4a8496d7132f7ed0e64888a23c2b2bf7438c671"
+    },
+    {
+      "id": "S58",
+      "path": "configs/experiments/v2_fedavg/gru_masked_seed44.json",
+      "purpose": "Exact completed training configuration",
+      "sha256": "a56bce8c697d90fd7755942a66194f8ea8782a26d253e1c0043bfe24543e94d5"
+    },
+    {
+      "id": "S59",
+      "path": "output/experiments/v2_fedavg/main/gru_masked_seed44/selected/receipt.json",
+      "purpose": "Selected export receipt",
+      "sha256": "72928b7e0b77e0a7703272aa0816b43fa8a48e974d982e88f346e69f06f7e054"
+    },
+    {
+      "id": "S60",
+      "path": "output/experiments/v2_fedavg/main/gru_masked_seed44/selected/model.pt",
+      "purpose": "Raw selected model export, hashed only; never loaded",
+      "sha256": "aab0f61ba0315476947119d1e46ee0ecb1b96bc0bd31e97119d1f03b8d0148f0"
+    },
+    {
+      "id": "S61",
+      "path": "output/experiments/v2_fedavg/main/gru_masked_seed44/events/54e359921f1f4bbf8758d20e56e27603.json",
+      "purpose": "Completed training counters and selected-checkpoint metadata",
+      "sha256": "73a90a41c6d0581fb5e5cb65494689e0d626f4f548a862bc3b283faef13e686f"
+    },
+    {
+      "id": "S62",
+      "path": "output/experiments/v2_fedavg/main/gru_masked_seed44/rounds/0200/receipt.json",
+      "purpose": "Saved selected validation score and checkpoint fingerprint",
+      "sha256": "bd522466fb50c9d92731750f0399cde319be54e72eac32fa06390f93f423b8b0"
+    },
+    {
+      "id": "S63",
+      "path": "output/experiments/v3_centralized_sgd/main/gru_masked_seed42_schedule_matched/manifest.json",
+      "purpose": "Completed centralized_sgd seed42 training manifest",
+      "sha256": "430402e2d93aa7f7ef3dd36c4c4154080d91375c2338125731c415c8a877ac12"
+    },
+    {
+      "id": "S64",
+      "path": "configs/experiments/v3_centralized_sgd/gru_masked_seed42_schedule_matched.json",
+      "purpose": "Exact completed training configuration",
+      "sha256": "b58d02713e12ffb80d1f01139ee367a8503c3a8c43b01c166d56c8f3e97c069e"
+    },
+    {
+      "id": "S65",
+      "path": "output/experiments/v3_centralized_sgd/main/gru_masked_seed42_schedule_matched/final/receipt.json",
+      "purpose": "Selected export receipt",
+      "sha256": "5fa31e2d09ba732f206eaa9bb76d6fe6046df7a6067d1d3e95695cc525a45092"
+    },
+    {
+      "id": "S66",
+      "path": "output/experiments/v3_centralized_sgd/main/gru_masked_seed42_schedule_matched/final/model.pt",
+      "purpose": "Raw selected model export, hashed only; never loaded",
+      "sha256": "a335deb6ec5ad916faf2c9fad561576ef8a6d7eef6b50a0299e74d22ff43c75d"
+    },
+    {
+      "id": "S67",
+      "path": "output/experiments/v3_centralized_sgd/main/gru_masked_seed42_schedule_matched/completed.json",
+      "purpose": "Completed training counters and selected-checkpoint metadata",
+      "sha256": "dea1ce574f77bfa3aa2fe941278dc11adf13e0750d4da5f04257ea82495c1e09"
+    },
+    {
+      "id": "S68",
+      "path": "output/experiments/v3_centralized_sgd/main/gru_masked_seed42_schedule_matched/blocks/0190/receipt.json",
+      "purpose": "Saved selected validation score and checkpoint fingerprint",
+      "sha256": "16b62fa2546592e5d4832c4bf80b6163f5a18389f33983d0285f10347a480033"
+    },
+    {
+      "id": "S69",
+      "path": "output/experiments/v3_centralized_sgd/main/gru_masked_seed43_schedule_matched/manifest.json",
+      "purpose": "Completed centralized_sgd seed43 training manifest",
+      "sha256": "86cd2ea2f00433959860719f2361377d3d7b8c26ae732299e6bf07d4f3221f41"
+    },
+    {
+      "id": "S70",
+      "path": "configs/experiments/v3_centralized_sgd/gru_masked_seed43_schedule_matched.json",
+      "purpose": "Exact completed training configuration",
+      "sha256": "f274253c4470503281cfb851ea988958fe01ba81da03b2d13c291c7c1f15f518"
+    },
+    {
+      "id": "S71",
+      "path": "output/experiments/v3_centralized_sgd/main/gru_masked_seed43_schedule_matched/final/receipt.json",
+      "purpose": "Selected export receipt",
+      "sha256": "a6b35a6ba3eb31c2573d467a9adc1898af9126979e604ba2d484d342983be6c3"
+    },
+    {
+      "id": "S72",
+      "path": "output/experiments/v3_centralized_sgd/main/gru_masked_seed43_schedule_matched/final/model.pt",
+      "purpose": "Raw selected model export, hashed only; never loaded",
+      "sha256": "900a57fcb89aa7fd30afd81b8252dd69b687378d32bf9989628b3f23b9e9990d"
+    },
+    {
+      "id": "S73",
+      "path": "output/experiments/v3_centralized_sgd/main/gru_masked_seed43_schedule_matched/completed.json",
+      "purpose": "Completed training counters and selected-checkpoint metadata",
+      "sha256": "db91ca60cd4d2cc2e529ed14afaee7211d1df6cd2aec80cad637e67c5cb6332c"
+    },
+    {
+      "id": "S74",
+      "path": "output/experiments/v3_centralized_sgd/main/gru_masked_seed43_schedule_matched/blocks/0190/receipt.json",
+      "purpose": "Saved selected validation score and checkpoint fingerprint",
+      "sha256": "636d78a3093fc36952693bd8d13d41c51085024cb1954b905f49852b4ceaf377"
+    },
+    {
+      "id": "S75",
+      "path": "output/experiments/v3_centralized_sgd/main/gru_masked_seed44_schedule_matched/manifest.json",
+      "purpose": "Completed centralized_sgd seed44 training manifest",
+      "sha256": "0bf4a2d8ad640d29cf771376d6654508011f5e5c3f5008c1a0a4e37955e59591"
+    },
+    {
+      "id": "S76",
+      "path": "configs/experiments/v3_centralized_sgd/gru_masked_seed44_schedule_matched.json",
+      "purpose": "Exact completed training configuration",
+      "sha256": "a139d06fb1ab4a8368f5b43b86fe863242c9065fa4a56c358945a813fbf13f88"
+    },
+    {
+      "id": "S77",
+      "path": "output/experiments/v3_centralized_sgd/main/gru_masked_seed44_schedule_matched/final/receipt.json",
+      "purpose": "Selected export receipt",
+      "sha256": "13bc72efc8039b053ca36bd81298f4c2226963d450def106c726105f8d54873d"
+    },
+    {
+      "id": "S78",
+      "path": "output/experiments/v3_centralized_sgd/main/gru_masked_seed44_schedule_matched/final/model.pt",
+      "purpose": "Raw selected model export, hashed only; never loaded",
+      "sha256": "d870018169be7858a0ae4b2a8ac758f7347d776e7116c6f4886c85db5a0e24b9"
+    },
+    {
+      "id": "S79",
+      "path": "output/experiments/v3_centralized_sgd/main/gru_masked_seed44_schedule_matched/completed.json",
+      "purpose": "Completed training counters and selected-checkpoint metadata",
+      "sha256": "1a891ccc0a6f1c214c5a4088b5f2a4feaf4fb1086602727dfc9c6d8af58c9cda"
+    },
+    {
+      "id": "S80",
+      "path": "output/experiments/v3_centralized_sgd/main/gru_masked_seed44_schedule_matched/blocks/0180/receipt.json",
+      "purpose": "Saved selected validation score and checkpoint fingerprint",
+      "sha256": "d99bd4fb0e1f7aeabb6b65bdb2683aefca58119082f0ca5aa6392d29ef5694ca"
+    },
+    {
+      "id": "S81",
+      "path": "output/experiments/v3_centralized_sgd/reports/validation_comparison_v1/validation_curves.png",
+      "purpose": "Existing validation figure, copied without regeneration",
+      "sha256": "3fb6cc05e992b605024dcd6c4d93064bd5b5f48192314b2d2386056aeba49f7a"
+    },
+    {
+      "id": "S82",
+      "path": "output/experiments/v3_centralized_sgd/reports/final_test_comparison_v1/per_node_comparison.png",
+      "purpose": "Existing per-node test figure, copied without regeneration",
+      "sha256": "5a1604fa95cbd3b85e0ef5214f5240eca7489b54c80c06348722baf1a7bb2df2"
+    }
+  ]
+}

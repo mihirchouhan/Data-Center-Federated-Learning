@@ -1,0 +1,14 @@
+{
+  "after": {
+    "files_checked": 3713,
+    "mismatches": [],
+    "scope": "bytes,size,mtime_ns,mode; access time ignored",
+    "venv_bytes_excluded": true
+  },
+  "before": {
+    "files_checked": 3713,
+    "mismatches": [],
+    "scope": "bytes,size,mtime_ns,mode; access time ignored",
+    "venv_bytes_excluded": true
+  }
+}

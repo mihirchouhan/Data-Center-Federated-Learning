@@ -1,0 +1,4 @@
+# Optional native XGBoost adapter; install after existing requirements.txt.
+# Binary wheels verified with Python 3.14 and the existing CUDA 13 environment.
+xgboost==3.4.1
+scipy==1.18.1

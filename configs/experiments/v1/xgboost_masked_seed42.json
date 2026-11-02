@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "kind": "comparison",
+  "model": "xgboost",
+  "weather": "masked",
+  "seed": 42,
+  "device": "cuda:0",
+  "num_threads": 4,
+  "learning_rate": 0.05,
+  "patience": 30,
+  "trees": 500,
+  "max_depth": 6,
+  "max_bin": 256,
+  "subsample": 0.8,
+  "colsample_bytree": 0.8
+}

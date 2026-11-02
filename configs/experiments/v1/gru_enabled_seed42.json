@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "kind": "comparison",
+  "model": "gru",
+  "weather": "enabled",
+  "seed": 42,
+  "device": "cuda:0",
+  "num_threads": 1,
+  "learning_rate": 0.001,
+  "patience": 5,
+  "epochs": 30,
+  "batch_size": 512,
+  "eval_batch_size": 1024,
+  "hidden_size": 64,
+  "num_layers": 2,
+  "node_embedding_size": 8
+}

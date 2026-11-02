@@ -1,0 +1,8 @@
+{
+  "status": "verified_complete",
+  "pre_existing_files_checked": 3687,
+  "report_artifacts_checked": 25,
+  "input_files_checked": 2652,
+  "mismatches": [],
+  "training_or_model_inference": false
+}
