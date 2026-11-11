@@ -1,0 +1,15 @@
+flowchart TD
+  files["Raw telemetry: node, timestamp, value"] --> dedup["Stable ordering, duplicate and range rules"]
+  dedup --> bins["Causal ten-minute bins and weather as-of join"]
+  bins --> split["Original chronological boundaries"]
+  split --> observed["Separate observed future power vector"]
+  split --> inputs["v5 input fill ages: 0, 1, 2 or 3 bins"]
+  inputs --> pools["Native policy training IDs"]
+  observed --> pools
+  observed --> common["Common no-fill validation and test IDs"]
+  inputs --> common
+  pools --> sample["Fixed per-client sample budget"]
+  common --> scale["Original training scalers and weather mask"]
+  sample --> scale
+  scale --> tensors["v5 batches: 36 by 14; scalar target"]
+  bins -.-> future["PLANNED bridge: strict-contained two-output windows"]

@@ -1,0 +1,16 @@
+flowchart TD
+    input["Standardized input: B x T x 14<br/>T = 6 historical; T = 36 in v5<br/>Masked variants set channels 7 and 8 to zero"]
+    input --> numeric["Channels 0-12<br/>B x T x 13 numerical values"]
+    input --> node["Channel 13: frozen categorical node index<br/>Same node identity throughout each history"]
+    node --> embedding["Shared learned embedding: 979 x 8<br/>Lookup at every time step: B x T x 8"]
+    numeric --> concat["Concatenate along the feature axis<br/>B x T x 21"]
+    embedding --> concat
+    concat --> gru["GRU: two layers, hidden size 64<br/>Sequence output: B x T x 64"]
+    gru --> last["Final sequence output<br/>B x 64"]
+    last --> head["Linear 64 to 1<br/>Zero-initialized correction head"]
+    input --> power["Last input time step, channel 0<br/>Standardized node power: B x 1"]
+    power --> baseline["Fixed persistence mapping<br/>a times last standardized power plus b"]
+    head --> add["Add learned correction and persistence reference<br/>Standardized next-hour mean target: B x 1"]
+    baseline --> add
+    add --> inverse["Inverse target scaling<br/>1000 times sigma_y times output plus 1000 times mu_y"]
+    inverse --> prediction["Predicted next-hour mean node IT power<br/>Watts; one scalar per window"]

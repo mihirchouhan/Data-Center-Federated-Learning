@@ -1,0 +1,21 @@
+flowchart TD
+    bins["Original frozen per-node feature bins<br/>Separate immutable observed-power target bins"]
+    bins --> target{"Six original future power bins observed<br/>and target interval entirely inside split?"}
+    target -->|No| reject["Exclude candidate window<br/>Never fill targets"]
+    target -->|Yes| policies["36-bin input-history eligibility<br/>Same features, mapping, UTC grid and scalers"]
+    policies --> nofill["No fill<br/>Require complete unmasked input history"]
+    policies --> ff10["FF10<br/>Carry original value at most 1 missing bin"]
+    policies --> ff20["FF20<br/>Carry original value at most 2 missing bins"]
+    policies --> ff30["FF30<br/>Carry original value at most 3 missing bins"]
+    nofill --> budget["Freeze m_k = each client's no-fill training count"]
+    nofill --> pool["Four distinct native training pools<br/>Preserve observed targets and node/origin IDs"]
+    ff10 --> pool
+    ff20 --> pool
+    ff30 --> pool
+    budget --> sample["Per selected client session<br/>Sample m_k distinct native rows then shuffle"]
+    pool --> sample
+    sample --> transform["Original frozen standardization<br/>Zero outdoor-weather channels 7 and 8"]
+    transform --> fit["Paired FedAvg / centralized-SGD fits<br/>Same processed counts, seeds and batch sizes"]
+    nofill --> common["Common no-fill validation and test windows<br/>Identical input histories and observed targets<br/>Same IDs and ordering across all policies"]
+    common --> val["Validation: 31448 windows / 929 nodes<br/>Checkpoint selection only"]
+    common --> test["Test: 6590 windows / 570 nodes<br/>Already-observed period; locked final reporting"]

@@ -1,0 +1,128 @@
+{
+  "artifacts": {
+    "configs/experiments/phase2_multioutput/v1/matrix.csv": {
+      "bytes": 5740,
+      "sha256": "8050421edb19496f53bfd3441a3ca08d775df4ec690fbb8e3c70bff2eeb6cc63"
+    },
+    "configs/experiments/phase2_multioutput/v1/matrix.json": {
+      "bytes": 11907,
+      "sha256": "ead3c216c7fde13165f01129d7bc9ac2479928646c3022356e5cd6779ab075fc"
+    },
+    "configs/experiments/phase2_multioutput/v1/methods/fedavg_gru_enabled.json": {
+      "bytes": 959,
+      "sha256": "20a69104ef686aba4156eaf19850fe584cde34e0dec63cc74b5db9189371d22e"
+    },
+    "configs/experiments/phase2_multioutput/v1/methods/fedavg_gru_masked.json": {
+      "bytes": 958,
+      "sha256": "1fee78e91f12748725a46f16d5e9258cc881569d83c9069733a6cc9d7edc6869"
+    },
+    "configs/experiments/phase2_multioutput/v1/methods/gru_enabled.json": {
+      "bytes": 968,
+      "sha256": "6ab1e3b7f4579550361db80e7254fb5fc94904cf3d6c7dc7299f22a65473b917"
+    },
+    "configs/experiments/phase2_multioutput/v1/methods/gru_masked_control.json": {
+      "bytes": 967,
+      "sha256": "37ed381bab4d8c67ed7c78ee1f6612c3774bc86c33429e2856f0a7d68bc9c910"
+    },
+    "configs/experiments/phase2_multioutput/v1/methods/lstm_enabled.json": {
+      "bytes": 969,
+      "sha256": "6b41d18114cc7f47bd5a92b36fbe0fbf3d62859cafe08038eeb5ee59e848831b"
+    },
+    "configs/experiments/phase2_multioutput/v1/methods/persistence.json": {
+      "bytes": 430,
+      "sha256": "f79b9de4c94ce06940a145d5f6bdc8f9e818ae1d9daec34a3707ee2816caf5f6"
+    },
+    "configs/experiments/phase2_multioutput/v1/methods/xgboost_enabled.json": {
+      "bytes": 5506,
+      "sha256": "f864526cf4ed7573e4497276a996128bb3ff7cd1566e8bc846e06dbc472924c8"
+    },
+    "configs/experiments/phase2_multioutput/v1/protocol.json": {
+      "bytes": 6136,
+      "sha256": "f11dee00e99c94789697bf8dc351b064385aa6c3c469246cabbf826edc729a82"
+    },
+    "docs/experiments/phase2_multioutput/v1/EVALUATION_SPEC.md": {
+      "bytes": 6940,
+      "sha256": "06afba098222d340fb6c8cc3ad8796bf546cbe1c5c0da472642ba59a2bd42604"
+    },
+    "docs/experiments/phase2_multioutput/v1/FEDERATED_PROTOCOL.md": {
+      "bytes": 6597,
+      "sha256": "4129a49155e9be851f7a9b863377af65d2e2f9e7e9c0d88844deb539ae1b2a30"
+    },
+    "docs/experiments/phase2_multioutput/v1/PROTOCOL.md": {
+      "bytes": 12658,
+      "sha256": "645b86a66b9a0c4b242446387cc3b61d408cc9b60381456f813eaef78996bec8"
+    },
+    "src/phase2_multioutput/__init__.py": {
+      "bytes": 162,
+      "sha256": "547dd08b0de1c3e5490a39760cb57578f26ea595751340e23c5e6e8d8d4b784b"
+    },
+    "src/phase2_multioutput/contracts.py": {
+      "bytes": 11511,
+      "sha256": "abc4db869fe7884573402329356106bf8889b68c7be816f14a498078659996a9"
+    },
+    "src/phase2_multioutput/evaluation.py": {
+      "bytes": 4967,
+      "sha256": "5d4481bee54f735c8bf091a7416c6e52bea0144afc566e3e22d3a3c4e4508cfc"
+    },
+    "src/phase2_multioutput/protocol.py": {
+      "bytes": 6228,
+      "sha256": "3a076085bc0f00684441aad381242305c0beefc47bd3d075fe0e03f0d91bc1f1"
+    },
+    "src/phase2_multioutput/readiness.py": {
+      "bytes": 3589,
+      "sha256": "cee0fa353d9400892c77d62cad32b02f9516f0b7dc212293d200e98f21234476"
+    },
+    "tests/phase2_multioutput/test_protocol.py": {
+      "bytes": 19761,
+      "sha256": "ee8db1b7d4a125513cca0fc44e306d29fbfd5a916cb0ad9f2dcffc06bf98cc5d"
+    }
+  },
+  "historical_dependencies": {
+    "output/experiments/v5_missing_data/model_comparison/v1/cohorts/node_mapping.json": {
+      "bytes": 8706,
+      "sha256": "ed2c7a0228a204faeeaf5a9a3100c5732f48c2432a604a23f111e6d30093d369"
+    },
+    "output/phase1_4/temperature_semantics.md": {
+      "bytes": 6177,
+      "sha256": "1ab0143e440d4ed7a0d5602ea44a8c285a83cd35d625599845754dd34c4d9213"
+    },
+    "output/phase1_5/validation_selection_proposal.md": {
+      "bytes": 7859,
+      "sha256": "ecabbcfc0377954e509fc994ae6bbc5726f6ea57f6c9dbc9efdd51d6ca787b8a"
+    },
+    "output/phase1_7/future_coverage_protocol.md": {
+      "bytes": 10285,
+      "sha256": "de92e519cb28ef768e048c656aca0c8653e706470ca33ecbcc1884726fca237f"
+    },
+    "src/experiment_models.py": {
+      "bytes": 12639,
+      "sha256": "a14ff8e32a6b052c831214e67cbb383c747b60b12cafc10c335412cd8ff25910"
+    },
+    "src/federated_train.py": {
+      "bytes": 10834,
+      "sha256": "b3f77ecfb509d5e2330ce3bac38578ce9a4c43108d636288d981f1200898106a"
+    },
+    "src/multinode.py": {
+      "bytes": 18883,
+      "sha256": "bd6e8d1d26af4603f01f950d91c707ede4bc0996c17ead1d35205825c8b01ee5"
+    },
+    "src/phase1_3/__init__.py": {
+      "bytes": 177,
+      "sha256": "0269adacef71a3f2506710082f3281ea0b34d1d988d696282bdfde9c135c6363"
+    },
+    "src/phase1_3/config.py": {
+      "bytes": 4758,
+      "sha256": "25859b8722b93088c6f819a34747884d06b174c93682d1eb785b963047bf1cdb"
+    },
+    "src/phase1_3/schema.py": {
+      "bytes": 1557,
+      "sha256": "a9d1d468e5da4113ad962798e27db75d3ec264c627ca5213fc68015d7764d93e"
+    },
+    "src/preprocess.py": {
+      "bytes": 21581,
+      "sha256": "a0567a07f8cef60f7df85e03da34646c0a47ef97a465680fdb021701c6918d64"
+    }
+  },
+  "schema": "phase2.0.design.v1",
+  "self_hash_policy": "Receipt self-hash external in Phase2.0 completion; no circular self-inventory"
+}

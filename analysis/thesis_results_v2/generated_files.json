@@ -1,0 +1,28 @@
+{
+  "files": {
+    "COMPLETE_RESULTS_REPORT.md": "2e2b63208d5861de9f64f32f0c065b386454fd277ec57d7fd7bec573e614f08c",
+    "DIAGRAMS.md": "fd70e6627ae739f905e759bf9fc029ff2e31720433e8254aded25ea9a205842e",
+    "PREVIEW.html": "d8291ab2a89f7794dd6782a741452761c2117aa4b88fba4e32d78a6712b44c87",
+    "README.md": "a7ff40b94fb014cc66835fc9b6ea1e0a011b2964c5220b49537ad061dff25aeb",
+    "diagram_sources.json": "03b7cd01428ac4b287171e7ae8a1311a3c7babaf87cf05c4ce4b10b400322785",
+    "diagram_verification.json": "2ceede7e39d9400121ffffcd2d8df7282d3a5276d30abe19114b0ad5929171b3",
+    "diagrams/01_data_and_experiment_flow.mmd": "0a8113c159a6fb4024100e807a9c8deb5b56b68a78e8b05f163df272ce26f711",
+    "diagrams/01_data_and_experiment_flow.svg": "b2ee5a51affcea299a6a5511342c38a1c17f0787ebcec0aa3c27ac14237d914d",
+    "diagrams/02_residual_gru_architecture.mmd": "eb7f728349e8163a3a7adceee5a6a6d7bbeda72ebe151b8db574c8b26b294ee1",
+    "diagrams/02_residual_gru_architecture.svg": "f90e23a981b825735dedf741331abae569a2c55436daaee0a35afb218eeaec9b",
+    "diagrams/03_historical_model_branches.mmd": "c80f09776a4ebe7252752d2a98a0fa530bd73eb15be465dd93ead4a749963bee",
+    "diagrams/03_historical_model_branches.svg": "5b296b5b942412c70707133ba553fbba8d82b5c579aae24df5362bd64e49807d",
+    "diagrams/04_fedavg_and_centralized_sgd.mmd": "0f8f5e50fb076979ed124a11fd20dd15b52010ef6699e5c4af75988e858cb3a2",
+    "diagrams/04_fedavg_and_centralized_sgd.svg": "a3b7248618cfdf8a67a85b374b1a50a70ea2d7c2b2cd0b7809eba6e3f3cd9a43",
+    "diagrams/05_v5_policy_cohorts.mmd": "d382c9eb10dbd0355e32c7bbd19b67a0b78144003ad2582babd382359652b196",
+    "diagrams/05_v5_policy_cohorts.svg": "bc854349eacfb3094b8a7e26a875e94a2d924c3e5d1b13cff23b4f920a30c153",
+    "diagrams/06_metric_aggregation.mmd": "35d241bfb78b60f8a8cfa22047bedc307c03882a2fbea4e9d64ee9b1c82a9222",
+    "diagrams/06_metric_aggregation.svg": "12f4a28b622d1543bc0cdd21c0c95b32993a392d3f9a4ea7cbd02e1741c569d7",
+    "diagrams/07_validation_selection_and_test_lock.mmd": "472ec858239ed30e744b68d1be865bd838df039832e75f87a5c4c9824c5a7c0d",
+    "diagrams/07_validation_selection_and_test_lock.svg": "530ad63853cbb82d154f3987005d341e1849a92649663f837f99e28d4c91a1d2",
+    "preservation_inventory.json": "7477cb912ba6f0b04d211c4aa6cce6d9cbd13361d1fc629d6330977617fddd8b"
+  },
+  "scope": "New documentation files only; self hash excluded",
+  "training_or_model_inference": false,
+  "version": 2
+}

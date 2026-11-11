@@ -1,0 +1,20 @@
+flowchart TD
+    init["Fresh paired seeded model initialization<br/>Fixed persistence coefficients; zero correction head"]
+    init --> initialval["Evaluate initial persistence candidate<br/>Complete common validation cohort"]
+    initialval --> schedule["Deterministic round/block plan<br/>98 of 979 node clients; no replacement<br/>Matched ordered batches within a paired run"]
+    schedule --> fedstate["FedAvg: immutable global state at round start"]
+    schedule --> centralstate["Centralized SGD: one continuing model state"]
+    fedstate --> clients["Each selected client starts from the same state<br/>Fresh local SGD; only its training examples"]
+    clients --> updates["Validate all client updates and processed counts<br/>Abort invalid round; never silently drop a client"]
+    updates --> aggregate["Sample-count-weighted FedAvg<br/>Entire trainable embedding table included<br/>Keep fixed buffers unchanged"]
+    aggregate --> fednext["Next global model"]
+    centralstate --> sequential["Process the same ordered client/batch sessions sequentially<br/>Fresh stateless SGD per session<br/>Carry model parameters forward; no averaging"]
+    sequential --> centralnext["Next central block model"]
+    fednext --> due{"Validation due?<br/>Every 10 rounds/blocks, including 200"}
+    centralnext --> due
+    due -->|Yes| validation["Complete global validation cohort<br/>Earliest strict minimum pooled RMSE"]
+    due -->|No| commit
+    validation --> commit["Atomic state/receipt commit and counters"]
+    commit --> cap{"Round/block 200 complete?"}
+    cap -->|No| schedule
+    cap -->|Yes| selected["Export validation-selected checkpoint<br/>Test reporting is a separate locked stage"]

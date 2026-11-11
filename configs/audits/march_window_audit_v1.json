@@ -1,0 +1,253 @@
+{
+  "archive_evidence": {
+    "bytes": 31495884800,
+    "md5": "4c74ad95b6d837d409e24216389bb25e",
+    "sha256": "f4ba184e4e7ecee5cbb2b3317a260329082333588545b1cabd4e2cbd9939fba2"
+  },
+  "design_manifest": "configs/experiments/phase2_multioutput/v1/design_manifest.json",
+  "inputs": {
+    "configs/experiments/phase2_multioutput/v1/design_manifest.json": {
+      "bytes": 5214,
+      "sha256": "c69f7556a0a49ca5ad809cccfc5b578da1103766140a62d596e2b1a19ec6f227"
+    },
+    "configs/experiments/phase2_multioutput/v1/protocol.json": {
+      "bytes": 6136,
+      "sha256": "f11dee00e99c94789697bf8dc351b064385aa6c3c469246cabbf826edc729a82"
+    },
+    "data/extracted/b067a6ea8a820f12dbab8ee65f0d3fb862e3f6ea0a8646614d09247f7c71b357/year_month=22-01/plugin=ganglia_pub/metric=cpu_idle/a_0.parquet": {
+      "bytes": 114558091,
+      "sha256": "c13d9fc5e174f5ace7c6ca5013d048b68094f4304732c2e03934554dfdb232ca"
+    },
+    "data/extracted/b067a6ea8a820f12dbab8ee65f0d3fb862e3f6ea0a8646614d09247f7c71b357/year_month=22-01/plugin=ganglia_pub/metric=cpu_system/a_0.parquet": {
+      "bytes": 103562688,
+      "sha256": "b925f86c425f3e7c367919590a8fb513f04e462b056ff15e69410c4f4bbe37de"
+    },
+    "data/extracted/b067a6ea8a820f12dbab8ee65f0d3fb862e3f6ea0a8646614d09247f7c71b357/year_month=22-01/plugin=ganglia_pub/metric=cpu_user/a_0.parquet": {
+      "bytes": 117696845,
+      "sha256": "a9a710f54ef400931971abcec0818a56aabc3c8543582da7091a5a41c156d5e0"
+    },
+    "data/extracted/b067a6ea8a820f12dbab8ee65f0d3fb862e3f6ea0a8646614d09247f7c71b357/year_month=22-01/plugin=ganglia_pub/metric=cpu_wio/a_0.parquet": {
+      "bytes": 85682075,
+      "sha256": "1548c5e3a8248e557b84199d46642ce8d72e18de0f5309045b9a75b1f2390b18"
+    },
+    "data/extracted/b067a6ea8a820f12dbab8ee65f0d3fb862e3f6ea0a8646614d09247f7c71b357/year_month=22-01/plugin=ganglia_pub/metric=mem_free/a_0.parquet": {
+      "bytes": 247889680,
+      "sha256": "c53a78bcbaed4690262154ec35768511c35702e87f04c414f26c92fbeb3b895b"
+    },
+    "data/extracted/b067a6ea8a820f12dbab8ee65f0d3fb862e3f6ea0a8646614d09247f7c71b357/year_month=22-01/plugin=ganglia_pub/metric=mem_total/a_0.parquet": {
+      "bytes": 77986765,
+      "sha256": "7920fc77828a6866e2795aaf3e929a8e65150ce7675dbc7b61be27132e5073c0"
+    },
+    "data/extracted/b067a6ea8a820f12dbab8ee65f0d3fb862e3f6ea0a8646614d09247f7c71b357/year_month=22-01/plugin=ipmi_pub/metric=ambient/a_0.parquet": {
+      "bytes": 49557425,
+      "sha256": "bdeb1db9afc58446cb0385668091d18a0db6d45f22943abc65f02332ae8c16ff"
+    },
+    "data/extracted/b067a6ea8a820f12dbab8ee65f0d3fb862e3f6ea0a8646614d09247f7c71b357/year_month=22-01/plugin=ipmi_pub/metric=total_power/a_0.parquet": {
+      "bytes": 95494335,
+      "sha256": "27af2caa0296f25b8b8307f8999c42c5ef8ee938f58e2e930f8eedf101adbeac"
+    },
+    "data/extracted/b067a6ea8a820f12dbab8ee65f0d3fb862e3f6ea0a8646614d09247f7c71b357/year_month=22-01/plugin=weather_pub/metric=humidity/a_0.parquet": {
+      "bytes": 15925,
+      "sha256": "a7a6c35a0bd6c0fb92e58f7d9a6d2c25d8ddaa010680f226a0079f0fbecc9fed"
+    },
+    "data/extracted/b067a6ea8a820f12dbab8ee65f0d3fb862e3f6ea0a8646614d09247f7c71b357/year_month=22-01/plugin=weather_pub/metric=temp/a_0.parquet": {
+      "bytes": 22573,
+      "sha256": "a786b5171a0a44a2452611f61a086d431fa9048be52dbe5e0dc6a274308d1ac4"
+    },
+    "data/extracted/b067a6ea8a820f12dbab8ee65f0d3fb862e3f6ea0a8646614d09247f7c71b357/year_month=22-02/plugin=ganglia_pub/metric=cpu_idle/a_0.parquet": {
+      "bytes": 42365858,
+      "sha256": "7cd4f78115f639d6302a5e2e3d695ce31f65e4444e8550f92bd2bc26d95a45fb"
+    },
+    "data/extracted/b067a6ea8a820f12dbab8ee65f0d3fb862e3f6ea0a8646614d09247f7c71b357/year_month=22-02/plugin=ganglia_pub/metric=cpu_system/a_0.parquet": {
+      "bytes": 36781879,
+      "sha256": "1efce13565eb45bfe5c5cb648b37d3f9f7bcf49ea54af0c586000bde6ba93821"
+    },
+    "data/extracted/b067a6ea8a820f12dbab8ee65f0d3fb862e3f6ea0a8646614d09247f7c71b357/year_month=22-02/plugin=ganglia_pub/metric=cpu_user/a_0.parquet": {
+      "bytes": 43269359,
+      "sha256": "8818d067aa955cc03ea7367e9ad31013c693bd1d65e8bb1e06e5937bada8ff5e"
+    },
+    "data/extracted/b067a6ea8a820f12dbab8ee65f0d3fb862e3f6ea0a8646614d09247f7c71b357/year_month=22-02/plugin=ganglia_pub/metric=cpu_wio/a_0.parquet": {
+      "bytes": 31407952,
+      "sha256": "a2c3d082d985b98b5bf2778e8e66c43f1d5fb8266ef6730dad36273fab5cf0a2"
+    },
+    "data/extracted/b067a6ea8a820f12dbab8ee65f0d3fb862e3f6ea0a8646614d09247f7c71b357/year_month=22-02/plugin=ganglia_pub/metric=mem_free/a_0.parquet": {
+      "bytes": 78906275,
+      "sha256": "a560bc502e42bd5f9d1d560c7c99e547fd6495f6ce5ec53057300194ebe3427f"
+    },
+    "data/extracted/b067a6ea8a820f12dbab8ee65f0d3fb862e3f6ea0a8646614d09247f7c71b357/year_month=22-02/plugin=ganglia_pub/metric=mem_total/a_0.parquet": {
+      "bytes": 26366264,
+      "sha256": "a0458d15ba040c506264570570a2c1ddd2bb83550133c52ce0032f8114266a76"
+    },
+    "data/extracted/b067a6ea8a820f12dbab8ee65f0d3fb862e3f6ea0a8646614d09247f7c71b357/year_month=22-02/plugin=ipmi_pub/metric=ambient/a_0.parquet": {
+      "bytes": 51638005,
+      "sha256": "e841bb0ee461658826fee1199710e55eb014c6d5e62c1546ae72afbcdf99d166"
+    },
+    "data/extracted/b067a6ea8a820f12dbab8ee65f0d3fb862e3f6ea0a8646614d09247f7c71b357/year_month=22-02/plugin=ipmi_pub/metric=total_power/a_0.parquet": {
+      "bytes": 86350858,
+      "sha256": "ab39ec6d86bc056ba21bfd558ff0939dc37e272bcee85748e1a6320ed10fb273"
+    },
+    "data/extracted/b067a6ea8a820f12dbab8ee65f0d3fb862e3f6ea0a8646614d09247f7c71b357/year_month=22-02/plugin=weather_pub/metric=humidity/a_0.parquet": {
+      "bytes": 13116,
+      "sha256": "b8b7eabd256f288b389de46aa73fe4c89e87978f017a6ff2f59e5d95135afaad"
+    },
+    "data/extracted/b067a6ea8a820f12dbab8ee65f0d3fb862e3f6ea0a8646614d09247f7c71b357/year_month=22-02/plugin=weather_pub/metric=temp/a_0.parquet": {
+      "bytes": 18264,
+      "sha256": "7ce236ebdbcdcc6c0a11f625bfc8bc7421d9d508722d3a8f857df2c58720e19a"
+    },
+    "data/march_2022_manual/extracted/year_month=22-03/plugin=ganglia_pub/metric=cpu_idle/a_0.parquet": {
+      "bytes": 109659544,
+      "sha256": "8786c70a173edc9e1ecdf9468df9509a2c2e7ccdc906e44bbd9fecf184b496d8"
+    },
+    "data/march_2022_manual/extracted/year_month=22-03/plugin=ganglia_pub/metric=cpu_system/a_0.parquet": {
+      "bytes": 100338814,
+      "sha256": "2c5f15e4723f60ce9c0d0acde1bf11fab46a85a56511e5f35ef0bf36b469f946"
+    },
+    "data/march_2022_manual/extracted/year_month=22-03/plugin=ganglia_pub/metric=cpu_user/a_0.parquet": {
+      "bytes": 112491779,
+      "sha256": "15aab5bc7ab89a6364d571e07063320519334ee553b178bcf2258c7dfbff5154"
+    },
+    "data/march_2022_manual/extracted/year_month=22-03/plugin=ganglia_pub/metric=cpu_wio/a_0.parquet": {
+      "bytes": 82190819,
+      "sha256": "4617a277b499c3d258d5275b6b2a59758dbdeeb06ed475e502141ddc634d07fd"
+    },
+    "data/march_2022_manual/extracted/year_month=22-03/plugin=ganglia_pub/metric=mem_free/a_0.parquet": {
+      "bytes": 210863930,
+      "sha256": "c5e0c7212a709fac3f4dc5e40095c3fb46a1e099cf8241e5b9c890e951dbed43"
+    },
+    "data/march_2022_manual/extracted/year_month=22-03/plugin=ganglia_pub/metric=mem_total/a_0.parquet": {
+      "bytes": 58236047,
+      "sha256": "5f5779071e6284177e9e211500abbae361c1272ef7fc18fe900600e0e4bcaec6"
+    },
+    "data/march_2022_manual/extracted/year_month=22-03/plugin=ipmi_pub/metric=ambient/a_0.parquet": {
+      "bytes": 56179898,
+      "sha256": "2e1030154d9f37d2d2eb64a7f7a7333f8c8a7ad58eb26f2033d62709a56679ae"
+    },
+    "data/march_2022_manual/extracted/year_month=22-03/plugin=ipmi_pub/metric=total_power/a_0.parquet": {
+      "bytes": 100992122,
+      "sha256": "1d98489db394ff1593b51d6b5815da7a792209dc60a1eb480e2a83f96954f83a"
+    },
+    "data/march_2022_manual/extracted/year_month=22-03/plugin=weather_pub/metric=humidity/a_0.parquet": {
+      "bytes": 14940,
+      "sha256": "52f4a32faeb787923c7269f98fc264a607ba3ad1a5e924fd375f67b3165038ca"
+    },
+    "data/march_2022_manual/extracted/year_month=22-03/plugin=weather_pub/metric=temp/a_0.parquet": {
+      "bytes": 21069,
+      "sha256": "8d4b4ec6a477e9e466c4170530b7850760f88e5741413111b02b52b22d11f660"
+    },
+    "output/experiments/v5_missing_data/model_comparison/v1/cohorts/node_mapping.json": {
+      "bytes": 8706,
+      "sha256": "ed2c7a0228a204faeeaf5a9a3100c5732f48c2432a604a23f111e6d30093d369"
+    },
+    "src/experiment_data.py": {
+      "bytes": 7936,
+      "sha256": "d75e1f5b79cc0fde81245a6c13d035cfec8ac2d8360b125349a716b90459e049"
+    },
+    "src/history_data_v4.py": {
+      "bytes": 13842,
+      "sha256": "dff15362b1b5cc5d78e1cf40918f089790b88cf14b7fa5f5ee86a1de6a18ca0c"
+    },
+    "src/march_window_audit_v1.py": {
+      "bytes": 34136,
+      "sha256": "e0069613dc4d4e7105da4180dafb17ae5e4f607765f6f0df088ddc516d7d6886"
+    },
+    "src/multinode.py": {
+      "bytes": 18883,
+      "sha256": "bd6e8d1d26af4603f01f950d91c707ede4bc0996c17ead1d35205825c8b01ee5"
+    },
+    "src/phase1_3/config.py": {
+      "bytes": 4758,
+      "sha256": "25859b8722b93088c6f819a34747884d06b174c93682d1eb785b963047bf1cdb"
+    },
+    "src/phase1_3/schema.py": {
+      "bytes": 1557,
+      "sha256": "a9d1d468e5da4113ad962798e27db75d3ec264c627ca5213fc68015d7764d93e"
+    },
+    "src/phase2_multioutput/contracts.py": {
+      "bytes": 11511,
+      "sha256": "abc4db869fe7884573402329356106bf8889b68c7be816f14a498078659996a9"
+    },
+    "src/phase2_multioutput/protocol.py": {
+      "bytes": 6228,
+      "sha256": "3a076085bc0f00684441aad381242305c0beefc47bd3d075fe0e03f0d91bc1f1"
+    },
+    "src/preprocess.py": {
+      "bytes": 21581,
+      "sha256": "a0567a07f8cef60f7df85e03da34646c0a47ef97a465680fdb021701c6918d64"
+    },
+    "tests/test_march_window_audit_v1.py": {
+      "bytes": 12625,
+      "sha256": "3b342b917dd7be048fa1be94085a9b1b3a44985cba50645730e3b68a672186be"
+    }
+  },
+  "limits": {
+    "arrow_batch_rows": 65536,
+    "max_node_rows": 1000000,
+    "max_shard_rows": 16000000,
+    "max_spool_bytes": 12884901888,
+    "max_unknown_nodes": 20000,
+    "max_weather_rows": 1000000,
+    "minimum_free_bytes": 21474836480,
+    "nodes_per_shard": 16
+  },
+  "march_parquet_files": 537,
+  "metric_files": {
+    "ambient": [
+      "data/extracted/b067a6ea8a820f12dbab8ee65f0d3fb862e3f6ea0a8646614d09247f7c71b357/year_month=22-01/plugin=ipmi_pub/metric=ambient/a_0.parquet",
+      "data/extracted/b067a6ea8a820f12dbab8ee65f0d3fb862e3f6ea0a8646614d09247f7c71b357/year_month=22-02/plugin=ipmi_pub/metric=ambient/a_0.parquet",
+      "data/march_2022_manual/extracted/year_month=22-03/plugin=ipmi_pub/metric=ambient/a_0.parquet"
+    ],
+    "cpu_idle": [
+      "data/extracted/b067a6ea8a820f12dbab8ee65f0d3fb862e3f6ea0a8646614d09247f7c71b357/year_month=22-01/plugin=ganglia_pub/metric=cpu_idle/a_0.parquet",
+      "data/extracted/b067a6ea8a820f12dbab8ee65f0d3fb862e3f6ea0a8646614d09247f7c71b357/year_month=22-02/plugin=ganglia_pub/metric=cpu_idle/a_0.parquet",
+      "data/march_2022_manual/extracted/year_month=22-03/plugin=ganglia_pub/metric=cpu_idle/a_0.parquet"
+    ],
+    "cpu_system": [
+      "data/extracted/b067a6ea8a820f12dbab8ee65f0d3fb862e3f6ea0a8646614d09247f7c71b357/year_month=22-01/plugin=ganglia_pub/metric=cpu_system/a_0.parquet",
+      "data/extracted/b067a6ea8a820f12dbab8ee65f0d3fb862e3f6ea0a8646614d09247f7c71b357/year_month=22-02/plugin=ganglia_pub/metric=cpu_system/a_0.parquet",
+      "data/march_2022_manual/extracted/year_month=22-03/plugin=ganglia_pub/metric=cpu_system/a_0.parquet"
+    ],
+    "cpu_user": [
+      "data/extracted/b067a6ea8a820f12dbab8ee65f0d3fb862e3f6ea0a8646614d09247f7c71b357/year_month=22-01/plugin=ganglia_pub/metric=cpu_user/a_0.parquet",
+      "data/extracted/b067a6ea8a820f12dbab8ee65f0d3fb862e3f6ea0a8646614d09247f7c71b357/year_month=22-02/plugin=ganglia_pub/metric=cpu_user/a_0.parquet",
+      "data/march_2022_manual/extracted/year_month=22-03/plugin=ganglia_pub/metric=cpu_user/a_0.parquet"
+    ],
+    "cpu_wio": [
+      "data/extracted/b067a6ea8a820f12dbab8ee65f0d3fb862e3f6ea0a8646614d09247f7c71b357/year_month=22-01/plugin=ganglia_pub/metric=cpu_wio/a_0.parquet",
+      "data/extracted/b067a6ea8a820f12dbab8ee65f0d3fb862e3f6ea0a8646614d09247f7c71b357/year_month=22-02/plugin=ganglia_pub/metric=cpu_wio/a_0.parquet",
+      "data/march_2022_manual/extracted/year_month=22-03/plugin=ganglia_pub/metric=cpu_wio/a_0.parquet"
+    ],
+    "humidity": [
+      "data/extracted/b067a6ea8a820f12dbab8ee65f0d3fb862e3f6ea0a8646614d09247f7c71b357/year_month=22-01/plugin=weather_pub/metric=humidity/a_0.parquet",
+      "data/extracted/b067a6ea8a820f12dbab8ee65f0d3fb862e3f6ea0a8646614d09247f7c71b357/year_month=22-02/plugin=weather_pub/metric=humidity/a_0.parquet",
+      "data/march_2022_manual/extracted/year_month=22-03/plugin=weather_pub/metric=humidity/a_0.parquet"
+    ],
+    "mem_free": [
+      "data/extracted/b067a6ea8a820f12dbab8ee65f0d3fb862e3f6ea0a8646614d09247f7c71b357/year_month=22-01/plugin=ganglia_pub/metric=mem_free/a_0.parquet",
+      "data/extracted/b067a6ea8a820f12dbab8ee65f0d3fb862e3f6ea0a8646614d09247f7c71b357/year_month=22-02/plugin=ganglia_pub/metric=mem_free/a_0.parquet",
+      "data/march_2022_manual/extracted/year_month=22-03/plugin=ganglia_pub/metric=mem_free/a_0.parquet"
+    ],
+    "mem_total": [
+      "data/extracted/b067a6ea8a820f12dbab8ee65f0d3fb862e3f6ea0a8646614d09247f7c71b357/year_month=22-01/plugin=ganglia_pub/metric=mem_total/a_0.parquet",
+      "data/extracted/b067a6ea8a820f12dbab8ee65f0d3fb862e3f6ea0a8646614d09247f7c71b357/year_month=22-02/plugin=ganglia_pub/metric=mem_total/a_0.parquet",
+      "data/march_2022_manual/extracted/year_month=22-03/plugin=ganglia_pub/metric=mem_total/a_0.parquet"
+    ],
+    "temp": [
+      "data/extracted/b067a6ea8a820f12dbab8ee65f0d3fb862e3f6ea0a8646614d09247f7c71b357/year_month=22-01/plugin=weather_pub/metric=temp/a_0.parquet",
+      "data/extracted/b067a6ea8a820f12dbab8ee65f0d3fb862e3f6ea0a8646614d09247f7c71b357/year_month=22-02/plugin=weather_pub/metric=temp/a_0.parquet",
+      "data/march_2022_manual/extracted/year_month=22-03/plugin=weather_pub/metric=temp/a_0.parquet"
+    ],
+    "total_power": [
+      "data/extracted/b067a6ea8a820f12dbab8ee65f0d3fb862e3f6ea0a8646614d09247f7c71b357/year_month=22-01/plugin=ipmi_pub/metric=total_power/a_0.parquet",
+      "data/extracted/b067a6ea8a820f12dbab8ee65f0d3fb862e3f6ea0a8646614d09247f7c71b357/year_month=22-02/plugin=ipmi_pub/metric=total_power/a_0.parquet",
+      "data/march_2022_manual/extracted/year_month=22-03/plugin=ipmi_pub/metric=total_power/a_0.parquet"
+    ]
+  },
+  "new_implementation_files": [
+    "src/march_window_audit_v1.py",
+    "tests/test_march_window_audit_v1.py"
+  ],
+  "preservation_baseline_sha256": "fbfd43ccd1394dc0af404f9e0d204f9e6abc4b0ea4607f8d4f4be30894a36c7e",
+  "protocol": "configs/experiments/phase2_multioutput/v1/protocol.json",
+  "schema": "march_window_audit.v1",
+  "scope": "coverage_only_no_models_scalers_or_historical_replay"
+}

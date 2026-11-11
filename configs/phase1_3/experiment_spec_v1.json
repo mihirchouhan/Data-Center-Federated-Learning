@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "phase": "phase1_3",
+  "execution": "synthetic_only_cpu_no_training_no_aggregation_no_scoring",
+  "features": [
+    "power_kw",
+    "cpu_user",
+    "cpu_system",
+    "cpu_idle",
+    "cpu_wio",
+    "memory_used_fraction",
+    "inlet_temperature_mean_c",
+    "outdoor_temperature_c",
+    "outdoor_humidity_percent",
+    "hour_sin",
+    "hour_cos",
+    "week_sin",
+    "week_cos",
+    "node_index"
+  ],
+  "feature_units": [
+    "kW",
+    "%",
+    "%",
+    "%",
+    "%",
+    "fraction",
+    "degC",
+    "degC",
+    "%",
+    "unitless",
+    "unitless",
+    "unitless",
+    "unitless",
+    "categorical index"
+  ],
+  "targets": [
+    "next_hour_mean_node_it_power_w",
+    "next_hour_mean_node_inlet_temperature_c"
+  ],
+  "target_units": [
+    "W",
+    "degC"
+  ],
+  "history_steps": 36,
+  "horizon_steps": 6,
+  "origin_stride_steps": 6,
+  "missing": "no_fill_reject_unobserved_except_masked_weather_7_8",
+  "target_aggregation": "six_original_observed_bins_arithmetic_mean_both_targets",
+  "split_rule": "whole_history_and_target_inside_same_split",
+  "normalization": "fit_accepted_training_windows_only_ddof0_mask_7_8_id13_identity_std_floor_1e-12",
+  "model": {
+    "hidden_size": 64,
+    "layers": 2,
+    "embedding_size": 8,
+    "head": "linear_hidden_to_2_no_residual",
+    "loss": "future_equal_output_mean_standardized_mse"
+  },
+  "client": "one_compute_node_one_simulated_client_training_only_eligibility",
+  "evaluation": "future_per_output_W_degC_pooled_and_equal_node_mae_rmse_no_scoring_implementation",
+  "profiles": {
+    "experiment": {
+      "start_utc": "2022-01-01T00:00:00Z",
+      "train_end_utc": "2022-02-11T07:10:00Z",
+      "val_end_utc": "2022-02-20T03:30:00Z",
+      "end_utc": "2022-03-01T00:00:00Z",
+      "minimum_windows": 24,
+      "minimum_days": 7,
+      "seed": 42
+    },
+    "synthetic": {
+      "start_utc": "2030-01-01T00:00:00Z",
+      "train_end_utc": "2030-01-03T00:00:00Z",
+      "val_end_utc": "2030-01-04T00:00:00Z",
+      "end_utc": "2030-01-05T00:00:00Z",
+      "minimum_windows": 4,
+      "minimum_days": 1,
+      "seed": 2026
+    }
+  }
+}

@@ -1,0 +1,12 @@
+flowchart TD
+    train["Training-only local/central batches"] --> candidates["Model candidates from the predeclared schedule"]
+    validation["Frozen common validation cohort<br/>Separate coordinator capability"] --> valrmse["Pooled validation RMSE in W"]
+    candidates --> valrmse
+    valrmse --> best["Earliest strict minimum<br/>Keep initial persistence candidate eligible"]
+    best --> selected["Selected checkpoint plus validation receipt<br/>Seed, policy, config and source provenance"]
+    selected --> verify["Verify recorded hashes and completion<br/>All expected identities; reject duplicates/missing runs"]
+    verify --> lock["Immutable selection lock before test inference<br/>Model/configuration/source and cohort identities"]
+    lock --> original["Previously authorized, completed test evaluation<br/>Only locked exports; no reselection"]
+    test["Frozen common test IDs and observed targets<br/>No path to training or checkpoint selection"] --> original
+    original --> saved["Saved predictions, node metrics, manifest and receipt"]
+    saved --> analysis["Current documentation stage<br/>Read existing artifacts and draw diagrams only"]

@@ -1,0 +1,61 @@
+{
+  "status": "complete",
+  "main_fits": 48,
+  "score_rows": 114,
+  "inventory_runs": 61,
+  "checks": {
+    "frozen_array_hashes": 14,
+    "recorded_hashes": 41,
+    "receipt_artifact_hashes": 856,
+    "artifact_inventories": 69,
+    "recorded_source_snapshots": 1038,
+    "numerical_reconciliations": 304492,
+    "saved_prediction_archives_reconciled": 77,
+    "checkpoint_byte_hashes": 6030,
+    "complete_training_ledgers": 30,
+    "current_locked_sources": 34,
+    "current_locked_evidence": 6,
+    "adapter_sources": 1,
+    "locked_training_artifacts": 120,
+    "sampling_trace_hashes": 4824
+  },
+  "maximum_numerical_difference_w": 1.7053025658242404e-13,
+  "tolerance_w": 1e-08,
+  "sources_used": 18848,
+  "model_training": false,
+  "model_initialization": false,
+  "model_deserialization": false,
+  "model_inference": false,
+  "original_evaluation_rerun": false,
+  "saved_prediction_arithmetic_only": true,
+  "missing_or_scope_notes": 12,
+  "preservation": {
+    "pre_existing_files_checked": 19673,
+    "unchanged": 19673,
+    "mismatches": [],
+    "scope": "all pre-existing regular files excluding .git, .venv and __pycache__; SHA-256, bytes, mode, mtime; excludes atime",
+    "new_directory": "analysis/thesis_results",
+    "existing_sources_results_checkpoints_modified": false
+  },
+  "analysis_tests": {
+    "tests_run": 10,
+    "passed": 10,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0
+  },
+  "documentation_checks": {
+    "pngs_verified": 7,
+    "markdown_links_checked": 130,
+    "main_fit_identities": 48,
+    "metric_provenance_rows_checked": 866,
+    "seed_groups_recalculated": 32,
+    "checks_passed": true
+  },
+  "analysis_builder_sha256": "1884613052dfe8e1a746a720eae79cbe92eab0f0438e1ec314f829985ab00b86",
+  "analysis_scripts_sha256": {
+    "build_report.py": "1884613052dfe8e1a746a720eae79cbe92eab0f0438e1ec314f829985ab00b86",
+    "finalize_review.py": "1f36dee752c978dce5f3d875a7bba458571a3464188940e0e9acd5e7ebbff78e",
+    "test_analysis.py": "73d4e1ef78352d462af4cb5037706c4fa542f3e10939990417ee8423fb1118a2"
+  }
+}

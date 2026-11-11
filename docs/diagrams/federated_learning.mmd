@@ -1,0 +1,15 @@
+flowchart TD
+  init["Fresh seeded residual GRU; fixed baseline buffer"] --> snapshot["Immutable global round state"]
+  snapshot --> sample["Sample 98 clients without replacement"]
+  sample --> plans["v5: sample m_k rows; independent shuffle stream"]
+  plans --> copies["Every client starts from the same snapshot"]
+  copies --> local["Fresh SGD: lr 0.01, no momentum or decay"]
+  local --> check["Validate counts, fingerprints, shapes and finite values"]
+  check --> avg["Sample-count-weighted full-model FedAvg"]
+  avg --> commit["Atomic checkpoint, row trace and receipt"]
+  commit --> due{"Scheduled validation?"}
+  due -->|Yes| val["Complete validation; earliest minimum RMSE"]
+  due -->|No| next{"Round 200 complete?"}
+  val --> next
+  next -->|No| snapshot
+  next -->|Yes| export["Export validation-selected model and receipt"]

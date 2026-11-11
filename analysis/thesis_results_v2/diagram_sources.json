@@ -1,0 +1,184 @@
+{
+  "diagrams": [
+    {
+      "caption": "This describes the completed project workflow, not a command to rerun it. A target is always the next six observed ten-minute power bins. The historical and v5 panels have different accepted cohorts and protocols; their scores are not a controlled history-length comparison. Clients are compute nodes, not independent data centers. The v5 test origins occur on one already-observed evening.",
+      "name": "01_data_and_experiment_flow",
+      "section": "## 1. Scope, experiment families and compatibility",
+      "sources": [
+        "src/multinode.py::weighted_bins/node_windows/prepare_multinode",
+        "src/experiment_data.py::freeze",
+        "src/v5_missing_data/build_training_cohorts.py",
+        "src/v5_missing_data/training_data.py::CohortContext/SplitData"
+      ],
+      "title": "Data and experiment flow"
+    },
+    {
+      "caption": "B denotes batch size and T history steps. Node identity occupies one stored channel; its eight embedding values replace that channel inside the model. a = sigma_x,power / sigma_y and b = (mu_x,power - mu_y) / sigma_y. baseline_coefficients is a fixed buffer. The zero-initialized head makes the initial candidate mathematically persistence, subject to recorded float32 rounding. This is the GRU used in the matched FedAvg/central-SGD studies; the historical LSTM shares the wrapper but uses an LSTM recurrent module. No model was instantiated to draw this diagram.",
+      "name": "02_residual_gru_architecture",
+      "section": "## 2. Metrics and aggregation",
+      "sources": [
+        "src/model.py::SequenceRegressor.__init__/forward",
+        "src/experiment_models.py::neural_model",
+        "src/federated_rounds.py::initialize_model",
+        "src/v5_missing_data/run_policy_experiments.py::initialize",
+        "configs/experiments/v1/gru_masked_seed42.json",
+        "configs/experiments/v5_missing_data/gru_gap_policy_v1.json"
+      ],
+      "title": "Shared residual-GRU model architecture"
+    },
+    {
+      "caption": "This is the historical one-hour v1 comparison only. Its neural fits use Adam; XGBoost uses its own boosting settings. They are not the matched SGD/FedAvg control. XGBoost columns 0-77 are time-major numerical lags, with step 0 corresponding to 60 minutes before origin and step 5 to 10 minutes; node index 78 is categorical, not a continuous numerical magnitude or learned embedding. Weather masking zeroes temperature/humidity lag columns. Validation can retain the initial persistence candidate instead of a learned correction.",
+      "name": "03_historical_model_branches",
+      "section": "## 3. Historical LSTM, GRU and XGBoost: one-hour history",
+      "sources": [
+        "src/experiment_models.py::lag_mapping/lag_features/xgb_matrix/fit_neural/fit_xgboost",
+        "src/model.py::SequenceRegressor",
+        "configs/experiments/v1/lstm_masked_seed42.json",
+        "configs/experiments/v1/gru_masked_seed42.json",
+        "configs/experiments/v1/xgboost_masked_seed42.json"
+      ],
+      "title": "Historical LSTM, GRU and XGBoost paths"
+    },
+    {
+      "caption": "The diagram shows algorithm structure within each separately frozen protocol. Historical v2/v3 clients process one full local training pass. V5 clients process m_k sampled native-pool examples, where m_k is their no-fill reference count, and aggregate by that processed count. SGD is lr 0.01, momentum 0 and weight decay 0; batch size is 512 with the partial batch retained. Client training is simulated on one compute process; parallel boxes indicate logical clients, not actual parallel execution or protected physical sites. Validation is scheduled only at the stated candidates; unscheduled rounds still commit. Equal nominal settings do not produce identical optimization trajectories.",
+      "name": "04_fedavg_and_centralized_sgd",
+      "section": "## 4. Historical matched FedAvg versus centralized SGD: one-hour history",
+      "sources": [
+        "src/federated_rounds.py::run_rounds/train_client",
+        "src/centralized_sgd.py::plan_block/train_block/run_control",
+        "src/federated_train.py::GlobalModelState/aggregate_fedavg",
+        "src/v5_missing_data/run_policy_experiments.py::run_one/train_local",
+        "src/v5_missing_data/sampling.py::round_plan/due/select"
+      ],
+      "title": "Matched FedAvg and centralized-SGD training"
+    },
+    {
+      "caption": "Forward filling uses only the same node/channel\u2019s last original observation, resets at split cuts, never fills leading gaps, and does not renew age from an imputed value. Weather is never filled and is masked after standardization. Inputs may use causal prior-split history under that earlier split\u2019s fill state; targets cannot cross their split boundary. Native training windows are 2310256 / 2996160 / 3459118 / 3867660 for no fill / FF10 / FF20 / FF30. All validation/test batches use the no-fill view even for models trained under filled policies. This tests training-pool access at fixed sample budgets, not accuracy on recovered filled evaluation windows.",
+      "name": "05_v5_policy_cohorts",
+      "section": "## 5. Current v5 missing-data comparison: six-hour history",
+      "sources": [
+        "src/v5_missing_data/training_data.py::SplitData.batch/TrainingRegistry",
+        "src/v5_missing_data/build_training_cohorts.py::selections_for_node",
+        "src/v5_missing_data/sampling.py::round_plan",
+        "output/experiments/v5_missing_data/model_comparison/v1/cohorts/contract.json",
+        "output/experiments/v5_missing_data/model_comparison/v1/cohorts/client_budgets.json"
+      ],
+      "title": "V5 missing-data policies and fixed sampling budgets"
+    },
+    {
+      "caption": "Pooled RMSE is the square root of count-weighted mean squared node RMSE, not the mean node RMSE. Missing nodes never receive zero error. Historical and v5 cohorts remain separate. Seeds are stochastic repeats on one dataset; sample SD is not a confidence interval and nodes/windows are not assumed independent datasets. The report uses already-saved predictions and performs no new inference.",
+      "name": "06_metric_aggregation",
+      "section": "## 7. Persistence and node-level consistency",
+      "sources": [
+        "src/experiment_eval.py::metric_pair/evaluate",
+        "src/v5_missing_data/evaluate_policy_models.py::predict_and_score/evaluate_locked",
+        "analysis/thesis_results/verification.json",
+        "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/results.json"
+      ],
+      "title": "Saved-prediction metrics and seed aggregation"
+    },
+    {
+      "caption": "This flowchart documents an already-completed separation of validation selection and test reporting. It does not describe the historical test period as untouched: prior test exposure remains a limitation. For v5 there are exactly 24 locked identities; v2 manifest discovery handles historical directory naming without changing run identities. There is deliberately no arrow from test metrics back to training, checkpoint selection, seed selection or hyperparameter tuning. Rendering this document does not execute any stage shown above.",
+      "name": "07_validation_selection_and_test_lock",
+      "section": "## 8. Seed-wise main results and selected checkpoints",
+      "sources": [
+        "src/experiment_models.py::select_if_better",
+        "src/v5_missing_data/sampling.py::select",
+        "src/v5_missing_data/evaluate_policy_models_v2.py::discover_runs/preflight/make_lock/verify_lock",
+        "src/v5_missing_data/evaluate_policy_models.py::load_lock/evaluate_locked"
+      ],
+      "title": "Validation selection, test lock and report-only analysis"
+    }
+  ],
+  "inputs": {
+    "analysis/thesis_results/verification.json": {
+      "path": "analysis/thesis_results/verification.json",
+      "sha256": "818cddce54de9d07a48b14a36b2740fdc31588fd4932176ad47b495380de18d0"
+    },
+    "configs/experiments/v1/gru_masked_seed42.json": {
+      "path": "configs/experiments/v1/gru_masked_seed42.json",
+      "sha256": "9e71c485ff3f32c8497e72206a66c61efdc419a9ebd763e63416b8f2c9c75955"
+    },
+    "configs/experiments/v1/lstm_masked_seed42.json": {
+      "path": "configs/experiments/v1/lstm_masked_seed42.json",
+      "sha256": "e98229308f4e117edd76361f27b8d36031edabbd597b552af238d201fc91f512"
+    },
+    "configs/experiments/v1/xgboost_masked_seed42.json": {
+      "path": "configs/experiments/v1/xgboost_masked_seed42.json",
+      "sha256": "ea8f03005a256e76d0342df834a99ed79caf6fd776d91d8f048c219e3b01ac10"
+    },
+    "configs/experiments/v5_missing_data/gru_gap_policy_v1.json": {
+      "path": "configs/experiments/v5_missing_data/gru_gap_policy_v1.json",
+      "sha256": "ff63776db8b4be6ace0dab76572f61d426c32f3635fbb25a2280910b56120301"
+    },
+    "output/experiments/v5_missing_data/model_comparison/v1/cohorts/client_budgets.json": {
+      "path": "output/experiments/v5_missing_data/model_comparison/v1/cohorts/client_budgets.json",
+      "sha256": "9011f9684e08736b15d216bc05365ff2cff9865f4c5ec7ecaab873270abee704"
+    },
+    "output/experiments/v5_missing_data/model_comparison/v1/cohorts/contract.json": {
+      "path": "output/experiments/v5_missing_data/model_comparison/v1/cohorts/contract.json",
+      "sha256": "27f8b02411b8495926c830ba6bfbd1bc02a1ed7b21fa3c42f8c32066128574d4"
+    },
+    "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/results.json": {
+      "path": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/results.json",
+      "sha256": "ea369a30c4f32efe040f13b0f36244b0014b2a34bd218528fc484036250b1fe7"
+    },
+    "src/centralized_sgd.py": {
+      "path": "src/centralized_sgd.py",
+      "sha256": "c251cd2b9bd41d972cc10483d57ec45852cba5fcf78c608f991a78d9fc64494b"
+    },
+    "src/experiment_data.py": {
+      "path": "src/experiment_data.py",
+      "sha256": "d75e1f5b79cc0fde81245a6c13d035cfec8ac2d8360b125349a716b90459e049"
+    },
+    "src/experiment_eval.py": {
+      "path": "src/experiment_eval.py",
+      "sha256": "24030cb3b22e3eff52717877b1a74c1ae0f8b79b46bc6d525445325e05f41475"
+    },
+    "src/experiment_models.py": {
+      "path": "src/experiment_models.py",
+      "sha256": "a14ff8e32a6b052c831214e67cbb383c747b60b12cafc10c335412cd8ff25910"
+    },
+    "src/federated_rounds.py": {
+      "path": "src/federated_rounds.py",
+      "sha256": "aa449e426a12f8e4af7bfabc82f03ba196ac7dc23e5e457dbc046de6e416164a"
+    },
+    "src/federated_train.py": {
+      "path": "src/federated_train.py",
+      "sha256": "b3f77ecfb509d5e2330ce3bac38578ce9a4c43108d636288d981f1200898106a"
+    },
+    "src/model.py": {
+      "path": "src/model.py",
+      "sha256": "d6cc3265a41258152389d85ae382cf2286527494129302f049b12205e358aaad"
+    },
+    "src/multinode.py": {
+      "path": "src/multinode.py",
+      "sha256": "bd6e8d1d26af4603f01f950d91c707ede4bc0996c17ead1d35205825c8b01ee5"
+    },
+    "src/v5_missing_data/build_training_cohorts.py": {
+      "path": "src/v5_missing_data/build_training_cohorts.py",
+      "sha256": "7b1192ccf20a8b6198e893abd7e9e4e3a5ba0da7055ea99d46fb1a97770623b1"
+    },
+    "src/v5_missing_data/evaluate_policy_models.py": {
+      "path": "src/v5_missing_data/evaluate_policy_models.py",
+      "sha256": "d0392dff153d61426473b6f5b154fd388dcb137275c76e9d1e73d66b76fac526"
+    },
+    "src/v5_missing_data/evaluate_policy_models_v2.py": {
+      "path": "src/v5_missing_data/evaluate_policy_models_v2.py",
+      "sha256": "5c27a94e1d796bb801bdaf2a182f0b4a81dbb551440a6420cbb55f9b40dd2c34"
+    },
+    "src/v5_missing_data/run_policy_experiments.py": {
+      "path": "src/v5_missing_data/run_policy_experiments.py",
+      "sha256": "747451abb4dec1a8d198643ed7354887cb03f6f2dc681997a92cd50f131375e2"
+    },
+    "src/v5_missing_data/sampling.py": {
+      "path": "src/v5_missing_data/sampling.py",
+      "sha256": "2f0137c8ad2d067f4e2b56b1e19872a30681f81b972db3570cabcc6e88005bb5"
+    },
+    "src/v5_missing_data/training_data.py": {
+      "path": "src/v5_missing_data/training_data.py",
+      "sha256": "91714636bdba75a7887eb01a211d2a4eb901975b13eb811061b869e79e37c1ad"
+    }
+  },
+  "original_report_sha256": "8d50dce6b839a8fafc301cf313494df54731b763c000911f7ec93f158b354ce9"
+}

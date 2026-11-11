@@ -1,0 +1,224 @@
+{
+  "approval_record": {
+    "engineering_templates": "initial_declared_settings_require_coverage_review_and_validation_only_pilot_before_full_run",
+    "march_role": "user_confirmed_original_train_val_then_March_test",
+    "primary_features": "user_confirmed_full_inputs_weather_enabled_vs_masked_matched",
+    "training_or_test_execution_authorized": false
+  },
+  "bin_seconds": 600,
+  "cohorts": {
+    "history_matched": "intersection_of_histories_6_36_144_per_split_same_raw_targets; common_training_eligibility_then_shared_eval_clients",
+    "native_coverage": "secondary_descriptive_only_no_history_effect_attribution",
+    "primary_6h": "identical_all_method_weather_enabled_valid_training_val_test_identities_per_split"
+  },
+  "data_acceptance": {
+    "archive_integrity": null,
+    "coverage_adequacy_review": null,
+    "frozen_window_manifests": null,
+    "provenance_scope_acceptance": null,
+    "real_data_bridge_implemented": false,
+    "schema_and_units": null,
+    "test_selection_lock_created": false,
+    "training_scalers": null,
+    "two_output_training_runner_implemented": false
+  },
+  "eligibility": {
+    "minimum_days": 7,
+    "minimum_windows": 24,
+    "training_only": true
+  },
+  "excluded_interval": [
+    "2022-02-20T03:30:00Z",
+    "2022-03-01T00:00:00Z"
+  ],
+  "execution_enabled": false,
+  "feature_units": [
+    "kW",
+    "%",
+    "%",
+    "%",
+    "%",
+    "fraction",
+    "degC",
+    "degC",
+    "%",
+    "unitless",
+    "unitless",
+    "unitless",
+    "unitless",
+    "categorical index"
+  ],
+  "features": [
+    "power_kw",
+    "cpu_user",
+    "cpu_system",
+    "cpu_idle",
+    "cpu_wio",
+    "memory_used_fraction",
+    "inlet_temperature_mean_c",
+    "outdoor_temperature_c",
+    "outdoor_humidity_percent",
+    "hour_sin",
+    "hour_cos",
+    "week_sin",
+    "week_cos",
+    "node_index"
+  ],
+  "federation": {
+    "aggregation": "sample_count_weighted_full_state_float64_cpu_accumulation_cast_back",
+    "batch_size": 512,
+    "central_control": "same_initial_GRU_and_ordered_client_batches; continuing_single_model_no_averaging",
+    "client": "mapped_compute_node_simulated_one_facility",
+    "clients_per_round": 98,
+    "drop_last": false,
+    "embedding": "standard_full_table_FedAvg_including_unchanged_rows",
+    "fixed_buffers": "exact_state_schema_invariance; no_legacy_baseline_coefficients_in_nonresidual_architecture",
+    "insufficient_clients": "stop_no_min_or_replacement_fallback",
+    "learning_rate": 0.01,
+    "local_epochs": 1,
+    "local_start": "same_immutable_global_fingerprint",
+    "momentum": 0.0,
+    "optimizer": "sgd",
+    "optimizer_reset": "each_client_round_session",
+    "rng_domains": {
+      "client_sampling": 1,
+      "initialization": 0,
+      "local_shuffle": 2,
+      "xgboost_output": 3
+    },
+    "rounds": 200,
+    "sampling": "uniform_without_replacement",
+    "shuffle_seed_coordinates": [
+      "seed",
+      2,
+      "round",
+      "frozen_node_index"
+    ],
+    "validation_indices": [
+      0,
+      10,
+      20,
+      30,
+      40,
+      50,
+      60,
+      70,
+      80,
+      90,
+      100,
+      110,
+      120,
+      130,
+      140,
+      150,
+      160,
+      170,
+      180,
+      190,
+      200
+    ],
+    "weight_decay": 0.0
+  },
+  "histories_steps": [
+    6,
+    36,
+    144
+  ],
+  "horizon_steps": 6,
+  "local_binning": {
+    "deduplicate": "stable_last_in_declared_member_row_order",
+    "hold_cap_seconds": 300,
+    "minimum_coverage_fraction": 0.5
+  },
+  "mapping": {
+    "candidate_nodes": 979,
+    "march_eligible_nodes": null,
+    "retrospective_admission_limitation": true,
+    "source": "output/experiments/v5_missing_data/model_comparison/v1/cohorts/node_mapping.json",
+    "source_sha256": "ed2c7a0228a204faeeaf5a9a3100c5732f48c2432a604a23f111e6d30093d369",
+    "unknown_nodes": "report_exclude_no_silent_reindex"
+  },
+  "march_counts": null,
+  "missing_policy": "no_fill_original_observed_joint_targets",
+  "normalization": {
+    "all_methods_and_histories_within_suite_share_scaler": true,
+    "arithmetic": "float64_ddof0_then_float32",
+    "categorical_identity_channel": 13,
+    "constant_target": "stop_review_no_automatic_unit_scale",
+    "fit_split": "train",
+    "input_axes": [
+      "windows",
+      "steps"
+    ],
+    "input_floor_replacement": 1,
+    "input_std_floor": 1e-12,
+    "numeric_channels": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "population": "eligible_clients_accepted_matched_train_windows_within_each_suite",
+    "reference_history_steps": 36
+  },
+  "origin_anchor_utc": "2022-01-01T00:00:00Z",
+  "origin_stride_steps": 6,
+  "phase": "2.0_design_freeze_only",
+  "primary_history_steps": 36,
+  "prohibited_claims": [
+    "energy_savings",
+    "cooling_optimization",
+    "PUE_or_SLA_improvement",
+    "formal_privacy",
+    "physical_multi_data_center_federation",
+    "longer_history_better_without_results"
+  ],
+  "raw_hold_reset_at_each_split": true,
+  "schema": "phase2.0.protocol.v1",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "selection": "earliest_minimum_pooled_equal_output_standardized_validation_mse",
+  "split_containment": "whole_history_and_target_and_raw_contributors",
+  "splits": {
+    "test": [
+      "2022-03-01T00:00:00Z",
+      "2022-04-01T00:00:00Z"
+    ],
+    "train": [
+      "2022-01-01T00:00:00Z",
+      "2022-02-11T07:10:00Z"
+    ],
+    "val": [
+      "2022-02-11T07:10:00Z",
+      "2022-02-20T03:30:00Z"
+    ]
+  },
+  "target_units": [
+    "W",
+    "degC"
+  ],
+  "targets": [
+    "next_hour_mean_node_it_power_w",
+    "next_hour_mean_node_inlet_temperature_c"
+  ],
+  "test_period_status": "historical_March_retrospective_holdout_intended; prior_scoring_status_must_be_audited; not_untouched_confirmatory",
+  "validation_objective": "0.5*((rmse_power_W/sigma_power_train_W)**2+(rmse_temperature_C/sigma_temperature_train_C)**2)",
+  "weather_ablation": "zero_standardized_channels_7_8_only_same_enabled_eligible_windows_scalers_targets",
+  "weather_join": {
+    "maximum_age_seconds": 1800,
+    "reset_at_split_lower_edge": true,
+    "strictly_before_bin_right_edge": true
+  }
+}

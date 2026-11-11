@@ -1,0 +1,14 @@
+flowchart LR
+  raw["Jan-Feb archives and Parquet"] --> prep["Causal preprocessing and audited bins"]
+  prep --> cohort["Frozen mapping, scalers and window IDs"]
+  cohort --> local["Training-only simulated node clients"]
+  cohort --> central["Continuing centralized SGD control"]
+  local --> avg["FedAvg coordinator"]
+  avg --> val["Common validation and checkpoint selection"]
+  central --> val
+  val --> lock["Immutable selected-model lock"]
+  lock --> test["Explicit test evaluator"]
+  test --> saved["Saved predictions and provenance"]
+  saved --> reports["Saved-artifact analysis and thesis"]
+  future["PLANNED: March two-output data bridge and trainers"] -.-> val
+  reports -.-> decision["PLANNED: energy-aware decision study"]

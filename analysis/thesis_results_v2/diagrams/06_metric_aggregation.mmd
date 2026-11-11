@@ -1,0 +1,11 @@
+flowchart TD
+    saved["One fit's saved predictions, targets and persistence<br/>W; aligned by frozen node/origin identity"]
+    saved --> errors["Residual per window<br/>prediction minus observed target"]
+    errors --> pooled["Pooled MAE and RMSE<br/>Equal weight per accepted window"]
+    errors --> nodes["Group residuals by evaluated node<br/>Per-node MAE and RMSE; retain sample counts"]
+    nodes --> macro["Macro MAE = mean node MAE<br/>Macro RMSE = mean node RMSE<br/>Equal weight per evaluated node"]
+    nodes --> consistency["Paired node-level differences and distributions<br/>Retain every evaluated node, including regressions"]
+    pooled --> scores["Three individual seed scores per configuration<br/>Seeds 42, 43 and 44; same cohort"]
+    macro --> scores
+    scores --> summary["Arithmetic mean and sample SD, ddof = 1<br/>Do not average prediction vectors"]
+    summary --> report["Report each split and cohort separately<br/>Persistence comparison on matching examples"]

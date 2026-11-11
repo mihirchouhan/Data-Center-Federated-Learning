@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "diagrams": 7,
+  "mermaid_parse_and_svg_render_passed": 7,
+  "numerical_and_source_table_rows_unchanged": 415,
+  "training_executed": false,
+  "inference_executed": false,
+  "model_evaluation_executed": false,
+  "historical_report_modified": false,
+  "svg_export_normalization": "Self-close XHTML br tags for valid SVG/XML; diagram content unchanged",
+  "original_report_sha256": "8d50dce6b839a8fafc301cf313494df54731b763c000911f7ec93f158b354ce9",
+  "mermaid_renderer": "Installed VS Code Mermaid core extracted to /tmp; installed bundle unchanged; offline headless Chrome",
+  "renderer_source": "/usr/share/code/resources/app/extensions/mermaid-markdown-features/markdown-preview-out/index.js",
+  "renderer_source_sha256": "abc80e61949c2d9f792e4bed85f8a854914d34b3af8fc3635b27f945e95a895f",
+  "preservation_baseline_files": 19794,
+  "checks_scope": "Documentation and file integrity only; no previous experiment tests rerun",
+  "markdown_links_checked": 165,
+  "preservation": {
+    "pre_existing_files_checked": 19794,
+    "unchanged": 19794,
+    "mismatches": [],
+    "unexpected_files": [],
+    "scope": "SHA-256, bytes, mode and mtime_ns; excludes .git/.venv/__pycache__; atime not compared",
+    "original_report_artifacts_verified": 27,
+    "locked_source_and_evidence_hashes_verified": 41,
+    "original_frozen_array_hashes_verified": 14
+  }
+}

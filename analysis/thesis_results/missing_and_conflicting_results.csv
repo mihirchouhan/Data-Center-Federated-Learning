@@ -1,0 +1,13 @@
+kind,message,source
+missing_metric,No saved model per-node validation metrics/predictions; macro model metrics remain blank.,output/experiments/v2_fedavg/main/gru_masked_seed42b/rounds/0200/receipt.json
+missing_metric,No saved model per-node validation metrics/predictions; macro model metrics remain blank.,output/experiments/v2_fedavg/main/gru_masked_seed43/rounds/0200/receipt.json
+missing_metric,No saved model per-node validation metrics/predictions; macro model metrics remain blank.,output/experiments/v2_fedavg/main/gru_masked_seed44/rounds/0200/receipt.json
+historical_scope,Historical uncontrolled run; excluded from three-seed main rankings. No training duration was inferred from timestamps.,output/gpu1_test/results/test_summary.json
+historical_scope,Historical uncontrolled run; excluded from three-seed main rankings. No training duration was inferred from timestamps.,output/m100/results/test_summary.json
+historical_scope,Historical uncontrolled run; excluded from three-seed main rankings. No training duration was inferred from timestamps.,output/m100_all_nodes/results/test_summary.json
+historical_scope,Historical uncontrolled run; excluded from three-seed main rankings. No training duration was inferred from timestamps.,output/m100_january/results/test_summary.json
+historical_scope,Historical uncontrolled run; excluded from three-seed main rankings. No training duration was inferred from timestamps.,output/m100_run01/results/test_summary.json
+duplicate_historical_predictions,m100_all_nodes and gpu1_test have exactly equal reported test metrics; do not treat them as independent seeds or datasets. Their saved prediction vectors are compared below.,
+persistence_fallback,"Historical lstm_masked_seed44 selected candidate persistence at epoch 0. Its test RMSE is only 0.000001370395 W below physical persistence, and MAE only 0.000000914772 W below; treat this as persistence-equivalent rounding, not a learned-model gain. Strict numerical win counts retain this distinction without a post-hoc threshold.",output/experiments/v1/comparison/lstm_masked_seed44/selection.json
+resolved_legacy_log_difference,m100 final-epoch summary validation MAE/RMSE differ slightly from the last history entry. The report uses summary values reconciled with saved validation predictions; the cause of the logging difference is not inferred.,output/m100/results/summary.json
+scope_limitation,V5 selected validation metrics and node errors are saved in selected receipts; validation prediction vectors were not saved for independent vector-level recalculation. Test predictions were saved and reconciled.,output/experiments/v5_missing_data/model_comparison/v1/full_runs

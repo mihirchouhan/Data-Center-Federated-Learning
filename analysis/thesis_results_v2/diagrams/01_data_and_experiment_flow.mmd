@@ -1,0 +1,19 @@
+flowchart TD
+    trace["M100 node telemetry and outdoor weather<br/>January-February 2022"]
+    bins["Causal ten-minute bins<br/>Fixed feature definitions and observed power"]
+    trace --> bins
+    bins --> short["Historical cohort<br/>6 history steps = 1 hour"]
+    bins --> long["v5 missing-data cohort<br/>36 history steps = 6 hours"]
+    short --> historical["Frozen v1 arrays<br/>Shared chronological splits and original scalers"]
+    long --> policies["No fill / FF10 / FF20 / FF30<br/>Input filling only; split reset; no target filling"]
+    policies --> longtrain["Policy-native training pools<br/>979 compute-node client IDs"]
+    policies --> longeval["One common no-fill evaluation cohort<br/>Validation: 31448 windows / 929 nodes<br/>Test: 6590 windows / 570 nodes"]
+    historical --> oldtrain["Historical LSTM / GRU / XGBoost<br/>Separate matched FedAvg / central-SGD study"]
+    longtrain --> newtrain["v5: two algorithms x four policies x three seeds<br/>24 fits; matched processed-count budgets"]
+    newtrain --> selected["Validation-selected exports"]
+    longeval -. "validation only" .-> selected
+    selected --> lockedtest["Immutable selection lock<br/>Previously completed test reporting"]
+    longeval -. "test only after lock" .-> lockedtest
+    oldtrain --> saved["Existing saved predictions, metrics and receipts"]
+    lockedtest --> saved
+    saved --> reports["Read-only arithmetic and documentation<br/>Separate compatible cohort panels"]

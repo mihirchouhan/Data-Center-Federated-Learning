@@ -1,0 +1,330 @@
+{
+  "baselines": [
+    {
+      "history_steps": 36,
+      "method": "persistence",
+      "output_relative": "output/experiments/phase2_multioutput/v1/primary_6h/persistence_h36",
+      "suite": "primary_6h"
+    },
+    {
+      "history_steps": 6,
+      "method": "persistence",
+      "output_relative": "output/experiments/phase2_multioutput/v1/history_matched/persistence_h6",
+      "suite": "history_matched"
+    },
+    {
+      "history_steps": 36,
+      "method": "persistence",
+      "output_relative": "output/experiments/phase2_multioutput/v1/history_matched/persistence_h36",
+      "suite": "history_matched"
+    },
+    {
+      "history_steps": 144,
+      "method": "persistence",
+      "output_relative": "output/experiments/phase2_multioutput/v1/history_matched/persistence_h144",
+      "suite": "history_matched"
+    }
+  ],
+  "execution_enabled": false,
+  "fits": [
+    {
+      "history_steps": 36,
+      "id": "primary_6h_gru_enabled_h36_seed42",
+      "method": "gru_enabled",
+      "output_relative": "output/experiments/phase2_multioutput/v1/primary_6h/gru_enabled_h36_seed42",
+      "seed": 42,
+      "suite": "primary_6h"
+    },
+    {
+      "history_steps": 36,
+      "id": "primary_6h_gru_enabled_h36_seed43",
+      "method": "gru_enabled",
+      "output_relative": "output/experiments/phase2_multioutput/v1/primary_6h/gru_enabled_h36_seed43",
+      "seed": 43,
+      "suite": "primary_6h"
+    },
+    {
+      "history_steps": 36,
+      "id": "primary_6h_gru_enabled_h36_seed44",
+      "method": "gru_enabled",
+      "output_relative": "output/experiments/phase2_multioutput/v1/primary_6h/gru_enabled_h36_seed44",
+      "seed": 44,
+      "suite": "primary_6h"
+    },
+    {
+      "history_steps": 36,
+      "id": "primary_6h_gru_masked_control_h36_seed42",
+      "method": "gru_masked_control",
+      "output_relative": "output/experiments/phase2_multioutput/v1/primary_6h/gru_masked_control_h36_seed42",
+      "seed": 42,
+      "suite": "primary_6h"
+    },
+    {
+      "history_steps": 36,
+      "id": "primary_6h_gru_masked_control_h36_seed43",
+      "method": "gru_masked_control",
+      "output_relative": "output/experiments/phase2_multioutput/v1/primary_6h/gru_masked_control_h36_seed43",
+      "seed": 43,
+      "suite": "primary_6h"
+    },
+    {
+      "history_steps": 36,
+      "id": "primary_6h_gru_masked_control_h36_seed44",
+      "method": "gru_masked_control",
+      "output_relative": "output/experiments/phase2_multioutput/v1/primary_6h/gru_masked_control_h36_seed44",
+      "seed": 44,
+      "suite": "primary_6h"
+    },
+    {
+      "history_steps": 36,
+      "id": "primary_6h_lstm_enabled_h36_seed42",
+      "method": "lstm_enabled",
+      "output_relative": "output/experiments/phase2_multioutput/v1/primary_6h/lstm_enabled_h36_seed42",
+      "seed": 42,
+      "suite": "primary_6h"
+    },
+    {
+      "history_steps": 36,
+      "id": "primary_6h_lstm_enabled_h36_seed43",
+      "method": "lstm_enabled",
+      "output_relative": "output/experiments/phase2_multioutput/v1/primary_6h/lstm_enabled_h36_seed43",
+      "seed": 43,
+      "suite": "primary_6h"
+    },
+    {
+      "history_steps": 36,
+      "id": "primary_6h_lstm_enabled_h36_seed44",
+      "method": "lstm_enabled",
+      "output_relative": "output/experiments/phase2_multioutput/v1/primary_6h/lstm_enabled_h36_seed44",
+      "seed": 44,
+      "suite": "primary_6h"
+    },
+    {
+      "history_steps": 36,
+      "id": "primary_6h_xgboost_enabled_h36_seed42",
+      "method": "xgboost_enabled",
+      "output_relative": "output/experiments/phase2_multioutput/v1/primary_6h/xgboost_enabled_h36_seed42",
+      "seed": 42,
+      "suite": "primary_6h"
+    },
+    {
+      "history_steps": 36,
+      "id": "primary_6h_xgboost_enabled_h36_seed43",
+      "method": "xgboost_enabled",
+      "output_relative": "output/experiments/phase2_multioutput/v1/primary_6h/xgboost_enabled_h36_seed43",
+      "seed": 43,
+      "suite": "primary_6h"
+    },
+    {
+      "history_steps": 36,
+      "id": "primary_6h_xgboost_enabled_h36_seed44",
+      "method": "xgboost_enabled",
+      "output_relative": "output/experiments/phase2_multioutput/v1/primary_6h/xgboost_enabled_h36_seed44",
+      "seed": 44,
+      "suite": "primary_6h"
+    },
+    {
+      "history_steps": 36,
+      "id": "primary_6h_fedavg_gru_enabled_h36_seed42",
+      "method": "fedavg_gru_enabled",
+      "output_relative": "output/experiments/phase2_multioutput/v1/primary_6h/fedavg_gru_enabled_h36_seed42",
+      "seed": 42,
+      "suite": "primary_6h"
+    },
+    {
+      "history_steps": 36,
+      "id": "primary_6h_fedavg_gru_enabled_h36_seed43",
+      "method": "fedavg_gru_enabled",
+      "output_relative": "output/experiments/phase2_multioutput/v1/primary_6h/fedavg_gru_enabled_h36_seed43",
+      "seed": 43,
+      "suite": "primary_6h"
+    },
+    {
+      "history_steps": 36,
+      "id": "primary_6h_fedavg_gru_enabled_h36_seed44",
+      "method": "fedavg_gru_enabled",
+      "output_relative": "output/experiments/phase2_multioutput/v1/primary_6h/fedavg_gru_enabled_h36_seed44",
+      "seed": 44,
+      "suite": "primary_6h"
+    },
+    {
+      "history_steps": 36,
+      "id": "primary_6h_fedavg_gru_masked_h36_seed42",
+      "method": "fedavg_gru_masked",
+      "output_relative": "output/experiments/phase2_multioutput/v1/primary_6h/fedavg_gru_masked_h36_seed42",
+      "seed": 42,
+      "suite": "primary_6h"
+    },
+    {
+      "history_steps": 36,
+      "id": "primary_6h_fedavg_gru_masked_h36_seed43",
+      "method": "fedavg_gru_masked",
+      "output_relative": "output/experiments/phase2_multioutput/v1/primary_6h/fedavg_gru_masked_h36_seed43",
+      "seed": 43,
+      "suite": "primary_6h"
+    },
+    {
+      "history_steps": 36,
+      "id": "primary_6h_fedavg_gru_masked_h36_seed44",
+      "method": "fedavg_gru_masked",
+      "output_relative": "output/experiments/phase2_multioutput/v1/primary_6h/fedavg_gru_masked_h36_seed44",
+      "seed": 44,
+      "suite": "primary_6h"
+    },
+    {
+      "history_steps": 6,
+      "id": "history_matched_gru_enabled_h6_seed42",
+      "method": "gru_enabled",
+      "output_relative": "output/experiments/phase2_multioutput/v1/history_matched/gru_enabled_h6_seed42",
+      "seed": 42,
+      "suite": "history_matched"
+    },
+    {
+      "history_steps": 6,
+      "id": "history_matched_gru_enabled_h6_seed43",
+      "method": "gru_enabled",
+      "output_relative": "output/experiments/phase2_multioutput/v1/history_matched/gru_enabled_h6_seed43",
+      "seed": 43,
+      "suite": "history_matched"
+    },
+    {
+      "history_steps": 6,
+      "id": "history_matched_gru_enabled_h6_seed44",
+      "method": "gru_enabled",
+      "output_relative": "output/experiments/phase2_multioutput/v1/history_matched/gru_enabled_h6_seed44",
+      "seed": 44,
+      "suite": "history_matched"
+    },
+    {
+      "history_steps": 6,
+      "id": "history_matched_fedavg_gru_enabled_h6_seed42",
+      "method": "fedavg_gru_enabled",
+      "output_relative": "output/experiments/phase2_multioutput/v1/history_matched/fedavg_gru_enabled_h6_seed42",
+      "seed": 42,
+      "suite": "history_matched"
+    },
+    {
+      "history_steps": 6,
+      "id": "history_matched_fedavg_gru_enabled_h6_seed43",
+      "method": "fedavg_gru_enabled",
+      "output_relative": "output/experiments/phase2_multioutput/v1/history_matched/fedavg_gru_enabled_h6_seed43",
+      "seed": 43,
+      "suite": "history_matched"
+    },
+    {
+      "history_steps": 6,
+      "id": "history_matched_fedavg_gru_enabled_h6_seed44",
+      "method": "fedavg_gru_enabled",
+      "output_relative": "output/experiments/phase2_multioutput/v1/history_matched/fedavg_gru_enabled_h6_seed44",
+      "seed": 44,
+      "suite": "history_matched"
+    },
+    {
+      "history_steps": 36,
+      "id": "history_matched_gru_enabled_h36_seed42",
+      "method": "gru_enabled",
+      "output_relative": "output/experiments/phase2_multioutput/v1/history_matched/gru_enabled_h36_seed42",
+      "seed": 42,
+      "suite": "history_matched"
+    },
+    {
+      "history_steps": 36,
+      "id": "history_matched_gru_enabled_h36_seed43",
+      "method": "gru_enabled",
+      "output_relative": "output/experiments/phase2_multioutput/v1/history_matched/gru_enabled_h36_seed43",
+      "seed": 43,
+      "suite": "history_matched"
+    },
+    {
+      "history_steps": 36,
+      "id": "history_matched_gru_enabled_h36_seed44",
+      "method": "gru_enabled",
+      "output_relative": "output/experiments/phase2_multioutput/v1/history_matched/gru_enabled_h36_seed44",
+      "seed": 44,
+      "suite": "history_matched"
+    },
+    {
+      "history_steps": 36,
+      "id": "history_matched_fedavg_gru_enabled_h36_seed42",
+      "method": "fedavg_gru_enabled",
+      "output_relative": "output/experiments/phase2_multioutput/v1/history_matched/fedavg_gru_enabled_h36_seed42",
+      "seed": 42,
+      "suite": "history_matched"
+    },
+    {
+      "history_steps": 36,
+      "id": "history_matched_fedavg_gru_enabled_h36_seed43",
+      "method": "fedavg_gru_enabled",
+      "output_relative": "output/experiments/phase2_multioutput/v1/history_matched/fedavg_gru_enabled_h36_seed43",
+      "seed": 43,
+      "suite": "history_matched"
+    },
+    {
+      "history_steps": 36,
+      "id": "history_matched_fedavg_gru_enabled_h36_seed44",
+      "method": "fedavg_gru_enabled",
+      "output_relative": "output/experiments/phase2_multioutput/v1/history_matched/fedavg_gru_enabled_h36_seed44",
+      "seed": 44,
+      "suite": "history_matched"
+    },
+    {
+      "history_steps": 144,
+      "id": "history_matched_gru_enabled_h144_seed42",
+      "method": "gru_enabled",
+      "output_relative": "output/experiments/phase2_multioutput/v1/history_matched/gru_enabled_h144_seed42",
+      "seed": 42,
+      "suite": "history_matched"
+    },
+    {
+      "history_steps": 144,
+      "id": "history_matched_gru_enabled_h144_seed43",
+      "method": "gru_enabled",
+      "output_relative": "output/experiments/phase2_multioutput/v1/history_matched/gru_enabled_h144_seed43",
+      "seed": 43,
+      "suite": "history_matched"
+    },
+    {
+      "history_steps": 144,
+      "id": "history_matched_gru_enabled_h144_seed44",
+      "method": "gru_enabled",
+      "output_relative": "output/experiments/phase2_multioutput/v1/history_matched/gru_enabled_h144_seed44",
+      "seed": 44,
+      "suite": "history_matched"
+    },
+    {
+      "history_steps": 144,
+      "id": "history_matched_fedavg_gru_enabled_h144_seed42",
+      "method": "fedavg_gru_enabled",
+      "output_relative": "output/experiments/phase2_multioutput/v1/history_matched/fedavg_gru_enabled_h144_seed42",
+      "seed": 42,
+      "suite": "history_matched"
+    },
+    {
+      "history_steps": 144,
+      "id": "history_matched_fedavg_gru_enabled_h144_seed43",
+      "method": "fedavg_gru_enabled",
+      "output_relative": "output/experiments/phase2_multioutput/v1/history_matched/fedavg_gru_enabled_h144_seed43",
+      "seed": 43,
+      "suite": "history_matched"
+    },
+    {
+      "history_steps": 144,
+      "id": "history_matched_fedavg_gru_enabled_h144_seed44",
+      "method": "fedavg_gru_enabled",
+      "output_relative": "output/experiments/phase2_multioutput/v1/history_matched/fedavg_gru_enabled_h144_seed44",
+      "seed": 44,
+      "suite": "history_matched"
+    }
+  ],
+  "method_files": {
+    "fedavg_gru_enabled": "methods/fedavg_gru_enabled.json",
+    "fedavg_gru_masked": "methods/fedavg_gru_masked.json",
+    "gru_enabled": "methods/gru_enabled.json",
+    "gru_masked_control": "methods/gru_masked_control.json",
+    "lstm_enabled": "methods/lstm_enabled.json",
+    "persistence": "methods/persistence.json",
+    "xgboost_enabled": "methods/xgboost_enabled.json"
+  },
+  "note": "Prospective identities only: no data counts, actual checkpoints, training runner, launch authorization or results. H36 cross-suite duplicates may not be merged without identical future cohort/scaler receipts.",
+  "schema": "phase2.0.matrix.v1"
+}

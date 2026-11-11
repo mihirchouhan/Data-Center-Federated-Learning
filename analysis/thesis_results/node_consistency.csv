@@ -1,0 +1,17 @@
+panel,algorithm,weather,policy,nodes,split,nodes_better_mean_mae_w,nodes_better_all_seeds_mae_w,nodes_better_mean_rmse_w,nodes_better_all_seeds_rmse_w
+matched_sgd_1h,centralized_sgd,masked,original_complete_windows,979,test,571,409,810,702
+matched_sgd_1h,fedavg,masked,original_complete_windows,979,test,257,227,569,532
+v1_adam_boosting_1h,gru,enabled,original_complete_windows,979,test,670,559,800,731
+v1_adam_boosting_1h,gru,masked,original_complete_windows,979,test,693,577,806,739
+v1_adam_boosting_1h,lstm,enabled,original_complete_windows,979,test,628,512,788,713
+v1_adam_boosting_1h,lstm,masked,original_complete_windows,979,test,677,526,811,688
+v1_adam_boosting_1h,xgboost,enabled,original_complete_windows,979,test,639,600,805,785
+v1_adam_boosting_1h,xgboost,masked,original_complete_windows,979,test,654,630,818,791
+v5_missing_data_6h,centralized_sgd,masked,ff10,570,test,290,245,317,273
+v5_missing_data_6h,centralized_sgd,masked,ff20,570,test,290,248,321,275
+v5_missing_data_6h,centralized_sgd,masked,ff30,570,test,279,217,312,253
+v5_missing_data_6h,centralized_sgd,masked,no_fill,570,test,268,198,300,234
+v5_missing_data_6h,fedavg,masked,ff10,570,test,227,180,218,175
+v5_missing_data_6h,fedavg,masked,ff20,570,test,228,184,220,175
+v5_missing_data_6h,fedavg,masked,ff30,570,test,227,184,219,177
+v5_missing_data_6h,fedavg,masked,no_fill,570,test,225,182,220,179

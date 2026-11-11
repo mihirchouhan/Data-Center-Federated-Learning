@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "record": "7590061",
+  "archive": "22-03.tar",
+  "published_md5": "4c74ad95b6d837d409e24216389bb25e",
+  "displayed_size": "31.5 GB",
+  "exact_bytes": 31495884800,
+  "resolved_url": "https://zenodo.org/api/records/7590061/files/22-03.tar/content",
+  "default_mode": "dry_run",
+  "authorization_required": true,
+  "data_relative": "data/march_2022_acquisition/v1",
+  "output_relative": "output/march_2022_acquisition/v1",
+  "max_requests": 5,
+  "max_storage_bytes": 80000000000,
+  "reserve_free_bytes": 10000000000,
+  "metadata_url": "https://zenodo.org/api/records/7590061",
+  "ca_bundle": null
+}

@@ -1,0 +1,16 @@
+flowchart TD
+    x["Historical input: B x 6 x 14<br/>Weather enabled or masked; fixed frozen IDs/scalers"]
+    x --> sequence["13 numerical channels plus shared 8-value node embedding<br/>B x 6 x 21"]
+    sequence --> lstm["LSTM: two layers, hidden size 64"]
+    sequence --> gru["GRU: two layers, hidden size 64"]
+    lstm --> readout["Final time step then Linear 64 to 1<br/>Learn standardized residual correction"]
+    gru --> readout
+    x --> lags["Flatten six lags of 13 numerical features<br/>78 numerical columns; oldest to newest"]
+    x --> category["One frozen categorical node index<br/>Column 78; native categorical handling"]
+    lags --> trees["XGBoost residual regressor<br/>79 columns; no neural node embedding"]
+    category --> trees
+    x --> persistence["Fixed persistence reference<br/>Last input power in target-standardized units"]
+    readout --> sum["Residual correction plus persistence"]
+    trees --> sum
+    persistence --> sum
+    sum --> output["Inverse target scaling to W<br/>Next-hour mean node IT-power prediction"]

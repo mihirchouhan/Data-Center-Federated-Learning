@@ -1,0 +1,15 @@
+{
+  "checkpoint": null,
+  "execution_enabled": false,
+  "formula": "last_original_input_bin_power_kw*1000_and_inlet_C_for_both_next_hour_means",
+  "fresh_initialization": true,
+  "model": "persistence",
+  "seed": null,
+  "selection": "shared_protocol_joint_validation_mse",
+  "targets": [
+    "next_hour_mean_node_it_power_w",
+    "next_hour_mean_node_inlet_temperature_c"
+  ],
+  "training": null,
+  "weather": "not_applicable"
+}

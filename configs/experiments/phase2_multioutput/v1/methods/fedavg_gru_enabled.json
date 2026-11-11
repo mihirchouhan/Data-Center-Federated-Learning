@@ -1,0 +1,49 @@
+{
+  "architecture": {
+    "dropout": 0.0,
+    "feature_slots": 14,
+    "head": "Linear_64_to_2_no_residual",
+    "hidden_size": 64,
+    "layers": 2,
+    "node_embedding_dim": 8,
+    "numeric_width": 13,
+    "recurrent_input_width": 21,
+    "reduction": "last_step"
+  },
+  "central_schedule": "same_seed_ordered_client_and_batch_exposure_schedule_as_fedavg",
+  "execution_enabled": false,
+  "fresh_initialization": true,
+  "initial_candidate": "fresh_random_model_not_persistence",
+  "method": "fedavg",
+  "model": "gru",
+  "selection": "shared_protocol_joint_validation_mse",
+  "targets": [
+    "next_hour_mean_node_it_power_w",
+    "next_hour_mean_node_inlet_temperature_c"
+  ],
+  "training_protocol": "protocol.federation",
+  "validation_indices": [
+    0,
+    10,
+    20,
+    30,
+    40,
+    50,
+    60,
+    70,
+    80,
+    90,
+    100,
+    110,
+    120,
+    130,
+    140,
+    150,
+    160,
+    170,
+    180,
+    190,
+    200
+  ],
+  "weather": "enabled"
+}

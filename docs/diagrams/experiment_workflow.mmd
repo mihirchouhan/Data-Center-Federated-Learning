@@ -1,0 +1,14 @@
+flowchart TD
+  config["Locked plan and source hashes"] --> preflight["Verify inputs and unused destination"]
+  preflight --> identity["Explicit method, policy, seed and kind"]
+  identity --> run["Authorized single fit or explicit matrix"]
+  run --> commit["Round commits; validation-only selection"]
+  commit --> finish["Completion and selected-model receipts"]
+  finish --> verify["Official fit verification"]
+  verify --> discover["Evaluator v2: exactly 24 manifest identities"]
+  discover --> lock["Separate immutable selection lock"]
+  lock --> authorize{"Test inference authorized?"}
+  authorize -->|No| stop["Stop before opening test examples"]
+  authorize -->|Yes| test["Evaluate locked models on common test IDs"]
+  test --> inventory["Verify output inventory and hashes"]
+  inventory --> report["Saved-artifact analysis"]

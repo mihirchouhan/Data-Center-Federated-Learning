@@ -1,0 +1,13 @@
+flowchart TD
+  question["Research question"] --> evidence["Inspect evidence and integrity"]
+  evidence --> design["Versioned protocol and budget"]
+  design --> coverage["Audit coverage, semantics and leakage"]
+  coverage --> gate{"Inputs and protocol approved?"}
+  gate -->|No| blocked["Stop and preserve evidence"]
+  gate -->|Yes| synthetic["Synthetic checks and separate pilot approval"]
+  synthetic --> pilot["Authorized validation-only pilot"]
+  pilot --> fits["Separately authorized fits"]
+  fits --> selected["Validation selection and immutable lock"]
+  selected --> eval["Separately authorized test reporting"]
+  eval --> report["Provenance, limitations and thesis"]
+  report -.-> later["PLANNED: history and decision studies"]
