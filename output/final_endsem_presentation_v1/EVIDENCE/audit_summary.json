@@ -1,0 +1,12 @@
+{
+  "report_artifacts_checked": 109,
+  "prior_content_comparisons": 647,
+  "fresh_expected_pass": 638,
+  "known_unrepaired_failures": 9,
+  "all_match_prior_observation": true,
+  "source_bindings": 279,
+  "paper_sha256": "c081a18f0a7ac2ea920698904734f667981fe2f707fbb5d1d869efe8ec4d8aef",
+  "midsemester_deck": "NOT FOUND in repository, Project roots, Downloads, Documents, attachments and /tmp search",
+  "no_model_execution": true,
+  "whole_tree_metadata_before_count": 174893
+}

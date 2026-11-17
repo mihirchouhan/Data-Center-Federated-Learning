@@ -1,0 +1,3 @@
+Method,Pooled MAE (W),Pooled RMSE (W),Macro-node MAE (W)
+"Shared LSTM, seed 42",27.934199,54.883981,27.689106
+Same-window persistence,30.926903,64.417454,30.703514

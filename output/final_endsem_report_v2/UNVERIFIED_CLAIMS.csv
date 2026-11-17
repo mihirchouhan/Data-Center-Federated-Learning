@@ -1,0 +1,20 @@
+claim_id,claim,status,evidence,report_treatment
+Q01,T7 narrative clean RMSE44.97 W,Contradicted,T7_RESULTS_PER_CONDITION.csv and SUMMARY give57.5502 W,"Use CSV-backed RMSE, preserve original narrative"
+Q02,New history preflight all979clients meet>=1024 windows,Contradicted,CLIENT_ELIGIBILITY: all False; counts12–985,Mark readiness unresolved; do not change threshold
+Q03,New T1.1/T1.2 execution provenance verified/frozen,Unverified / failed bindings,Nine actual SHA-256 mismatches in their new manifests,Retain failures; no hash regeneration
+Q04,Three-way common windows exist only underFF30,Contradicted,Positive no-fill/FF10/FF20 intersections in common CSV,"FF30 is largest here, not uniquely nonempty"
+Q05,Late-February Ganglia daemon crash proven,Not verified,Channel gaps do not identify operator/software cause,Describe measured telemetry gaps only
+Q06,T4winner and proposed history runner have identicalMSEloss,Contradicted,T4L1; new runner/config MSELoss,Require explicit scientific decision before execution
+Q07,T7 tests21/21passed,Not verified,Current test source has4test_* methods; no supported21-test log found,No fresh test execution; constructor accesses actual data
+Q08,Burst blocks never overlap,Contradicted by implementation,Unique start positions can produce overlapping spans,Call it sampled-start burst masking; report requested versus realized rates
+Q09,"T7 missingness audit denominator7,138,530 window elements",Contradicted,"CSV:7,154,532 node-grid/channel values",Distinguish grid accounting from windows
+Q10,Random real-world loss predominates / FF30 solves packet loss,Not evaluated,"Synthetic generator, one fixed mask per condition",Limit to this synthetic stress study
+Q11,Power blackout predicts exactly the training mean,Too strong,Source adds learned residual to mean-anchor fallback,Separate anchor from final prediction
+Q12,T6 establishes a universal Pareto winner includingTransformer,Not supported,No Transformer result in verified matrix; LSTM lower RMSE in some views,Restrict to actual models/metrics and measured resources
+Q13,New residual history memory/runtime estimates guarantee negligibleOOMrisk,Not verified,Numbers reused from different older1-layer runs,Label estimates; no execution readiness inferred
+Q14,T7 audit proves prior T5/T6 contents unaltered,Overstated,audit_t7_integrity.py checks existence of three prior artifacts,Use actual byte checks separately; no blanket audit claim
+Q15,All T7 predictions/identities independently replayed,Not verified,Saved metrics/counters; no frozen prediction archive replay in this task,Counts/code intention do not prove ordered prediction equality
+Q16,Named uploaded base paper byte-identical to reviewedPDF,Not verified,Uploaded copy unavailable; cached officialv3 hash matches prior identity,Keep documented official-PDF substitution
+Q17,Historical semantic reproduction or preflight repaired,Not established,Historical preflight FAILED; reproduction UNKNOWN,Preserve status; report adds no approval
+Q18,Energy/SLA/PUE/cooling benefits or operational control demonstrated,Not evaluated,Forecast errors and proposed decisions only,"No savings,service or deployed-control claims"
+Q19,New audit historical FF10 validation:146 common windows across979 common nodes,Contradicted by counting bound,Three COMMON_COHORT rows have common_nodes979 > common_windows146,Do not use those historical node counts; retain source inconsistency

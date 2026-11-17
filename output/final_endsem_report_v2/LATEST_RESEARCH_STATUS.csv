@@ -1,0 +1,10 @@
+category,component_or_scope,evidence,qualification
+Completed and verified,Stored outcomes and byte/summary checks passed with stated limits,Legacy; v1; v2/v3; v5; B1 FedAvg; T4/T5/T6,No semantic/model replay; each track stays separate
+Completed and verified,T7 saved evaluation metrics/hash/summary verification only,"99 records, 33 groups; 3 frozen models",RMSE narrative and test-count claims require qualification
+Implemented but not executed,B1 centralized March evaluation adapter,Implementation exists; default scoring outputs not verified present,Three B1 centralized fits complete; no verified central March evaluation
+Executed but not fully evaluated,B1 centralized fits selected200/190/190,Three-seed matrix complete; March evaluator adapter exists,Centralized March scoring output not verified present
+Executed but not fully evaluated,New coverage and preflight,Saved population counts; 979 active clients,0 satisfy its1024-window predicate; 9 manifest bindings fail; exact replay not run
+Currently ongoing,New two-layer residual-history benchmark: external partial H6/seed42 fit,Fixed progress-log snapshot; runtime directory appeared during review,No final scores; not launched/controlled by this task; no full matrix completion verified
+Planned or proposed,FedProx; participation sensitivity; further temporal studies,Roadmap and source inventory,No matching completed matrices found
+Not implemented,Validated action-response simulator and energy/SLA policy evaluation,No matching executable/result found,Not a claim that such work is impossible
+Unknown or unverifiable,Historical semantic reproduction; daemon outage cause; claimed21 T7 test passes,Historic preflight FAILED; current T7 file has4 test methods,No model/test execution performed here

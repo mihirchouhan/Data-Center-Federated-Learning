@@ -1,0 +1,209 @@
+[2026-11-17 19:47:58] ================================================================================
+[2026-11-17 19:47:58] TASK T1.2: CONTROLLED HISTORY-LENGTH BENCHMARK INITIALIZATION
+[2026-11-17 19:47:58] Output Directory: /media/csedept/cse2014/Project/m100_training_template/output/experiments/t1_2_controlled_history_benchmark_v1
+[2026-11-17 19:47:59] Execution Device: cuda:1
+[2026-11-17 19:47:59] Rounds: 200 | Clients/Round: 98 | LR: 0.001
+[2026-11-17 19:47:59] ================================================================================
+[2026-11-17 19:47:59] Loading memory-mapped Candidate 1 telemetry arrays...
+[2026-11-17 19:48:00] Discovering Secondary Option A No-Fill test origins...
+[2026-11-17 19:48:00] Option A Test Discovery: 50,392 windows across 635 active nodes
+[2026-11-17 19:48:00] Computing training residual moments on [0, 3024)...
+[2026-11-17 19:48:01] Training Residual Moments: mu_r = 0.00005242 kW (0.0524 W), sigma_r = 0.06295236 kW (62.9524 W)
+[2026-11-17 19:48:01] Training Power Moments: y_mean = 0.656216 kW (656.22 W), y_std = 0.176574 kW (176.57 W)
+[2026-11-17 19:48:01] 
+================================================================================
+[2026-11-17 19:48:01] PRE-FLIGHT RESIDUAL-ANCHOR IDENTITY VERIFICATION
+[2026-11-17 19:48:01] ================================================================================
+[2026-11-17 19:48:01] Auditing residual-anchor across H=6, 36, 144 on train...
+[2026-11-17 19:48:10]   [PASS] train: 100% bitwise identity verified across all 394,100 windows (979 nodes)
+[2026-11-17 19:48:10] Auditing residual-anchor across H=6, 36, 144 on val...
+[2026-11-17 19:48:14]   [PASS] val: 100% bitwise identity verified across all 157,484 windows (929 nodes)
+[2026-11-17 19:48:14] Auditing residual-anchor across H=6, 36, 144 on test (primary)...
+[2026-11-17 19:48:18]   [PASS] test (primary): 100% bitwise identity verified across all 243,138 windows (978 nodes)
+[2026-11-17 19:48:18] Auditing residual-anchor across H=6, 36, 144 on test (option_a)...
+[2026-11-17 19:48:19]   [PASS] test (option_a): 100% bitwise identity verified across all 50,392 windows (635 nodes)
+[2026-11-17 19:48:19] Pre-flight Residual Anchor Identity Verification: CERTIFIED IDENTICAL.
+[2026-11-17 19:48:19] 
+================================================================================
+[2026-11-17 19:48:19] BENCHMARK TRACK: 1-HOUR HISTORY (H=6 BINS)
+[2026-11-17 19:48:19] ================================================================================
+[2026-11-17 19:48:19] 
+--- Pre-extracting In-Memory Datasets for H=6 (1.0h history) ---
+[2026-11-17 19:48:20] Pre-extraction complete in 0.8s: Train=394,100 win (979 nodes), Val=157,484 win, Primary Test=243,138 win, Option A Test=50,392 win
+[2026-11-17 19:48:20] 
+>>> STARTING FIT: H=6 (1h), Seed 42 <<<
+================================================================================
+🚀 STARTING FEDERATED TRAINING: [T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Device: cuda:1 | Total Rounds: 200 | Clients/Round: 98
+Started At: 2026-11-17 19:48:20 UTC
+================================================================================
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 001/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 1.09225
+Round completed | Val MAE: 31.26 W (Best: R001 31.26 W)
+Time: 7.4s | Elapsed: 00:00:07 | ETA: 00:24:35
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 002/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 1.01547
+Round completed | Val MAE: 32.24 W
+Time: 7.0s | Elapsed: 00:00:14 | ETA: 00:23:43
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 003/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 1.02563
+Round completed | Val MAE: 33.15 W
+Time: 7.0s | Elapsed: 00:00:21 | ETA: 00:23:23
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 004/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.85626
+Round completed | Val MAE: 34.03 W
+Time: 6.9s | Elapsed: 00:00:28 | ETA: 00:23:05
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 005/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.91727
+Round completed | Val MAE: 34.18 W
+Time: 6.6s | Elapsed: 00:00:35 | ETA: 00:22:41
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 006/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.85833
+Round completed | Val MAE: 34.31 W
+Time: 6.0s | Elapsed: 00:00:41 | ETA: 00:22:04
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 007/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.85198
+Round completed | Val MAE: 35.06 W
+Time: 4.6s | Elapsed: 00:00:46 | ETA: 00:20:57
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 008/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.86636
+Round completed | Val MAE: 35.01 W
+Time: 4.3s | Elapsed: 00:00:50 | ETA: 00:19:58
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 009/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.84488
+Round completed | Val MAE: 34.94 W
+Time: 6.0s | Elapsed: 00:00:56 | ETA: 00:19:46
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 010/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.84729
+Round completed | Val MAE: 35.17 W
+Time: 7.3s | Elapsed: 00:01:03 | ETA: 00:20:01
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 011/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.84901
+Round completed | Val MAE: 34.49 W
+Time: 7.0s | Elapsed: 00:01:10 | ETA: 00:19:46
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 012/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.88454
+Round completed | Val MAE: 34.81 W
+Time: 6.7s | Elapsed: 00:01:17 | ETA: 00:19:36
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 013/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.94756
+Round completed | Val MAE: 35.26 W
+Time: 7.5s | Elapsed: 00:01:25 | ETA: 00:19:39
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 014/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.88211
+Round completed | Val MAE: 35.14 W
+Time: 6.9s | Elapsed: 00:01:31 | ETA: 00:19:33
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 015/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.82572
+Round completed | Val MAE: 35.33 W
+Time: 7.2s | Elapsed: 00:01:39 | ETA: 00:19:37
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 016/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.98751
+Round completed | Val MAE: 35.54 W
+Time: 6.7s | Elapsed: 00:01:45 | ETA: 00:19:43
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 017/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.88590
+Round completed | Val MAE: 35.02 W
+Time: 6.6s | Elapsed: 00:01:52 | ETA: 00:20:13
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 018/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.85262
+Round completed | Val MAE: 35.08 W
+Time: 6.6s | Elapsed: 00:01:59 | ETA: 00:20:47
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 019/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.81611
+Round completed | Val MAE: 35.15 W
+Time: 7.6s | Elapsed: 00:02:06 | ETA: 00:21:10
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 020/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.82588
+Round completed | Val MAE: 35.48 W
+Time: 6.5s | Elapsed: 00:02:13 | ETA: 00:20:48
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 021/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.86732
+Round completed | Val MAE: 35.87 W
+Time: 6.8s | Elapsed: 00:02:19 | ETA: 00:20:38
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 022/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 1.02145
+Round completed | Val MAE: 36.52 W
+Time: 6.8s | Elapsed: 00:02:26 | ETA: 00:20:33
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 023/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.96773
+Round completed | Val MAE: 36.10 W
+Time: 7.3s | Elapsed: 00:02:34 | ETA: 00:20:22
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 024/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.92474
+Round completed | Val MAE: 36.79 W
+Time: 7.0s | Elapsed: 00:02:41 | ETA: 00:20:16
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 025/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.83787
+Round completed | Val MAE: 36.30 W
+Time: 7.1s | Elapsed: 00:02:48 | ETA: 00:20:07
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 026/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.77354
+Round completed | Val MAE: 36.15 W
+Time: 7.0s | Elapsed: 00:02:55 | ETA: 00:20:05
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 027/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.79453
+Round completed | Val MAE: 36.08 W
+Time: 6.5s | Elapsed: 00:03:01 | ETA: 00:19:56
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 028/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.91883
+Round completed | Val MAE: 36.14 W
+Time: 7.0s | Elapsed: 00:03:08 | ETA: 00:19:57
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 029/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.89051
+Round completed | Val MAE: 36.20 W
+Time: 6.8s | Elapsed: 00:03:15 | ETA: 00:19:35
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 030/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.80790
+Round completed | Val MAE: 36.40 W
+Time: 7.8s | Elapsed: 00:03:23 | ETA: 00:19:51
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 031/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.89993
+Round completed | Val MAE: 36.26 W
+Time: 7.6s | Elapsed: 00:03:30 | ETA: 00:19:58
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 032/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.83370
+Round completed | Val MAE: 36.47 W
+Time: 7.7s | Elapsed: 00:03:38 | ETA: 00:20:05
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 033/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.96011
+Round completed | Val MAE: 36.99 W
+Time: 7.6s | Elapsed: 00:03:46 | ETA: 00:20:04
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 034/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.94576
+Round completed | Val MAE: 37.50 W
+Time: 7.0s | Elapsed: 00:03:53 | ETA: 00:19:57

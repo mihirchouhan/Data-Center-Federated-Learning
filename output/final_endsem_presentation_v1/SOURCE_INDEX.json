@@ -1,0 +1,262 @@
+[
+  {
+    "id": "REPORT",
+    "path": "output/final_endsem_report_v2/FINAL_PROJECT_REPORT.md",
+    "bytes": 101633,
+    "sha256": "3ce9c4e0748e1aa5ab2c6525c250225a83ccc8602b5d455ecd1823d4941ade82",
+    "kind": "md"
+  },
+  {
+    "id": "REGISTRY",
+    "path": "output/final_endsem_report_v2/EXPERIMENT_STATUS_REGISTER.csv",
+    "bytes": 50775,
+    "sha256": "e4bdcf1efea3d0b2bec564b7a8d98508601dd45355542e73dc163839aaad92c3",
+    "kind": "csv"
+  },
+  {
+    "id": "ARCHITECTURE",
+    "path": "docs/Architecture.md",
+    "bytes": 7313,
+    "sha256": "e5f7a3946ead21e9810133dfc586deb1987aa3a20434bc33e3de857206a84c87",
+    "kind": "md"
+  },
+  {
+    "id": "PREPROCESS",
+    "path": "src/preprocess.py",
+    "bytes": 21581,
+    "sha256": "a0567a07f8cef60f7df85e03da34646c0a47ef97a465680fdb021701c6918d64",
+    "kind": "py"
+  },
+  {
+    "id": "FEATURES",
+    "path": "src/experiment_data.py",
+    "bytes": 7936,
+    "sha256": "d75e1f5b79cc0fde81245a6c13d035cfec8ac2d8360b125349a716b90459e049",
+    "kind": "py"
+  },
+  {
+    "id": "COMPARISON",
+    "path": "output/final_endsem_report_v2/BASE_PAPER_VS_OUR_RESEARCH_COMPARISON.md",
+    "bytes": 13123,
+    "sha256": "c29700d098fd7406df89db85a0d3966b400b6ecbbfa65206e3d7fd4b538e00a3",
+    "kind": "md"
+  },
+  {
+    "id": "REPORT_VALIDATION",
+    "path": "output/final_endsem_report_v2/REPORT_VALIDATION.md",
+    "bytes": 14219,
+    "sha256": "b6a0606fb2c4c29018f6449b4275838c8e2a38518a7e43647a39c3c9a34809d8",
+    "kind": "md"
+  },
+  {
+    "id": "B1_PREP",
+    "path": "output/march_window_audit/b1_real_data_preparation_execution_v1/REPORT.md",
+    "bytes": 7476,
+    "sha256": "ffb237a6c1fc2aa372036b37b205752452fefca218298ddaf9b01671a0414855",
+    "kind": "md"
+  },
+  {
+    "id": "B1_MODEL",
+    "path": "src/b1_model_adapter_v1.py",
+    "bytes": 8152,
+    "sha256": "1336041595752e7694c53256884d7e3acfbd6ae0c0c8072a60e49235ea3d7410",
+    "kind": "py"
+  },
+  {
+    "id": "B1_RUNNER",
+    "path": "src/b1_real_fedavg_runner_v1.py",
+    "bytes": 36535,
+    "sha256": "7b095fdf07bea23358f13c6cf2f351e1ce8b29a8e813b08e69cc5b5925b29c7c",
+    "kind": "py"
+  },
+  {
+    "id": "FEDAVG",
+    "path": "src/b1_fedavg_orchestration_v1.py",
+    "bytes": 18225,
+    "sha256": "456b65ae1e79cf5456eea661c4cbd1d0eb5f6addb00b8ee723ce3817e22eef1e",
+    "kind": "py"
+  },
+  {
+    "id": "B1_EVAL",
+    "path": "output/experiments/b1_no_ff/march_test_evaluation_v2/metrics.json",
+    "bytes": 333527,
+    "sha256": "bc836f2a8f4b76564660e75f05d2be1c118d5804e3c18bbde4c6e1a484d04193",
+    "kind": "json"
+  },
+  {
+    "id": "B1_PERSIST",
+    "path": "output/experiments/b1_no_ff/march_persistence_comparison_v1/persistence_metrics.csv",
+    "bytes": 316,
+    "sha256": "3e739b19657d13835568440876da94609fd6744276cf60dbdb8126baa392bcb6",
+    "kind": "csv"
+  },
+  {
+    "id": "B1_LOCK",
+    "path": "output/march_window_audit/b1_model_selection_lock_v1/selection_lock.json",
+    "bytes": 52677,
+    "sha256": "ceb3f469e84fb4beb1de5fc34cef70d1cc626fbc4ae5b96711ce1a8c3e67ebc4",
+    "kind": "json"
+  },
+  {
+    "id": "B1_CENTRAL_STATUS",
+    "path": "output/experiments/b1_no_ff/centralized_sgd_control_v2/runs/matrix_completed.json",
+    "bytes": 453,
+    "sha256": "bf5e7827c70a669a38dc3ec279ff00db84a4df84559cba5e66e03d69d278f5fa",
+    "kind": "json"
+  },
+  {
+    "id": "LEGACY",
+    "path": "output/m100_all_nodes/results/test_summary.json",
+    "bytes": 443,
+    "sha256": "a4c88079798f7f9e720e0bbc5f64c70f90b4ae3189193220f03c46a6bd69f255",
+    "kind": "json"
+  },
+  {
+    "id": "V5",
+    "path": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/completed.json",
+    "bytes": 8498,
+    "sha256": "27ec7ee81b2d9b004c85ee9d119cb33e3174c7fb89c44ccf6354bdb94dfee88b",
+    "kind": "json"
+  },
+  {
+    "id": "V5_SEEDS",
+    "path": "output/final_endsem_report_v2/EVIDENCE/v5_seedwise_metrics.csv",
+    "bytes": 5012,
+    "sha256": "a511f966a3ceff1fbac41f8be1e84c816f72eab3c0526844f331a317c20f3adf",
+    "kind": "csv"
+  },
+  {
+    "id": "T4",
+    "path": "output/experiments/t4_model_improvement_v1/T4_FINAL_REPORT.md",
+    "bytes": 18275,
+    "sha256": "e6d1b13fe7f4e54ed871f3b1c859cfe055ab7e1b138101b4ce989a09edb49ef0",
+    "kind": "md"
+  },
+  {
+    "id": "T4_CONFIG",
+    "path": "output/experiments/t4_model_improvement_v1/config.json",
+    "bytes": 909,
+    "sha256": "69576dba7d2fe1611ec8b8c91bea5dcdee019ffc31a4e5bea00012a4d357fda7",
+    "kind": "json"
+  },
+  {
+    "id": "T4_SOURCE",
+    "path": "src/t4_model_improvement_v1.py",
+    "bytes": 48561,
+    "sha256": "8ed20f5527955735e5e6cdfa11a596061e6a17c12e7d9698e3e17411608d751e",
+    "kind": "py"
+  },
+  {
+    "id": "T4_SEEDS",
+    "path": "output/experiments/t4_model_improvement_v1/final_results_by_seed.csv",
+    "bytes": 2053,
+    "sha256": "2c0cc86ded7f8eeb7865587e6b9a987983e6c82c752988288160cdad42067ede",
+    "kind": "csv"
+  },
+  {
+    "id": "T4_AUDIT",
+    "path": "output/experiments/t4_model_improvement_v1/T4_INTEGRITY_AUDIT.md",
+    "bytes": 14153,
+    "sha256": "34b6634efabc9823ecae1333ce332d3e4c55f9f8bb7560473a38bbce880c16bd",
+    "kind": "md"
+  },
+  {
+    "id": "T4_MANIFEST",
+    "path": "output/experiments/t4_model_improvement_v1/T4_ARTIFACT_MANIFEST.md",
+    "bytes": 10749,
+    "sha256": "c702f85f0022efe851f6e6824822efed787828208fcd9ee54051a2a350d69447",
+    "kind": "md"
+  },
+  {
+    "id": "HISTORY",
+    "path": "output/experiments/history_length_comparison_v1/multiseed_ff30_analysis/per_node_metrics_by_seed.csv",
+    "bytes": 226323,
+    "sha256": "b67bb25034c10ab1b708241dafd9c5f2b41a8b528c318dacf8c12cb232f74532",
+    "kind": "csv"
+  },
+  {
+    "id": "HISTORY_SEEDS",
+    "path": "output/final_endsem_report_v2/EVIDENCE/history_seedwise_metrics.csv",
+    "bytes": 1103,
+    "sha256": "3272e6049db196a85d3616a9e411abd2f2dd4e3c5e38f63827bed28ee9377f4c",
+    "kind": "csv"
+  },
+  {
+    "id": "NEW_STATUS",
+    "path": "output/final_endsem_report_v2/EVIDENCE/UPDATE_V2/current_execution_observation.json",
+    "bytes": 1018,
+    "sha256": "9b85bab601d2fd7efdc36afd4a2a26dfe81551a6528b379805f921de4446b0ee",
+    "kind": "json"
+  },
+  {
+    "id": "FAILED_BINDINGS",
+    "path": "output/final_endsem_report_v2/TABLES/FAILED_NEW_MANIFEST_BINDINGS.csv",
+    "bytes": 2232,
+    "sha256": "373d37afda68ccd43e56021753c5ad129079d83942ee26aebf47ed599b63dfb0",
+    "kind": "csv"
+  },
+  {
+    "id": "T5",
+    "path": "output/experiments/t5_weather_ablation_v1/T5_RESULTS_PER_SEED.csv",
+    "bytes": 10806,
+    "sha256": "69349902eb651872aa54ebf44c7f3a87efaab82488668c395e421545fda52a3b",
+    "kind": "csv"
+  },
+  {
+    "id": "T6",
+    "path": "output/experiments/t6_architecture_benchmark_v1/T6_RESULTS_PER_SEED.csv",
+    "bytes": 13740,
+    "sha256": "082b32aa8a56c852ea37865e72a27e49ada54d6d334848378e68006d5242b7dc",
+    "kind": "csv"
+  },
+  {
+    "id": "LATE_RESULTS",
+    "path": "output/final_endsem_report_v2/EVIDENCE/late_results.json",
+    "bytes": 92967,
+    "sha256": "a7b18132f169c599c44df212047d19b4cc9dad994440699a375d847833d963ad",
+    "kind": "json"
+  },
+  {
+    "id": "T7",
+    "path": "output/experiments/t7_missing_telemetry_robustness_v1/T7_RESULTS_PER_CONDITION.csv",
+    "bytes": 30533,
+    "sha256": "aa52eeda39f9fbbdbb434dcd259143786c0470db61f44bbed6855760ef518892",
+    "kind": "csv"
+  },
+  {
+    "id": "T7_SUMMARY",
+    "path": "output/final_endsem_report_v2/TABLES/T7_ALL_CONDITIONS.csv",
+    "bytes": 11111,
+    "sha256": "d6bfe28701c7b37bb91f560f5840768f6debbc879471202918a731e91d078564",
+    "kind": "csv"
+  },
+  {
+    "id": "T7_NODES",
+    "path": "output/experiments/t7_missing_telemetry_robustness_v1/T7_PER_NODE_RESULTS.csv",
+    "bytes": 1254843,
+    "sha256": "db1b085a2deb3ee31e367219af7d52b1318757dd92c880f6f7ec85c68387608b",
+    "kind": "csv"
+  },
+  {
+    "id": "T7_SOURCE",
+    "path": "src/t7_missing_telemetry_robustness_v1.py",
+    "bytes": 48745,
+    "sha256": "8306ecb562a6c0533a84087f54c8193526ffa3276a165190d3353a4a8346e203",
+    "kind": "py"
+  },
+  {
+    "id": "PAPER",
+    "path": "https://arxiv.org/pdf/2511.00623v3",
+    "local_read_copy": "/tmp/endsem_report_work_v1/base_paper_arxiv_v3.pdf",
+    "bytes": 1069514,
+    "sha256": "c081a18f0a7ac2ea920698904734f667981fe2f707fbb5d1d869efe8ec4d8aef",
+    "kind": "official PDF; original uploaded copy not found"
+  },
+  {
+    "id": "AUDIT",
+    "path": "EVIDENCE/audit_summary.json",
+    "bytes": 480,
+    "sha256": "a7504c47f16878be9966c7663edbc9f28c11b41abe577b928ccfffc612186ebc",
+    "kind": "new presentation scoped byte verification"
+  }
+]

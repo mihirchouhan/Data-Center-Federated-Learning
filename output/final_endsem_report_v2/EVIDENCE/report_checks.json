@@ -1,0 +1,184 @@
+{
+  "checks": [
+    {
+      "check": "no project output collision",
+      "pass": true,
+      "detail": "Destination must remain absent before atomic publication"
+    },
+    {
+      "check": "560 bound source/artifact content checks",
+      "pass": true,
+      "detail": "Actual SHA-256 values compared with existing evidence; no deserialization"
+    },
+    {
+      "check": "T4 22 manifest file hashes",
+      "pass": true,
+      "detail": "Actual bytes checked"
+    },
+    {
+      "check": "T4 six checkpoint hashes",
+      "pass": true,
+      "detail": "Bytes only, no checkpoint loading"
+    },
+    {
+      "check": "v5 all identities exactly expected",
+      "pass": true,
+      "detail": "2 methods \u00d7 4 policies \u00d7 3 seeds"
+    },
+    {
+      "check": "v5 same targets and ordered identities",
+      "pass": true,
+      "detail": "Digests stored in metrics; actual evaluation artifact byte bindings checked separately"
+    },
+    {
+      "check": "v5 12/12 central lower pooled errors",
+      "pass": true,
+      "detail": "12 paired comparisons, 24 inequalities; not independent datasets"
+    },
+    {
+      "check": "B1 8 mean/sample-SD summary equalities",
+      "pass": true,
+      "detail": "Recomputed from seed metric scores only"
+    },
+    {
+      "check": "B1 test identity common",
+      "pass": true,
+      "detail": "Identical recorded digest in all three metric records"
+    },
+    {
+      "check": "B1 194212 windows / 976 nodes",
+      "pass": true,
+      "detail": "Counts of saved metric records, not raw-preparation replay"
+    },
+    {
+      "check": "history exactly nine FF30 fit records",
+      "pass": true,
+      "detail": "Actual fit result JSON plus analysis CSV"
+    },
+    {
+      "check": "T4 exactly 18 metric rows",
+      "pass": true,
+      "detail": "2 methods \u00d7 3 seeds \u00d7 3 nested period views"
+    },
+    {
+      "check": "T4 saved reconciliation rows PASS",
+      "pass": true,
+      "detail": "Stored audit result only; audit tool not rerun"
+    },
+    {
+      "check": "T4 node count scope",
+      "pass": true,
+      "detail": "Seed42 only; explicit source condition at src/t4_model_improvement_v1.py:847"
+    },
+    {
+      "check": "559 claim rows have actual source hash",
+      "pass": true,
+      "detail": "All source paths exist; including late T5/T6 evidence"
+    },
+    {
+      "check": "main claim identifiers resolve",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "no unexpanded table placeholders",
+      "pass": true,
+      "detail": "All eight result/schema tables expanded"
+    },
+    {
+      "check": "seven comparison tables and interpretations",
+      "pass": true,
+      "detail": "Full 25-dimension comparison in chapter12"
+    },
+    {
+      "check": "main approximate requested word count",
+      "pass": true,
+      "detail": {
+        "words_whitespace": 12006,
+        "note": "Includes table cells, references and Mermaid labels; approximately 12000 words"
+      }
+    },
+    {
+      "check": "figure output complete",
+      "pass": true,
+      "detail": "PNG+SVG; 2 editable Mermaid sources"
+    },
+    {
+      "check": "figure links exist",
+      "pass": true,
+      "detail": "Eight main-report image references checked"
+    },
+    {
+      "check": "balanced code fences",
+      "pass": true,
+      "detail": "Mermaid included"
+    },
+    {
+      "check": "paper TableIII rounding",
+      "pass": true,
+      "detail": "Arithmetic on published costs only"
+    },
+    {
+      "check": "paper runtime ratio",
+      "pass": true,
+      "detail": "Approximate published end-to-end workflow times"
+    },
+    {
+      "check": "pre-existing metadata preservation",
+      "pass": false,
+      "detail": {
+        "checked": 174672,
+        "mismatches": [
+          {
+            "path": "output/experiments/t6_architecture_benchmark_v1/fedavg_lstm_seed43_progress.csv",
+            "fields": {
+              "bytes": {
+                "before": 14384,
+                "after": 15450
+              },
+              "mtime_ns": {
+                "before": 1794907998456374261,
+                "after": 1794908066893344456
+              }
+            }
+          },
+          {
+            "path": "output/experiments/t6_architecture_benchmark_v1/progress.log",
+            "fields": {
+              "bytes": {
+                "before": 73929,
+                "after": 115198
+              },
+              "mtime_ns": {
+                "before": 1794907998454374437,
+                "after": 1794909331227059835
+              }
+            }
+          }
+        ],
+        "fields": "bytes,mtime_ns,mode,inode,device; atime excluded"
+      }
+    },
+    {
+      "check": "270 code/config/doc text hashes unchanged",
+      "pass": true,
+      "detail": {
+        "mismatches": []
+      }
+    },
+    {
+      "check": "116 inspected result-source hashes unchanged",
+      "pass": true,
+      "detail": {
+        "mismatches": []
+      }
+    }
+  ],
+  "passed": 26,
+  "failed": 1,
+  "training": false,
+  "inference": false,
+  "GPU": false,
+  "scaler_fitting": false,
+  "checkpoint_deserialization": false
+}

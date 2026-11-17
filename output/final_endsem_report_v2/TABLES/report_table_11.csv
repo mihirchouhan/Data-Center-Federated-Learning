@@ -1,0 +1,10 @@
+View,Model,"Pooled MAE W, mean ± sample SD","Pooled RMSE W, mean ± sample SD"
+test_t1,FedAvg-GRU (T4 Reference),24.8133 ± 0.0358,57.5502 ± 0.0306
+test_q1,FedAvg-GRU (T4 Reference),33.9660 ± 0.1185,77.9329 ± 0.1593
+test_march,FedAvg-GRU (T4 Reference),38.2834 ± 0.1686,85.7435 ± 0.2301
+test_t1,FedAvg-LSTM,25.4863 ± 0.0982,57.5802 ± 0.1214
+test_q1,FedAvg-LSTM,34.8224 ± 0.0495,77.6333 ± 0.0594
+test_march,FedAvg-LSTM,39.2619 ± 0.0957,85.2932 ± 0.0860
+test_t1,Centralized XGBoost,25.7755 ± 0.0455,57.0110 ± 0.0497
+test_q1,Centralized XGBoost,36.4159 ± 0.0199,79.1592 ± 0.0661
+test_march,Centralized XGBoost,41.6276 ± 0.0470,87.8040 ± 0.1058

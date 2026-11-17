@@ -1,0 +1,5 @@
+Output,Aggregation,Persistence MAE,"B1 MAE, mean ± sample SD",Persistence RMSE,"B1 RMSE, mean ± sample SD"
+Power W,pooled,42.392221,53.356761 ± 1.512556,92.600392,89.797794 ± 1.138748
+Power W,macro_node,43.176484,53.770241 ± 1.591911,90.728449,88.644047 ± 1.069145
+Ambient °C,pooled,0.303385,0.447872 ± 0.007676,0.609532,0.724799 ± 0.010215
+Ambient °C,macro_node,0.308145,0.452148 ± 0.007587,0.510989,0.639703 ± 0.006426

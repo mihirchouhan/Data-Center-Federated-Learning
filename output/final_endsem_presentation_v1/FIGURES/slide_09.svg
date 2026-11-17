@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1152pt" height="648pt" viewBox="0 0 1152 648" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-17T20:44:54.522491</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 648 
+L 1152 648 
+L 1152 0 
+L 0 0 
+z
+" style="fill: #f6f8fa"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 0 10.368 
+L 1152 10.368 
+L 1152 0 
+L 0 0 
+z
+" clip-path="url(#p0a143b9bcd)" style="fill: #007e87; stroke: #007e87; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 93.312 377.136 
+L 379.008 377.136 
+Q 393.984 377.136 393.984 368.712 
+L 393.984 208.008 
+Q 393.984 199.584 379.008 199.584 
+L 93.312 199.584 
+Q 78.336 199.584 78.336 208.008 
+L 78.336 368.712 
+Q 78.336 377.136 93.312 377.136 
+z
+" clip-path="url(#p0a143b9bcd)" style="fill: #ffffff; stroke: #d9e1e8; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 450.432 377.136 
+L 713.088 377.136 
+Q 728.064 377.136 728.064 368.712 
+L 728.064 208.008 
+Q 728.064 199.584 713.088 199.584 
+L 450.432 199.584 
+Q 435.456 199.584 435.456 208.008 
+L 435.456 368.712 
+Q 435.456 377.136 450.432 377.136 
+z
+" clip-path="url(#p0a143b9bcd)" style="fill: #ffffff; stroke: #d9e1e8; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 796.032 377.136 
+L 1058.688 377.136 
+Q 1073.664 377.136 1073.664 368.712 
+L 1073.664 208.008 
+Q 1073.664 199.584 1058.688 199.584 
+L 796.032 199.584 
+Q 781.056 199.584 781.056 208.008 
+L 781.056 368.712 
+Q 781.056 377.136 796.032 377.136 
+z
+" clip-path="url(#p0a143b9bcd)" style="fill: #ffffff; stroke: #d9e1e8; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 387.920391 291.6 
+Q 414.7208 291.6 439.285142 291.6 
+" clip-path="url(#p0a143b9bcd)" style="fill: none; stroke: #007e87; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 430.485142 287.2 
+L 439.285142 291.6 
+L 430.485142 296 
+z
+" clip-path="url(#p0a143b9bcd)" style="fill: #007e87; stroke: #007e87; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 722.003906 291.6 
+Q 754.560373 291.6 784.880772 291.6 
+" clip-path="url(#p0a143b9bcd)" style="fill: none; stroke: #007e87; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 776.080772 287.2 
+L 784.880772 291.6 
+L 776.080772 296 
+z
+" clip-path="url(#p0a143b9bcd)" style="fill: #007e87; stroke: #007e87; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 51.84 583.2 
+L 1100.16 583.2 
+Q 1109.376 583.2 1109.376 578.016 
+L 1109.376 530.064 
+Q 1109.376 524.88 1100.16 524.88 
+L 51.84 524.88 
+Q 42.624 524.88 42.624 530.064 
+L 42.624 578.016 
+Q 42.624 583.2 51.84 583.2 
+z
+" clip-path="url(#p0a143b9bcd)" style="fill: #e4f1f0"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 51.84 153.576 
+L 1100.16 153.576 
+" clip-path="url(#p0a143b9bcd)" style="fill: none; stroke: #d5dee5; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #007e87" x="51.84" y="46.276719" transform="rotate(-0 51.84 46.276719)">SIMULATED CLIENT ARCHITECTURE</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 33px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #142c43" x="51.84" y="100.242844" transform="rotate(-0 51.84 100.242844)">979 clients means 979 mapped compute nodes</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #526575" x="51.84" y="137.445187" transform="rotate(-0 51.84 137.445187)">One facility • known node identities • unequal local data</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #526575" x="51.84" y="624.621422" transform="rotate(-0 51.84 624.621422)">Mihir Chouhan · NIT Goa  |  Evidence: 17 Nov 2026</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #526575" x="1100.16" y="624.381188" transform="rotate(-0 1100.16 624.381188)">09 / 24</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #526575" x="51.84" y="598.293656" transform="rotate(-0 51.84 598.293656)">Sources: B1_MODEL, B1_RUNNER, REPORT</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 24px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #142c43" x="112.896" y="243.74025" transform="rotate(-0 112.896 243.74025)">Node client k</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #142c43" transform="translate(112.896 290.464688)">Original literal node ID</text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #142c43" transform="translate(112.896 321.964688)">Local windows only</text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #142c43" transform="translate(112.896 355.499063)">Ordinal never renumbered</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 24px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #142c43" x="470.016" y="243.74025" transform="rotate(-0 470.016 243.74025)">Shared model</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #142c43" transform="translate(470.016 290.464688)">979 × 8 embedding</text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #142c43" transform="translate(470.016 321.964688)">13 numeric + 8 identity</text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #142c43" transform="translate(470.016 355.499063)">21 recurrent values</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 24px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #142c43" x="815.616" y="243.74025" transform="rotate(-0 815.616 243.74025)">Coordinator</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #142c43" transform="translate(815.616 289.43875)">Uniform client sampling</text>
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #142c43" transform="translate(815.616 321.37625)">Global validation</text>
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #142c43" transform="translate(815.616 349.43875)">Full-state aggregation</text>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 24px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #142c43" x="103.68" y="478.31625" transform="rotate(-0 103.68 478.31625)">Unequal coverage and node errors → client heterogeneity</text>
+   </g>
+   <g id="text_14">
+    <text style="font-weight: 700; font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #007e87" x="70.272" y="559.495898" transform="rotate(-0 70.272 559.495898)">979 simulated clients ≠ 979 physical data centers or unseen-site evidence.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p0a143b9bcd">
+   <rect x="0" y="0" width="1152" height="648"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,228 @@
+{
+  "report_checks": [
+    {
+      "check": "Audited content stable through report assembly",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "Original 41 inventoried files unchanged",
+      "pass": true,
+      "detail": "Original package untouched"
+    },
+    {
+      "check": "Original main report backup exact",
+      "pass": true,
+      "detail": "Backup made before v2 edits"
+    },
+    {
+      "check": "No unexplained additional pre-existing metadata changes",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "Original 270 source/config/test/document contents unchanged",
+      "pass": true,
+      "detail": "Preserves old report source baseline; new runner not in this old set"
+    },
+    {
+      "check": "Original 116 result-source contents unchanged",
+      "pass": true,
+      "detail": "Exact original result-source bytes"
+    },
+    {
+      "check": "Latest audited 279 source/config/test/document contents stable",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "All 16 original numbered chapters preserved",
+      "pass": true,
+      "detail": "New material added within existing chapter structure"
+    },
+    {
+      "check": "All original figures1\u20138 unchanged",
+      "pass": true,
+      "detail": "Old figures copied byte-identically"
+    },
+    {
+      "check": "Sequential figure captions1\u201312",
+      "pass": true,
+      "detail": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ]
+    },
+    {
+      "check": "All12 report images exist",
+      "pass": true,
+      "detail": [
+        "FIGURES/01_system_architecture.png",
+        "FIGURES/02_model_architectures.png",
+        "FIGURES/03_experiment_tracks.png",
+        "FIGURES/04_v5_policy_results.png",
+        "FIGURES/05_b1_persistence_results.png",
+        "FIGURES/06_history_results.png",
+        "FIGURES/07_t4_canonical_results.png",
+        "FIGURES/08_t4_temporal_results.png",
+        "FIGURES/09_t7_missingness_robustness.png",
+        "FIGURES/10_t7_channel_sensitivity.png",
+        "FIGURES/11_t7_node_consistency.png",
+        "FIGURES/12_common_coverage_by_policy.png"
+      ]
+    },
+    {
+      "check": "Balanced code fences",
+      "pass": true,
+      "detail": "Two Mermaid workflow blocks supported"
+    },
+    {
+      "check": "20 unique chapter-local table IDs",
+      "pass": true,
+      "detail": [
+        "2.1",
+        "4.1",
+        "5.1",
+        "5.2",
+        "11.1",
+        "11.2",
+        "11.3",
+        "11.4",
+        "11.5",
+        "11.6",
+        "11.7",
+        "11.8",
+        "11.9",
+        "12.1",
+        "12.2",
+        "12.3",
+        "12.4",
+        "12.5",
+        "12.6",
+        "12.7"
+      ]
+    },
+    {
+      "check": "Seven base-paper comparisons retained",
+      "pass": true,
+      "detail": "Chapter12 scope unchanged; T7 qualification added"
+    },
+    {
+      "check": "Main claim references resolve",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "Claim IDs unique",
+      "pass": true,
+      "detail": 1162
+    },
+    {
+      "check": "Claim source paths/hashes valid",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "99 T7 evaluations registered through75 condition/seed entries",
+      "pass": true,
+      "detail": "Period availability identified per entry; no new fits counted"
+    },
+    {
+      "check": "Incomplete new benchmark not promoted to result",
+      "pass": true,
+      "detail": "No provisional validation score included in final tables"
+    },
+    {
+      "check": "Bibliography retains R1\u2013R7",
+      "pass": true,
+      "detail": "No new unsupported reference"
+    },
+    {
+      "check": "647 actual bindings /9 unresolved new-manifest failures",
+      "pass": true,
+      "detail": "638 PASS; failures prominently preserved, not repaired"
+    },
+    {
+      "check": "11 new numeric/count summary checks passed",
+      "pass": true,
+      "detail": "Saved metric/count/node summaries only; no inference"
+    }
+  ],
+  "pass": 22,
+  "fail": 0,
+  "independent_summary_checks": [
+    {
+      "check": "99 unique condition/seed/period records",
+      "pass": true,
+      "evidence": "25 canonical +4 extended +4 March conditions, each 3 seeds"
+    },
+    {
+      "check": "Expected 33 groups and seedset",
+      "pass": true,
+      "evidence": "Same fixed mask per condition across model seeds; not 3 missingness draws"
+    },
+    {
+      "check": "25 missingness accounting equalities",
+      "pass": true,
+      "evidence": "Saved aggregate counters, not regeneration of masks"
+    },
+    {
+      "check": "25 observation accounting equalities",
+      "pass": true,
+      "evidence": "Natural+artificial counters"
+    },
+    {
+      "check": "All metrics finite and nonnegative",
+      "pass": true,
+      "evidence": "Saved metrics only"
+    },
+    {
+      "check": "264 mean/sample-SD equalities",
+      "pass": true,
+      "evidence": "33 groups \u00d74 metrics \u00d7mean/SD; tolerance only four-decimal serialization rounding 5e-5 W"
+    },
+    {
+      "check": "99 degradation differences",
+      "pass": true,
+      "evidence": "Saved paired condition-minus-clean seed scores"
+    },
+    {
+      "check": "Selected node-group summaries",
+      "pass": true,
+      "evidence": "4 canonical conditions \u00d73 seeds \u00d7978 node rows; summaries only, no prediction scoring"
+    },
+    {
+      "check": "New client table sums to recorded populations",
+      "pass": true,
+      "evidence": "Count arithmetic, no bin replay"
+    },
+    {
+      "check": "Eligibility flags match >=1024 numerical predicate",
+      "pass": true,
+      "evidence": "All 979 flags False; report prose is contradicted"
+    },
+    {
+      "check": "Candidate1 policy coverage arithmetic/nesting",
+      "pass": true,
+      "evidence": "Not independent identity-array equality verification"
+    }
+  ],
+  "existing_manifest_comparisons": {
+    "total": 647,
+    "pass": 638,
+    "fail": 9
+  },
+  "whole_tree_metadata_equality": false,
+  "original_root_files_preserved": true,
+  "training_inference_GPU_scaler_raw_operations_by_this_task": false
+}

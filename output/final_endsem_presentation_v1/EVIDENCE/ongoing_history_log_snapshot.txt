@@ -1,0 +1,1731 @@
+[2026-11-17 19:47:58] ================================================================================
+[2026-11-17 19:47:58] TASK T1.2: CONTROLLED HISTORY-LENGTH BENCHMARK INITIALIZATION
+[2026-11-17 19:47:58] Output Directory: /media/csedept/cse2014/Project/m100_training_template/output/experiments/t1_2_controlled_history_benchmark_v1
+[2026-11-17 19:47:59] Execution Device: cuda:1
+[2026-11-17 19:47:59] Rounds: 200 | Clients/Round: 98 | LR: 0.001
+[2026-11-17 19:47:59] ================================================================================
+[2026-11-17 19:47:59] Loading memory-mapped Candidate 1 telemetry arrays...
+[2026-11-17 19:48:00] Discovering Secondary Option A No-Fill test origins...
+[2026-11-17 19:48:00] Option A Test Discovery: 50,392 windows across 635 active nodes
+[2026-11-17 19:48:00] Computing training residual moments on [0, 3024)...
+[2026-11-17 19:48:01] Training Residual Moments: mu_r = 0.00005242 kW (0.0524 W), sigma_r = 0.06295236 kW (62.9524 W)
+[2026-11-17 19:48:01] Training Power Moments: y_mean = 0.656216 kW (656.22 W), y_std = 0.176574 kW (176.57 W)
+[2026-11-17 19:48:01] 
+================================================================================
+[2026-11-17 19:48:01] PRE-FLIGHT RESIDUAL-ANCHOR IDENTITY VERIFICATION
+[2026-11-17 19:48:01] ================================================================================
+[2026-11-17 19:48:01] Auditing residual-anchor across H=6, 36, 144 on train...
+[2026-11-17 19:48:10]   [PASS] train: 100% bitwise identity verified across all 394,100 windows (979 nodes)
+[2026-11-17 19:48:10] Auditing residual-anchor across H=6, 36, 144 on val...
+[2026-11-17 19:48:14]   [PASS] val: 100% bitwise identity verified across all 157,484 windows (929 nodes)
+[2026-11-17 19:48:14] Auditing residual-anchor across H=6, 36, 144 on test (primary)...
+[2026-11-17 19:48:18]   [PASS] test (primary): 100% bitwise identity verified across all 243,138 windows (978 nodes)
+[2026-11-17 19:48:18] Auditing residual-anchor across H=6, 36, 144 on test (option_a)...
+[2026-11-17 19:48:19]   [PASS] test (option_a): 100% bitwise identity verified across all 50,392 windows (635 nodes)
+[2026-11-17 19:48:19] Pre-flight Residual Anchor Identity Verification: CERTIFIED IDENTICAL.
+[2026-11-17 19:48:19] 
+================================================================================
+[2026-11-17 19:48:19] BENCHMARK TRACK: 1-HOUR HISTORY (H=6 BINS)
+[2026-11-17 19:48:19] ================================================================================
+[2026-11-17 19:48:19] 
+--- Pre-extracting In-Memory Datasets for H=6 (1.0h history) ---
+[2026-11-17 19:48:20] Pre-extraction complete in 0.8s: Train=394,100 win (979 nodes), Val=157,484 win, Primary Test=243,138 win, Option A Test=50,392 win
+[2026-11-17 19:48:20] 
+>>> STARTING FIT: H=6 (1h), Seed 42 <<<
+================================================================================
+🚀 STARTING FEDERATED TRAINING: [T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Device: cuda:1 | Total Rounds: 200 | Clients/Round: 98
+Started At: 2026-11-17 19:48:20 UTC
+================================================================================
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 001/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 1.09225
+Round completed | Val MAE: 31.26 W (Best: R001 31.26 W)
+Time: 7.4s | Elapsed: 00:00:07 | ETA: 00:24:35
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 002/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 1.01547
+Round completed | Val MAE: 32.24 W
+Time: 7.0s | Elapsed: 00:00:14 | ETA: 00:23:43
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 003/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 1.02563
+Round completed | Val MAE: 33.15 W
+Time: 7.0s | Elapsed: 00:00:21 | ETA: 00:23:23
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 004/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.85626
+Round completed | Val MAE: 34.03 W
+Time: 6.9s | Elapsed: 00:00:28 | ETA: 00:23:05
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 005/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.91727
+Round completed | Val MAE: 34.18 W
+Time: 6.6s | Elapsed: 00:00:35 | ETA: 00:22:41
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 006/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.85833
+Round completed | Val MAE: 34.31 W
+Time: 6.0s | Elapsed: 00:00:41 | ETA: 00:22:04
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 007/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.85198
+Round completed | Val MAE: 35.06 W
+Time: 4.6s | Elapsed: 00:00:46 | ETA: 00:20:57
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 008/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.86636
+Round completed | Val MAE: 35.01 W
+Time: 4.3s | Elapsed: 00:00:50 | ETA: 00:19:58
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 009/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.84488
+Round completed | Val MAE: 34.94 W
+Time: 6.0s | Elapsed: 00:00:56 | ETA: 00:19:46
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 010/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.84729
+Round completed | Val MAE: 35.17 W
+Time: 7.3s | Elapsed: 00:01:03 | ETA: 00:20:01
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 011/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.84901
+Round completed | Val MAE: 34.49 W
+Time: 7.0s | Elapsed: 00:01:10 | ETA: 00:19:46
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 012/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.88454
+Round completed | Val MAE: 34.81 W
+Time: 6.7s | Elapsed: 00:01:17 | ETA: 00:19:36
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 013/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.94756
+Round completed | Val MAE: 35.26 W
+Time: 7.5s | Elapsed: 00:01:25 | ETA: 00:19:39
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 014/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.88211
+Round completed | Val MAE: 35.14 W
+Time: 6.9s | Elapsed: 00:01:31 | ETA: 00:19:33
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 015/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.82572
+Round completed | Val MAE: 35.33 W
+Time: 7.2s | Elapsed: 00:01:39 | ETA: 00:19:37
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 016/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.98751
+Round completed | Val MAE: 35.54 W
+Time: 6.7s | Elapsed: 00:01:45 | ETA: 00:19:43
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 017/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.88590
+Round completed | Val MAE: 35.02 W
+Time: 6.6s | Elapsed: 00:01:52 | ETA: 00:20:13
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 018/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.85262
+Round completed | Val MAE: 35.08 W
+Time: 6.6s | Elapsed: 00:01:59 | ETA: 00:20:47
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 019/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.81611
+Round completed | Val MAE: 35.15 W
+Time: 7.6s | Elapsed: 00:02:06 | ETA: 00:21:10
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 020/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.82588
+Round completed | Val MAE: 35.48 W
+Time: 6.5s | Elapsed: 00:02:13 | ETA: 00:20:48
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 021/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.86732
+Round completed | Val MAE: 35.87 W
+Time: 6.8s | Elapsed: 00:02:19 | ETA: 00:20:38
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 022/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 1.02145
+Round completed | Val MAE: 36.52 W
+Time: 6.8s | Elapsed: 00:02:26 | ETA: 00:20:33
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 023/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.96773
+Round completed | Val MAE: 36.10 W
+Time: 7.3s | Elapsed: 00:02:34 | ETA: 00:20:22
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 024/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.92474
+Round completed | Val MAE: 36.79 W
+Time: 7.0s | Elapsed: 00:02:41 | ETA: 00:20:16
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 025/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.83787
+Round completed | Val MAE: 36.30 W
+Time: 7.1s | Elapsed: 00:02:48 | ETA: 00:20:07
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 026/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.77354
+Round completed | Val MAE: 36.15 W
+Time: 7.0s | Elapsed: 00:02:55 | ETA: 00:20:05
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 027/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.79453
+Round completed | Val MAE: 36.08 W
+Time: 6.5s | Elapsed: 00:03:01 | ETA: 00:19:56
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 028/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.91883
+Round completed | Val MAE: 36.14 W
+Time: 7.0s | Elapsed: 00:03:08 | ETA: 00:19:57
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 029/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.89051
+Round completed | Val MAE: 36.20 W
+Time: 6.8s | Elapsed: 00:03:15 | ETA: 00:19:35
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 030/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.80790
+Round completed | Val MAE: 36.40 W
+Time: 7.8s | Elapsed: 00:03:23 | ETA: 00:19:51
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 031/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.89993
+Round completed | Val MAE: 36.26 W
+Time: 7.6s | Elapsed: 00:03:30 | ETA: 00:19:58
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 032/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.83370
+Round completed | Val MAE: 36.47 W
+Time: 7.7s | Elapsed: 00:03:38 | ETA: 00:20:05
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 033/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.96011
+Round completed | Val MAE: 36.99 W
+Time: 7.6s | Elapsed: 00:03:46 | ETA: 00:20:04
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 034/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.94576
+Round completed | Val MAE: 37.50 W
+Time: 7.0s | Elapsed: 00:03:53 | ETA: 00:19:57
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 035/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.71822
+Round completed | Val MAE: 36.60 W
+Time: 6.3s | Elapsed: 00:03:59 | ETA: 00:19:38
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 036/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.87201
+Round completed | Val MAE: 37.91 W
+Time: 4.9s | Elapsed: 00:04:04 | ETA: 00:18:56
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 037/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.91098
+Round completed | Val MAE: 37.22 W
+Time: 4.0s | Elapsed: 00:04:08 | ETA: 00:18:10
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 038/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.84733
+Round completed | Val MAE: 37.36 W
+Time: 4.5s | Elapsed: 00:04:13 | ETA: 00:17:21
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 039/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.84706
+Round completed | Val MAE: 37.91 W
+Time: 4.6s | Elapsed: 00:04:17 | ETA: 00:16:40
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 040/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.72865
+Round completed | Val MAE: 37.45 W
+Time: 6.1s | Elapsed: 00:04:23 | ETA: 00:16:07
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 041/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.79723
+Round completed | Val MAE: 38.24 W
+Time: 7.1s | Elapsed: 00:04:30 | ETA: 00:15:53
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 042/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.74094
+Round completed | Val MAE: 37.17 W
+Time: 7.1s | Elapsed: 00:04:37 | ETA: 00:15:37
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 043/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.76916
+Round completed | Val MAE: 38.21 W
+Time: 6.8s | Elapsed: 00:04:44 | ETA: 00:15:18
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 044/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.78775
+Round completed | Val MAE: 38.11 W
+Time: 6.8s | Elapsed: 00:04:51 | ETA: 00:15:10
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 045/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.89570
+Round completed | Val MAE: 38.34 W
+Time: 6.7s | Elapsed: 00:04:58 | ETA: 00:15:11
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 046/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.77532
+Round completed | Val MAE: 38.18 W
+Time: 7.0s | Elapsed: 00:05:05 | ETA: 00:15:37
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 047/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.75870
+Round completed | Val MAE: 38.16 W
+Time: 5.5s | Elapsed: 00:05:10 | ETA: 00:15:53
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 048/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.84399
+Round completed | Val MAE: 38.34 W
+Time: 4.8s | Elapsed: 00:05:15 | ETA: 00:15:51
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 049/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.77126
+Round completed | Val MAE: 38.78 W
+Time: 4.5s | Elapsed: 00:05:20 | ETA: 00:15:43
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 050/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.83457
+Round completed | Val MAE: 37.87 W
+Time: 5.8s | Elapsed: 00:05:25 | ETA: 00:15:32
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 051/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.74695
+Round completed | Val MAE: 38.65 W
+Time: 6.7s | Elapsed: 00:05:32 | ETA: 00:15:19
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 052/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.85570
+Round completed | Val MAE: 37.97 W
+Time: 6.9s | Elapsed: 00:05:39 | ETA: 00:15:10
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 053/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.83028
+Round completed | Val MAE: 38.14 W
+Time: 6.8s | Elapsed: 00:05:46 | ETA: 00:15:05
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 054/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.92905
+Round completed | Val MAE: 38.01 W
+Time: 6.8s | Elapsed: 00:05:53 | ETA: 00:14:58
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 055/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.78007
+Round completed | Val MAE: 38.07 W
+Time: 6.5s | Elapsed: 00:05:59 | ETA: 00:14:48
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 056/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.82155
+Round completed | Val MAE: 37.89 W
+Time: 6.3s | Elapsed: 00:06:06 | ETA: 00:14:32
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 057/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.72402
+Round completed | Val MAE: 38.59 W
+Time: 7.1s | Elapsed: 00:06:13 | ETA: 00:14:49
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 058/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.76264
+Round completed | Val MAE: 38.28 W
+Time: 6.7s | Elapsed: 00:06:19 | ETA: 00:15:09
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 059/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.68279
+Round completed | Val MAE: 38.02 W
+Time: 6.1s | Elapsed: 00:06:25 | ETA: 00:15:26
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 060/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.83988
+Round completed | Val MAE: 38.51 W
+Time: 6.7s | Elapsed: 00:06:32 | ETA: 00:15:32
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 061/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.75598
+Round completed | Val MAE: 37.32 W
+Time: 6.5s | Elapsed: 00:06:39 | ETA: 00:15:22
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 062/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.71856
+Round completed | Val MAE: 37.43 W
+Time: 7.2s | Elapsed: 00:06:46 | ETA: 00:15:20
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 063/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.78494
+Round completed | Val MAE: 38.63 W
+Time: 7.2s | Elapsed: 00:06:53 | ETA: 00:15:19
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 064/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.78439
+Round completed | Val MAE: 37.66 W
+Time: 7.6s | Elapsed: 00:07:01 | ETA: 00:15:23
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 065/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.79222
+Round completed | Val MAE: 38.42 W
+Time: 7.2s | Elapsed: 00:07:08 | ETA: 00:15:26
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 066/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.75958
+Round completed | Val MAE: 37.98 W
+Time: 7.1s | Elapsed: 00:07:15 | ETA: 00:15:29
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 067/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.77988
+Round completed | Val MAE: 38.66 W
+Time: 7.0s | Elapsed: 00:07:22 | ETA: 00:15:21
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 068/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.67860
+Round completed | Val MAE: 38.68 W
+Time: 6.9s | Elapsed: 00:07:29 | ETA: 00:15:17
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 069/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.94318
+Round completed | Val MAE: 39.27 W
+Time: 7.7s | Elapsed: 00:07:37 | ETA: 00:15:31
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 070/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.76529
+Round completed | Val MAE: 38.09 W
+Time: 6.9s | Elapsed: 00:07:43 | ETA: 00:15:26
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 071/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.88865
+Round completed | Val MAE: 39.15 W
+Time: 7.2s | Elapsed: 00:07:51 | ETA: 00:15:29
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 072/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.79470
+Round completed | Val MAE: 38.00 W
+Time: 6.6s | Elapsed: 00:07:57 | ETA: 00:15:14
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 073/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.75227
+Round completed | Val MAE: 38.48 W
+Time: 6.5s | Elapsed: 00:08:04 | ETA: 00:14:58
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 074/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.77532
+Round completed | Val MAE: 38.21 W
+Time: 7.1s | Elapsed: 00:08:11 | ETA: 00:14:45
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 075/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.69913
+Round completed | Val MAE: 37.91 W
+Time: 6.6s | Elapsed: 00:08:18 | ETA: 00:14:31
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 076/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.80279
+Round completed | Val MAE: 38.01 W
+Time: 6.8s | Elapsed: 00:08:24 | ETA: 00:14:21
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 077/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.77155
+Round completed | Val MAE: 39.40 W
+Time: 4.9s | Elapsed: 00:08:29 | ETA: 00:13:48
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 078/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.84850
+Round completed | Val MAE: 38.47 W
+Time: 4.2s | Elapsed: 00:08:33 | ETA: 00:13:08
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 079/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.79898
+Round completed | Val MAE: 38.04 W
+Time: 4.3s | Elapsed: 00:08:38 | ETA: 00:12:21
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 080/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.78868
+Round completed | Val MAE: 38.39 W
+Time: 4.6s | Elapsed: 00:08:42 | ETA: 00:11:47
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 081/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.78540
+Round completed | Val MAE: 38.79 W
+Time: 5.0s | Elapsed: 00:08:47 | ETA: 00:11:15
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 082/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.76107
+Round completed | Val MAE: 39.81 W
+Time: 6.8s | Elapsed: 00:08:54 | ETA: 00:11:11
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 083/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.77939
+Round completed | Val MAE: 37.79 W
+Time: 7.3s | Elapsed: 00:09:02 | ETA: 00:11:15
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 084/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.90016
+Round completed | Val MAE: 38.22 W
+Time: 7.2s | Elapsed: 00:09:09 | ETA: 00:11:09
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 085/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.79695
+Round completed | Val MAE: 37.28 W
+Time: 6.4s | Elapsed: 00:09:15 | ETA: 00:11:01
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 086/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.74497
+Round completed | Val MAE: 37.04 W
+Time: 6.7s | Elapsed: 00:09:22 | ETA: 00:10:53
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 087/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.67160
+Round completed | Val MAE: 37.91 W
+Time: 6.8s | Elapsed: 00:09:29 | ETA: 00:11:09
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 088/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.88681
+Round completed | Val MAE: 39.42 W
+Time: 6.7s | Elapsed: 00:09:35 | ETA: 00:11:31
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 089/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.79499
+Round completed | Val MAE: 38.43 W
+Time: 4.8s | Elapsed: 00:09:40 | ETA: 00:11:30
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 090/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.87524
+Round completed | Val MAE: 39.17 W
+Time: 4.7s | Elapsed: 00:09:45 | ETA: 00:11:25
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 091/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.83860
+Round completed | Val MAE: 39.29 W
+Time: 4.8s | Elapsed: 00:09:49 | ETA: 00:11:16
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 092/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.74252
+Round completed | Val MAE: 39.35 W
+Time: 6.8s | Elapsed: 00:09:56 | ETA: 00:11:10
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 093/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.81409
+Round completed | Val MAE: 38.40 W
+Time: 7.2s | Elapsed: 00:10:04 | ETA: 00:11:03
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 094/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.71996
+Round completed | Val MAE: 39.72 W
+Time: 6.7s | Elapsed: 00:10:10 | ETA: 00:10:52
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 095/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.69423
+Round completed | Val MAE: 38.48 W
+Time: 7.2s | Elapsed: 00:10:17 | ETA: 00:10:54
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 096/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.94128
+Round completed | Val MAE: 40.50 W
+Time: 7.0s | Elapsed: 00:10:24 | ETA: 00:10:52
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 097/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.81720
+Round completed | Val MAE: 38.95 W
+Time: 7.3s | Elapsed: 00:10:32 | ETA: 00:10:50
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 098/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.93884
+Round completed | Val MAE: 38.95 W
+Time: 7.3s | Elapsed: 00:10:39 | ETA: 00:10:50
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 099/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.79753
+Round completed | Val MAE: 39.61 W
+Time: 7.0s | Elapsed: 00:10:46 | ETA: 00:11:06
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 100/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.85746
+Round completed | Val MAE: 38.75 W
+Time: 6.9s | Elapsed: 00:10:53 | ETA: 00:11:22
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 101/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.80273
+Round completed | Val MAE: 38.93 W
+Time: 6.5s | Elapsed: 00:10:59 | ETA: 00:11:32
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 102/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.68514
+Round completed | Val MAE: 39.46 W
+Time: 7.3s | Elapsed: 00:11:07 | ETA: 00:11:30
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 103/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.74962
+Round completed | Val MAE: 39.38 W
+Time: 6.9s | Elapsed: 00:11:14 | ETA: 00:11:19
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 104/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.76092
+Round completed | Val MAE: 39.54 W
+Time: 7.1s | Elapsed: 00:11:21 | ETA: 00:11:16
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 105/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.86913
+Round completed | Val MAE: 40.90 W
+Time: 7.0s | Elapsed: 00:11:28 | ETA: 00:11:07
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 106/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.81618
+Round completed | Val MAE: 39.70 W
+Time: 6.9s | Elapsed: 00:11:35 | ETA: 00:10:59
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 107/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.82782
+Round completed | Val MAE: 38.66 W
+Time: 7.0s | Elapsed: 00:11:42 | ETA: 00:10:49
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 108/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.67862
+Round completed | Val MAE: 38.73 W
+Time: 6.9s | Elapsed: 00:11:49 | ETA: 00:10:39
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 109/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.76974
+Round completed | Val MAE: 38.50 W
+Time: 7.2s | Elapsed: 00:11:56 | ETA: 00:10:33
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 110/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.85628
+Round completed | Val MAE: 39.48 W
+Time: 6.7s | Elapsed: 00:12:03 | ETA: 00:10:25
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 111/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.73888
+Round completed | Val MAE: 39.05 W
+Time: 6.7s | Elapsed: 00:12:09 | ETA: 00:10:20
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 112/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.84972
+Round completed | Val MAE: 38.85 W
+Time: 6.8s | Elapsed: 00:12:16 | ETA: 00:10:09
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 113/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.76838
+Round completed | Val MAE: 39.74 W
+Time: 7.0s | Elapsed: 00:12:23 | ETA: 00:10:03
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 114/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.77003
+Round completed | Val MAE: 38.23 W
+Time: 6.9s | Elapsed: 00:12:30 | ETA: 00:09:54
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 115/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.87869
+Round completed | Val MAE: 38.71 W
+Time: 6.9s | Elapsed: 00:12:37 | ETA: 00:09:46
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 116/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.78764
+Round completed | Val MAE: 38.41 W
+Time: 6.5s | Elapsed: 00:12:43 | ETA: 00:09:36
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 117/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.84196
+Round completed | Val MAE: 39.75 W
+Time: 6.8s | Elapsed: 00:12:50 | ETA: 00:09:28
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 118/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.88858
+Round completed | Val MAE: 39.34 W
+Time: 5.3s | Elapsed: 00:12:55 | ETA: 00:09:08
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 119/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.72579
+Round completed | Val MAE: 39.60 W
+Time: 4.6s | Elapsed: 00:13:00 | ETA: 00:08:40
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 120/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.82896
+Round completed | Val MAE: 39.85 W
+Time: 4.1s | Elapsed: 00:13:04 | ETA: 00:08:13
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 121/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.67971
+Round completed | Val MAE: 38.52 W
+Time: 4.4s | Elapsed: 00:13:09 | ETA: 00:07:48
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 122/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.86611
+Round completed | Val MAE: 38.67 W
+Time: 4.4s | Elapsed: 00:13:13 | ETA: 00:07:24
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 123/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.85603
+Round completed | Val MAE: 38.79 W
+Time: 6.8s | Elapsed: 00:13:20 | ETA: 00:07:17
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 124/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.78265
+Round completed | Val MAE: 37.96 W
+Time: 7.1s | Elapsed: 00:13:27 | ETA: 00:07:13
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 125/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.72040
+Round completed | Val MAE: 38.35 W
+Time: 6.6s | Elapsed: 00:13:34 | ETA: 00:07:05
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 126/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.88270
+Round completed | Val MAE: 38.68 W
+Time: 7.0s | Elapsed: 00:13:41 | ETA: 00:07:02
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 127/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.78533
+Round completed | Val MAE: 38.97 W
+Time: 7.4s | Elapsed: 00:13:48 | ETA: 00:07:01
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 128/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.89741
+Round completed | Val MAE: 39.18 W
+Time: 7.1s | Elapsed: 00:13:55 | ETA: 00:07:08
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 129/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.88580
+Round completed | Val MAE: 39.17 W
+Time: 6.6s | Elapsed: 00:14:02 | ETA: 00:07:16
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 130/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.78959
+Round completed | Val MAE: 38.70 W
+Time: 4.7s | Elapsed: 00:14:06 | ETA: 00:07:14
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 131/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.92451
+Round completed | Val MAE: 40.90 W
+Time: 4.4s | Elapsed: 00:14:11 | ETA: 00:07:07
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 132/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.92107
+Round completed | Val MAE: 40.51 W
+Time: 5.0s | Elapsed: 00:14:16 | ETA: 00:07:05
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 133/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.79258
+Round completed | Val MAE: 38.63 W
+Time: 6.8s | Elapsed: 00:14:22 | ETA: 00:06:59
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 134/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.78291
+Round completed | Val MAE: 39.66 W
+Time: 7.1s | Elapsed: 00:14:30 | ETA: 00:06:53
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 135/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.80501
+Round completed | Val MAE: 39.16 W
+Time: 7.0s | Elapsed: 00:14:36 | ETA: 00:06:49
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 136/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.76035
+Round completed | Val MAE: 39.36 W
+Time: 6.9s | Elapsed: 00:14:43 | ETA: 00:06:42
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 137/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.91095
+Round completed | Val MAE: 38.13 W
+Time: 6.8s | Elapsed: 00:14:50 | ETA: 00:06:32
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 138/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.79041
+Round completed | Val MAE: 37.89 W
+Time: 7.1s | Elapsed: 00:14:57 | ETA: 00:06:26
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 139/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.86982
+Round completed | Val MAE: 39.61 W
+Time: 6.3s | Elapsed: 00:15:04 | ETA: 00:06:18
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 140/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.80169
+Round completed | Val MAE: 39.58 W
+Time: 7.2s | Elapsed: 00:15:11 | ETA: 00:06:27
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 141/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.77562
+Round completed | Val MAE: 38.84 W
+Time: 7.0s | Elapsed: 00:15:18 | ETA: 00:06:36
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 142/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.86824
+Round completed | Val MAE: 38.62 W
+Time: 6.7s | Elapsed: 00:15:24 | ETA: 00:06:39
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 143/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.76494
+Round completed | Val MAE: 38.50 W
+Time: 6.1s | Elapsed: 00:15:31 | ETA: 00:06:28
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 144/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.81343
+Round completed | Val MAE: 37.95 W
+Time: 6.9s | Elapsed: 00:15:37 | ETA: 00:06:20
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 145/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.80762
+Round completed | Val MAE: 38.86 W
+Time: 7.2s | Elapsed: 00:15:45 | ETA: 00:06:14
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 146/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.88570
+Round completed | Val MAE: 38.33 W
+Time: 6.8s | Elapsed: 00:15:51 | ETA: 00:06:07
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 147/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.80452
+Round completed | Val MAE: 38.22 W
+Time: 7.0s | Elapsed: 00:15:58 | ETA: 00:06:01
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 148/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.81456
+Round completed | Val MAE: 38.28 W
+Time: 6.9s | Elapsed: 00:16:05 | ETA: 00:05:53
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 149/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.82237
+Round completed | Val MAE: 39.90 W
+Time: 6.7s | Elapsed: 00:16:12 | ETA: 00:05:49
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 150/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.84287
+Round completed | Val MAE: 38.84 W
+Time: 7.2s | Elapsed: 00:16:19 | ETA: 00:05:42
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 151/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.80080
+Round completed | Val MAE: 39.51 W
+Time: 6.8s | Elapsed: 00:16:26 | ETA: 00:05:34
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 152/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.70053
+Round completed | Val MAE: 39.10 W
+Time: 6.8s | Elapsed: 00:16:33 | ETA: 00:05:28
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 153/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.77555
+Round completed | Val MAE: 39.26 W
+Time: 6.7s | Elapsed: 00:16:40 | ETA: 00:05:24
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 154/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.85473
+Round completed | Val MAE: 38.41 W
+Time: 6.6s | Elapsed: 00:16:46 | ETA: 00:05:16
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 155/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.87634
+Round completed | Val MAE: 39.63 W
+Time: 6.8s | Elapsed: 00:16:53 | ETA: 00:05:07
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 156/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.71535
+Round completed | Val MAE: 37.80 W
+Time: 7.1s | Elapsed: 00:17:00 | ETA: 00:05:02
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 157/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.77060
+Round completed | Val MAE: 38.08 W
+Time: 7.5s | Elapsed: 00:17:08 | ETA: 00:04:57
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 158/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.79325
+Round completed | Val MAE: 37.55 W
+Time: 7.6s | Elapsed: 00:17:15 | ETA: 00:04:53
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 159/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.71733
+Round completed | Val MAE: 37.43 W
+Time: 5.7s | Elapsed: 00:17:21 | ETA: 00:04:42
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 160/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.73820
+Round completed | Val MAE: 38.58 W
+Time: 4.5s | Elapsed: 00:17:25 | ETA: 00:04:24
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 161/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.88785
+Round completed | Val MAE: 38.56 W
+Time: 4.3s | Elapsed: 00:17:30 | ETA: 00:04:08
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 162/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.76195
+Round completed | Val MAE: 36.84 W
+Time: 4.4s | Elapsed: 00:17:34 | ETA: 00:03:52
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 163/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.75229
+Round completed | Val MAE: 37.90 W
+Time: 4.4s | Elapsed: 00:17:39 | ETA: 00:03:38
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 164/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.73164
+Round completed | Val MAE: 39.27 W
+Time: 5.6s | Elapsed: 00:17:44 | ETA: 00:03:28
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 165/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.82133
+Round completed | Val MAE: 39.60 W
+Time: 6.8s | Elapsed: 00:17:51 | ETA: 00:03:23
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 166/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.82013
+Round completed | Val MAE: 37.90 W
+Time: 6.6s | Elapsed: 00:17:58 | ETA: 00:03:15
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 167/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.88418
+Round completed | Val MAE: 39.13 W
+Time: 6.9s | Elapsed: 00:18:04 | ETA: 00:03:08
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 168/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.84725
+Round completed | Val MAE: 38.58 W
+Time: 7.1s | Elapsed: 00:18:12 | ETA: 00:03:00
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 169/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.84429
+Round completed | Val MAE: 39.02 W
+Time: 6.6s | Elapsed: 00:18:18 | ETA: 00:02:58
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 170/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.67621
+Round completed | Val MAE: 37.25 W
+Time: 7.1s | Elapsed: 00:18:25 | ETA: 00:03:00
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 171/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.69710
+Round completed | Val MAE: 38.25 W
+Time: 6.6s | Elapsed: 00:18:32 | ETA: 00:03:00
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 172/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.92081
+Round completed | Val MAE: 37.77 W
+Time: 4.6s | Elapsed: 00:18:37 | ETA: 00:02:55
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 173/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.76508
+Round completed | Val MAE: 38.36 W
+Time: 4.5s | Elapsed: 00:18:41 | ETA: 00:02:49
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 174/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.83912
+Round completed | Val MAE: 38.86 W
+Time: 5.1s | Elapsed: 00:18:46 | ETA: 00:02:41
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 175/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.90538
+Round completed | Val MAE: 39.14 W
+Time: 6.8s | Elapsed: 00:18:53 | ETA: 00:02:35
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 176/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.93013
+Round completed | Val MAE: 39.23 W
+Time: 6.6s | Elapsed: 00:19:00 | ETA: 00:02:29
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 177/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.70338
+Round completed | Val MAE: 38.12 W
+Time: 6.8s | Elapsed: 00:19:06 | ETA: 00:02:22
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 178/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.78005
+Round completed | Val MAE: 38.60 W
+Time: 7.0s | Elapsed: 00:19:13 | ETA: 00:02:16
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 179/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.79687
+Round completed | Val MAE: 37.94 W
+Time: 7.1s | Elapsed: 00:19:20 | ETA: 00:02:11
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 180/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.78250
+Round completed | Val MAE: 37.53 W
+Time: 6.8s | Elapsed: 00:19:27 | ETA: 00:02:04
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 181/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.70266
+Round completed | Val MAE: 38.36 W
+Time: 6.8s | Elapsed: 00:19:34 | ETA: 00:01:58
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 182/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.86198
+Round completed | Val MAE: 39.32 W
+Time: 7.1s | Elapsed: 00:19:41 | ETA: 00:01:56
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 183/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.83422
+Round completed | Val MAE: 38.87 W
+Time: 7.1s | Elapsed: 00:19:48 | ETA: 00:01:54
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 184/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.68077
+Round completed | Val MAE: 38.68 W
+Time: 7.5s | Elapsed: 00:19:56 | ETA: 00:01:51
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 185/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.86173
+Round completed | Val MAE: 38.25 W
+Time: 7.3s | Elapsed: 00:20:03 | ETA: 00:01:45
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 186/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.73541
+Round completed | Val MAE: 39.07 W
+Time: 6.8s | Elapsed: 00:20:10 | ETA: 00:01:38
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 187/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.81456
+Round completed | Val MAE: 39.46 W
+Time: 6.8s | Elapsed: 00:20:17 | ETA: 00:01:31
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 188/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.83060
+Round completed | Val MAE: 39.38 W
+Time: 7.0s | Elapsed: 00:20:24 | ETA: 00:01:24
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 189/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.89767
+Round completed | Val MAE: 39.26 W
+Time: 7.5s | Elapsed: 00:20:31 | ETA: 00:01:18
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 190/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.78297
+Round completed | Val MAE: 39.29 W
+Time: 7.0s | Elapsed: 00:20:38 | ETA: 00:01:11
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 191/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.75606
+Round completed | Val MAE: 38.13 W
+Time: 6.9s | Elapsed: 00:20:45 | ETA: 00:01:04
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 192/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.73231
+Round completed | Val MAE: 39.01 W
+Time: 7.7s | Elapsed: 00:20:53 | ETA: 00:00:57
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 193/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.79304
+Round completed | Val MAE: 40.36 W
+Time: 6.9s | Elapsed: 00:21:00 | ETA: 00:00:50
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 194/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.76554
+Round completed | Val MAE: 39.71 W
+Time: 6.5s | Elapsed: 00:21:06 | ETA: 00:00:42
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 195/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.89389
+Round completed | Val MAE: 38.34 W
+Time: 6.9s | Elapsed: 00:21:13 | ETA: 00:00:35
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 196/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.88932
+Round completed | Val MAE: 39.38 W
+Time: 7.0s | Elapsed: 00:21:20 | ETA: 00:00:28
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 197/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.69841
+Round completed | Val MAE: 38.32 W
+Time: 7.1s | Elapsed: 00:21:27 | ETA: 00:00:21
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 198/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.76496
+Round completed | Val MAE: 38.89 W
+Time: 7.3s | Elapsed: 00:21:34 | ETA: 00:00:14
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 199/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.80457
+Round completed | Val MAE: 39.27 W
+Time: 6.4s | Elapsed: 00:21:41 | ETA: 00:00:07
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Round 200/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.85673
+Round completed | Val MAE: 40.32 W
+Time: 7.2s | Elapsed: 00:21:48 | ETA: 00:00:00
+================================================================================
+✅ FEDERATED TRAINING COMPLETE: [T1.2-HistoryBenchmark | FedAvg-1h | Seed 42]
+Rounds: 200/200 | Best Val Round: R001 (MAE: 31.26 W)
+Total Time: 00:21:48 (1308.0s) | Avg Round: 6.5s
+Completed At: 2026-11-17 20:10:08 UTC
+================================================================================
+[2026-11-17 20:10:08] >>> Completed Fit: H=6 (1h), Seed 42 | Best Round: 1 | Best Val MAE: 31.26 W | Time: 1308.0s <<<
+[2026-11-17 20:10:08] Evaluating best checkpoint on Primary Held-Out Test (243,138 win)...
+[2026-11-17 20:10:09] Evaluating best checkpoint on Secondary Option A No-Fill Test (50,392 win)...
+[2026-11-17 20:10:09] Results for H=6 Seed 42: Primary Pooled MAE = 34.51 W (Pers 33.07 W, Improvement -4.37%, WinRate 23.4%) | Option A Pooled MAE = 35.37 W (Pers 34.22 W)
+[2026-11-17 20:10:09] 
+>>> STARTING FIT: H=6 (1h), Seed 43 <<<
+================================================================================
+🚀 STARTING FEDERATED TRAINING: [T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Device: cuda:1 | Total Rounds: 200 | Clients/Round: 98
+Started At: 2026-11-17 20:10:09 UTC
+================================================================================
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 001/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.87902
+Round completed | Val MAE: 30.42 W (Best: R001 30.42 W)
+Time: 4.7s | Elapsed: 00:00:05 | ETA: 00:15:41
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 002/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.91115
+Round completed | Val MAE: 31.63 W
+Time: 4.5s | Elapsed: 00:00:09 | ETA: 00:15:13
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 003/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.83787
+Round completed | Val MAE: 32.41 W
+Time: 4.3s | Elapsed: 00:00:14 | ETA: 00:14:51
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 004/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.84463
+Round completed | Val MAE: 33.21 W
+Time: 4.5s | Elapsed: 00:00:18 | ETA: 00:14:47
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 005/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 1.01773
+Round completed | Val MAE: 34.12 W
+Time: 5.3s | Elapsed: 00:00:23 | ETA: 00:15:13
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 006/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.92743
+Round completed | Val MAE: 34.72 W
+Time: 7.5s | Elapsed: 00:00:31 | ETA: 00:16:39
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 007/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.88064
+Round completed | Val MAE: 34.60 W
+Time: 7.1s | Elapsed: 00:00:38 | ETA: 00:17:27
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 008/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.89644
+Round completed | Val MAE: 34.89 W
+Time: 7.0s | Elapsed: 00:00:45 | ETA: 00:17:58
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 009/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 1.04631
+Round completed | Val MAE: 35.14 W
+Time: 7.3s | Elapsed: 00:00:52 | ETA: 00:18:29
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 010/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 1.00234
+Round completed | Val MAE: 35.45 W
+Time: 7.6s | Elapsed: 00:01:00 | ETA: 00:18:57
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 011/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.95803
+Round completed | Val MAE: 34.99 W
+Time: 7.2s | Elapsed: 00:01:07 | ETA: 00:19:38
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 012/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.97908
+Round completed | Val MAE: 34.81 W
+Time: 7.2s | Elapsed: 00:01:14 | ETA: 00:20:22
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 013/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.89693
+Round completed | Val MAE: 34.96 W
+Time: 5.1s | Elapsed: 00:01:19 | ETA: 00:20:29
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 014/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.87858
+Round completed | Val MAE: 34.67 W
+Time: 4.8s | Elapsed: 00:01:24 | ETA: 00:20:28
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 015/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.86110
+Round completed | Val MAE: 34.68 W
+Time: 5.5s | Elapsed: 00:01:30 | ETA: 00:20:25
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 016/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.85061
+Round completed | Val MAE: 35.04 W
+Time: 7.0s | Elapsed: 00:01:37 | ETA: 00:20:10
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 017/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.92847
+Round completed | Val MAE: 34.83 W
+Time: 7.3s | Elapsed: 00:01:44 | ETA: 00:20:06
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 018/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.88354
+Round completed | Val MAE: 35.14 W
+Time: 6.6s | Elapsed: 00:01:51 | ETA: 00:19:54
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 019/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.98336
+Round completed | Val MAE: 35.69 W
+Time: 7.0s | Elapsed: 00:01:58 | ETA: 00:19:42
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 020/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.82260
+Round completed | Val MAE: 35.36 W
+Time: 7.0s | Elapsed: 00:02:05 | ETA: 00:19:26
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 021/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.94593
+Round completed | Val MAE: 35.46 W
+Time: 7.2s | Elapsed: 00:02:12 | ETA: 00:19:19
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 022/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.99573
+Round completed | Val MAE: 35.89 W
+Time: 6.4s | Elapsed: 00:02:18 | ETA: 00:18:59
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 023/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.96165
+Round completed | Val MAE: 36.10 W
+Time: 7.0s | Elapsed: 00:02:25 | ETA: 00:19:27
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 024/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.85473
+Round completed | Val MAE: 35.52 W
+Time: 6.5s | Elapsed: 00:02:32 | ETA: 00:19:50
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 025/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.88686
+Round completed | Val MAE: 35.52 W
+Time: 6.6s | Elapsed: 00:02:39 | ETA: 00:20:03
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 026/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.82742
+Round completed | Val MAE: 35.96 W
+Time: 6.2s | Elapsed: 00:02:45 | ETA: 00:19:41
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 027/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 1.02694
+Round completed | Val MAE: 36.86 W
+Time: 6.8s | Elapsed: 00:02:52 | ETA: 00:19:27
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 028/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.96155
+Round completed | Val MAE: 37.12 W
+Time: 7.3s | Elapsed: 00:02:59 | ETA: 00:19:32
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 029/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.87368
+Round completed | Val MAE: 37.06 W
+Time: 7.0s | Elapsed: 00:03:06 | ETA: 00:19:26
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 030/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.91519
+Round completed | Val MAE: 36.99 W
+Time: 7.2s | Elapsed: 00:03:13 | ETA: 00:19:21
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 031/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.90558
+Round completed | Val MAE: 37.96 W
+Time: 7.3s | Elapsed: 00:03:20 | ETA: 00:19:15
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 032/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.89302
+Round completed | Val MAE: 36.87 W
+Time: 7.1s | Elapsed: 00:03:27 | ETA: 00:19:19
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 033/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.83616
+Round completed | Val MAE: 36.87 W
+Time: 6.8s | Elapsed: 00:03:34 | ETA: 00:19:10
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 034/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.86108
+Round completed | Val MAE: 37.28 W
+Time: 6.8s | Elapsed: 00:03:41 | ETA: 00:19:08
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 035/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.80390
+Round completed | Val MAE: 38.63 W
+Time: 7.0s | Elapsed: 00:03:48 | ETA: 00:19:06
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 036/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.92808
+Round completed | Val MAE: 37.56 W
+Time: 6.2s | Elapsed: 00:03:54 | ETA: 00:19:00
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 037/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.92790
+Round completed | Val MAE: 36.82 W
+Time: 6.6s | Elapsed: 00:04:01 | ETA: 00:18:49
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 038/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.87180
+Round completed | Val MAE: 36.57 W
+Time: 7.3s | Elapsed: 00:04:08 | ETA: 00:18:41
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 039/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.68929
+Round completed | Val MAE: 36.70 W
+Time: 6.6s | Elapsed: 00:04:15 | ETA: 00:18:27
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 040/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.75982
+Round completed | Val MAE: 36.72 W
+Time: 6.1s | Elapsed: 00:04:21 | ETA: 00:18:02
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 041/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.84234
+Round completed | Val MAE: 38.04 W
+Time: 5.8s | Elapsed: 00:04:27 | ETA: 00:17:33
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 042/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.79976
+Round completed | Val MAE: 37.62 W
+Time: 4.3s | Elapsed: 00:04:31 | ETA: 00:16:43
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 043/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.73655
+Round completed | Val MAE: 38.33 W
+Time: 4.8s | Elapsed: 00:04:36 | ETA: 00:16:05
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 044/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.90911
+Round completed | Val MAE: 39.11 W
+Time: 4.5s | Elapsed: 00:04:40 | ETA: 00:15:23
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 045/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.77570
+Round completed | Val MAE: 38.39 W
+Time: 4.1s | Elapsed: 00:04:44 | ETA: 00:14:33
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 046/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.72842
+Round completed | Val MAE: 37.69 W
+Time: 4.6s | Elapsed: 00:04:49 | ETA: 00:14:03
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 047/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.89978
+Round completed | Val MAE: 38.05 W
+Time: 5.3s | Elapsed: 00:04:54 | ETA: 00:13:38
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 048/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.92339
+Round completed | Val MAE: 38.66 W
+Time: 6.6s | Elapsed: 00:05:01 | ETA: 00:13:23
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 049/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.91479
+Round completed | Val MAE: 38.40 W
+Time: 6.9s | Elapsed: 00:05:08 | ETA: 00:13:23
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 050/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.74059
+Round completed | Val MAE: 37.87 W
+Time: 6.8s | Elapsed: 00:05:15 | ETA: 00:13:29
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 051/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.88010
+Round completed | Val MAE: 38.46 W
+Time: 6.9s | Elapsed: 00:05:22 | ETA: 00:13:39
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 052/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.76983
+Round completed | Val MAE: 38.85 W
+Time: 7.3s | Elapsed: 00:05:29 | ETA: 00:14:18
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 053/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.87457
+Round completed | Val MAE: 38.53 W
+Time: 7.1s | Elapsed: 00:05:36 | ETA: 00:14:45
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 054/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.81620
+Round completed | Val MAE: 38.95 W
+Time: 7.2s | Elapsed: 00:05:43 | ETA: 00:15:19
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 055/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.76562
+Round completed | Val MAE: 37.92 W
+Time: 5.1s | Elapsed: 00:05:48 | ETA: 00:15:26
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 056/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.81775
+Round completed | Val MAE: 39.26 W
+Time: 4.7s | Elapsed: 00:05:53 | ETA: 00:15:20
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 057/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.83567
+Round completed | Val MAE: 38.38 W
+Time: 4.9s | Elapsed: 00:05:58 | ETA: 00:15:08
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 058/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.71454
+Round completed | Val MAE: 38.17 W
+Time: 6.2s | Elapsed: 00:06:04 | ETA: 00:14:56
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 059/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.80434
+Round completed | Val MAE: 39.00 W
+Time: 6.5s | Elapsed: 00:06:11 | ETA: 00:14:43
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 060/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.75412
+Round completed | Val MAE: 38.60 W
+Time: 6.8s | Elapsed: 00:06:18 | ETA: 00:14:37
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 061/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.83442
+Round completed | Val MAE: 38.60 W
+Time: 6.6s | Elapsed: 00:06:24 | ETA: 00:14:26
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 062/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.93611
+Round completed | Val MAE: 39.01 W
+Time: 6.7s | Elapsed: 00:06:31 | ETA: 00:14:11
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 063/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.85354
+Round completed | Val MAE: 38.64 W
+Time: 7.3s | Elapsed: 00:06:38 | ETA: 00:14:08
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 064/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.81820
+Round completed | Val MAE: 38.35 W
+Time: 6.6s | Elapsed: 00:06:45 | ETA: 00:13:54
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 065/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.81246
+Round completed | Val MAE: 39.18 W
+Time: 6.6s | Elapsed: 00:06:51 | ETA: 00:14:09
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 066/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.84670
+Round completed | Val MAE: 39.61 W
+Time: 7.8s | Elapsed: 00:06:59 | ETA: 00:14:44
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 067/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.79421
+Round completed | Val MAE: 39.24 W
+Time: 6.7s | Elapsed: 00:07:06 | ETA: 00:15:02
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 068/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.73601
+Round completed | Val MAE: 39.11 W
+Time: 7.1s | Elapsed: 00:07:13 | ETA: 00:15:07
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 069/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.80418
+Round completed | Val MAE: 38.47 W
+Time: 6.8s | Elapsed: 00:07:20 | ETA: 00:15:04
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 070/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.80634
+Round completed | Val MAE: 38.07 W
+Time: 7.3s | Elapsed: 00:07:27 | ETA: 00:15:03
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 071/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.76958
+Round completed | Val MAE: 38.78 W
+Time: 7.3s | Elapsed: 00:07:34 | ETA: 00:15:05
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 072/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.75789
+Round completed | Val MAE: 39.07 W
+Time: 6.8s | Elapsed: 00:07:41 | ETA: 00:14:59
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 073/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.78784
+Round completed | Val MAE: 38.05 W
+Time: 6.9s | Elapsed: 00:07:48 | ETA: 00:14:47
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 074/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.73172
+Round completed | Val MAE: 38.44 W
+Time: 6.6s | Elapsed: 00:07:55 | ETA: 00:14:41
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 075/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.78765
+Round completed | Val MAE: 37.91 W
+Time: 6.8s | Elapsed: 00:08:01 | ETA: 00:14:36
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 076/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.83744
+Round completed | Val MAE: 37.95 W
+Time: 7.4s | Elapsed: 00:08:09 | ETA: 00:14:24
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 077/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.89705
+Round completed | Val MAE: 38.31 W
+Time: 6.4s | Elapsed: 00:08:15 | ETA: 00:14:13
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 078/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.81300
+Round completed | Val MAE: 38.13 W
+Time: 7.0s | Elapsed: 00:08:22 | ETA: 00:14:04
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 079/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.76792
+Round completed | Val MAE: 39.55 W
+Time: 7.0s | Elapsed: 00:08:29 | ETA: 00:14:00
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 080/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.77942
+Round completed | Val MAE: 39.03 W
+Time: 7.4s | Elapsed: 00:08:37 | ETA: 00:13:54
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 081/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.83839
+Round completed | Val MAE: 39.25 W
+Time: 6.9s | Elapsed: 00:08:44 | ETA: 00:13:43
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 082/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.90507
+Round completed | Val MAE: 38.33 W
+Time: 7.1s | Elapsed: 00:08:51 | ETA: 00:13:40
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 083/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.82062
+Round completed | Val MAE: 37.54 W
+Time: 6.8s | Elapsed: 00:08:57 | ETA: 00:13:31
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 084/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.84720
+Round completed | Val MAE: 37.04 W
+Time: 5.5s | Elapsed: 00:09:03 | ETA: 00:13:11
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 085/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.77881
+Round completed | Val MAE: 38.64 W
+Time: 4.9s | Elapsed: 00:09:08 | ETA: 00:12:43
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 086/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.93213
+Round completed | Val MAE: 39.10 W
+Time: 4.5s | Elapsed: 00:09:12 | ETA: 00:12:02
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 087/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.68126
+Round completed | Val MAE: 37.52 W
+Time: 4.6s | Elapsed: 00:09:17 | ETA: 00:11:36
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 088/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.81644
+Round completed | Val MAE: 37.24 W
+Time: 4.3s | Elapsed: 00:09:21 | ETA: 00:11:00
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 089/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.77876
+Round completed | Val MAE: 37.85 W
+Time: 5.4s | Elapsed: 00:09:27 | ETA: 00:10:36
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 090/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.89667
+Round completed | Val MAE: 37.67 W
+Time: 7.0s | Elapsed: 00:09:34 | ETA: 00:10:26
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 091/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.82681
+Round completed | Val MAE: 38.53 W
+Time: 7.1s | Elapsed: 00:09:41 | ETA: 00:10:22
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 092/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.78085
+Round completed | Val MAE: 38.80 W
+Time: 7.1s | Elapsed: 00:09:48 | ETA: 00:10:17
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 093/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.92327
+Round completed | Val MAE: 38.19 W
+Time: 6.8s | Elapsed: 00:09:54 | ETA: 00:10:10
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 094/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.89618
+Round completed | Val MAE: 38.03 W
+Time: 6.6s | Elapsed: 00:10:01 | ETA: 00:10:17
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 095/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.79508
+Round completed | Val MAE: 37.53 W
+Time: 7.3s | Elapsed: 00:10:08 | ETA: 00:10:36
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 096/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.92024
+Round completed | Val MAE: 38.12 W
+Time: 7.0s | Elapsed: 00:10:15 | ETA: 00:10:56
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 097/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.77320
+Round completed | Val MAE: 37.26 W
+Time: 4.8s | Elapsed: 00:10:20 | ETA: 00:10:52
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 098/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.79779
+Round completed | Val MAE: 38.34 W
+Time: 4.6s | Elapsed: 00:10:25 | ETA: 00:10:49
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 099/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.79362
+Round completed | Val MAE: 37.82 W
+Time: 4.9s | Elapsed: 00:10:30 | ETA: 00:10:38
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 100/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.88571
+Round completed | Val MAE: 38.49 W
+Time: 6.9s | Elapsed: 00:10:37 | ETA: 00:10:31
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 101/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.82908
+Round completed | Val MAE: 39.03 W
+Time: 6.8s | Elapsed: 00:10:43 | ETA: 00:10:22
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 102/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.87605
+Round completed | Val MAE: 38.52 W
+Time: 6.6s | Elapsed: 00:10:50 | ETA: 00:10:11
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 103/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.73224
+Round completed | Val MAE: 37.36 W
+Time: 6.7s | Elapsed: 00:10:57 | ETA: 00:10:04
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 104/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.81955
+Round completed | Val MAE: 38.72 W
+Time: 6.8s | Elapsed: 00:11:04 | ETA: 00:09:59
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 105/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.69431
+Round completed | Val MAE: 38.06 W
+Time: 6.9s | Elapsed: 00:11:11 | ETA: 00:09:50
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 106/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.75683
+Round completed | Val MAE: 38.81 W
+Time: 6.9s | Elapsed: 00:11:17 | ETA: 00:09:42
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 107/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.76858
+Round completed | Val MAE: 39.10 W
+Time: 6.6s | Elapsed: 00:11:24 | ETA: 00:09:53
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 108/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.81841
+Round completed | Val MAE: 38.21 W
+Time: 6.8s | Elapsed: 00:11:31 | ETA: 00:10:08
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 109/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.78188
+Round completed | Val MAE: 37.68 W
+Time: 6.8s | Elapsed: 00:11:38 | ETA: 00:10:18
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 110/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.80165
+Round completed | Val MAE: 38.30 W
+Time: 6.4s | Elapsed: 00:11:44 | ETA: 00:10:06
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 111/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.89209
+Round completed | Val MAE: 38.81 W
+Time: 6.5s | Elapsed: 00:11:51 | ETA: 00:09:57
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 112/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.89690
+Round completed | Val MAE: 40.10 W
+Time: 7.0s | Elapsed: 00:11:58 | ETA: 00:09:54
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 113/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.85944
+Round completed | Val MAE: 38.49 W
+Time: 7.1s | Elapsed: 00:12:05 | ETA: 00:09:51
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 114/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.82043
+Round completed | Val MAE: 38.06 W
+Time: 6.8s | Elapsed: 00:12:12 | ETA: 00:09:44
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 115/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.80644
+Round completed | Val MAE: 38.89 W
+Time: 7.1s | Elapsed: 00:12:19 | ETA: 00:09:39
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 116/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.74539
+Round completed | Val MAE: 37.82 W
+Time: 7.1s | Elapsed: 00:12:26 | ETA: 00:09:35
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 117/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.85802
+Round completed | Val MAE: 37.46 W
+Time: 6.3s | Elapsed: 00:12:32 | ETA: 00:09:25
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 118/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.82747
+Round completed | Val MAE: 38.36 W
+Time: 7.2s | Elapsed: 00:12:39 | ETA: 00:09:21
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 119/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.79924
+Round completed | Val MAE: 38.39 W
+Time: 7.0s | Elapsed: 00:12:46 | ETA: 00:09:16
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 120/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.75519
+Round completed | Val MAE: 38.37 W
+Time: 6.7s | Elapsed: 00:12:53 | ETA: 00:09:12
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 121/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.71147
+Round completed | Val MAE: 38.02 W
+Time: 7.1s | Elapsed: 00:13:00 | ETA: 00:09:09
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 122/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.78823
+Round completed | Val MAE: 37.88 W
+Time: 6.8s | Elapsed: 00:13:07 | ETA: 00:09:00
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 123/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.71147
+Round completed | Val MAE: 37.92 W
+Time: 6.9s | Elapsed: 00:13:14 | ETA: 00:08:51
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 124/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.82437
+Round completed | Val MAE: 37.66 W
+Time: 6.5s | Elapsed: 00:13:20 | ETA: 00:08:42
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 125/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.87000
+Round completed | Val MAE: 38.46 W
+Time: 6.3s | Elapsed: 00:13:27 | ETA: 00:08:30
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 126/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.69694
+Round completed | Val MAE: 38.67 W
+Time: 5.6s | Elapsed: 00:13:32 | ETA: 00:08:12
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 127/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.89367
+Round completed | Val MAE: 38.76 W
+Time: 5.5s | Elapsed: 00:13:38 | ETA: 00:07:59
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 128/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.79075
+Round completed | Val MAE: 38.74 W
+Time: 4.6s | Elapsed: 00:13:43 | ETA: 00:07:34
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 129/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.83990
+Round completed | Val MAE: 39.28 W
+Time: 4.6s | Elapsed: 00:13:47 | ETA: 00:07:11
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 130/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.72773
+Round completed | Val MAE: 38.04 W
+Time: 4.3s | Elapsed: 00:13:51 | ETA: 00:06:48
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 131/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.78425
+Round completed | Val MAE: 37.79 W
+Time: 4.2s | Elapsed: 00:13:56 | ETA: 00:06:22
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 132/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.71083
+Round completed | Val MAE: 37.98 W
+Time: 5.3s | Elapsed: 00:14:01 | ETA: 00:06:06
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 133/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.75847
+Round completed | Val MAE: 37.70 W
+Time: 7.2s | Elapsed: 00:14:08 | ETA: 00:06:03
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 134/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.78664
+Round completed | Val MAE: 38.00 W
+Time: 6.8s | Elapsed: 00:14:15 | ETA: 00:05:59
+[T1.2-HistoryBenchmark | FedAvg-1h | Seed 43]
+Round 135/200 | Clients 098/098
+Local Epoch 1/1 | Loss: 0.79941
+Round completed | Val MAE: 38.60 W
+Time: 6.7s | Elapsed: 00:14:22 | ETA: 00:05:56

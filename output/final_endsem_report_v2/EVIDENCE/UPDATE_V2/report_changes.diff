@@ -1,0 +1,405 @@
+--- v1/FINAL_PROJECT_REPORT.md
++++ v2/FINAL_PROJECT_REPORT.md
+@@ -5,13 +5,14 @@
+ **Department of Computer Science and Engineering, National Institute of Technology Goa**  
+ **Supervisor:**Dr. Pravati Swain  
+ **Presentation date:**19 December 2026  
+-**Evidence snapshot and report preparation:**17 November 2026, Asia/Kolkata
++**Evidence snapshot and report preparation:**17 November 2026, Asia/Kolkata  
++**Report revision:** v2, 17 November 2026 (Asia/Calcutta); updated from the preserved v1 Markdown
+ 
+ The presentation date is prospective. This document describes evidence available at preparation time; it does not anticipate December experiments. The research title states the broader direction. Forecasting has been implemented and evaluated; a validated energy-aware control policy has not been demonstrated.
+ 
+ ## Abstract
+ 
+-This project studies node-level forecasting from CINECA Marconi 100 telemetry under heterogeneous availability and missing observations. The implementation represents 979 known compute nodes as simulated federated clients from one facility. It does not represent 979 independent data centers. A sequence model predicts the mean of six future ten-minute power bins; one separately versioned experiment also predicts recorded IPMI ambient temperature. Chronological preparation, explicit window identities, training-only normalization, validation selection, preserved predictions and artifact hashes provide the basis for interpreting results.
++This project studies node-level forecasting from CINECA Marconi100 telemetry under heterogeneous availability and missing observations. The implementation represents 979 known compute nodes as simulated federated clients from one facility. It does not represent 979 independent data centers. A sequence model predicts the mean of six future ten-minute power bins; one separately versioned experiment also predicts recorded IPMI ambient temperature. Chronological preparation, explicit window identities, training-only normalization, validation selection, preserved predictions and artifact hashes provide the basis for interpreting results.
+ 
+ The experimental record contains several distinct tracks. An earlier one-hour shared LSTM reports held-out MAE 27.934 W and RMSE 54.884 W on 75,566 windows. The historical six-hour,24-fit missing-data matrix contains FedAvg and centralized SGD, four input-fill policies and three seeds; centralized SGD has lower pooled MAE and RMSE in all 12 matched policy/seed pairs. Its common test population, however, covers only 6,590 windows,570 nodes and 17 origins on one date. The separate B1 two-output March experiment has 194,212 hourly windows on 976 nodes. Its FedAvg power RMSE improves slightly over persistence while power MAE and both ambient-temperature errors worsen. [L01; V01–V03; B01–B03]
+ 
+@@ -19,9 +20,11 @@
+ 
+ The main contribution is an evidence-preserving forecasting and comparison workflow, accompanied by measured findings that include unfavorable results. Remaining work includes scientific reconciliation of newer protocol/documentation differences, broader temporal validation, controlled environmental and optimizer studies, and a separately validated action-response model before any energy/SLA benefit can be measured.
+ 
++The updated evidence adds T7 inference-time robustness: 99 saved condition/seed/period evaluations of frozen T4 models, without new fitting. Random 20% dropout raises canonical pooled MAE from 24.8133 W to 26.5202 W; 30% two-hour burst masking raises it to 36.1049 W. These figures describe a synthetic input-loss stress test with FF30 and mean-input fallback, not the original no-fill policy. New coverage/preflight records also exist, but their training-eligibility and loss-description conflicts prevent treating the proposed two-layer history benchmark as ready or completed. [U01–U06]
++
+ ## Reading guide and evidence convention
+ 
+-Claim identifiers such as[L01] resolve to `EVIDENCE_AND_CLAIM_REGISTER.csv`. That register supplies the original path, field or function location, verification status and qualification. `EXPERIMENT_STATUS_REGISTER.csv` distinguishes completed fits, completed analyses, designs and missing evaluations. Source-file hashes, byte checks and the full repository metadata inventory accompany this report. External research references use[R1]–[R7] and direct primary-source links in Section 16.
++Claim identifiers such as[L01] resolve to `EVIDENCE_AND_CLAIM_REGISTER.csv`. That register supplies the original path, field or function location, verification status and qualification. `EXPERIMENT_STATUS_REGISTER.csv` distinguishes completed fits, completed analyses, designs and missing evaluations. Source-file hashes, byte checks and repository inventories accompany this report. `EVIDENCE/UPDATE_V2/` contains the current audit; older files in `EVIDENCE/` remain the explicitly dated v1 snapshot. The original report and root registers are backed up under `BACKUP/`. External research references use[R1]–[R7] and direct primary-source links in Section 16.
+ 
+ “Verified” means the stated, bounded check passed: for example, a metric field exists and its arithmetic or byte binding matches. It never means that all historical experiments have been numerically reproduced. “Partially verified” identifies a saved outcome with unresolved protocol, independent-replay or granularity limitations. “Planned” does not imply implementation or execution. Where evidence is unavailable, the explicit conclusion is **Not verified from available artifacts.**
+ 
+@@ -52,6 +55,8 @@
+ Establish causal observed-window cohorts; implement sequence models and simulated FedAvg; compare same-window errors; quantify missingness/history effects; preserve selection and result provenance. Operational decision evaluation remains a separate future objective.
+ 
+ ### 2.3 Research questions and present answers
++
++**Table 2.1.**
+ 
+ |Question|Present evidence-based answer|Scope|
+ |---|---|---|
+@@ -76,11 +81,13 @@
+ 
+ ### 4.1 Source and entities
+ 
+-The working dataset is M 100/ExaData telemetry from CINECA’s Marconi 100 facility. Historical main experiments use January–February 2022. Later B1 and temporal/T4 work include March 2022 under different cohorts. Source records are distributed in Parquet partitions organized by month, plugin and metric; prepared data are stored as frozen arrays, retained bins and manifests. Existing acquisition reports provide archive hashes. This report did not download or extract archives. [D01; P01]
++The working dataset is M100/ExaData telemetry from CINECA’s Marconi100 facility. Historical main experiments use January–February 2022. Later B1 and temporal/T4 work include March 2022 under different cohorts. Source records are distributed in Parquet partitions organized by month, plugin and metric; prepared data are stored as frozen arrays, retained bins and manifests. Existing acquisition reports provide archive hashes. This report did not download or extract archives. [D01; P01]
+ 
+ The 979 original node strings and their ordinal mapping identify compute nodes. They are categorical identities, not a geographical index or a measurement in watts. The model embedding allows repeated observations of an already-known node to influence its representation. The evaluation therefore concerns known-node forecasting rather than unseen-data-center or unseen-node generalization.
+ 
+ ### 4.2 Availability and readiness
++
++**Table 4.1.**
+ 
+ | Quantity | Evidence category | Recorded source/partition | Interpretation |
+ | --- | --- | --- | --- |
+@@ -128,6 +135,8 @@
+ 
+ ### 5.2 Fourteen-slot input contract
+ 
++**Table 5.1.**
++
+ | Slot | Exact channel | Unit | Model handling |
+ | --- | --- | --- | --- |
+ | 0 | power_kw | kW | Retained numeric input |
+@@ -160,6 +169,8 @@
+ 
+ ### 5.4 Track-specific split semantics
+ 
++**Table 5.2.**
++
+ | Track | Training | Validation | Test / containment |
+ | --- | --- | --- | --- |
+ | Frozen one-hour/v5 | Jan 1–Feb 11 07:10 UTC | Feb 11 07:10–Feb 20 03:30 | Feb 20 03:30–Mar 1; historical window contract |
+@@ -171,13 +182,34 @@
+ 
+ Inspection of `Candidate1RealData._discover_valid_origins` shows `origins >= 144`, not `origins >= split_lower+144`. It disallows filled sources from crossing a split’s lower boundary but can retain observed history from the preceding split. This is different from B1’s strict whole-history containment. It is not future-target leakage by itself; it is a different context-at-boundary definition. The report records the implementation instead of applying a generic “strict splits” label to all experiments. [C04; T06]
+ 
+-The newer protocol-design counts and executed counts also differ. Candidate 1 design tables give FF30 common counts 394,979/171,977/281,954 for train/validation/test, while the later executed record reports 394,100/157,484/243,138. The exact exclusion reconciliation is not reproduced here. Executed results are reported using their own cohort counts; the design counts are not silently substituted. [C02; C04]
++The newer protocol-design counts and executed counts also differ. Candidate 1 design tables give FF30 common counts 394,979/171,977/281,954 for train/validation/test, while the later executed record reports 394,100/157,484/243,138. A new T1.1 v2 audit explains differences through split-local source/reset rules and repeats the executed counts. This is a source-supported explanation, not a newly replayed identity-by-identity exclusion reconciliation; its eligibility and causal-outage prose have additional conflicts described in §11.10. [U03; U05] Executed results are reported using their own cohort counts; the design counts are not silently substituted. [C02; C04]
++
++### 5.5 T7 stress-test inputs: an explicit exception to complete-input evaluation
++
++```mermaid
++flowchart TD
++  A["Frozen T4 seed42/43/44 models"] --> I["Stress inference in completed T7 study"]
++  X["Saved eligible origins and operational histories"] --> M["Fixed per-condition synthetic loss mask"]
++  M --> F["Causal fill up to 3 bins"]
++  F --> Z["Unfillable input: standardized training mean"]
++  Z --> I
++  Y["Observed future targets; never masked"] --> C["Condition-specific pooled and node errors"]
++  I --> C
++  C --> R["This task: read stored results and verify summaries"]
++  R -.-> P["Future action-response design; not executed"]
++```
++
++T7 keeps the saved eligible origin sets and observed future power targets, then applies synthetic loss to operational input channels 0–6. Weather stays masked, and calendar/identity channels are retained. Its generator takes directly observed finite entries (`age == 0`), applies one fixed seed42 mask per condition across all model seeds, and recomputes causal fill with age at most three bins. Remaining missing inputs become zero in standardized space. This is **training-mean input imputation**, not a claim that all accepted input bins remain observed. No target is filled. [U01; U04]
++
++The persistence anchor changes under corruption: it searches backwards within the six-hour history for available power, otherwise uses the training mean. Both the residual predictor and its condition-specific persistence baseline use that anchor. Comparisons against clean persistence and degraded-input persistence answer different questions. The audit counts describe a sliced node×time×channel grid, not the number of prediction windows multiplied by history length. Each period uses its own slice and fixed mask; across-seed variability does not sample new failure patterns. [U01; U04]
++
++This stress test differs from B1's observed no-fill windows and historical v5's fixed common no-fill holdouts. The burst generator samples distinct start positions but does not explicitly prohibit overlapping blocks. Requested dropout percentages therefore differ from realized removed-observation proportions, especially for long blocks. The generator's first source row is the evaluation slice start: available context is bounded and can differ from an uninterrupted telemetry feed. These limitations are part of the intervention definition. [U04]
+ 
+ ## 6. System architecture and implemented workflow
+ 
+ ![Research architecture](FIGURES/01_system_architecture.png)
+ 
+-**Figure 1.** Evidence-preserving forecasting architecture. Solid components represent implemented data/model/result paths; the dashed decision-support branch is proposed. Simulated clients remain node partitions from one facility.
++**Figure 1.** Evidence-preserving forecasting architecture. The rendered figure summarizes implemented data/model/result paths; the Mermaid workflow separately identifies future decision support. Simulated clients remain node partitions from one facility.
+ 
+ ### 6.1 Components and responsibilities
+ 
+@@ -294,7 +326,7 @@
+ 
+ ### 8.3 B1 training and matched control
+ 
+-B1 uses one local epoch, batch 128 and fresh SGD sessions, with all original 979 client ordinals preserved. Its prepared dataset has 280,499 training and 82,993 validation windows. Validation occurs at 0,10,…,200 rounds; the earliest strict minimum joint standardized RMSE is selected. All three FedAvg selections were round 200. [B01; B04]
++B1 uses one local epoch, batch 128 and fresh SGD sessions, with all original 979 client ordinals preserved. Its prepared dataset has 280,499 training and 82,993 validation windows. Validation occurs at 0,10,…, 200 rounds; the earliest strict minimum joint standardized RMSE is selected. All three FedAvg selections were round 200. [B01; B04]
+ 
+ The separately trained B1 centralized-SGD v2 control replays the exact FedAvg selected-client order and within-client batches on one continuing model. Its recorded seed 42/43/44 selections are 200/190/190, with 200 blocks complete for each. The matrix completion exists and the selected exports are present. This is genuine completed training, but it is not yet a matched March result: the current adapter’s 56 contract tests do not supply centralized test predictions. [B04; B06]
+ 
+@@ -369,6 +401,8 @@
+ ## 11. Completed experimental results
+ 
+ ### 11.1 Earlier one-hour shared LSTM
++
++**Table 11.1.**
+ 
+ | Method | Pooled MAE (W) | Pooled RMSE (W) | Macro-node MAE (W) |
+ | --- | --- | --- | --- |
+@@ -381,6 +415,8 @@
+ The pooled improvements are approximately 9.68%in MAE and 14.80%in RMSE. The result demonstrates a useful shared-model forecast on its accepted historical windows. It does not demonstrate a federated benefit, because the model is not this project’s FedAvg comparison. Nor does it establish performance on March, on all unavailable bins or on new nodes. The duplicate legacy GPU 1/all-nodes summaries are not counted as independent evidence merely because they occupy separate directories.
+ 
+ ### 11.2 Historical v1 architecture/weather panel and matched v2/v3 control
++
++**Table 11.2.**
+ 
+ | Historical v1 model | Weather | Pooled MAE W, mean ± sample SD | Pooled RMSE W | Macro MAE W |
+ | --- | --- | --- | --- | --- |
+@@ -397,6 +433,8 @@
+ The earlier one-hour matched comparison contains six additional FedAvg/centralized-SGD fits. Its mean pooled test RMSE is 63.231179 W for FedAvg and 56.016953 W for central SGD; mean MAE is 33.924637 W versus 30.516738 W. Persistence is approximately 64.417454 W RMSE and 30.926903 W MAE. These remain a separate historical control panel. The results support lower central errors in that protocol, not a general theorem about federated learning. [H02]
+ 
+ ### 11.3 Historical six-hour 24-fit missing-data matrix
++
++**Table 11.3.**
+ 
+ | Method | Input policy | Pooled MAE W | Pooled RMSE W | Macro MAE W | Macro RMSE W |
+ | --- | --- | --- | --- | --- | --- |
+@@ -422,6 +460,8 @@
+ 
+ ### 11.4 Separate B1 two-output March experiment
+ 
++**Table 11.4.**
++
+ | Output | Aggregation | Persistence MAE | B1 MAE, mean ± sample SD | Persistence RMSE | B1 RMSE, mean ± sample SD |
+ | --- | --- | --- | --- | --- | --- |
+ | Power W | pooled | 42.392221 | 53.356761 ± 1.512556 | 92.600392 | 89.797794 ± 1.138748 |
+@@ -444,6 +484,8 @@
+ 
+ The T1.1-style audit is complete, and the T1.2 directory contains a completed protocol-design record. Later T1.3 named execution directories contain nine FF30 fits:3 histories×3 seeds. They go beyond a proposal or a short pilot. The corresponding no-fill nine-fit sensitivity matrix is not verified as completed from available artifacts. [C01–C03]
+ 
++**Table 11.5.**
++
+ | History hours | Pooled MAE W | Pooled RMSE W | Macro MAE W | Macro RMSE W |
+ | --- | --- | --- | --- | --- |
+ | 1 | 33.302 ± 0.371 | 58.716 ± 0.085 | 33.941 ± 0.364 | 55.389 ± 0.102 |
+@@ -459,6 +501,8 @@
+ 
+ **Figure 6.** Saved FF30 history comparison, means/sample SD from nine seed rows. Shared targets/cohort are part of the implementation; protocol-design/executed-count differences and no-fill incompleteness remain qualifications.
+ 
++The completed table above is the older one-layer, direct-power/MSE history experiment. The newly added `t1_2_controlled_history_benchmark_v1.py` instead proposes two-layer residual/MSE fits and a no-fill test sensitivity. Its output was absent at initial inspection and later appeared with partial external execution evidence; no completed new nine-fit result is inferred from that progress. [U03; U05]
++
+ ### 11.6 T2 temporal extension and T3 adaptation
+ 
+ The frozen six-hour T1 models were also evaluated over an extended January 28–April 1 period. Saved T2 results show larger MAE under that extension than on the canonical early test and MAE worse than persistence, while RMSE remains better. This motivates investigating temporal sensitivity, but does not identify a physical cause for every drift or telemetry gap. [C05]
+@@ -468,6 +512,8 @@
+ ### 11.7 T4 residual-power benchmark
+ 
+ All requested T4 final-report, integrity-audit and artifact-manifest files exist. Twenty-two manifest-listed files match their recorded hashes, and all six final FedAvg/central checkpoint hashes match the seed-audit CSV. The saved reconciliation table reports PASS for 18 method/seed/period rows. This report independently checks those stored values and summaries without rerunning the audit tool, which would execute inference. [T01; T07; T08]
++
++**Table 11.6.**
+ 
+ | Temporal view | Method | Pooled MAE W | Pooled RMSE W | Macro MAE W | Macro RMSE W | Persistence pooled MAE/RMSE W |
+ | --- | --- | --- | --- | --- | --- | --- |
+@@ -498,6 +544,8 @@
+ T5 contains four conditions × three seeds × three temporal views. Its no-weather condition reuses T4; nine additional weather-enabled fits are recorded. Canonical mean pooled MAE is 24.8133 W with no weather, 24.8836 W with temperature only, 24.9316 W with humidity only and 24.9593 W with both. The differences are small; they support no benefit in this measured panel, not a general irrelevance of weather. T5 reconstructs unmasked channels separately, so the T4 loader's weather masking must not be attributed to all T5 conditions. The checkpoint registry is used for identities; its manifest's repeated reference “Round198” is inconsistent with T4's seed-specific 197/198/200 selections. [N01]
+ 
+ T6 completion reports appeared during this reporting session, independently of this task. The saved matrix reuses three T4 GRUs and adds three FedAvg-LSTM fits and three centralized XGBoost fits. It is a model-family/control comparison, not a fully federated tree benchmark or a capacity-identical GRU/LSTM comparison. The LSTM has 63,449 parameters versus 49,561 for GRU; trees flatten 36×14 inputs. [N02]
++
++**Table 11.7.**
+ 
+ | View | Model | Pooled MAE W, mean ± sample SD | Pooled RMSE W, mean ± sample SD |
+ | --- | --- | --- | --- |
+@@ -515,11 +563,80 @@
+ 
+ Two pre-existing T6 progress logs grew during the report interval, and new T6 artifacts appeared. The writer's exact invocation is not established; the log records completion of a concurrently progressing suite. This task did not launch it. Full-tree metadata preservation is therefore not a zero-mismatch result, although the 270 code/config/document hashes and 116 core inspected result hashes remain unchanged. Exact differences are retained in the preservation record; no baseline was updated. [N03]
+ 
++### 11.9 T7: completed inference-time missing-telemetry stress study
++
++T7 reuses the three frozen T4 FedAvg checkpoints; it adds **no training fits**. The artifacts contain 25 canonical conditions×3 seeds=75 records, plus four conditions×3 seeds in each of the extended and March views, for 99 records across 33 condition/period groups. Canonical evaluation retains 243,138 windows/978 nodes, the extended view 3,609,285/979 and March 2,229,042/976. All periods are retrospective and nested as previously defined. The progress logger's “75 experiments” refers to its canonical tracker, not the full exported matrix. [U01]
++
++**Table 11.8.**
++
++| Canonical condition | Pooled MAE W, mean ± sample SD | Pooled RMSE W, mean ± sample SD | Macro MAE W, mean ± sample SD | Condition persistence MAE W | Δ pooled MAE vs clean W |
++| --- | --- | --- | --- | --- | --- |
++| Reference Baseline (0% Missing) | 24.8133 ± 0.0358 | 57.5502 ± 0.0306 | 25.2242 ± 0.0343 | 33.0661 | +0.0000 |
++| Random 5% Missing | 25.1918 ± 0.0209 | 58.1319 ± 0.0364 | 25.5885 ± 0.0205 | 33.2087 | +0.3785 |
++| Random 10% Missing | 25.5890 ± 0.0023 | 58.6870 ± 0.0354 | 26.0097 ± 0.0025 | 33.3517 | +0.7757 |
++| Random 20% Missing | 26.5202 ± 0.0298 | 60.1124 ± 0.0450 | 26.9302 ± 0.0271 | 33.7593 | +1.7068 |
++| Random 30% Missing | 28.0694 ± 0.0514 | 62.5783 ± 0.0375 | 28.5075 ± 0.0525 | 34.2945 | +3.2561 |
++| Contiguous L=3 (30m) 10% Missing | 26.3227 ± 0.0044 | 59.9737 ± 0.0282 | 26.7771 ± 0.0039 | 33.6730 | +1.5094 |
++| Contiguous L=6 (1h) 10% Missing | 28.6445 ± 0.0541 | 62.6327 ± 0.0151 | 28.9943 ± 0.0556 | 34.1098 | +3.8312 |
++| Contiguous L=6 (1h) 20% Missing | 32.3509 ± 0.0904 | 67.4298 ± 0.0440 | 32.8676 ± 0.0876 | 35.1875 | +7.5376 |
++| Contiguous L=6 (1h) 30% Missing | 35.3446 ± 0.1321 | 71.4836 ± 0.0767 | 35.6323 ± 0.1447 | 36.2360 | +10.5313 |
++| Contiguous L=12 (2h) 10% Missing | 29.1049 ± 0.0273 | 63.8359 ± 0.0296 | 29.4209 ± 0.0270 | 34.6999 | +4.2915 |
++| Contiguous L=12 (2h) 30% Missing | 36.1049 ± 0.0698 | 74.3882 ± 0.0224 | 36.5035 ± 0.0728 | 38.1274 | +11.2916 |
++| Feature Group: Power (100% Sensor Outage) | 124.9714 ± 0.0509 | 163.0349 ± 0.0136 | 126.4499 ± 0.0410 | 124.8222 | +100.1581 |
++| Feature Group: Cpu (100% Sensor Outage) | 24.7965 ± 0.0406 | 57.6186 ± 0.0228 | 25.2088 ± 0.0387 | 33.0661 | -0.0168 |
++| Feature Group: Memory (100% Sensor Outage) | 25.0213 ± 0.0286 | 57.6458 ± 0.0472 | 25.4389 ± 0.0321 | 33.0661 | +0.2079 |
++| Feature Group: Inlet_Temp (100% Sensor Outage) | 24.8431 ± 0.0368 | 57.5572 ± 0.0290 | 25.2459 ± 0.0344 | 33.0661 | +0.0298 |
++
++All values above are independently summarized from saved per-condition seed scores. The complete 33-group table, including macro RMSE, is supplied in `TABLES/T7_ALL_CONDITIONS.csv`; no inference was rerun. The clean canonical RMSE is 57.5502 W, **not the 44.97 W stated in T7's Markdown**. The CSV's clean result agrees with T4 to its recorded rounding; several other narrative RMSE cells also conflict, so the numerical CSV takes precedence. [U01; U02]
++
++Random 20% masking adds about 1.71 W MAE, whereas one-hour bursts at 20% add about 7.54 W and two-hour bursts at 30% add about 11.29 W. Longer uninterrupted gaps exceed FF30's age limit more often in this generator. This supports an observed sensitivity to missingness structure under the declared fallback; it does not establish that actual facility failures are predominantly random, that packet loss has been “solved,” or that all telemetry tasks need no other imputation method.
++
++Complete power-channel blackout produces mean MAE about 124.97 W, close to—and slightly worse than—the degraded-input persistence baseline. The model still adds a learned residual to a training-mean anchor; it does not necessarily output that mean exactly. Small CPU/memory/ambient blackout changes are conditional on this already-trained power-anchored model and cannot establish that those physical signals have no value or should be dropped. [U01; U04]
++
++![T7 missingness degradation](FIGURES/09_t7_missingness_robustness.png)
++
++**Figure 9.** Saved T7 canonical pooled MAE under random and burst input loss. Means/sample SD share one mask across model seeds; percentages are requested masking settings, not independently sampled deployments.
++
++![T7 channel sensitivity](FIGURES/10_t7_channel_sensitivity.png)
++
++**Figure 10.** Paired MAE change under complete group blackout; power is shown separately so small non-power changes remain visible. Conditional sensitivity is not causal physical-feature importance.
++
++![T7 client-wise performance](FIGURES/11_t7_node_consistency.png)
++
++**Figure 11.** Distributions and win rates calculated from saved per-node MAEs for four exported canonical conditions, retaining 978 nodes and all three seed records. Negative model-minus-condition-persistence differences favor the model.
++
++### 11.10 New coverage reconciliation and gated residual-history implementation
++
++The new `t1_1_common_history_coverage_audit_v2` supplies saved policy/history counts and a node exclusion table; `t1_2_history_length_preflight_v1` supplies population and client tables. They are additional audits, not new forecasting results and not a replacement for the older nine-fit history experiment. [U03; U05]
++
++**Table 11.9.**
++
++| Policy | Common training windows / active nodes | Common validation windows / active nodes | Common test windows / active nodes |
++| --- | --- | --- | --- |
++| No-fill | 4,138 / 354 | 16,842 / 329 | 50,392 / 635 |
++| FF10 | 11,897 / 576 | 44,769 / 597 | 125,691 / 907 |
++| FF20 | 113,898 / 920 | 86,425 / 795 | 176,698 / 966 |
++| FF30 | 394,100 / 979 | 157,484 / 929 | 243,138 / 978 |
++
++These are three-history intersections within each policy, not one cross-policy shared test cohort. FF30 provides the broadest coverage here; “common windows exist only under FF30” is contradicted by nonzero no-fill/FF10/FF20 intersections. In the historical late-February split, saved 24-hour test counts remain zero under all four policies. Three new historical FF10 validation rows also label 146 common windows as 979 common nodes, an impossible node/window bound. Those historical node-count fields are not accepted. Large CPU/memory gaps support a telemetry-availability explanation; they do not prove the claimed Ganglia daemon crash or its operator-level cause. [U03]
++
++The client CSV exactly reconciles 394,100/157,484/243,138 totals. Its categories are 928 active in all splits, 50 training/test only and 1 training/validation only. The excluded test entry is **node ordinal 704**, which must not be silently relabeled as literal node ID 704. Its counts are a static audit, not an independent preparation rerun. [U05]
++
++The preflight's eligibility narrative is contradicted by its own data: training common counts range 12–985, and **all 979 `train_eligible_prd` flags are False** under the source's `>=1024` predicate. All clients are active (>0 windows), which is a different criterion; seven-day eligibility is not established by that Boolean calculation. This blocks a claim that all clients meet the newly stated threshold, without retroactively changing older experiments' participation rules.
++
++The new T1.1/T1.2 manifests also fail nine actual hash comparisons involving their own scripts/tests/logs and historical-input references. The referenced historical coverage CSV and training array match older independent records; the new expected entries disagree. The audit/preflight execution provenance is therefore **not verified**, even where saved count arithmetic reconciles. No expected hash is updated and no failed gate is bypassed. Exact failures are in `EVIDENCE/UPDATE_V2/content_checks.json`. [U03; U05]
++
++The new proposed runner uses 36/6/144-step inputs, two-layer 64-unit GRU, residual output, batch 64, Adam 0.001, 98 clients, 200 rounds and three seeds. It explicitly uses MSE, whereas T4's winner uses L1. Its documents incorrectly call those losses identical. Proposed resource figures reuse older measurements with a different architecture and are estimates, not a new benchmark or an assurance of zero OOM risk. At the initial audit snapshot the new benchmark had no runtime output. Later in this documentation session its source changed and an external runtime directory appeared; the progress snapshot records a partial one-hour/seed42 fit. Its current status is **ongoing, not completed or accepted as a result matrix**. No provisional validation score is reported as a final outcome. Eligibility/loss/provenance decisions remain unresolved. This task did not launch, authorize, stop or control that run; no protocol choice is made here. [U05; U06]
++
++![Policy-specific common coverage](FIGURES/12_common_coverage_by_policy.png)
++
++**Figure 12.** Saved common-window counts across histories within each policy. Different policies retain different populations; the bars are not matched predictive-performance comparisons.
++
+ ## 12. Comparative Analysis with the Base Paper
+ 
+-This chapter compares Liu et al., arXiv:2511.00623 v3, with the verified forecasting implementation. Page references identify the official 14-page PDF; the named uploaded copy was unavailable locally, so its byte identity is unverified. Full source identity and mathematical reading are in `BASE_PAPER_DETAILED_ANALYSIS.md`. Project claim identifiers resolve to the evidence register. **Not Implemented**, **Not Evaluated** and **Not Directly Comparable** are substantive boundaries, not missing scores to be estimated.
+-
+-### Table 1: Overall research comparison
++This chapter compares Liu et al., arXiv:2511.00623v3, with the verified forecasting implementation. Page references identify the official 14-page PDF; the named uploaded copy was unavailable locally, so its byte identity is unverified. Full source identity and mathematical reading are in `BASE_PAPER_DETAILED_ANALYSIS.md`. Project claim identifiers resolve to the evidence register. **Not Implemented**, **Not Evaluated** and **Not Directly Comparable** are substantive boundaries, not missing scores to be estimated.
++
++### Table 12.1: Overall research comparison
+ 
+ |Dimension|Base paper|Our research|Interpretation/status|
+ |---|---|---|---|
+@@ -531,20 +648,20 @@
+ 
+ **Interpretation.** The paper learns decision variables that enter a physical coordination problem. Our supervised labels are future sensor-bin means. The shared word “federated” therefore does not make the pipelines reproductions of one another. The project's defensible result is the bounded empirical behavior of explicitly versioned forecasters. The paper supplies a motivation for a later decision layer, not evidence that forecasting error already measures energy-management performance. [D01; M01–M04; T01]
+ 
+-### Table 2: Dataset and experimental setup comparison
++### Table 12.2: Dataset and experimental setup comparison
+ 
+ |Dimension|Base paper|Our research|Interpretation/status|
+ |---|---|---|---|
+-|4. Data source|Market/load/operational simulation data; §IV-A, p. 9, ref. [29]|M 100 ExaData, raw Parquet, sensor audit and saved experiments|Different label generation|
++|4. Data source|Market/load/operational simulation data; §IV-A, p. 9, ref. [29]|M100 ExaData, raw Parquet, sensor audit and saved experiments|Different label generation|
+ |5. Entities|Five modeled data centers; Table II, p. 9|979 mapped compute-node clients in one facility|Not 979 physical data centers|
+ |6. Heterogeneity|Distinct local datasets and unequal update acceptance; Fig. 5|Unequal histories, counts, observed node errors|Formal non-IID taxonomy not fully evaluated|
+-|7. Missing data|Comparable sensor-gap treatment not verified in PDF|Coverage-controlled bins; no-fill/FF10/FF20/FF30 inputs|Our target values remain observed|
++|7. Missing data|Comparable sensor-gap treatment not verified in PDF|Coverage-controlled bins; no-fill/FF10/FF20/FF30 inputs; T7 stress/fallback separately|Our target values remain observed|
+ |8. Inputs|Prices, workload arrivals and queue state; §III-A, p. 4|14 operational, thermal, weather and calendar slots|Some executed tracks mask weather|
+ |10. Temporal formulation|Multi-period day-ahead decisions, Eq. (1)|6/36/144 ten-minute histories, next-six-bin mean|Different horizon and origin contracts|
+ 
+ **Interpretation.** This project's data are real telemetry, but the federation is simulated and includes known nodes. More clients does not establish stronger multi-site generalization. The historical v5 common test contains 6,590 windows on one date; B1 contains 194,212 hourly March windows; T4's canonical test contains 243,138 overlapping-origin windows. These populations must remain distinct. The paper's exact sample split and comparable telemetry-gap rates are Not verified from available artifacts in this review. [V01; B01; C03; T04]
+ 
+-### Table 3: Model and federated learning comparison
++### Table 12.3: Model and federated learning comparison
+ 
+ |Dimension|Base paper|Our research|Interpretation/status|
+ |---|---|---|---|
+@@ -556,7 +673,7 @@
+ 
+ **Interpretation.** Full-table averaging dilutes a node-specific embedding update when unchanged copies from other selected clients are averaged with it; that is documented standard FedAvg behavior here. It is unrelated to the paper's selective block sharing and acceptance. T4 further differs from B1: Adam, batch 64, residual L1 training and float32 aggregation are implemented. An average over all these versions would obscure the experiment. FedProx remains a proposed controlled comparison, not a completed adaptive substitute. [M01–M04; T09; F01]
+ 
+-### Table 4: Prediction and evaluation comparison
++### Table 12.4: Prediction and evaluation comparison
+ 
+ |Dimension|Base paper|Our research|Interpretation/status|
+ |---|---|---|---|
+@@ -568,7 +685,7 @@
+ 
+ **Interpretation.** R² measures variance explained relative to a mean predictor, while watt MAE measures absolute physical error and RMSE weights large errors more heavily. A 0.988 R² cannot be ranked against 24.8133 W MAE. Nor is a three-seed standard deviation an uncertainty interval for an individual future node. The correct empirical questions use the same labels, identities and aggregation: the historical v5 centralized control wins both pooled errors in all 12 pairs, whereas B1 beats persistence only on power RMSE among its four pooled output/error comparisons. [V02; B02; T02]
+ 
+-### Table 5: Energy-management and optimization comparison
++### Table 12.5: Energy-management and optimization comparison
+ 
+ |Dimension|Base paper|Our research|Interpretation/status|
+ |---|---|---|---|
+@@ -581,7 +698,7 @@
+ 
+ **Interpretation.** Facility cooling and PUE channels exist upstream, but availability does not create a causal controller or a node-level cooling label. A forecast can support a decision only after its action variables, physical response and constraints are specified and validated. The paper's cost model supplies a useful conceptual separation, not a transferable cost measurement. This project cannot claim energy/SLA savings or use hardcoded memory fields as measured efficiency evidence. [D02; T09; F02]
+ 
+-### Table 6: Quantitative results comparison
++### Table 12.6: Quantitative results comparison
+ 
+ |Record|Base paper's measured quantity|Our separately measured quantity|Comparison indicator|
+ |---|---|---|---|
+@@ -593,14 +710,14 @@
+ 
+ **Interpretation.** The paper's adaptive method does not minimize every displayed aggregate deviation: default FL's 0.07% is below adaptive FL's 0.08%. Its argument also considers component errors and decision quality. Similarly, our B1 finding is mixed and T4's favorable persistence result does not establish FL superiority over its centralized control. The runtime ratio is recomputed from approximate published times, not independently benchmarked. T4's 24.81 W pooled MAE pairs with 33.0661 W pooled persistence; 33.3504 W is a macro-node baseline. [B02; T02; T03]
+ 
+-### Table 7: Research gaps and opportunities derived from the comparison
++### Table 12.7: Research gaps and opportunities derived from the comparison
+ 
+ |25. Opportunity|Existing foundation|Missing evidence/component|Defensible next step|
+ |---|---|---|---|
+ |Telemetry-to-decision connection|Observed forecasting and paper's physical formulation|Validated response to actions|Specify action/response/constraints before simulation claims|
+ |Temporal robustness|Completed FF30 history, T2/T3 and T4 panels|Consistent contracts and prospective periods|Reconcile executed cohort rules; register later evaluation|
+ |Client heterogeneity|Per-node counts/errors, known-node embedding|Controlled non-IID/FedProx/participation study|Fix windows and budget, vary one factor|
+-|Missing telemetry|24-fit input-fill matrix|Broader independent dates and failure modes|Replicate with explicit target-observation rules|
++|Missing telemetry|24-fit input-fill matrix plus T7 synthetic loss|Real failure mechanisms and independent dates|Replicate with explicit target-observation rules|
+ |Multi-output forecasting|B1 power/ambient execution|Uniform benefit, sensor placement/calibration|Audit targets and compare single-/multi-output baselines|
+ |Operational objectives|Upstream facility signals and modeled paper costs|Validated energy/SLA accounting and controller|Match units, aggregation scale and intervention evidence|
+ 
+@@ -614,13 +731,19 @@
+ 
+ T4 supplies the strongest favorable persistence comparison in the current record. Its residual L1 forecaster improves the canonical pooled MAE by approximately one quarter, with improvement also present in the saved March panel. The centralized T4 control has lower mean errors than its FedAvg counterpart. Because T4 changes cohort, origin spacing, filling, residual target, loss and optimization, its improvement cannot be attributed to federation, longer history or one feature in isolation. It is an evaluated configuration, rather than a causal ablation of every design decision. [T02–T04; T09]
+ 
+-The FF30 history panel provides an actual controlled length comparison, conditional on a longest-history-eligible population. It supports a small measured 24-hour advantage over six hours on that population, not a universal ranking. Earlier coverage audits finding zero 24-hour test windows refer to another split/contract. Both facts can be true. The unresolved discrepancy between protocol-design counts and executed counts should be reconciled before a final freeze or a stronger generalization claim. [C01–C04]
++The FF30 history panel provides an actual controlled length comparison, conditional on a longest-history-eligible population. It supports a small measured 24-hour advantage over six hours on that population, not a universal ranking. Earlier coverage audits finding zero 24-hour test windows refer to another split/contract. Both facts can be true. The newer T1.1 v2 boundary-source explanation narrows the design/count discrepancy, but its eligibility claims and exact identity-level attrition require further review. The newly implemented two-layer residual benchmark has no completed result matrix; its externally progressing partial run is reported only as status. [U03; U05] [C01–C04]
+ 
+ ### 13.2 Demonstrated contributions versus intended contributions
+ 
+ Demonstrated engineering contributions include causal coverage-controlled preparation, stable node/origin identities, explicit observed-target rules, node-client simulation, versioned sequence-model experiments, matched error reporting and provenance-preserving artifacts. Demonstrated empirical contributions include the historical input-fill/method comparison, B1's negative persistence findings, completed FF30 history experiments and the bounded T4 residual results. These are application-specific experimental contributions; they are not a newly invented GRU, FedAvg theorem or proof of deployment benefit.
+ 
+-### 13.3 Scientific and verification limits
++### 13.3 Updated heterogeneity and decision-support interpretation
++
++Client heterogeneity has observed coverage and error distributions: new FF30 common training counts span12–985 per node; validation excludes 50 active-training nodes; and T7 node errors change unevenly under input corruption. These describe unequal availability and performance. They do not identify a formal non-IID generative mechanism, a completed FedProx benefit or an evaluated participation-rate sensitivity. Three model seeds under one mask do not estimate missingness-process uncertainty. [U01; U05]
++
++Decision support remains a proposed research layer. T7 motivates testing failure-aware confidence/fallback behavior before any scheduler consumes forecasts, but neither a 30-minute alert threshold nor power-sensor redundancy is validated as an energy-saving policy here. Facility cooling/PUE measurements remain physically distinct from node outputs. A later simulator must specify causal action response, service constraints and energy accounting; no such simulator or energy/SLA result was found in the current source/result inventory. [U07]
++
++### 13.4 Scientific and verification limits
+ 
+ The data come from one facility and predominantly known clients. Client count measures a simulation partition, not independent organizational replication. Adjacent ten-minute origins have overlapping one-hour labels, while even hourly-origin B1 windows share much input history. Three random seeds measure initialization/sampling variability on one dataset. Neither the number of windows nor a small seed SD establishes independent statistical replication.
+ 
+@@ -628,15 +751,15 @@
+ 
+ The reporting checks are bounded. File hashes establish equality with recorded local evidence; they do not prove the original measurements or every program execution was correct. Stored reconciliation PASS rows are cited as stored evidence. This task independently recalculates arithmetic from stored metric rows, not prediction-level inference. It does not rerun historical semantic preparation, deserialize models or re-evaluate predictions. Historical strict preflight remains FAILED and semantic reproduction UNKNOWN. [P01; P02; T08]
+ 
+-Known documentation inconsistencies are retained in `REPORT_VALIDATION.md`: an early score is an LSTM result; pooled and macro persistence baselines differ; some newer SD fields use ddof=0; T4 node exports contain seed 42 only; weather is masked in Candidate 1/T4 despite 14 retained slots; T4 memory values are placeholders; and design/executed cohort totals differ. These findings reduce the scope of claims, rather than justify overwriting historical artifacts.
++Known documentation inconsistencies are retained in `REPORT_VALIDATION.md`: an early score is an LSTM result; pooled and macro persistence baselines differ; some newer SD fields use ddof=0; T4 node exports contain seed 42 only; weather is masked in Candidate 1/T4 despite 14 retained slots; T4 memory values are placeholders; design/executed cohort totals differ; T7 narrative RMSE conflicts with its CSV; and the new history preflight confuses active clients with its failing 1,024-window eligibility threshold. These findings reduce the scope of claims, rather than justify overwriting historical artifacts.
+ 
+ ## 14. Ongoing work and prioritized research plan
+ 
+ The immediate next evaluation is the B1 exposure-matched centralized-SGD control. Its three fits and selection exports exist, and a locked March evaluation adapter is implemented. Its March evaluation is not verified complete in the inspected inventory. The next gated operation must validate the selection lock, frozen test identity/target hashes, saved FedAvg alignment, quota and separate authorization receipt. It should reuse saved FedAvg predictions, not generate another FedAvg test run. This report starts no such operation. [B04]
+ 
+-The next methodological priority is reconciliation of Candidate 1/T4 executed rules with their design documents, followed by independently specified temporal evaluation. Full-cohort versus strict-history containment, longest-history gating, scaling population, weather handling and client eligibility must be explicit. Comparisons should freeze these choices before testing additional models or algorithms. A no-fill history counterpart remains incomplete in the verified record.
+-
+-Environmental ablation has historical evidence and completed T5 records. GRU/LSTM/XGBoost have historical results and newly completed T6 records. These studies need their own protocol qualifications and do not establish a universal feature or architecture ranking. Missingness robustness needs multiple dates and defined missingness mechanisms. Client heterogeneity should be characterized through coverage and errors before claims about a particular non-IID mechanism. FedProx and client participation sensitivity are proposed experiments, not completed results. [H01; C03; F01]
++The next methodological priority is resolution of the new preflight eligibility and loss-definition conflicts, followed by independently specified temporal evaluation. Full-cohort versus strict-history containment, longest-history gating, scaling population, weather handling and client eligibility must be explicit. Comparisons should freeze these choices before testing additional models or algorithms. A no-fill history counterpart remains incomplete in the verified record.
++
++Environmental ablation has historical evidence and completed T5 records. GRU/LSTM/XGBoost have historical results and newly completed T6 records. These studies need their own protocol qualifications and do not establish a universal feature or architecture ranking. T7 now provides saved synthetic missingness results, with explicit zero-mean fallback and conditional persistence. Further robustness work needs real failure-mechanism evidence and additional periods rather than treating the stress test as a deployed monitoring solution. Client heterogeneity should be characterized through coverage and errors before claims about a particular non-IID mechanism. FedProx and client participation sensitivity are proposed experiments, not completed results. [H01; C03; F01]
+ 
+ Multi-output development should build on B1's completed but mixed result. Before adding targets, verify physical meaning, units, coverage, temporal alignment and aggregation level. A useful controlled study would compare single-output and joint-output models with the same input windows, scaler policy and training budget, while inspecting per-output gradients and persistence behavior. More outputs should not be treated as an automatic improvement.
+ 
+@@ -646,13 +769,13 @@
+ 
+ The completed record demonstrates a telemetry forecasting workflow and distinct empirical studies. Its reliable presentation position is evidence-specific: historical centralized controls outperform their FedAvg counterparts on the recorded matched v5 errors; B1 is a completed two-output experiment with mixed persistence performance; the FF30 history panel measures modest length effects on a selected cohort; and T4 provides the strongest current residual-power persistence improvement, subject to explicitly documented protocol and reporting qualifications.
+ 
+-The work should be presented as progress toward energy-aware decision support. It does not reproduce the mandatory paper's complete learning-to-optimization system and does not yet measure energy savings, cooling optimization, PUE improvement or SLA benefit. Retaining unfavorable outcomes, physical distinctions and unresolved provenance is part of the research contribution. The report freezes no new experiment and grants no execution authorization.
++The work should be presented as progress toward energy-aware decision support. It does not reproduce the mandatory paper's complete learning-to-optimization system and does not yet measure energy savings, cooling optimization, PUE improvement or SLA benefit. Retaining unfavorable outcomes, physical distinctions and unresolved provenance is part of the research contribution. The latest additions broaden the recorded evidence with T7 stress tests and new coverage/preflight artifacts, while exposing rather than repairing their contradictions. The report freezes no new experiment and grants no execution authorization.
+ 
+ ## 16. References
+ 
+-[R1] J. Liu, L. Du, Y. Li, R.-P. Liu, Y. Li, F. Teng and F. Y. Hou. *Adaptive Federated Learning to Optimize Integrated Flows in Cyber–Physical Data Centers*. arXiv:2511.00623 v3, 14 July 2026. [Versioned PDF](https://arxiv.org/pdf/2511.00623v3). Detailed page-level analysis accompanies this report.
+-
+-[R2] A. Borghesi et al. *M 100 ExaData: a data collection campaign on the CINECA's Marconi 100 Tier-0 supercomputer*. Scientific Data 10, 288, 2023. [DOI:10.1038/s 41597-023-02174-3](https://doi.org/10.1038/s41597-023-02174-3).
++[R1] J. Liu, L. Du, Y. Li, R.-P. Liu, Y. Li, F. Teng and F. Y. Hou. *Adaptive Federated Learning to Optimize Integrated Flows in Cyber–Physical Data Centers*. arXiv:2511.00623v3, 14 July 2026. [Versioned PDF](https://arxiv.org/pdf/2511.00623v3). Detailed page-level analysis accompanies this report.
++
++[R2] A. Borghesi et al. *M100 ExaData: a data collection campaign on the CINECA's Marconi100 Tier-0 supercomputer*. Scientific Data 10, 288, 2023. [DOI:10.1038/s41597-023-02174-3](https://doi.org/10.1038/s41597-023-02174-3).
+ 
+ [R3] H. B. McMahan, E. Moore, D. Ramage, S. Hampson and B. Agüera y Arcas. *Communication-Efficient Learning of Deep Networks from Decentralized Data*. AISTATS, PMLR 54:1273–1282, 2017. [Publisher](https://proceedings.mlr.press/v54/mcmahan17a.html).
+ 

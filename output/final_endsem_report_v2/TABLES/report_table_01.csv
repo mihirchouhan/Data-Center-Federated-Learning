@@ -1,0 +1,7 @@
+Question,Present evidence-based answer,Scope
+Can a shared recurrent model outperform last-bin persistence?,Yes in the legacy LSTM and T4 power comparisons; B1 has mixed outcomes.,Separate cohorts and targets; no universal statement.
+Does FedAvg outperform centralized SGD?,No in the historical v5 paired pooled MAE/RMSE comparisons; T4 also favors central mean errors.,"Only the actual, differently budgeted controls evaluated."
+Which fill policy is best?,"No universal winner. v5 mean RMSE favors centralFF10 and FedAvgFF20, with small within-FedAvg differences.",Common narrow test; policy-specific native training pools.
+Does longer history help?,The newer FF30 record shows a modest 1 h→6 h improvement and a small further 6 h→24 h difference.,"Nine fits, one cohort, three seeds; no-fill counterpart absent."
+Can power and ambient temperature be predicted jointly?,B1 implements and evaluates both outputs.,Temperature errors did not beat persistence.
+Can forecasts reduce energy or meet SLA constraints?,Not demonstrated.,Requires a validated action-response and decision evaluation.

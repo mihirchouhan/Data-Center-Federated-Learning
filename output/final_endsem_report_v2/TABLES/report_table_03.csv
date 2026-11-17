@@ -1,0 +1,15 @@
+Slot,Exact channel,Unit,Model handling
+0,power_kw,kW,Retained numeric input
+1,cpu_user,%,Retained numeric input
+2,cpu_system,%,Retained numeric input
+3,cpu_idle,%,Retained numeric input
+4,cpu_wio,%,Retained numeric input
+5,memory_used_fraction,fraction,Retained numeric input
+6,inlet_temperature_mean_c,°C,Retained numeric input
+7,outdoor_temperature_c,°C,"Weather enabled or zeroed after scaling, by track"
+8,outdoor_humidity_percent,%,"Weather enabled or zeroed after scaling, by track"
+9,hour_sin,dimensionless,Retained numeric input
+10,hour_cos,dimensionless,Retained numeric input
+11,week_sin,dimensionless,Retained numeric input
+12,week_cos,dimensionless,Retained numeric input
+13,node_index,categorical ordinal,Embedding lookup; not continuous scaling

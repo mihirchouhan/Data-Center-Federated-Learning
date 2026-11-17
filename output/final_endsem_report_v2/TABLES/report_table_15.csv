@@ -1,0 +1,7 @@
+Dimension,Base paper,Our research,Interpretation/status
+4. Data source,"Market/load/operational simulation data; §IV-A, p. 9, ref. [29]","M100 ExaData, raw Parquet, sensor audit and saved experiments",Different label generation
+5. Entities,"Five modeled data centers; Table II, p. 9",979 mapped compute-node clients in one facility,Not 979 physical data centers
+6. Heterogeneity,Distinct local datasets and unequal update acceptance; Fig. 5,"Unequal histories, counts, observed node errors",Formal non-IID taxonomy not fully evaluated
+7. Missing data,Comparable sensor-gap treatment not verified in PDF,Coverage-controlled bins; no-fill/FF10/FF20/FF30 inputs; T7 stress/fallback separately,Our target values remain observed
+8. Inputs,"Prices, workload arrivals and queue state; §III-A, p. 4","14 operational, thermal, weather and calendar slots",Some executed tracks mask weather
+10. Temporal formulation,"Multi-period day-ahead decisions, Eq. (1)","6/36/144 ten-minute histories, next-six-bin mean",Different horizon and origin contracts

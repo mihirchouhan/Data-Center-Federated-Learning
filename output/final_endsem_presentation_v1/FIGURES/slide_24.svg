@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1152pt" height="648pt" viewBox="0 0 1152 648" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-17T20:45:04.182500</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 648 
+L 1152 648 
+L 1152 0 
+L 0 0 
+z
+" style="fill: #f6f8fa"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 0 10.368 
+L 1152 10.368 
+L 1152 0 
+L 0 0 
+z
+" clip-path="url(#pa6ca4ed9c7)" style="fill: #007e87; stroke: #007e87; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 70.272 448.416 
+L 563.328 448.416 
+Q 578.304 448.416 578.304 439.992 
+L 578.304 195.048 
+Q 578.304 186.624 563.328 186.624 
+L 70.272 186.624 
+Q 55.296 186.624 55.296 195.048 
+L 55.296 439.992 
+Q 55.296 448.416 70.272 448.416 
+z
+" clip-path="url(#pa6ca4ed9c7)" style="fill: #ffffff; stroke: #d9e1e8; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 623.232 448.416 
+L 1081.728 448.416 
+Q 1096.704 448.416 1096.704 439.992 
+L 1096.704 195.048 
+Q 1096.704 186.624 1081.728 186.624 
+L 623.232 186.624 
+Q 608.256 186.624 608.256 195.048 
+L 608.256 439.992 
+Q 608.256 448.416 623.232 448.416 
+z
+" clip-path="url(#pa6ca4ed9c7)" style="fill: #ffffff; stroke: #d9e1e8; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 51.84 583.2 
+L 1100.16 583.2 
+Q 1109.376 583.2 1109.376 578.016 
+L 1109.376 530.064 
+Q 1109.376 524.88 1100.16 524.88 
+L 51.84 524.88 
+Q 42.624 524.88 42.624 530.064 
+L 42.624 578.016 
+Q 42.624 583.2 51.84 583.2 
+z
+" clip-path="url(#pa6ca4ed9c7)" style="fill: #e4f1f0"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 51.84 153.576 
+L 1100.16 153.576 
+" clip-path="url(#pa6ca4ed9c7)" style="fill: none; stroke: #d5dee5; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #007e87" x="51.84" y="46.276719" transform="rotate(-0 51.84 46.276719)">CONCLUSION &amp; NEXT RESEARCH STEP</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 33px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #142c43" x="51.84" y="100.242844" transform="rotate(-0 51.84 100.242844)">Conclusions: useful forecasts, bounded claims</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #526575" x="51.84" y="137.445187" transform="rotate(-0 51.84 137.445187)">A measured forecasting contribution—not an energy-saving deployment claim</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #526575" x="51.84" y="624.621422" transform="rotate(-0 51.84 624.621422)">Mihir Chouhan · NIT Goa  |  Evidence: 17 Nov 2026</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #526575" x="1100.16" y="624.381188" transform="rotate(-0 1100.16 624.381188)">24 / 24</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #526575" x="51.84" y="598.293656" transform="rotate(-0 51.84 598.293656)">Sources: REPORT, V5, B1_EVAL, T4, T7</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 24px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #142c43" x="89.856" y="230.78025" transform="rotate(-0 89.856 230.78025)">Measured findings</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; fill: #142c43" transform="translate(89.856 278.530625)">T4 residual L1 improves persistence.</text>
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; fill: #142c43" transform="translate(89.856 311.530625)">Central controls remain competitive.</text>
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; fill: #142c43" transform="translate(89.856 344.530625)">B1 multi-output results are mixed.</text>
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; fill: #142c43" transform="translate(89.856 377.530625)">Bursts and power loss expose fragility.</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 24px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #142c43" x="642.816" y="230.78025" transform="rotate(-0 642.816 230.78025)">Next defensible steps</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #142c43" transform="translate(642.816 277.504688)">1  Locked B1 central March comparison</text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #142c43" transform="translate(642.816 309.004688)">2  Resolve new benchmark provenance</text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #142c43" transform="translate(642.816 340.504688)">3  Validate decision/action response</text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #142c43" transform="translate(642.816 372.004688)">4  Test actual operational outcomes</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #142c43" x="70.272" y="559.495898" transform="rotate(-0 70.272 559.495898)">Thank you • Questions</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pa6ca4ed9c7">
+   <rect x="0" y="0" width="1152" height="648"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,6 @@
+Dimension,Base paper,Our research,Interpretation/status
+11. Neural model,"MLP ensemble, hidden [256,1024,256], ReLU/dropout 0.15; Eq. (4), §IV-A",GRU/LSTM plus node embedding; B1/T4 2×64 GRU,No paper MLP-ensemble reproduction
+12. FL method,"Conditional adaptive sharing/acceptance; Algorithm 1, p. 6",Standard sample-weighted FedAvg,Different algorithm
+13. Aggregation,"Selected shared blocks, weighted aggregate and local momentum mixing; Eqs. (5),(10),(13)",Full state including embedding; accepted-example weighting,No custom row-wise embedding rule
+14. Local learning,"1,500 warm-up steps, batch 512; 25×800 local steps","B1 SGD .01, batch 128, one local epoch, 200 rounds",Not equal computational budgets
+15. Adaptation,"Recent median/slope/volatility acceptance; Eqs. (11), temporary opt-out",Uniform fixed 98/979 sampling in principal runs,Adaptive participation Not Implemented

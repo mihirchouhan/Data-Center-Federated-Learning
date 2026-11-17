@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1152pt" height="648pt" viewBox="0 0 1152 648" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-17T20:44:56.853238</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 648 
+L 1152 648 
+L 1152 0 
+L 0 0 
+z
+" style="fill: #f6f8fa"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 0 10.368 
+L 1152 10.368 
+L 1152 0 
+L 0 0 
+z
+" clip-path="url(#pdfdf957e4e)" style="fill: #007e87; stroke: #007e87; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 63.36 270.216 
+L 1088.64 270.216 
+L 1088.64 228.9384 
+L 63.36 228.9384 
+z
+" clip-path="url(#pdfdf957e4e)" style="fill: #ffffff"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 63.36 312.336 
+L 1088.64 312.336 
+L 1088.64 271.0584 
+L 63.36 271.0584 
+z
+" clip-path="url(#pdfdf957e4e)" style="fill: #eef2f5"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 63.36 354.456 
+L 1088.64 354.456 
+L 1088.64 313.1784 
+L 63.36 313.1784 
+z
+" clip-path="url(#pdfdf957e4e)" style="fill: #ffffff"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 63.36 396.576 
+L 1088.64 396.576 
+L 1088.64 355.2984 
+L 63.36 355.2984 
+z
+" clip-path="url(#pdfdf957e4e)" style="fill: #eef2f5"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 63.36 438.696 
+L 1088.64 438.696 
+L 1088.64 397.4184 
+L 63.36 397.4184 
+z
+" clip-path="url(#pdfdf957e4e)" style="fill: #ffffff"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 63.36 480.816 
+L 1088.64 480.816 
+L 1088.64 439.5384 
+L 63.36 439.5384 
+z
+" clip-path="url(#pdfdf957e4e)" style="fill: #eef2f5"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 63.36 522.936 
+L 1088.64 522.936 
+L 1088.64 481.6584 
+L 63.36 481.6584 
+z
+" clip-path="url(#pdfdf957e4e)" style="fill: #ffffff"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 51.84 583.2 
+L 1100.16 583.2 
+Q 1109.376 583.2 1109.376 578.016 
+L 1109.376 530.064 
+Q 1109.376 524.88 1100.16 524.88 
+L 51.84 524.88 
+Q 42.624 524.88 42.624 530.064 
+L 42.624 578.016 
+Q 42.624 583.2 51.84 583.2 
+z
+" clip-path="url(#pdfdf957e4e)" style="fill: #e4f1f0"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 51.84 153.576 
+L 1100.16 153.576 
+" clip-path="url(#pdfdf957e4e)" style="fill: none; stroke: #d5dee5; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #007e87" x="51.84" y="46.276719" transform="rotate(-0 51.84 46.276719)">EXPERIMENT STATUS REGISTRY</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 33px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #142c43" x="51.84" y="100.242844" transform="rotate(-0 51.84 100.242844)">Completed evidence is a portfolio, not one leaderboard</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #526575" x="51.84" y="137.445187" transform="rotate(-0 51.84 137.445187)">Separate cohorts, losses, horizons and budgets remain explicit</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #526575" x="51.84" y="624.621422" transform="rotate(-0 51.84 624.621422)">Mihir Chouhan · NIT Goa  |  Evidence: 17 Nov 2026</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #526575" x="1100.16" y="624.381188" transform="rotate(-0 1100.16 624.381188)">13 / 24</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #526575" x="51.84" y="598.293656" transform="rotate(-0 51.84 598.293656)">Sources: REGISTRY, V5, B1_EVAL, T4, T5, T6, T7</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 18.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #007e87" x="72.576" y="208.457109" transform="rotate(-0 72.576 208.457109)">Track</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 18.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #007e87" x="298.1376" y="208.457109" transform="rotate(-0 298.1376 208.457109)">Completed evidence</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 18.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #007e87" x="708.2496" y="208.457109" transform="rotate(-0 708.2496 208.457109)">Separate evaluation scope</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 18.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #142c43" x="72.576" y="254.465109" transform="rotate(-0 72.576 254.465109)">Legacy 1 h</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 18.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #142c43" x="298.1376" y="254.465109" transform="rotate(-0 298.1376 254.465109)">LSTM; 18 v1 + 6 v2/v3 fits</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 18.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #142c43" x="708.2496" y="254.465109" transform="rotate(-0 708.2496 254.465109)">75,566 windows / 979 nodes</text>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 18.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #142c43" x="72.576" y="296.585109" transform="rotate(-0 72.576 296.585109)">v5 6 h</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 18.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #142c43" x="298.1376" y="296.585109" transform="rotate(-0 298.1376 296.585109)">24 policy / method / seed fits</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 18.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #142c43" x="708.2496" y="296.585109" transform="rotate(-0 708.2496 296.585109)">6,590 windows / 570 nodes</text>
+   </g>
+   <g id="text_16">
+    <text style="font-weight: 700; font-size: 18.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #142c43" x="72.576" y="338.705109" transform="rotate(-0 72.576 338.705109)">B1 6 h</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 18.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #142c43" x="298.1376" y="338.705109" transform="rotate(-0 298.1376 338.705109)">3 FedAvg + 3 central fits</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 18.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #142c43" x="708.2496" y="338.705109" transform="rotate(-0 708.2496 338.705109)">March: 194,212 (FedAvg only)</text>
+   </g>
+   <g id="text_19">
+    <text style="font-weight: 700; font-size: 18.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #142c43" x="72.576" y="380.825109" transform="rotate(-0 72.576 380.825109)">History / T2–T3</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 18.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #142c43" x="298.1376" y="380.825109" transform="rotate(-0 298.1376 380.825109)">9 history fits; temporal panels</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 18.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #142c43" x="708.2496" y="380.825109" transform="rotate(-0 708.2496 380.825109)">Weekly adaptation: seed 42 only</text>
+   </g>
+   <g id="text_22">
+    <text style="font-weight: 700; font-size: 18.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #142c43" x="72.576" y="422.943664" transform="rotate(-0 72.576 422.943664)">T4</text>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 18.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #142c43" x="298.1376" y="422.945109" transform="rotate(-0 298.1376 422.945109)">6 final fits + validation pilots</text>
+   </g>
+   <g id="text_24">
+    <text style="font-size: 18.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #142c43" x="708.2496" y="422.945109" transform="rotate(-0 708.2496 422.945109)">Canonical / extended / March</text>
+   </g>
+   <g id="text_25">
+    <text style="font-weight: 700; font-size: 18.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #142c43" x="72.576" y="465.063664" transform="rotate(-0 72.576 465.063664)">T5 / T6</text>
+   </g>
+   <g id="text_26">
+    <text style="font-size: 18.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #142c43" x="298.1376" y="465.065109" transform="rotate(-0 298.1376 465.065109)">9 weather + 6 family fits</text>
+   </g>
+   <g id="text_27">
+    <text style="font-size: 18.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #142c43" x="708.2496" y="465.065109" transform="rotate(-0 708.2496 465.065109)">Reference GRUs reused</text>
+   </g>
+   <g id="text_28">
+    <text style="font-weight: 700; font-size: 18.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #142c43" x="72.576" y="507.183664" transform="rotate(-0 72.576 507.183664)">T7</text>
+   </g>
+   <g id="text_29">
+    <text style="font-size: 18.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #142c43" x="298.1376" y="507.185109" transform="rotate(-0 298.1376 507.185109)">99 saved stress records</text>
+   </g>
+   <g id="text_30">
+    <text style="font-size: 18.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #142c43" x="708.2496" y="507.185109" transform="rotate(-0 708.2496 507.185109)">3 frozen models; no new fits</text>
+   </g>
+   <g id="text_31">
+    <text style="font-weight: 700; font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #007e87" x="70.272" y="559.495898" transform="rotate(-0 70.272 559.495898)">New two-layer history benchmark: ongoing; no completed matrix accepted.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pdfdf957e4e">
+   <rect x="0" y="0" width="1152" height="648"/>
+  </clipPath>
+ </defs>
+</svg>

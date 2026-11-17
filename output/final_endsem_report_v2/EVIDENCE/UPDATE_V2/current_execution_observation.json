@@ -1,0 +1,19 @@
+{
+  "snapshot_time_Asia_Calcutta": "2026-11-17T19:52:19.224609+05:30",
+  "initial_output_absent": true,
+  "later_output_present": true,
+  "source_path": "src/t1_2_controlled_history_benchmark_v1.py",
+  "initial_source_sha256": "5bf10f0969ae2c88fe557a1d29bd8349bd2d08c43dcf08ef92f41f56c86af65b",
+  "audited_later_source_sha256": "6d71bcf516b20a6edb7d2a2df828b74d3aade54b2d74daf719e1bf4981584022",
+  "source_changed_by_this_task": false,
+  "log_path": "output/experiments/t1_2_controlled_history_benchmark_v1/progress.log",
+  "log_sha256": "94c4f6fa8d2a8afb320b5daf5e72cd9459af2b7a5377b29a5a3e5c487962f049",
+  "log_bytes": 9705,
+  "observed_fit": "H=6 (one-hour), seed42",
+  "last_observed_round": 34,
+  "planned_rounds": 200,
+  "completion_verified": false,
+  "model_fit_started_by_this_task": false,
+  "model_or_process_control_by_this_task": false,
+  "interpretation": "Progress evidence only; no final fit/evaluation metrics accepted; exact writer not identified; logger timezone label not independently validated"
+}

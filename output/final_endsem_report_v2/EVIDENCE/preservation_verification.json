@@ -1,0 +1,46 @@
+{
+  "regular_files_checked": 174672,
+  "metadata_mismatches": [
+    {
+      "path": "output/experiments/t6_architecture_benchmark_v1/fedavg_lstm_seed43_progress.csv",
+      "fields": {
+        "bytes": {
+          "before": 14384,
+          "after": 15450
+        },
+        "mtime_ns": {
+          "before": 1794907998456374261,
+          "after": 1794908066893344456
+        }
+      }
+    },
+    {
+      "path": "output/experiments/t6_architecture_benchmark_v1/progress.log",
+      "fields": {
+        "bytes": {
+          "before": 73929,
+          "after": 115198
+        },
+        "mtime_ns": {
+          "before": 1794907998454374437,
+          "after": 1794909331227059835
+        }
+      }
+    }
+  ],
+  "source_text_files_hashed": 270,
+  "source_text_hash_mismatches": [],
+  "result_source_files_hashed": 116,
+  "result_source_hash_mismatches": [],
+  "binary_integrity_scope": "560 explicit bindings plus 22 T4 manifest files and 6 T4 checkpoint checks; overlapping entries possible, not a full-project binary hash audit",
+  "atime_compared": false,
+  "excluded_directories": [
+    ".git",
+    ".venv",
+    "__pycache__",
+    ".pytest_cache"
+  ],
+  "historical_preflight": "FAILED unchanged",
+  "semantic_reproduction": "UNKNOWN not replayed",
+  "preserved": false
+}

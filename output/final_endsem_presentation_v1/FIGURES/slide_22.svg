@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1152pt" height="648pt" viewBox="0 0 1152 648" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-17T20:45:03.100476</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 648 
+L 1152 648 
+L 1152 0 
+L 0 0 
+z
+" style="fill: #f6f8fa"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 0 10.368 
+L 1152 10.368 
+L 1152 0 
+L 0 0 
+z
+" clip-path="url(#p7f504017c8)" style="fill: #007e87; stroke: #007e87; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 208.512 234.576 
+L 943.488 234.576 
+Q 958.464 234.576 958.464 226.152 
+L 958.464 172.368 
+Q 958.464 163.944 943.488 163.944 
+L 208.512 163.944 
+Q 193.536 163.944 193.536 172.368 
+L 193.536 226.152 
+Q 193.536 234.576 208.512 234.576 
+z
+" clip-path="url(#p7f504017c8)" style="fill: #e4f1f0; stroke: #d9e1e8; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 208.512 312.336 
+L 943.488 312.336 
+Q 958.464 312.336 958.464 303.912 
+L 958.464 250.128 
+Q 958.464 241.704 943.488 241.704 
+L 208.512 241.704 
+Q 193.536 241.704 193.536 250.128 
+L 193.536 303.912 
+Q 193.536 312.336 208.512 312.336 
+z
+" clip-path="url(#p7f504017c8)" style="fill: #eef2f5; stroke: #d9e1e8; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 208.512 390.096 
+L 943.488 390.096 
+Q 958.464 390.096 958.464 381.672 
+L 958.464 327.888 
+Q 958.464 319.464 943.488 319.464 
+L 208.512 319.464 
+Q 193.536 319.464 193.536 327.888 
+L 193.536 381.672 
+Q 193.536 390.096 208.512 390.096 
+z
+" clip-path="url(#p7f504017c8)" style="fill: #eef2f5; stroke: #d9e1e8; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 208.512 467.856 
+L 943.488 467.856 
+Q 958.464 467.856 958.464 459.432 
+L 958.464 405.648 
+Q 958.464 397.224 943.488 397.224 
+L 208.512 397.224 
+Q 193.536 397.224 193.536 405.648 
+L 193.536 459.432 
+Q 193.536 467.856 208.512 467.856 
+z
+" clip-path="url(#p7f504017c8)" style="fill: #eef2f5; stroke: #d9e1e8; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 51.84 583.2 
+L 1100.16 583.2 
+Q 1109.376 583.2 1109.376 578.016 
+L 1109.376 530.064 
+Q 1109.376 524.88 1100.16 524.88 
+L 51.84 524.88 
+Q 42.624 524.88 42.624 530.064 
+L 42.624 578.016 
+Q 42.624 583.2 51.84 583.2 
+z
+" clip-path="url(#p7f504017c8)" style="fill: #e4f1f0"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 51.84 153.576 
+L 1100.16 153.576 
+" clip-path="url(#p7f504017c8)" style="fill: none; stroke: #d5dee5; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #007e87" x="51.84" y="46.276719" transform="rotate(-0 51.84 46.276719)">PROPOSED DECISION-SUPPORT FRAMEWORK</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 33px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #142c43" x="51.84" y="100.242844" transform="rotate(-0 51.84 100.242844)">Energy-aware decisions remain a separate research layer</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #526575" x="51.84" y="137.445187" transform="rotate(-0 51.84 137.445187)">Forecast evidence exists; action-response and savings evidence do not</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #526575" x="51.84" y="624.621422" transform="rotate(-0 51.84 624.621422)">Mihir Chouhan · NIT Goa  |  Evidence: 17 Nov 2026</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #526575" x="1100.16" y="624.381188" transform="rotate(-0 1100.16 624.381188)">22 / 24</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #526575" x="51.84" y="598.293656" transform="rotate(-0 51.84 598.293656)">Sources: PAPER, REPORT, B1_CENTRAL_STATUS</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #142c43" x="228.096" y="205.059313" transform="rotate(-0 228.096 205.059313)">Forecast + coverage</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #142c43" x="228.096" y="282.820875" transform="rotate(-0 228.096 282.820875)">Action-response model</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #142c43" x="228.096" y="360.580875" transform="rotate(-0 228.096 360.580875)">Constrained decisions</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #142c43" x="228.096" y="438.340875" transform="rotate(-0 228.096 438.340875)">Policy experiment</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #007e87" x="967.68" y="206.55625" transform="rotate(-0 967.68 206.55625)">DONE</text>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'DejaVu Sans'; fill: #526575" transform="translate(978.316719 393.107812) rotate(-90)">PROPOSED</text>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #007e87" x="70.272" y="559.495898" transform="rotate(-0 70.272 559.495898)">No energy savings, PUE, cooling or SLA improvement has been measured.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p7f504017c8">
+   <rect x="0" y="0" width="1152" height="648"/>
+  </clipPath>
+ </defs>
+</svg>

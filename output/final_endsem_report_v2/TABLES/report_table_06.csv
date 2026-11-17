@@ -1,0 +1,7 @@
+Historical v1 model,Weather,"Pooled MAE W, mean ± sample SD",Pooled RMSE W,Macro MAE W
+lstm,enabled,29.322 ± 0.642,55.407 ± 0.328,29.066 ± 0.634
+lstm,masked,29.386 ± 1.337,58.138 ± 5.439,29.151 ± 1.350
+gru,enabled,28.568 ± 0.363,55.183 ± 0.231,28.334 ± 0.362
+gru,masked,28.181 ± 0.158,54.948 ± 0.271,27.946 ± 0.135
+xgboost,enabled,29.264 ± 0.062,55.833 ± 0.082,29.000 ± 0.059
+xgboost,masked,28.971 ± 0.072,55.866 ± 0.205,28.707 ± 0.074

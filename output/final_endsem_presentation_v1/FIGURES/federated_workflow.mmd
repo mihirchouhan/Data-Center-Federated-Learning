@@ -1,0 +1,9 @@
+flowchart LR
+ G[Global model] --> S[Uniform sample 98 of 979]
+ S --> L[Copy same state to each selected client]
+ L --> U[Fresh local optimizer / one epoch]
+ U --> A[Full-table sample-weighted FedAvg]
+ A --> G
+ A --> V[Global validation / track-specific metric]
+ V --> K[Earliest minimum checkpoint]
+ K --> F[Immutable lock before test]

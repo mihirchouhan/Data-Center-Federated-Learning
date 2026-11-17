@@ -1,0 +1,2362 @@
+[
+  {
+    "check": "v5 identity centralized_sgdff1042 mae_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_ff10_seed42/metrics.json"
+  },
+  {
+    "check": "v5 identity centralized_sgdff1042 rmse_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_ff10_seed42/metrics.json"
+  },
+  {
+    "check": "v5 identity centralized_sgdff1042 macro_mae_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_ff10_seed42/metrics.json"
+  },
+  {
+    "check": "v5 identity centralized_sgdff1042 macro_rmse_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_ff10_seed42/metrics.json"
+  },
+  {
+    "check": "v5 fixed cohort centralized_sgdff1042",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_ff10_seed42/metrics.json"
+  },
+  {
+    "check": "v5 fixed identity hash centralized_sgdff1042",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_ff10_seed42/metrics.json"
+  },
+  {
+    "check": "v5 identity centralized_sgdff1043 mae_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_ff10_seed43/metrics.json"
+  },
+  {
+    "check": "v5 identity centralized_sgdff1043 rmse_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_ff10_seed43/metrics.json"
+  },
+  {
+    "check": "v5 identity centralized_sgdff1043 macro_mae_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_ff10_seed43/metrics.json"
+  },
+  {
+    "check": "v5 identity centralized_sgdff1043 macro_rmse_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_ff10_seed43/metrics.json"
+  },
+  {
+    "check": "v5 fixed cohort centralized_sgdff1043",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_ff10_seed43/metrics.json"
+  },
+  {
+    "check": "v5 fixed identity hash centralized_sgdff1043",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_ff10_seed43/metrics.json"
+  },
+  {
+    "check": "v5 identity centralized_sgdff1044 mae_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_ff10_seed44/metrics.json"
+  },
+  {
+    "check": "v5 identity centralized_sgdff1044 rmse_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_ff10_seed44/metrics.json"
+  },
+  {
+    "check": "v5 identity centralized_sgdff1044 macro_mae_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_ff10_seed44/metrics.json"
+  },
+  {
+    "check": "v5 identity centralized_sgdff1044 macro_rmse_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_ff10_seed44/metrics.json"
+  },
+  {
+    "check": "v5 fixed cohort centralized_sgdff1044",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_ff10_seed44/metrics.json"
+  },
+  {
+    "check": "v5 fixed identity hash centralized_sgdff1044",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_ff10_seed44/metrics.json"
+  },
+  {
+    "check": "v5 identity centralized_sgdff2042 mae_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_ff20_seed42/metrics.json"
+  },
+  {
+    "check": "v5 identity centralized_sgdff2042 rmse_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_ff20_seed42/metrics.json"
+  },
+  {
+    "check": "v5 identity centralized_sgdff2042 macro_mae_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_ff20_seed42/metrics.json"
+  },
+  {
+    "check": "v5 identity centralized_sgdff2042 macro_rmse_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_ff20_seed42/metrics.json"
+  },
+  {
+    "check": "v5 fixed cohort centralized_sgdff2042",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_ff20_seed42/metrics.json"
+  },
+  {
+    "check": "v5 fixed identity hash centralized_sgdff2042",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_ff20_seed42/metrics.json"
+  },
+  {
+    "check": "v5 identity centralized_sgdff2043 mae_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_ff20_seed43/metrics.json"
+  },
+  {
+    "check": "v5 identity centralized_sgdff2043 rmse_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_ff20_seed43/metrics.json"
+  },
+  {
+    "check": "v5 identity centralized_sgdff2043 macro_mae_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_ff20_seed43/metrics.json"
+  },
+  {
+    "check": "v5 identity centralized_sgdff2043 macro_rmse_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_ff20_seed43/metrics.json"
+  },
+  {
+    "check": "v5 fixed cohort centralized_sgdff2043",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_ff20_seed43/metrics.json"
+  },
+  {
+    "check": "v5 fixed identity hash centralized_sgdff2043",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_ff20_seed43/metrics.json"
+  },
+  {
+    "check": "v5 identity centralized_sgdff2044 mae_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_ff20_seed44/metrics.json"
+  },
+  {
+    "check": "v5 identity centralized_sgdff2044 rmse_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_ff20_seed44/metrics.json"
+  },
+  {
+    "check": "v5 identity centralized_sgdff2044 macro_mae_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_ff20_seed44/metrics.json"
+  },
+  {
+    "check": "v5 identity centralized_sgdff2044 macro_rmse_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_ff20_seed44/metrics.json"
+  },
+  {
+    "check": "v5 fixed cohort centralized_sgdff2044",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_ff20_seed44/metrics.json"
+  },
+  {
+    "check": "v5 fixed identity hash centralized_sgdff2044",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_ff20_seed44/metrics.json"
+  },
+  {
+    "check": "v5 identity centralized_sgdff3042 mae_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_ff30_seed42/metrics.json"
+  },
+  {
+    "check": "v5 identity centralized_sgdff3042 rmse_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_ff30_seed42/metrics.json"
+  },
+  {
+    "check": "v5 identity centralized_sgdff3042 macro_mae_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_ff30_seed42/metrics.json"
+  },
+  {
+    "check": "v5 identity centralized_sgdff3042 macro_rmse_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_ff30_seed42/metrics.json"
+  },
+  {
+    "check": "v5 fixed cohort centralized_sgdff3042",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_ff30_seed42/metrics.json"
+  },
+  {
+    "check": "v5 fixed identity hash centralized_sgdff3042",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_ff30_seed42/metrics.json"
+  },
+  {
+    "check": "v5 identity centralized_sgdff3043 mae_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_ff30_seed43/metrics.json"
+  },
+  {
+    "check": "v5 identity centralized_sgdff3043 rmse_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_ff30_seed43/metrics.json"
+  },
+  {
+    "check": "v5 identity centralized_sgdff3043 macro_mae_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_ff30_seed43/metrics.json"
+  },
+  {
+    "check": "v5 identity centralized_sgdff3043 macro_rmse_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_ff30_seed43/metrics.json"
+  },
+  {
+    "check": "v5 fixed cohort centralized_sgdff3043",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_ff30_seed43/metrics.json"
+  },
+  {
+    "check": "v5 fixed identity hash centralized_sgdff3043",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_ff30_seed43/metrics.json"
+  },
+  {
+    "check": "v5 identity centralized_sgdff3044 mae_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_ff30_seed44/metrics.json"
+  },
+  {
+    "check": "v5 identity centralized_sgdff3044 rmse_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_ff30_seed44/metrics.json"
+  },
+  {
+    "check": "v5 identity centralized_sgdff3044 macro_mae_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_ff30_seed44/metrics.json"
+  },
+  {
+    "check": "v5 identity centralized_sgdff3044 macro_rmse_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_ff30_seed44/metrics.json"
+  },
+  {
+    "check": "v5 fixed cohort centralized_sgdff3044",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_ff30_seed44/metrics.json"
+  },
+  {
+    "check": "v5 fixed identity hash centralized_sgdff3044",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_ff30_seed44/metrics.json"
+  },
+  {
+    "check": "v5 identity centralized_sgdno_fill42 mae_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_no_fill_seed42/metrics.json"
+  },
+  {
+    "check": "v5 identity centralized_sgdno_fill42 rmse_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_no_fill_seed42/metrics.json"
+  },
+  {
+    "check": "v5 identity centralized_sgdno_fill42 macro_mae_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_no_fill_seed42/metrics.json"
+  },
+  {
+    "check": "v5 identity centralized_sgdno_fill42 macro_rmse_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_no_fill_seed42/metrics.json"
+  },
+  {
+    "check": "v5 fixed cohort centralized_sgdno_fill42",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_no_fill_seed42/metrics.json"
+  },
+  {
+    "check": "v5 fixed identity hash centralized_sgdno_fill42",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_no_fill_seed42/metrics.json"
+  },
+  {
+    "check": "v5 identity centralized_sgdno_fill43 mae_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_no_fill_seed43/metrics.json"
+  },
+  {
+    "check": "v5 identity centralized_sgdno_fill43 rmse_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_no_fill_seed43/metrics.json"
+  },
+  {
+    "check": "v5 identity centralized_sgdno_fill43 macro_mae_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_no_fill_seed43/metrics.json"
+  },
+  {
+    "check": "v5 identity centralized_sgdno_fill43 macro_rmse_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_no_fill_seed43/metrics.json"
+  },
+  {
+    "check": "v5 fixed cohort centralized_sgdno_fill43",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_no_fill_seed43/metrics.json"
+  },
+  {
+    "check": "v5 fixed identity hash centralized_sgdno_fill43",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_no_fill_seed43/metrics.json"
+  },
+  {
+    "check": "v5 identity centralized_sgdno_fill44 mae_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_no_fill_seed44/metrics.json"
+  },
+  {
+    "check": "v5 identity centralized_sgdno_fill44 rmse_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_no_fill_seed44/metrics.json"
+  },
+  {
+    "check": "v5 identity centralized_sgdno_fill44 macro_mae_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_no_fill_seed44/metrics.json"
+  },
+  {
+    "check": "v5 identity centralized_sgdno_fill44 macro_rmse_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_no_fill_seed44/metrics.json"
+  },
+  {
+    "check": "v5 fixed cohort centralized_sgdno_fill44",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_no_fill_seed44/metrics.json"
+  },
+  {
+    "check": "v5 fixed identity hash centralized_sgdno_fill44",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/centralized_sgd_no_fill_seed44/metrics.json"
+  },
+  {
+    "check": "v5 identity fedavgff1042 mae_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_ff10_seed42/metrics.json"
+  },
+  {
+    "check": "v5 identity fedavgff1042 rmse_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_ff10_seed42/metrics.json"
+  },
+  {
+    "check": "v5 identity fedavgff1042 macro_mae_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_ff10_seed42/metrics.json"
+  },
+  {
+    "check": "v5 identity fedavgff1042 macro_rmse_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_ff10_seed42/metrics.json"
+  },
+  {
+    "check": "v5 fixed cohort fedavgff1042",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_ff10_seed42/metrics.json"
+  },
+  {
+    "check": "v5 fixed identity hash fedavgff1042",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_ff10_seed42/metrics.json"
+  },
+  {
+    "check": "v5 identity fedavgff1043 mae_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_ff10_seed43/metrics.json"
+  },
+  {
+    "check": "v5 identity fedavgff1043 rmse_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_ff10_seed43/metrics.json"
+  },
+  {
+    "check": "v5 identity fedavgff1043 macro_mae_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_ff10_seed43/metrics.json"
+  },
+  {
+    "check": "v5 identity fedavgff1043 macro_rmse_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_ff10_seed43/metrics.json"
+  },
+  {
+    "check": "v5 fixed cohort fedavgff1043",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_ff10_seed43/metrics.json"
+  },
+  {
+    "check": "v5 fixed identity hash fedavgff1043",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_ff10_seed43/metrics.json"
+  },
+  {
+    "check": "v5 identity fedavgff1044 mae_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_ff10_seed44/metrics.json"
+  },
+  {
+    "check": "v5 identity fedavgff1044 rmse_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_ff10_seed44/metrics.json"
+  },
+  {
+    "check": "v5 identity fedavgff1044 macro_mae_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_ff10_seed44/metrics.json"
+  },
+  {
+    "check": "v5 identity fedavgff1044 macro_rmse_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_ff10_seed44/metrics.json"
+  },
+  {
+    "check": "v5 fixed cohort fedavgff1044",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_ff10_seed44/metrics.json"
+  },
+  {
+    "check": "v5 fixed identity hash fedavgff1044",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_ff10_seed44/metrics.json"
+  },
+  {
+    "check": "v5 identity fedavgff2042 mae_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_ff20_seed42/metrics.json"
+  },
+  {
+    "check": "v5 identity fedavgff2042 rmse_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_ff20_seed42/metrics.json"
+  },
+  {
+    "check": "v5 identity fedavgff2042 macro_mae_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_ff20_seed42/metrics.json"
+  },
+  {
+    "check": "v5 identity fedavgff2042 macro_rmse_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_ff20_seed42/metrics.json"
+  },
+  {
+    "check": "v5 fixed cohort fedavgff2042",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_ff20_seed42/metrics.json"
+  },
+  {
+    "check": "v5 fixed identity hash fedavgff2042",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_ff20_seed42/metrics.json"
+  },
+  {
+    "check": "v5 identity fedavgff2043 mae_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_ff20_seed43/metrics.json"
+  },
+  {
+    "check": "v5 identity fedavgff2043 rmse_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_ff20_seed43/metrics.json"
+  },
+  {
+    "check": "v5 identity fedavgff2043 macro_mae_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_ff20_seed43/metrics.json"
+  },
+  {
+    "check": "v5 identity fedavgff2043 macro_rmse_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_ff20_seed43/metrics.json"
+  },
+  {
+    "check": "v5 fixed cohort fedavgff2043",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_ff20_seed43/metrics.json"
+  },
+  {
+    "check": "v5 fixed identity hash fedavgff2043",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_ff20_seed43/metrics.json"
+  },
+  {
+    "check": "v5 identity fedavgff2044 mae_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_ff20_seed44/metrics.json"
+  },
+  {
+    "check": "v5 identity fedavgff2044 rmse_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_ff20_seed44/metrics.json"
+  },
+  {
+    "check": "v5 identity fedavgff2044 macro_mae_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_ff20_seed44/metrics.json"
+  },
+  {
+    "check": "v5 identity fedavgff2044 macro_rmse_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_ff20_seed44/metrics.json"
+  },
+  {
+    "check": "v5 fixed cohort fedavgff2044",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_ff20_seed44/metrics.json"
+  },
+  {
+    "check": "v5 fixed identity hash fedavgff2044",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_ff20_seed44/metrics.json"
+  },
+  {
+    "check": "v5 identity fedavgff3042 mae_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_ff30_seed42/metrics.json"
+  },
+  {
+    "check": "v5 identity fedavgff3042 rmse_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_ff30_seed42/metrics.json"
+  },
+  {
+    "check": "v5 identity fedavgff3042 macro_mae_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_ff30_seed42/metrics.json"
+  },
+  {
+    "check": "v5 identity fedavgff3042 macro_rmse_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_ff30_seed42/metrics.json"
+  },
+  {
+    "check": "v5 fixed cohort fedavgff3042",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_ff30_seed42/metrics.json"
+  },
+  {
+    "check": "v5 fixed identity hash fedavgff3042",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_ff30_seed42/metrics.json"
+  },
+  {
+    "check": "v5 identity fedavgff3043 mae_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_ff30_seed43/metrics.json"
+  },
+  {
+    "check": "v5 identity fedavgff3043 rmse_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_ff30_seed43/metrics.json"
+  },
+  {
+    "check": "v5 identity fedavgff3043 macro_mae_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_ff30_seed43/metrics.json"
+  },
+  {
+    "check": "v5 identity fedavgff3043 macro_rmse_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_ff30_seed43/metrics.json"
+  },
+  {
+    "check": "v5 fixed cohort fedavgff3043",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_ff30_seed43/metrics.json"
+  },
+  {
+    "check": "v5 fixed identity hash fedavgff3043",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_ff30_seed43/metrics.json"
+  },
+  {
+    "check": "v5 identity fedavgff3044 mae_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_ff30_seed44/metrics.json"
+  },
+  {
+    "check": "v5 identity fedavgff3044 rmse_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_ff30_seed44/metrics.json"
+  },
+  {
+    "check": "v5 identity fedavgff3044 macro_mae_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_ff30_seed44/metrics.json"
+  },
+  {
+    "check": "v5 identity fedavgff3044 macro_rmse_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_ff30_seed44/metrics.json"
+  },
+  {
+    "check": "v5 fixed cohort fedavgff3044",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_ff30_seed44/metrics.json"
+  },
+  {
+    "check": "v5 fixed identity hash fedavgff3044",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_ff30_seed44/metrics.json"
+  },
+  {
+    "check": "v5 identity fedavgno_fill42 mae_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_no_fill_seed42/metrics.json"
+  },
+  {
+    "check": "v5 identity fedavgno_fill42 rmse_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_no_fill_seed42/metrics.json"
+  },
+  {
+    "check": "v5 identity fedavgno_fill42 macro_mae_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_no_fill_seed42/metrics.json"
+  },
+  {
+    "check": "v5 identity fedavgno_fill42 macro_rmse_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_no_fill_seed42/metrics.json"
+  },
+  {
+    "check": "v5 fixed cohort fedavgno_fill42",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_no_fill_seed42/metrics.json"
+  },
+  {
+    "check": "v5 fixed identity hash fedavgno_fill42",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_no_fill_seed42/metrics.json"
+  },
+  {
+    "check": "v5 identity fedavgno_fill43 mae_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_no_fill_seed43/metrics.json"
+  },
+  {
+    "check": "v5 identity fedavgno_fill43 rmse_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_no_fill_seed43/metrics.json"
+  },
+  {
+    "check": "v5 identity fedavgno_fill43 macro_mae_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_no_fill_seed43/metrics.json"
+  },
+  {
+    "check": "v5 identity fedavgno_fill43 macro_rmse_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_no_fill_seed43/metrics.json"
+  },
+  {
+    "check": "v5 fixed cohort fedavgno_fill43",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_no_fill_seed43/metrics.json"
+  },
+  {
+    "check": "v5 fixed identity hash fedavgno_fill43",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_no_fill_seed43/metrics.json"
+  },
+  {
+    "check": "v5 identity fedavgno_fill44 mae_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_no_fill_seed44/metrics.json"
+  },
+  {
+    "check": "v5 identity fedavgno_fill44 rmse_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_no_fill_seed44/metrics.json"
+  },
+  {
+    "check": "v5 identity fedavgno_fill44 macro_mae_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_no_fill_seed44/metrics.json"
+  },
+  {
+    "check": "v5 identity fedavgno_fill44 macro_rmse_w",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_no_fill_seed44/metrics.json"
+  },
+  {
+    "check": "v5 fixed cohort fedavgno_fill44",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_no_fill_seed44/metrics.json"
+  },
+  {
+    "check": "v5 fixed identity hash fedavgno_fill44",
+    "pass": true,
+    "detail": "output/experiments/v5_missing_data/model_comparison/v1/test_evaluation/v2/fedavg_no_fill_seed44/metrics.json"
+  },
+  {
+    "check": "v5 paired central lower no_fill42",
+    "pass": true,
+    "detail": "Same stored test identities"
+  },
+  {
+    "check": "v5 paired central lower no_fill43",
+    "pass": true,
+    "detail": "Same stored test identities"
+  },
+  {
+    "check": "v5 paired central lower no_fill44",
+    "pass": true,
+    "detail": "Same stored test identities"
+  },
+  {
+    "check": "v5 paired central lower ff1042",
+    "pass": true,
+    "detail": "Same stored test identities"
+  },
+  {
+    "check": "v5 paired central lower ff1043",
+    "pass": true,
+    "detail": "Same stored test identities"
+  },
+  {
+    "check": "v5 paired central lower ff1044",
+    "pass": true,
+    "detail": "Same stored test identities"
+  },
+  {
+    "check": "v5 paired central lower ff2042",
+    "pass": true,
+    "detail": "Same stored test identities"
+  },
+  {
+    "check": "v5 paired central lower ff2043",
+    "pass": true,
+    "detail": "Same stored test identities"
+  },
+  {
+    "check": "v5 paired central lower ff2044",
+    "pass": true,
+    "detail": "Same stored test identities"
+  },
+  {
+    "check": "v5 paired central lower ff3042",
+    "pass": true,
+    "detail": "Same stored test identities"
+  },
+  {
+    "check": "v5 paired central lower ff3043",
+    "pass": true,
+    "detail": "Same stored test identities"
+  },
+  {
+    "check": "v5 paired central lower ff3044",
+    "pass": true,
+    "detail": "Same stored test identities"
+  },
+  {
+    "check": "B1 three seeds",
+    "pass": true,
+    "detail": "Saved metrics.json"
+  },
+  {
+    "check": "B1 equal identity",
+    "pass": true,
+    "detail": "Saved identity hashes only; no dataset opened"
+  },
+  {
+    "check": "B1 node/window count 42",
+    "pass": true,
+    "detail": "Saved per-node metric counts"
+  },
+  {
+    "check": "B1 macro 420mae",
+    "pass": true,
+    "detail": "Re-aggregate saved node metrics"
+  },
+  {
+    "check": "B1 pooled 420mae",
+    "pass": true,
+    "detail": "Re-aggregate saved node metrics"
+  },
+  {
+    "check": "B1 macro 420rmse",
+    "pass": true,
+    "detail": "Re-aggregate saved node metrics"
+  },
+  {
+    "check": "B1 pooled 420rmse",
+    "pass": true,
+    "detail": "Re-aggregate saved node metrics"
+  },
+  {
+    "check": "B1 macro 421mae",
+    "pass": true,
+    "detail": "Re-aggregate saved node metrics"
+  },
+  {
+    "check": "B1 pooled 421mae",
+    "pass": true,
+    "detail": "Re-aggregate saved node metrics"
+  },
+  {
+    "check": "B1 macro 421rmse",
+    "pass": true,
+    "detail": "Re-aggregate saved node metrics"
+  },
+  {
+    "check": "B1 pooled 421rmse",
+    "pass": true,
+    "detail": "Re-aggregate saved node metrics"
+  },
+  {
+    "check": "B1 node/window count 43",
+    "pass": true,
+    "detail": "Saved per-node metric counts"
+  },
+  {
+    "check": "B1 macro 430mae",
+    "pass": true,
+    "detail": "Re-aggregate saved node metrics"
+  },
+  {
+    "check": "B1 pooled 430mae",
+    "pass": true,
+    "detail": "Re-aggregate saved node metrics"
+  },
+  {
+    "check": "B1 macro 430rmse",
+    "pass": true,
+    "detail": "Re-aggregate saved node metrics"
+  },
+  {
+    "check": "B1 pooled 430rmse",
+    "pass": true,
+    "detail": "Re-aggregate saved node metrics"
+  },
+  {
+    "check": "B1 macro 431mae",
+    "pass": true,
+    "detail": "Re-aggregate saved node metrics"
+  },
+  {
+    "check": "B1 pooled 431mae",
+    "pass": true,
+    "detail": "Re-aggregate saved node metrics"
+  },
+  {
+    "check": "B1 macro 431rmse",
+    "pass": true,
+    "detail": "Re-aggregate saved node metrics"
+  },
+  {
+    "check": "B1 pooled 431rmse",
+    "pass": true,
+    "detail": "Re-aggregate saved node metrics"
+  },
+  {
+    "check": "B1 node/window count 44",
+    "pass": true,
+    "detail": "Saved per-node metric counts"
+  },
+  {
+    "check": "B1 macro 440mae",
+    "pass": true,
+    "detail": "Re-aggregate saved node metrics"
+  },
+  {
+    "check": "B1 pooled 440mae",
+    "pass": true,
+    "detail": "Re-aggregate saved node metrics"
+  },
+  {
+    "check": "B1 macro 440rmse",
+    "pass": true,
+    "detail": "Re-aggregate saved node metrics"
+  },
+  {
+    "check": "B1 pooled 440rmse",
+    "pass": true,
+    "detail": "Re-aggregate saved node metrics"
+  },
+  {
+    "check": "B1 macro 441mae",
+    "pass": true,
+    "detail": "Re-aggregate saved node metrics"
+  },
+  {
+    "check": "B1 pooled 441mae",
+    "pass": true,
+    "detail": "Re-aggregate saved node metrics"
+  },
+  {
+    "check": "B1 macro 441rmse",
+    "pass": true,
+    "detail": "Re-aggregate saved node metrics"
+  },
+  {
+    "check": "B1 pooled 441rmse",
+    "pass": true,
+    "detail": "Re-aggregate saved node metrics"
+  },
+  {
+    "check": "B1 saved mean pooledmae0",
+    "pass": true,
+    "detail": "Saved seed scores"
+  },
+  {
+    "check": "B1 saved sampleSD pooledmae0",
+    "pass": true,
+    "detail": "ddof1"
+  },
+  {
+    "check": "B1 saved mean pooledmae1",
+    "pass": true,
+    "detail": "Saved seed scores"
+  },
+  {
+    "check": "B1 saved sampleSD pooledmae1",
+    "pass": true,
+    "detail": "ddof1"
+  },
+  {
+    "check": "B1 saved mean pooledrmse0",
+    "pass": true,
+    "detail": "Saved seed scores"
+  },
+  {
+    "check": "B1 saved sampleSD pooledrmse0",
+    "pass": true,
+    "detail": "ddof1"
+  },
+  {
+    "check": "B1 saved mean pooledrmse1",
+    "pass": true,
+    "detail": "Saved seed scores"
+  },
+  {
+    "check": "B1 saved sampleSD pooledrmse1",
+    "pass": true,
+    "detail": "ddof1"
+  },
+  {
+    "check": "B1 saved mean macro_nodemae0",
+    "pass": true,
+    "detail": "Saved seed scores"
+  },
+  {
+    "check": "B1 saved sampleSD macro_nodemae0",
+    "pass": true,
+    "detail": "ddof1"
+  },
+  {
+    "check": "B1 saved mean macro_nodemae1",
+    "pass": true,
+    "detail": "Saved seed scores"
+  },
+  {
+    "check": "B1 saved sampleSD macro_nodemae1",
+    "pass": true,
+    "detail": "ddof1"
+  },
+  {
+    "check": "B1 saved mean macro_nodermse0",
+    "pass": true,
+    "detail": "Saved seed scores"
+  },
+  {
+    "check": "B1 saved sampleSD macro_nodermse0",
+    "pass": true,
+    "detail": "ddof1"
+  },
+  {
+    "check": "B1 saved mean macro_nodermse1",
+    "pass": true,
+    "detail": "Saved seed scores"
+  },
+  {
+    "check": "B1 saved sampleSD macro_nodermse1",
+    "pass": true,
+    "detail": "ddof1"
+  },
+  {
+    "check": "T5 group size condition_a_no_weathertest_t1",
+    "pass": true,
+    "detail": "Original per-seed CSV"
+  },
+  {
+    "check": "T5condition_a_no_weathertest_t1pooled_mae_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T5condition_a_no_weathertest_t1pooled_rmse_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T5condition_a_no_weathertest_t1macro_mae_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T5condition_a_no_weathertest_t1macro_rmse_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T5 group size condition_a_no_weathertest_q1",
+    "pass": true,
+    "detail": "Original per-seed CSV"
+  },
+  {
+    "check": "T5condition_a_no_weathertest_q1pooled_mae_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T5condition_a_no_weathertest_q1pooled_rmse_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T5condition_a_no_weathertest_q1macro_mae_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T5condition_a_no_weathertest_q1macro_rmse_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T5 group size condition_a_no_weathertest_march",
+    "pass": true,
+    "detail": "Original per-seed CSV"
+  },
+  {
+    "check": "T5condition_a_no_weathertest_marchpooled_mae_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T5condition_a_no_weathertest_marchpooled_rmse_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T5condition_a_no_weathertest_marchmacro_mae_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T5condition_a_no_weathertest_marchmacro_rmse_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T5 group size condition_b_temp_onlytest_t1",
+    "pass": true,
+    "detail": "Original per-seed CSV"
+  },
+  {
+    "check": "T5condition_b_temp_onlytest_t1pooled_mae_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T5condition_b_temp_onlytest_t1pooled_rmse_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T5condition_b_temp_onlytest_t1macro_mae_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T5condition_b_temp_onlytest_t1macro_rmse_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T5 group size condition_b_temp_onlytest_q1",
+    "pass": true,
+    "detail": "Original per-seed CSV"
+  },
+  {
+    "check": "T5condition_b_temp_onlytest_q1pooled_mae_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T5condition_b_temp_onlytest_q1pooled_rmse_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T5condition_b_temp_onlytest_q1macro_mae_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T5condition_b_temp_onlytest_q1macro_rmse_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T5 group size condition_b_temp_onlytest_march",
+    "pass": true,
+    "detail": "Original per-seed CSV"
+  },
+  {
+    "check": "T5condition_b_temp_onlytest_marchpooled_mae_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T5condition_b_temp_onlytest_marchpooled_rmse_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T5condition_b_temp_onlytest_marchmacro_mae_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T5condition_b_temp_onlytest_marchmacro_rmse_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T5 group size condition_c_humidity_onlytest_t1",
+    "pass": true,
+    "detail": "Original per-seed CSV"
+  },
+  {
+    "check": "T5condition_c_humidity_onlytest_t1pooled_mae_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T5condition_c_humidity_onlytest_t1pooled_rmse_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T5condition_c_humidity_onlytest_t1macro_mae_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T5condition_c_humidity_onlytest_t1macro_rmse_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T5 group size condition_c_humidity_onlytest_q1",
+    "pass": true,
+    "detail": "Original per-seed CSV"
+  },
+  {
+    "check": "T5condition_c_humidity_onlytest_q1pooled_mae_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T5condition_c_humidity_onlytest_q1pooled_rmse_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T5condition_c_humidity_onlytest_q1macro_mae_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T5condition_c_humidity_onlytest_q1macro_rmse_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T5 group size condition_c_humidity_onlytest_march",
+    "pass": true,
+    "detail": "Original per-seed CSV"
+  },
+  {
+    "check": "T5condition_c_humidity_onlytest_marchpooled_mae_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T5condition_c_humidity_onlytest_marchpooled_rmse_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T5condition_c_humidity_onlytest_marchmacro_mae_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T5condition_c_humidity_onlytest_marchmacro_rmse_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T5 group size condition_d_temp_and_humiditytest_t1",
+    "pass": true,
+    "detail": "Original per-seed CSV"
+  },
+  {
+    "check": "T5condition_d_temp_and_humiditytest_t1pooled_mae_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T5condition_d_temp_and_humiditytest_t1pooled_rmse_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T5condition_d_temp_and_humiditytest_t1macro_mae_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T5condition_d_temp_and_humiditytest_t1macro_rmse_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T5 group size condition_d_temp_and_humiditytest_q1",
+    "pass": true,
+    "detail": "Original per-seed CSV"
+  },
+  {
+    "check": "T5condition_d_temp_and_humiditytest_q1pooled_mae_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T5condition_d_temp_and_humiditytest_q1pooled_rmse_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T5condition_d_temp_and_humiditytest_q1macro_mae_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T5condition_d_temp_and_humiditytest_q1macro_rmse_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T5 group size condition_d_temp_and_humiditytest_march",
+    "pass": true,
+    "detail": "Original per-seed CSV"
+  },
+  {
+    "check": "T5condition_d_temp_and_humiditytest_marchpooled_mae_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T5condition_d_temp_and_humiditytest_marchpooled_rmse_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T5condition_d_temp_and_humiditytest_marchmacro_mae_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T5condition_d_temp_and_humiditytest_marchmacro_rmse_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T6 group size condition_a_fedavg_grutest_t1",
+    "pass": true,
+    "detail": "Original per-seed CSV"
+  },
+  {
+    "check": "T6condition_a_fedavg_grutest_t1pooled_mae_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T6condition_a_fedavg_grutest_t1pooled_rmse_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T6condition_a_fedavg_grutest_t1macro_mae_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T6condition_a_fedavg_grutest_t1macro_rmse_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T6 group size condition_a_fedavg_grutest_q1",
+    "pass": true,
+    "detail": "Original per-seed CSV"
+  },
+  {
+    "check": "T6condition_a_fedavg_grutest_q1pooled_mae_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T6condition_a_fedavg_grutest_q1pooled_rmse_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T6condition_a_fedavg_grutest_q1macro_mae_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T6condition_a_fedavg_grutest_q1macro_rmse_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T6 group size condition_a_fedavg_grutest_march",
+    "pass": true,
+    "detail": "Original per-seed CSV"
+  },
+  {
+    "check": "T6condition_a_fedavg_grutest_marchpooled_mae_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T6condition_a_fedavg_grutest_marchpooled_rmse_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T6condition_a_fedavg_grutest_marchmacro_mae_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T6condition_a_fedavg_grutest_marchmacro_rmse_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T6 group size condition_b_fedavg_lstmtest_t1",
+    "pass": true,
+    "detail": "Original per-seed CSV"
+  },
+  {
+    "check": "T6condition_b_fedavg_lstmtest_t1pooled_mae_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T6condition_b_fedavg_lstmtest_t1pooled_rmse_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T6condition_b_fedavg_lstmtest_t1macro_mae_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T6condition_b_fedavg_lstmtest_t1macro_rmse_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T6 group size condition_b_fedavg_lstmtest_q1",
+    "pass": true,
+    "detail": "Original per-seed CSV"
+  },
+  {
+    "check": "T6condition_b_fedavg_lstmtest_q1pooled_mae_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T6condition_b_fedavg_lstmtest_q1pooled_rmse_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T6condition_b_fedavg_lstmtest_q1macro_mae_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T6condition_b_fedavg_lstmtest_q1macro_rmse_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T6 group size condition_b_fedavg_lstmtest_march",
+    "pass": true,
+    "detail": "Original per-seed CSV"
+  },
+  {
+    "check": "T6condition_b_fedavg_lstmtest_marchpooled_mae_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T6condition_b_fedavg_lstmtest_marchpooled_rmse_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T6condition_b_fedavg_lstmtest_marchmacro_mae_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T6condition_b_fedavg_lstmtest_marchmacro_rmse_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T6 group size condition_c_centralized_xgboosttest_t1",
+    "pass": true,
+    "detail": "Original per-seed CSV"
+  },
+  {
+    "check": "T6condition_c_centralized_xgboosttest_t1pooled_mae_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T6condition_c_centralized_xgboosttest_t1pooled_rmse_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T6condition_c_centralized_xgboosttest_t1macro_mae_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T6condition_c_centralized_xgboosttest_t1macro_rmse_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T6 group size condition_c_centralized_xgboosttest_q1",
+    "pass": true,
+    "detail": "Original per-seed CSV"
+  },
+  {
+    "check": "T6condition_c_centralized_xgboosttest_q1pooled_mae_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T6condition_c_centralized_xgboosttest_q1pooled_rmse_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T6condition_c_centralized_xgboosttest_q1macro_mae_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T6condition_c_centralized_xgboosttest_q1macro_rmse_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T6 group size condition_c_centralized_xgboosttest_march",
+    "pass": true,
+    "detail": "Original per-seed CSV"
+  },
+  {
+    "check": "T6condition_c_centralized_xgboosttest_marchpooled_mae_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T6condition_c_centralized_xgboosttest_marchpooled_rmse_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T6condition_c_centralized_xgboosttest_marchmacro_mae_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T6condition_c_centralized_xgboosttest_marchmacro_rmse_w",
+    "pass": true,
+    "detail": "Original per-seed CSV + report aggregate"
+  },
+  {
+    "check": "T7 unique record keys",
+    "pass": true,
+    "detail": "99 source CSV records"
+  },
+  {
+    "check": "T7 group count cond_00_ref_0pcttest_t1",
+    "pass": true,
+    "detail": "Stored source rows"
+  },
+  {
+    "check": "T7 arithmetic cond_00_ref_0pcttest_t1pooled_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_00_ref_0pcttest_t1pooled_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_00_ref_0pcttest_t1macro_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_00_ref_0pcttest_t1macro_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 group count cond_rand_05pcttest_t1",
+    "pass": true,
+    "detail": "Stored source rows"
+  },
+  {
+    "check": "T7 arithmetic cond_rand_05pcttest_t1pooled_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_rand_05pcttest_t1pooled_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_rand_05pcttest_t1macro_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_rand_05pcttest_t1macro_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 group count cond_rand_10pcttest_t1",
+    "pass": true,
+    "detail": "Stored source rows"
+  },
+  {
+    "check": "T7 arithmetic cond_rand_10pcttest_t1pooled_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_rand_10pcttest_t1pooled_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_rand_10pcttest_t1macro_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_rand_10pcttest_t1macro_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 group count cond_rand_20pcttest_t1",
+    "pass": true,
+    "detail": "Stored source rows"
+  },
+  {
+    "check": "T7 arithmetic cond_rand_20pcttest_t1pooled_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_rand_20pcttest_t1pooled_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_rand_20pcttest_t1macro_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_rand_20pcttest_t1macro_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 group count cond_rand_30pcttest_t1",
+    "pass": true,
+    "detail": "Stored source rows"
+  },
+  {
+    "check": "T7 arithmetic cond_rand_30pcttest_t1pooled_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_rand_30pcttest_t1pooled_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_rand_30pcttest_t1macro_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_rand_30pcttest_t1macro_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 group count cond_cont_l3_05pcttest_t1",
+    "pass": true,
+    "detail": "Stored source rows"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l3_05pcttest_t1pooled_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l3_05pcttest_t1pooled_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l3_05pcttest_t1macro_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l3_05pcttest_t1macro_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 group count cond_cont_l3_10pcttest_t1",
+    "pass": true,
+    "detail": "Stored source rows"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l3_10pcttest_t1pooled_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l3_10pcttest_t1pooled_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l3_10pcttest_t1macro_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l3_10pcttest_t1macro_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 group count cond_cont_l3_20pcttest_t1",
+    "pass": true,
+    "detail": "Stored source rows"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l3_20pcttest_t1pooled_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l3_20pcttest_t1pooled_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l3_20pcttest_t1macro_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l3_20pcttest_t1macro_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 group count cond_cont_l3_30pcttest_t1",
+    "pass": true,
+    "detail": "Stored source rows"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l3_30pcttest_t1pooled_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l3_30pcttest_t1pooled_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l3_30pcttest_t1macro_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l3_30pcttest_t1macro_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 group count cond_cont_l6_05pcttest_t1",
+    "pass": true,
+    "detail": "Stored source rows"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l6_05pcttest_t1pooled_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l6_05pcttest_t1pooled_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l6_05pcttest_t1macro_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l6_05pcttest_t1macro_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 group count cond_cont_l6_10pcttest_t1",
+    "pass": true,
+    "detail": "Stored source rows"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l6_10pcttest_t1pooled_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l6_10pcttest_t1pooled_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l6_10pcttest_t1macro_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l6_10pcttest_t1macro_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 group count cond_cont_l6_20pcttest_t1",
+    "pass": true,
+    "detail": "Stored source rows"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l6_20pcttest_t1pooled_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l6_20pcttest_t1pooled_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l6_20pcttest_t1macro_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l6_20pcttest_t1macro_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 group count cond_cont_l6_30pcttest_t1",
+    "pass": true,
+    "detail": "Stored source rows"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l6_30pcttest_t1pooled_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l6_30pcttest_t1pooled_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l6_30pcttest_t1macro_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l6_30pcttest_t1macro_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 group count cond_cont_l12_05pcttest_t1",
+    "pass": true,
+    "detail": "Stored source rows"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l12_05pcttest_t1pooled_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l12_05pcttest_t1pooled_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l12_05pcttest_t1macro_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l12_05pcttest_t1macro_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 group count cond_cont_l12_10pcttest_t1",
+    "pass": true,
+    "detail": "Stored source rows"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l12_10pcttest_t1pooled_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l12_10pcttest_t1pooled_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l12_10pcttest_t1macro_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l12_10pcttest_t1macro_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 group count cond_cont_l12_20pcttest_t1",
+    "pass": true,
+    "detail": "Stored source rows"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l12_20pcttest_t1pooled_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l12_20pcttest_t1pooled_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l12_20pcttest_t1macro_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l12_20pcttest_t1macro_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 group count cond_cont_l12_30pcttest_t1",
+    "pass": true,
+    "detail": "Stored source rows"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l12_30pcttest_t1pooled_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l12_30pcttest_t1pooled_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l12_30pcttest_t1macro_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l12_30pcttest_t1macro_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 group count group_power_rand20test_t1",
+    "pass": true,
+    "detail": "Stored source rows"
+  },
+  {
+    "check": "T7 arithmetic group_power_rand20test_t1pooled_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic group_power_rand20test_t1pooled_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic group_power_rand20test_t1macro_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic group_power_rand20test_t1macro_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 group count group_power_blackouttest_t1",
+    "pass": true,
+    "detail": "Stored source rows"
+  },
+  {
+    "check": "T7 arithmetic group_power_blackouttest_t1pooled_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic group_power_blackouttest_t1pooled_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic group_power_blackouttest_t1macro_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic group_power_blackouttest_t1macro_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 group count group_cpu_rand20test_t1",
+    "pass": true,
+    "detail": "Stored source rows"
+  },
+  {
+    "check": "T7 arithmetic group_cpu_rand20test_t1pooled_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic group_cpu_rand20test_t1pooled_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic group_cpu_rand20test_t1macro_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic group_cpu_rand20test_t1macro_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 group count group_cpu_blackouttest_t1",
+    "pass": true,
+    "detail": "Stored source rows"
+  },
+  {
+    "check": "T7 arithmetic group_cpu_blackouttest_t1pooled_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic group_cpu_blackouttest_t1pooled_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic group_cpu_blackouttest_t1macro_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic group_cpu_blackouttest_t1macro_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 group count group_memory_rand20test_t1",
+    "pass": true,
+    "detail": "Stored source rows"
+  },
+  {
+    "check": "T7 arithmetic group_memory_rand20test_t1pooled_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic group_memory_rand20test_t1pooled_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic group_memory_rand20test_t1macro_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic group_memory_rand20test_t1macro_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 group count group_memory_blackouttest_t1",
+    "pass": true,
+    "detail": "Stored source rows"
+  },
+  {
+    "check": "T7 arithmetic group_memory_blackouttest_t1pooled_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic group_memory_blackouttest_t1pooled_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic group_memory_blackouttest_t1macro_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic group_memory_blackouttest_t1macro_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 group count group_inlet_temp_rand20test_t1",
+    "pass": true,
+    "detail": "Stored source rows"
+  },
+  {
+    "check": "T7 arithmetic group_inlet_temp_rand20test_t1pooled_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic group_inlet_temp_rand20test_t1pooled_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic group_inlet_temp_rand20test_t1macro_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic group_inlet_temp_rand20test_t1macro_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 group count group_inlet_temp_blackouttest_t1",
+    "pass": true,
+    "detail": "Stored source rows"
+  },
+  {
+    "check": "T7 arithmetic group_inlet_temp_blackouttest_t1pooled_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic group_inlet_temp_blackouttest_t1pooled_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic group_inlet_temp_blackouttest_t1macro_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic group_inlet_temp_blackouttest_t1macro_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 group count cond_00_ref_0pcttest_q1",
+    "pass": true,
+    "detail": "Stored source rows"
+  },
+  {
+    "check": "T7 arithmetic cond_00_ref_0pcttest_q1pooled_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_00_ref_0pcttest_q1pooled_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_00_ref_0pcttest_q1macro_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_00_ref_0pcttest_q1macro_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 group count cond_rand_10pcttest_q1",
+    "pass": true,
+    "detail": "Stored source rows"
+  },
+  {
+    "check": "T7 arithmetic cond_rand_10pcttest_q1pooled_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_rand_10pcttest_q1pooled_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_rand_10pcttest_q1macro_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_rand_10pcttest_q1macro_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 group count cond_cont_l6_10pcttest_q1",
+    "pass": true,
+    "detail": "Stored source rows"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l6_10pcttest_q1pooled_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l6_10pcttest_q1pooled_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l6_10pcttest_q1macro_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l6_10pcttest_q1macro_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 group count cond_cont_l6_20pcttest_q1",
+    "pass": true,
+    "detail": "Stored source rows"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l6_20pcttest_q1pooled_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l6_20pcttest_q1pooled_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l6_20pcttest_q1macro_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l6_20pcttest_q1macro_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 group count cond_00_ref_0pcttest_march",
+    "pass": true,
+    "detail": "Stored source rows"
+  },
+  {
+    "check": "T7 arithmetic cond_00_ref_0pcttest_marchpooled_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_00_ref_0pcttest_marchpooled_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_00_ref_0pcttest_marchmacro_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_00_ref_0pcttest_marchmacro_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 group count cond_rand_10pcttest_march",
+    "pass": true,
+    "detail": "Stored source rows"
+  },
+  {
+    "check": "T7 arithmetic cond_rand_10pcttest_marchpooled_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_rand_10pcttest_marchpooled_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_rand_10pcttest_marchmacro_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_rand_10pcttest_marchmacro_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 group count cond_cont_l6_10pcttest_march",
+    "pass": true,
+    "detail": "Stored source rows"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l6_10pcttest_marchpooled_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l6_10pcttest_marchpooled_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l6_10pcttest_marchmacro_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l6_10pcttest_marchmacro_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 group count cond_cont_l6_20pcttest_march",
+    "pass": true,
+    "detail": "Stored source rows"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l6_20pcttest_marchpooled_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l6_20pcttest_marchpooled_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l6_20pcttest_marchmacro_mae",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  },
+  {
+    "check": "T7 arithmetic cond_cont_l6_20pcttest_marchmacro_rmse",
+    "pass": true,
+    "detail": "Means and sampleSD from stored CSV, not prediction replay"
+  }
+]

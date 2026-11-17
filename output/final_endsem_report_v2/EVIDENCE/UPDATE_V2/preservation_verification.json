@@ -1,0 +1,35 @@
+{
+  "metadata_files_checked": 174775,
+  "metadata_equality_pass": false,
+  "metadata_differences": [
+    {
+      "path": "src/t1_2_controlled_history_benchmark_v1.py",
+      "before": [
+        51971,
+        1794924441225729710,
+        420,
+        415867761,
+        2065
+      ],
+      "after": [
+        52528,
+        1794924855590591089,
+        420,
+        415867761,
+        2065
+      ]
+    }
+  ],
+  "unexpected_metadata_differences": [],
+  "initial_code_content_files": 279,
+  "old_source_files_unchanged": 270,
+  "old_result_source_files_unchanged": 116,
+  "current_source_binding_mismatches": [],
+  "original_report_inventory_unchanged": true,
+  "existing_file_writes_by_this_task": false,
+  "concurrent_change_interpretation": "New unexecuted-at-start history runner changed during review; later partial external execution observed. Exact writer unknown. No process/model control by this task. Initial baseline retained.",
+  "atime_compared": false,
+  "binary_integrity_scope": "647 recorded binding comparisons:638 match,9 new history-manifest mismatches. Historical referenced bytes separately match older records; not a full-project binary hash audit.",
+  "historical_preflight": "FAILED unchanged",
+  "semantic_reproduction": "UNKNOWN not replayed"
+}

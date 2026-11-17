@@ -1,0 +1,9 @@
+flowchart LR
+ A[Raw telemetry / Parquet] --> B[Causal UTC bins]
+ B --> C[Frozen IDs and observed targets]
+ C --> D[Training-only normalization]
+ D --> E[Local fitting and full-table FedAvg]
+ E --> F[Validation selection and model lock]
+ F --> G[Common test prediction artifacts]
+ G --> H[Pooled / macro / node metrics]
+ H -. Proposed .-> I[Validated action-response and decision layer]

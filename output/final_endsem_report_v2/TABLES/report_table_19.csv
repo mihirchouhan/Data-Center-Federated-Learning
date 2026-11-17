@@ -1,0 +1,6 @@
+Record,Base paper's measured quantity,Our separately measured quantity,Comparison indicator
+Learning accuracy,"Table II, p. 9: adaptive R² .951/.988/.988/.984/.988 across DC1–5",T4 canonical FedAvg pooled MAE 24.8133 W; RMSE 57.5502 W,Not Directly Comparable: decision R² versus sensor errors
+Learning comparator,Table II default FL R² .591/.807/.797/.642/.935,v5 centralized pooled MAE/RMSE lower than FedAvg in 12/12 pairs,Different populations and algorithms
+Cost accuracy,"Table III, p. 10: independent .12%, default .07%, adaptive .08% aggregate deviation",No operational cost evaluation,Not Evaluated
+Runtime,"Fig. 8, p. 10: ~.61 s versus ~5.30 s; ratio ~8.69×",No equivalent optimization workflow benchmark,Not Directly Comparable
+Persistence,"Mean-reference R² and independent-learning comparison, not our persistence task",B1 power MAE 53.3568 versus 42.3922 W; RMSE 89.7978 versus 92.6004 W,Within-B1 comparison only

@@ -1,0 +1,166 @@
+[
+  {
+    "path": "BASE_PAPER_DETAILED_ANALYSIS.md",
+    "match": true
+  },
+  {
+    "path": "BASE_PAPER_VS_OUR_RESEARCH_COMPARISON.md",
+    "match": true
+  },
+  {
+    "path": "EVIDENCE/CODE_INTERFACE_INVENTORY.csv",
+    "match": true
+  },
+  {
+    "path": "EVIDENCE/REPOSITORY_INVENTORY.csv",
+    "match": true
+  },
+  {
+    "path": "EVIDENCE/base_paper_identity.json",
+    "match": true
+  },
+  {
+    "path": "EVIDENCE/code_document_hashes.json",
+    "match": true
+  },
+  {
+    "path": "EVIDENCE/fresh_content_checks.json",
+    "match": true
+  },
+  {
+    "path": "EVIDENCE/history_seedwise_metrics.csv",
+    "match": true
+  },
+  {
+    "path": "EVIDENCE/late_results.json",
+    "match": true
+  },
+  {
+    "path": "EVIDENCE/preservation_verification.json",
+    "match": true
+  },
+  {
+    "path": "EVIDENCE/report_checks.json",
+    "match": true
+  },
+  {
+    "path": "EVIDENCE/report_metric_extract.json",
+    "match": true
+  },
+  {
+    "path": "EVIDENCE/result_source_hashes.json",
+    "match": true
+  },
+  {
+    "path": "EVIDENCE/t4_seedwise_metrics.csv",
+    "match": true
+  },
+  {
+    "path": "EVIDENCE/v5_matched_differences.csv",
+    "match": true
+  },
+  {
+    "path": "EVIDENCE/v5_seedwise_metrics.csv",
+    "match": true
+  },
+  {
+    "path": "EVIDENCE_AND_CLAIM_REGISTER.csv",
+    "match": true
+  },
+  {
+    "path": "EXECUTIVE_SUMMARY.md",
+    "match": true
+  },
+  {
+    "path": "EXPERIMENT_STATUS_REGISTER.csv",
+    "match": true
+  },
+  {
+    "path": "FIGURES/01_system_architecture.png",
+    "match": true
+  },
+  {
+    "path": "FIGURES/01_system_architecture.svg",
+    "match": true
+  },
+  {
+    "path": "FIGURES/02_model_architectures.png",
+    "match": true
+  },
+  {
+    "path": "FIGURES/02_model_architectures.svg",
+    "match": true
+  },
+  {
+    "path": "FIGURES/03_experiment_tracks.png",
+    "match": true
+  },
+  {
+    "path": "FIGURES/03_experiment_tracks.svg",
+    "match": true
+  },
+  {
+    "path": "FIGURES/04_v5_policy_results.png",
+    "match": true
+  },
+  {
+    "path": "FIGURES/04_v5_policy_results.svg",
+    "match": true
+  },
+  {
+    "path": "FIGURES/05_b1_persistence_results.png",
+    "match": true
+  },
+  {
+    "path": "FIGURES/05_b1_persistence_results.svg",
+    "match": true
+  },
+  {
+    "path": "FIGURES/06_history_results.png",
+    "match": true
+  },
+  {
+    "path": "FIGURES/06_history_results.svg",
+    "match": true
+  },
+  {
+    "path": "FIGURES/07_t4_canonical_results.png",
+    "match": true
+  },
+  {
+    "path": "FIGURES/07_t4_canonical_results.svg",
+    "match": true
+  },
+  {
+    "path": "FIGURES/08_t4_temporal_results.png",
+    "match": true
+  },
+  {
+    "path": "FIGURES/08_t4_temporal_results.svg",
+    "match": true
+  },
+  {
+    "path": "FIGURES/generate_figures.py",
+    "match": true
+  },
+  {
+    "path": "FIGURES/model_architecture.mmd",
+    "match": true
+  },
+  {
+    "path": "FIGURES/research_workflow.mmd",
+    "match": true
+  },
+  {
+    "path": "FINAL_PROJECT_REPORT.md",
+    "match": true
+  },
+  {
+    "path": "REPORT_VALIDATION.md",
+    "match": true
+  },
+  {
+    "path": "RESEARCH_GAP_AND_CONTRIBUTION_ANALYSIS.md",
+    "match": true
+  }
+]

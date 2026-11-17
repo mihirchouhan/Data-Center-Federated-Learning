@@ -1,0 +1,4 @@
+Track,Training,Validation,Test / containment
+Frozen one-hour/v5,Jan 1–Feb 11 07:10 UTC,Feb 11 07:10–Feb 20 03:30,Feb 20 03:30–Mar 1; historical window contract
+B1,Jan 1–Jan 28,Jan 28–Feb 4,March 1–April 1; whole history/target contained; hourly origins
+Candidate 1 / T4,Jan 1–Jan 22,Jan 22–Jan 28,Jan 28–Feb 4; extended/March nested views; longest-history gating

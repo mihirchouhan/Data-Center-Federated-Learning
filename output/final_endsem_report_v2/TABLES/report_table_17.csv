@@ -1,0 +1,6 @@
+Dimension,Base paper,Our research,Interpretation/status
+9. Targets,"Operational decisions/states, including servers, queue, cooling and temperature; §III-A",Observed mean node power; B1 also recorded IPMI ambient,Different semantics and physical scale
+16. Evaluation,Independent/default/adaptive learning plus optimization reference; §IV,"Chronological holdouts, frozen identities, persistence, selected centralized controls",Different reference questions
+17. Prediction metrics,"NRMSE averaged across decision dimensions, R²; Eq. (15), p. 9","Pooled and macro-node MAE/RMSE, W or °C",Not Directly Comparable
+Selection,Conditional validation acceptance; Algorithm 1,Track-specific earliest minimum validation error,No test-based reselection authorized
+Uncertainty,"Ensemble spread, Eq. (12)",Three-seed sample SD where available,Seed SD is not calibrated predictive uncertainty

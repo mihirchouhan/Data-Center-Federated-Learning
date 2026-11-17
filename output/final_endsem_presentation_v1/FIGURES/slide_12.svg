@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1152pt" height="648pt" viewBox="0 0 1152 648" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-17T20:44:56.168772</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 648 
+L 1152 648 
+L 1152 0 
+L 0 0 
+z
+" style="fill: #f6f8fa"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 0 10.368 
+L 1152 10.368 
+L 1152 0 
+L 0 0 
+z
+" clip-path="url(#p64d6e7c12a)" style="fill: #007e87; stroke: #007e87; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 70.272 428.976 
+L 551.808 428.976 
+Q 566.784 428.976 566.784 420.552 
+L 566.784 188.568 
+Q 566.784 180.144 551.808 180.144 
+L 70.272 180.144 
+Q 55.296 180.144 55.296 188.568 
+L 55.296 420.552 
+Q 55.296 428.976 70.272 428.976 
+z
+" clip-path="url(#p64d6e7c12a)" style="fill: #ffffff; stroke: #d9e1e8; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 600.192 428.976 
+L 1081.728 428.976 
+Q 1096.704 428.976 1096.704 420.552 
+L 1096.704 188.568 
+Q 1096.704 180.144 1081.728 180.144 
+L 600.192 180.144 
+Q 585.216 180.144 585.216 188.568 
+L 585.216 420.552 
+Q 585.216 428.976 600.192 428.976 
+z
+" clip-path="url(#p64d6e7c12a)" style="fill: #ffffff; stroke: #d9e1e8; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 51.84 583.2 
+L 1100.16 583.2 
+Q 1109.376 583.2 1109.376 578.016 
+L 1109.376 530.064 
+Q 1109.376 524.88 1100.16 524.88 
+L 51.84 524.88 
+Q 42.624 524.88 42.624 530.064 
+L 42.624 578.016 
+Q 42.624 583.2 51.84 583.2 
+z
+" clip-path="url(#p64d6e7c12a)" style="fill: #e4f1f0"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 51.84 153.576 
+L 1100.16 153.576 
+" clip-path="url(#p64d6e7c12a)" style="fill: none; stroke: #d5dee5; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #007e87" x="51.84" y="46.276719" transform="rotate(-0 51.84 46.276719)">EVALUATION PROTOCOL</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 33px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #142c43" x="51.84" y="100.242844" transform="rotate(-0 51.84 100.242844)">Frozen identities make comparisons interpretable</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #526575" x="51.84" y="137.445187" transform="rotate(-0 51.84 137.445187)">Selection uses validation; final comparison uses common stored test windows</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #526575" x="51.84" y="624.621422" transform="rotate(-0 51.84 624.621422)">Mihir Chouhan · NIT Goa  |  Evidence: 17 Nov 2026</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #526575" x="1100.16" y="624.381188" transform="rotate(-0 1100.16 624.381188)">12 / 24</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #526575" x="51.84" y="598.293656" transform="rotate(-0 51.84 598.293656)">Sources: B1_RUNNER, B1_EVAL, REGISTRY</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 24px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #142c43" x="89.856" y="224.30025" transform="rotate(-0 89.856 224.30025)">Selection and leakage safeguards</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #142c43" transform="translate(89.856 271.150313)">Frozen train / validation / test identities</text>
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #142c43" transform="translate(89.856 299.99875)">Fit scalers on declared training population</text>
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #142c43" transform="translate(89.856 330.915938)">B1 validation: 0, 10, …, 200 rounds</text>
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #142c43" transform="translate(89.856 359.99875)">Earliest minimum joint standardized RMSE</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 24px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #142c43" x="619.776" y="224.30025" transform="rotate(-0 619.776 224.30025)">Report both aggregation views</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #142c43" transform="translate(619.776 270.778594)">MAE = mean |error|</text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #142c43" transform="translate(619.776 303.861797)">RMSE = √ mean(error²)</text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #142c43" transform="translate(619.776 334.024688)">Pooled: all windows; macro: equal nodes</text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #142c43" transform="translate(619.776 365.524688)">Mean ± sample SD across seeds 42/43/44</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #007e87" x="70.272" y="559.495898" transform="rotate(-0 70.272 559.495898)">Seed SD is not a confidence interval or independent-dataset uncertainty.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p64d6e7c12a">
+   <rect x="0" y="0" width="1152" height="648"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,7 @@
+Dimension,Base paper,Our research,Interpretation/status
+19. Formulation,"MINLP P 1, envelope/MIQP P 2, reduced P 3; Eqs. (1)–(3),(14)",Forecasting losses only,Operational optimization Not Implemented
+20. Decisions,"Servers, cooling, generators, storage, grid trades",No executed control action,Action-response model Not Implemented
+21. SLA/service,Queue/delay constraints and penalty; Eqs. (1 j)–(1 k),"Operational proxies exist, final SLA definition absent",SLA benefit Not Evaluated
+22. Energy cost,Modeled dispatch costs relative to reference; Table III,No same-action energy/cost experiment,Not Directly Comparable
+23. Efficiency,"Optimization workflow time, Fig. 8",Some training times; T4 VRAM fields are fixed placeholders,No comparable end-to-end speedup
+Excluded dimensions,"Privacy, key management, cryptographic protocols, cybersecurity/security mechanisms",Not compared,Out of Scope for this comparison

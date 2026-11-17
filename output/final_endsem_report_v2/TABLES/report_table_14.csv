@@ -1,0 +1,6 @@
+Dimension,Base paper,Our research,Interpretation/status
+1. Problem,"Coupled power, heat and workload decisions; §II, pp. 3–4",Next-hour telemetry means from recent history,Different scientific tasks
+2. Objectives,Near-reference operating decisions with a reduced optimization solve,"Forecast accuracy, missingness/history/control comparisons",Forecasting objective demonstrated; operational objective future
+3. Scope,"Learning-to-optimization framework; §III, pp. 4–7",Observed-telemetry forecasting workflow,Complete paper architecture Not Implemented
+18. Energy-related objective,Explicit economic objective Eq. (1 a),Energy-aware decision support is a research direction,Savings Not Evaluated
+24. Limitations,Five modeled agents; reproduction details require source-code review,"One physical facility, observed periods, changing track contracts",Neither validates universal deployment benefit

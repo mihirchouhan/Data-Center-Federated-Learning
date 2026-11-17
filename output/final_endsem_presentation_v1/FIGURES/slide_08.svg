@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1152pt" height="648pt" viewBox="0 0 1152 648" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-17T20:44:53.980581</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 648 
+L 1152 648 
+L 1152 0 
+L 0 0 
+z
+" style="fill: #f6f8fa"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 0 10.368 
+L 1152 10.368 
+L 1152 0 
+L 0 0 
+z
+" clip-path="url(#pb81ec6ee78)" style="fill: #007e87; stroke: #007e87; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 87.552 351.216 
+L 707.328 351.216 
+Q 722.304 351.216 722.304 342.792 
+L 722.304 220.968 
+Q 722.304 212.544 707.328 212.544 
+L 87.552 212.544 
+Q 72.576 212.544 72.576 220.968 
+L 72.576 342.792 
+Q 72.576 351.216 87.552 351.216 
+z
+" clip-path="url(#pb81ec6ee78)" style="fill: #e4f1f0; stroke: #d9e1e8; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 755.712 351.216 
+L 1064.448 351.216 
+Q 1079.424 351.216 1079.424 342.792 
+L 1079.424 220.968 
+Q 1079.424 212.544 1064.448 212.544 
+L 755.712 212.544 
+Q 740.736 212.544 740.736 220.968 
+L 740.736 342.792 
+Q 740.736 351.216 755.712 351.216 
+z
+" clip-path="url(#pb81ec6ee78)" style="fill: #f9ebdd; stroke: #d9e1e8; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 716.243906 285.12 
+Q 731.522459 285.12 744.564943 285.12 
+" clip-path="url(#pb81ec6ee78)" style="fill: none; stroke: #007e87; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 735.764943 280.72 
+L 744.564943 285.12 
+L 735.764943 289.52 
+z
+" clip-path="url(#pb81ec6ee78)" style="fill: #007e87; stroke: #007e87; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 63.36 489.888 
+L 1088.64 489.888 
+L 1088.64 445.4352 
+L 63.36 445.4352 
+z
+" clip-path="url(#pb81ec6ee78)" style="fill: #ffffff"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 51.84 583.2 
+L 1100.16 583.2 
+Q 1109.376 583.2 1109.376 578.016 
+L 1109.376 530.064 
+Q 1109.376 524.88 1100.16 524.88 
+L 51.84 524.88 
+Q 42.624 524.88 42.624 530.064 
+L 42.624 578.016 
+Q 42.624 583.2 51.84 583.2 
+z
+" clip-path="url(#pb81ec6ee78)" style="fill: #e4f1f0"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 51.84 153.576 
+L 1100.16 153.576 
+" clip-path="url(#pb81ec6ee78)" style="fill: none; stroke: #d5dee5; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #007e87" x="51.84" y="46.276719" transform="rotate(-0 51.84 46.276719)">WINDOW &amp; SPLIT CONTRACT</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 33px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #142c43" x="51.84" y="100.242844" transform="rotate(-0 51.84 100.242844)">Predict the next-hour mean, not a point at +60 min</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #526575" x="51.84" y="137.445187" transform="rotate(-0 51.84 137.445187)">Identity = original node string + forecast-origin UTC timestamp</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #526575" x="51.84" y="624.621422" transform="rotate(-0 51.84 624.621422)">Mihir Chouhan · NIT Goa  |  Evidence: 17 Nov 2026</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #526575" x="1100.16" y="624.381188" transform="rotate(-0 1100.16 624.381188)">08 / 24</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #526575" x="51.84" y="598.293656" transform="rotate(-0 51.84 598.293656)">Sources: B1_PREP, B1_EVAL, REPORT</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 25px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #142c43" x="107.136" y="257.460094" transform="rotate(-0 107.136 257.460094)">History: [t − 6 h, t)</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #142c43" x="107.136" y="304.450625" transform="rotate(-0 107.136 304.450625)">36 completed ten-minute bins</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #142c43" x="775.296" y="255.940406" transform="rotate(-0 775.296 255.940406)">Target: [t, t + 1 h)</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #142c43" x="775.296" y="304.33625" transform="rotate(-0 775.296 304.33625)">Mean of 6 observed bins</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #d87b36" x="731.52" y="196.636875" transform="rotate(-0 731.52 196.636875)">origin t</text>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #007e87" x="72.576" y="423.436875" transform="rotate(-0 72.576 423.436875)">B1 training</text>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #007e87" x="414.336" y="423.436875" transform="rotate(-0 414.336 423.436875)">B1 validation</text>
+   </g>
+   <g id="text_14">
+    <text style="font-weight: 700; font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #007e87" x="756.096" y="423.436875" transform="rotate(-0 756.096 423.436875)">B1 retrospective test</text>
+   </g>
+   <g id="text_15">
+    <text style="font-weight: 700; font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #142c43" x="72.576" y="472.684875" transform="rotate(-0 72.576 472.684875)">[1 Jan, 28 Jan)</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #142c43" x="414.336" y="472.684875" transform="rotate(-0 414.336 472.684875)">[28 Jan, 4 Feb)</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #142c43" x="756.096" y="472.684875" transform="rotate(-0 756.096 472.684875)">[1 Mar, 1 Apr)</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #142c43" x="80.64" y="509.196563" transform="rotate(-0 80.64 509.196563)">Whole history + whole target contained in each B1 split; hourly origins.</text>
+   </g>
+   <g id="text_19">
+    <text style="font-weight: 700; font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #007e87" x="70.272" y="559.495898" transform="rotate(-0 70.272 559.495898)">B1 containment differs from historical tracks with prior-split histories.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pb81ec6ee78">
+   <rect x="0" y="0" width="1152" height="648"/>
+  </clipPath>
+ </defs>
+</svg>

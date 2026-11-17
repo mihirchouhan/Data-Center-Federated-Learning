@@ -1,0 +1,49 @@
+{
+  "existing_regular_files_metadata_compared": 174893,
+  "fields": [
+    "bytes",
+    "mtime_ns",
+    "mode"
+  ],
+  "atime_checked": false,
+  "metadata_changes": [
+    {
+      "path": "output/experiments/t1_2_controlled_history_benchmark_v1/round_progress_h6_seed43.csv",
+      "before": [
+        10476,
+        1794927270685519479,
+        436
+      ],
+      "after": [
+        15523,
+        1794927682209660538,
+        436
+      ]
+    },
+    {
+      "path": "output/experiments/t1_2_controlled_history_benchmark_v1/progress.log",
+      "before": [
+        68779,
+        1794927270674519857,
+        436
+      ],
+      "after": [
+        122168,
+        1794928801086542016,
+        436
+      ]
+    }
+  ],
+  "unexpected_changes": [],
+  "all_changes_within_observed_active_run": true,
+  "task_modified_existing_files": false,
+  "exact_writer_of_concurrent_changes": "UNKNOWN; paths belong to observed externally progressing run; no process was launched/controlled by this task",
+  "fresh_content_comparisons": 647,
+  "fresh_expected_matches": 638,
+  "known_failed_comparisons_preserved": 9,
+  "report_artifacts_preserved": 109,
+  "source_bindings_preserved": 279,
+  "historical_preflight": "FAILED unchanged",
+  "semantic_reproduction": "UNKNOWN; not executed",
+  "scope_note": "Metadata checks do not establish binary contents. Actual byte hashes checked only for listed result/source/report bindings; no whole-project binary-integrity claim."
+}

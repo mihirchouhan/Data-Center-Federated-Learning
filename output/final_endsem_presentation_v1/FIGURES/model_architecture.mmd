@@ -1,0 +1,11 @@
+flowchart LR
+ X[Input B x 36 x 14] --> S[13 numeric channels]
+ X --> N[Original node index]
+ N --> E[979 x 8 embedding]
+ S --> C[21 recurrent values]
+ E --> C
+ C --> G[Two GRU layers / hidden 64]
+ G --> B[B1 linear 64 to 2 / standardized outputs]
+ G --> T[T4 linear 64 to 1 / residual correction]
+ B --> Y[Power W / IPMI ambient C]
+ T --> P[Add last power / W]

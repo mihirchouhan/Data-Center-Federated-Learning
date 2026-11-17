@@ -1,0 +1,12 @@
+flowchart TD
+  R["Versioned raw telemetry"] --> B["UTC ten-minute causal bins; coverage masks"]
+  B --> W["Node and origin identities; observed future targets"]
+  W --> S["Fixed chronological train / validation / test"]
+  S --> F["Training-only scaler fit"]
+  F --> L["Local training and sample-weighted FedAvg"]
+  L --> V["Validation-only checkpoint selection"]
+  V --> K["Immutable selection lock and separate test authorization"]
+  K --> E["Fixed test inference in original experiment"]
+  E --> P["Saved predictions and physical-unit metrics"]
+  P --> Q["This task: read-only results verification and report"]
+  Q --> U["Future decision support: requires action-response validation"]

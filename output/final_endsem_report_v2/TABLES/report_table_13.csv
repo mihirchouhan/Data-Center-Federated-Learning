@@ -1,0 +1,5 @@
+Policy,Common training windows / active nodes,Common validation windows / active nodes,Common test windows / active nodes
+No-fill,"4,138 / 354","16,842 / 329","50,392 / 635"
+FF10,"11,897 / 576","44,769 / 597","125,691 / 907"
+FF20,"113,898 / 920","86,425 / 795","176,698 / 966"
+FF30,"394,100 / 979","157,484 / 929","243,138 / 978"
