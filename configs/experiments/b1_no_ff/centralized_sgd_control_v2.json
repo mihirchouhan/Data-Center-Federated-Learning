@@ -1,0 +1,3244 @@
+{
+  "March_access": false,
+  "base_plan": {
+    "bytes": 121307,
+    "path": "configs/experiments/b1_no_ff/centralized_sgd_control_v1.json",
+    "sha256": "1b2a212774620767cf0ad537e0f872db714c40b309fb7d4f09434c5c34e07d32"
+  },
+  "budget_decision": "exact_replay_explicitly_confirmed",
+  "dataset": "output/experiments/b1_no_ff/preparation/train_val_v1/dataset",
+  "dataset_manifest_sha256": "497a699025ef0babccc48776fd7a8c531d72a03f6f2aa5fa5ea931c7b0a0a13c",
+  "historical_preflight": "FAILED",
+  "lifecycle": "fixed_seedset_explicit_partial_v2",
+  "output": "output/experiments/b1_no_ff/centralized_sgd_control_v2/runs",
+  "reference": {
+    "plan": {
+      "bytes": 4304,
+      "path": "configs/experiments/b1_no_ff/fedavg_gpu_v1.json",
+      "sha256": "627179146ab04f753b2dac8ded60ef986e44740986dec452a5a61e9d9272c8a5"
+    },
+    "seeds": {
+      "42": {
+        "completion": {
+          "bytes": 421,
+          "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/completed.json",
+          "sha256": "43395abc0454653a4605f5fd85802af04cf64351fdc1c8dc40bdba620596ce54"
+        },
+        "round_receipts": [
+          {
+            "bytes": 110945,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0000/receipt.json",
+            "sha256": "93807e58bb76187468dabb9d740f416d133c298c54daea3feffa400e860a7243"
+          },
+          {
+            "bytes": 46553,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0001/receipt.json",
+            "sha256": "3452bd8ca742c014da326d2c6f49b7a764c81517d02f2a191be5f9f2ddeba1bf"
+          },
+          {
+            "bytes": 46570,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0002/receipt.json",
+            "sha256": "3d1f56db37bb59f47b6e7ab3623a8b6a8061fe628739069907f9decb764988b7"
+          },
+          {
+            "bytes": 46541,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0003/receipt.json",
+            "sha256": "83db522a4b009cb7db25f8321f1655118058257740881eefd12e9d86a151a2e4"
+          },
+          {
+            "bytes": 46542,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0004/receipt.json",
+            "sha256": "f33e4bed1125a5dec503a6d9a35e92fb049f215ceaec1d675410ba71d1d62bdc"
+          },
+          {
+            "bytes": 46502,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0005/receipt.json",
+            "sha256": "19f9c142ce344920b04f191f09d45627761124a568fbfb68d410c9095ad403a6"
+          },
+          {
+            "bytes": 46558,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0006/receipt.json",
+            "sha256": "96cdcca0321edcf9e9cacc1befc692af6e600f6224d234304e3e3003b8d06fd2"
+          },
+          {
+            "bytes": 46516,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0007/receipt.json",
+            "sha256": "cc43002df6540b6cb1bd7b1ac588ab2a55707e9caa12e11e0c346c3122eef84a"
+          },
+          {
+            "bytes": 46483,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0008/receipt.json",
+            "sha256": "cac24174743d7848e986f0cfe0675001bf257e18301002d00c2ae6bb7c70f825"
+          },
+          {
+            "bytes": 46551,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0009/receipt.json",
+            "sha256": "c3562da2e0fe7340c2602ac1d8eac60b0207bd6b38f2446112ec0da45ed1fe8a"
+          },
+          {
+            "bytes": 156873,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0010/receipt.json",
+            "sha256": "42c4ae804875e4316c16f984502dac089fc30e2398425d261112416bd6d6aa37"
+          },
+          {
+            "bytes": 46536,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0011/receipt.json",
+            "sha256": "21831d558b61718f1d549c1d18c6b2d639ce6e37c89d75a851b9a0dd4ebad91b"
+          },
+          {
+            "bytes": 46528,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0012/receipt.json",
+            "sha256": "8cf30f4ec50ef30f8ef9760df6d6e1698cbbea52ce1ee00c6f4ce871edfd241b"
+          },
+          {
+            "bytes": 46529,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0013/receipt.json",
+            "sha256": "0f9095ca70f2b74d451ea330e4d77d604db7d8d4ae5d3661bf5745ab61b1cbe6"
+          },
+          {
+            "bytes": 46565,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0014/receipt.json",
+            "sha256": "010a922101d667e7e534fb609e0b7c021459513c3efd25f61e0cd2b416db07a7"
+          },
+          {
+            "bytes": 46592,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0015/receipt.json",
+            "sha256": "a30716d3199b5cc93f3c91fc270a59a8b9020988d38863e6f5509b5d047a51dc"
+          },
+          {
+            "bytes": 46562,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0016/receipt.json",
+            "sha256": "058e725f2e48eb93571979f2b1333d486b6c2918cb88dc019f73cf3d3916e5dd"
+          },
+          {
+            "bytes": 46562,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0017/receipt.json",
+            "sha256": "913782e1b3920f5ec537b0ac2cfb423e6f9d2177c329d294b10c803252db4672"
+          },
+          {
+            "bytes": 46554,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0018/receipt.json",
+            "sha256": "7e60e37922c7b56daaab90a350a8d6e504f7263feb2f83e12347ea5f1f782b83"
+          },
+          {
+            "bytes": 46545,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0019/receipt.json",
+            "sha256": "77bb5448e39bc1f824a8552b248a0bfa2c55da5f9f5f26efea741d26350607c8"
+          },
+          {
+            "bytes": 156992,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0020/receipt.json",
+            "sha256": "c647d630fcf25f7030b419fcc15e2c9aeaee43dfc38003e3c98d5b7641d955fc"
+          },
+          {
+            "bytes": 46571,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0021/receipt.json",
+            "sha256": "e996342130317b6422a43cc796b5468b036b662de3ae5c16bbe003f67197ac17"
+          },
+          {
+            "bytes": 46566,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0022/receipt.json",
+            "sha256": "eb913f8173460586cbb2a2eaac07cd411bbdf9fce610eb38727a335cbd9f023e"
+          },
+          {
+            "bytes": 46528,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0023/receipt.json",
+            "sha256": "b085949223988b044d31970d15bd144f078a20e3242bb0862affe70ff8b7d696"
+          },
+          {
+            "bytes": 46548,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0024/receipt.json",
+            "sha256": "7162afe06432dd048ec9e02a16c220f884619efe2833df6477a605839e312c14"
+          },
+          {
+            "bytes": 46554,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0025/receipt.json",
+            "sha256": "5604da67f5f7dce3ecbe076d1499f11b2d11a247fb9052f501a3ab9cb93dd9d2"
+          },
+          {
+            "bytes": 46540,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0026/receipt.json",
+            "sha256": "a1c8a04483866392eecb8a45f2c582862dee888a367c8bba3c7574b7a512b324"
+          },
+          {
+            "bytes": 46552,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0027/receipt.json",
+            "sha256": "03e0e3ef90cadb8e4386b2198c9d60ef724f67ba7a6483cbe3f605c940620c56"
+          },
+          {
+            "bytes": 46560,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0028/receipt.json",
+            "sha256": "2a1c40d6762d13d1f7788e7af3a133361ce6f67c5f69a5805a07dcf599f58504"
+          },
+          {
+            "bytes": 46568,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0029/receipt.json",
+            "sha256": "18aaef31d93eb390d0361a3f4a9305c2cf571e353253825e8aa24a9b76a159c5"
+          },
+          {
+            "bytes": 156929,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0030/receipt.json",
+            "sha256": "521e4f633b3f45f7eb29a854528991d2091ebe12190a01e3db907e8c98ad489e"
+          },
+          {
+            "bytes": 46590,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0031/receipt.json",
+            "sha256": "5de59b6d79171a9303d7593a9101a9721cae648f356da2c201341fb92b79c72a"
+          },
+          {
+            "bytes": 46572,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0032/receipt.json",
+            "sha256": "64a3470e6276d9a1c7f40d18c6301884c182527f5c27ef2feaf505ede9a343d4"
+          },
+          {
+            "bytes": 46625,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0033/receipt.json",
+            "sha256": "4f80d13a75fd6a48cab2b7c0e1575c671bbc1e5fe0302f51e1306c2a14a15aba"
+          },
+          {
+            "bytes": 46571,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0034/receipt.json",
+            "sha256": "c3d54e5550b654490b57399fd72b1bd78c662ec7b93af418f3407402615bf3ea"
+          },
+          {
+            "bytes": 46571,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0035/receipt.json",
+            "sha256": "4b8def65f3735c3362d785a11f822a552e4b5dd11ce520bd5cc3459e306628a1"
+          },
+          {
+            "bytes": 46616,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0036/receipt.json",
+            "sha256": "c35df823d4e18bc29ef634e207fbd5cf777e316336680f6b9207aadb903a26f1"
+          },
+          {
+            "bytes": 46597,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0037/receipt.json",
+            "sha256": "58b0f8d96ab935b1294ab14410f7eb0d7d5897bf27293977ee3f1148b1e6a4cc"
+          },
+          {
+            "bytes": 46605,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0038/receipt.json",
+            "sha256": "e3af7b763daec180bd9eeb7a613b54898bf68d2924de92c79bb8279a1a71403d"
+          },
+          {
+            "bytes": 46635,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0039/receipt.json",
+            "sha256": "440910bcdc51510d249bae6a23d8ddb857ea2ea72bfa3306f4858f60316e8784"
+          },
+          {
+            "bytes": 156889,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0040/receipt.json",
+            "sha256": "4c1d37faf13963a1ba8ab1c45475f9fa7f3174dd16813342fdd7eb65ad14f383"
+          },
+          {
+            "bytes": 46602,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0041/receipt.json",
+            "sha256": "d42624975f7935bad35837934428bd570b0a2fab258e5f824665fe492dd8390b"
+          },
+          {
+            "bytes": 46606,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0042/receipt.json",
+            "sha256": "28c61f5455c06ed3fafa784c8f4c083d5677a7568d16807de3af8c3153179716"
+          },
+          {
+            "bytes": 46594,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0043/receipt.json",
+            "sha256": "3bdb63299bd7937d4201e0d8618a9d52c5d879fcc501df5f8b71a3de660a5aa5"
+          },
+          {
+            "bytes": 46634,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0044/receipt.json",
+            "sha256": "bd49efe72e8eab19ff2380828663df02ab321f2a1c4a843a82e637a67d9a61f8"
+          },
+          {
+            "bytes": 46606,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0045/receipt.json",
+            "sha256": "ea5c15a6da55210b72c624c08b954e4805388fb464f57a1a48936b23d90743c3"
+          },
+          {
+            "bytes": 46623,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0046/receipt.json",
+            "sha256": "20072b8a503250abf671d2ead310061bc7820f00b3a1ece039c25a6bc8a2f41a"
+          },
+          {
+            "bytes": 46637,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0047/receipt.json",
+            "sha256": "c4b99a4f9e6adbbe0e790eb5cc6f15f24f825083fd0c3081de3ad63cae0b9a54"
+          },
+          {
+            "bytes": 46631,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0048/receipt.json",
+            "sha256": "b468f388e6d1d85655c1efa73479f679cc0388d43ee8fc2e7ac3c66f68f18a98"
+          },
+          {
+            "bytes": 46635,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0049/receipt.json",
+            "sha256": "6fc4d5d93ffc9ef93c639f19a7f669e7c0d9a8d7062e49fe46175593c7b63e68"
+          },
+          {
+            "bytes": 156907,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0050/receipt.json",
+            "sha256": "b93fbc431269dbb69eac8f0872169977aa3a6da59de724bcc1ff60ac7bd28f14"
+          },
+          {
+            "bytes": 46664,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0051/receipt.json",
+            "sha256": "7b07a9ad4fa1490070083d3a8af35d6688a18f0bf0992f56aaced0235c63a763"
+          },
+          {
+            "bytes": 46667,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0052/receipt.json",
+            "sha256": "42c3e482459b363e1eda0b3ebc40014097e58ab5011ca4547a8af4fe6b6e6658"
+          },
+          {
+            "bytes": 46632,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0053/receipt.json",
+            "sha256": "ab16120d48cc213c16cf36cfda565bd4536a710bfea565767d01f45b5fa19b1e"
+          },
+          {
+            "bytes": 46671,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0054/receipt.json",
+            "sha256": "1aa3bb9bedec0351ac0bd1608944ebc76369f4cfe5b94c3b18d0bd58e39ccd19"
+          },
+          {
+            "bytes": 46682,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0055/receipt.json",
+            "sha256": "c0c8a347758b73b6c6a94aded7713d82a5ee3db4c2b9c8e4683a17c17ac23356"
+          },
+          {
+            "bytes": 46654,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0056/receipt.json",
+            "sha256": "e125937c5a4a3723c26912c82d51371c991cf78ac14374c05c9fb8107c7ef0db"
+          },
+          {
+            "bytes": 46706,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0057/receipt.json",
+            "sha256": "8082dc8234ec86986282976b5725def517aad8c255a914ef81c813c931546a86"
+          },
+          {
+            "bytes": 46637,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0058/receipt.json",
+            "sha256": "5af4b738ab220408862e622cb832473c541e3d111c7104b6aa1b6e11a17595ac"
+          },
+          {
+            "bytes": 46625,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0059/receipt.json",
+            "sha256": "128ff496f46ef8c24f7e1d3d1482bac212e7e8f55050c1ef8e61e5fc8e789b7b"
+          },
+          {
+            "bytes": 157142,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0060/receipt.json",
+            "sha256": "a55017662f749b37fc3ab5cb5c2c15580fd9277b2c838befb82076ffbc49c02a"
+          },
+          {
+            "bytes": 46651,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0061/receipt.json",
+            "sha256": "7d7d1b59218b68d1d97bab5f909a06bf131af225699d37e83cfe128d74dedb2a"
+          },
+          {
+            "bytes": 46657,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0062/receipt.json",
+            "sha256": "4f448e19fa9213edfa1759a093b395d8ec51cd82854a3a2fce3f5aeb20480eca"
+          },
+          {
+            "bytes": 46668,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0063/receipt.json",
+            "sha256": "4c0f7e190a9d819cbf224b1f1fae150e598308e0ea0cab0e28a748083a48136a"
+          },
+          {
+            "bytes": 46684,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0064/receipt.json",
+            "sha256": "8531dab942368241a5742ab927b78f93cbb36a8edd113f89b180d47718049cdf"
+          },
+          {
+            "bytes": 46667,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0065/receipt.json",
+            "sha256": "8315083dffd162df0a583e0c705027044646af0e117a3618b50e9e42457326e3"
+          },
+          {
+            "bytes": 46711,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0066/receipt.json",
+            "sha256": "2dba599caf8fe83c9242120955695c879425738ed05b3c038febdd8a67497047"
+          },
+          {
+            "bytes": 46675,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0067/receipt.json",
+            "sha256": "53b9b282ac2edc3972a81a55c7588aa9f31115dc920b4f650f0334d032f93ba5"
+          },
+          {
+            "bytes": 46701,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0068/receipt.json",
+            "sha256": "3db559e80d135d70de4eda47f8548461c4ab19e96e205fb6fa53f9a0c54a39ae"
+          },
+          {
+            "bytes": 46651,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0069/receipt.json",
+            "sha256": "212e77f983ec6442798ae8f97ec0019fcccb8b1edd9d4488a929c92033f8ad92"
+          },
+          {
+            "bytes": 157435,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0070/receipt.json",
+            "sha256": "624ba764b02334371407d6f0e50dc8846cf897019e966106ddcb69ab23138377"
+          },
+          {
+            "bytes": 46685,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0071/receipt.json",
+            "sha256": "e2967f2de18bd5bd7274918330352a62115d8de66669170f7802999cc5d9589f"
+          },
+          {
+            "bytes": 46668,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0072/receipt.json",
+            "sha256": "6b0b8c579422e8b0c65975e6f72219a4230dd247d860a6b80d30343d9453e7c4"
+          },
+          {
+            "bytes": 46649,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0073/receipt.json",
+            "sha256": "3ee3f9ef1d2b18b9da41dfbbdcd3f5df43573b1cfe7278df80e72e04dd2c0724"
+          },
+          {
+            "bytes": 46683,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0074/receipt.json",
+            "sha256": "1ef4c379da67bed0de50be710fa148f9328ed83dd116421f63b1597d74fd33e5"
+          },
+          {
+            "bytes": 46704,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0075/receipt.json",
+            "sha256": "5be4790d937e57e955bdee0744e508000940c7933f0920c648b12d3b112670db"
+          },
+          {
+            "bytes": 46699,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0076/receipt.json",
+            "sha256": "1e15923597d86fb899b5439527deb1b0f1acfd184b4bf960e4d81589d4454ee6"
+          },
+          {
+            "bytes": 46633,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0077/receipt.json",
+            "sha256": "60a81190e1cc7d5c68bcc87217b03632424045fb3d135d73cf7d696b44c56c9f"
+          },
+          {
+            "bytes": 46650,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0078/receipt.json",
+            "sha256": "a63926e9dd53cc8dfe0074971adc76dcbdd138901d1ce3a32bb1729293da687a"
+          },
+          {
+            "bytes": 46660,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0079/receipt.json",
+            "sha256": "8ec67f7f0196e71ea5b2ddc975c62757d3c26b5c54103925e266c96ba2a17e6d"
+          },
+          {
+            "bytes": 157601,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0080/receipt.json",
+            "sha256": "240ebbb9adfc00615d63bc101995990cf365b1f70dd3d1e153c2d6c75df78c96"
+          },
+          {
+            "bytes": 46640,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0081/receipt.json",
+            "sha256": "e60069c97258506c9cd00abc0cfea835d650cc450659865804a83d5a680e4a70"
+          },
+          {
+            "bytes": 46658,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0082/receipt.json",
+            "sha256": "94725bef89e93078335e2c563472eb6ccea79209575bd5964344a568e8bad3c7"
+          },
+          {
+            "bytes": 46664,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0083/receipt.json",
+            "sha256": "97c6db9f4154145a85ec2259d45a273e98d5e943af59eaabf4a5cefbe9a906a0"
+          },
+          {
+            "bytes": 46653,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0084/receipt.json",
+            "sha256": "b8382b46451c2494cee978fb97fa37f3c09a4c523f7f6e007be2f4f0f3d6f666"
+          },
+          {
+            "bytes": 46661,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0085/receipt.json",
+            "sha256": "a97b1b220e30705a30c21ff468741fac623150f1827c433b7e67ba49be145609"
+          },
+          {
+            "bytes": 46662,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0086/receipt.json",
+            "sha256": "41942b2cda0985e447fcc2fb67f9dc79ac23b6fcf9af2b0dbad9fbca42f398d2"
+          },
+          {
+            "bytes": 46652,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0087/receipt.json",
+            "sha256": "3b7352b79aa09c3351e582315cd5fbb34b31a585205cfad4f352eb7cb6ffafac"
+          },
+          {
+            "bytes": 46690,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0088/receipt.json",
+            "sha256": "7bd775dfa30d04e869fa7033d27210005a1bb06036583f12d4d7280811791de5"
+          },
+          {
+            "bytes": 46644,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0089/receipt.json",
+            "sha256": "a59e62a3e25c96ea53bb064bf1f00738167971e30c08ff5f3f7a8394eab6b0b7"
+          },
+          {
+            "bytes": 157714,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0090/receipt.json",
+            "sha256": "9489b3acd3446c6f5b24802bc20b2127dc9e91339953f31fdd58e380d85ec87c"
+          },
+          {
+            "bytes": 46617,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0091/receipt.json",
+            "sha256": "f20397164367f93236097055efb6725b93aa7b49850f734437f8a8fab096184d"
+          },
+          {
+            "bytes": 46666,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0092/receipt.json",
+            "sha256": "6658b36654619cc227179d16cd8428f428f9684b1381decafd4748cb8193cc8f"
+          },
+          {
+            "bytes": 46675,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0093/receipt.json",
+            "sha256": "9cf7fe9fb05e65c10876ef05274ed6d4c78e124ce49a483755e8a1453a50da4c"
+          },
+          {
+            "bytes": 46641,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0094/receipt.json",
+            "sha256": "033ead8c16b5d6baa778c833b8dd77b19aff0ce8e31920c82a79bcc2fdeb9aaf"
+          },
+          {
+            "bytes": 46654,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0095/receipt.json",
+            "sha256": "c9e9d05de8e627cebcbc417e3d1e7da97e831080a7ee9e72ad5473f7083dcb01"
+          },
+          {
+            "bytes": 46646,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0096/receipt.json",
+            "sha256": "9e1f3f80b47ef82e4267dbe6942a96d89adb2c09fb2656c9a765a18953647d28"
+          },
+          {
+            "bytes": 46611,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0097/receipt.json",
+            "sha256": "a62e95d900dba32c65bff1690e1e5284e27e4f3a51a07540a5441bd4ff9e9a0b"
+          },
+          {
+            "bytes": 46642,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0098/receipt.json",
+            "sha256": "14d7d48f89c789065113ad55365f86da558af962a5fe36460fbce19abf52604e"
+          },
+          {
+            "bytes": 46659,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0099/receipt.json",
+            "sha256": "faa5fb6ef585b153f670b9154e16bcd10eec11a09674a7e782706a5a81209e63"
+          },
+          {
+            "bytes": 157814,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0100/receipt.json",
+            "sha256": "48a5d9c6a1d713a2a2d228375cd117451d86de7ff356c8728de48c9dbe5a0d87"
+          },
+          {
+            "bytes": 46672,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0101/receipt.json",
+            "sha256": "e1d21a11ce2a75e2fd77951222f0dd8b105551736e5ff914326bf9296ac3ab3b"
+          },
+          {
+            "bytes": 46665,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0102/receipt.json",
+            "sha256": "3b2b5a9174f6658f5cd6977f07bc986911572dff73fa2e15fc1a1fa0d898ec09"
+          },
+          {
+            "bytes": 46653,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0103/receipt.json",
+            "sha256": "0ec3157cb5cd399a463a1c9bc34f93b94e61529ded82b00be87bfcd0fae39500"
+          },
+          {
+            "bytes": 46660,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0104/receipt.json",
+            "sha256": "55b951f97b3c247b56bc9e88c32b21be73c2c74213c9dcd5adc4b16bd62a2dde"
+          },
+          {
+            "bytes": 46687,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0105/receipt.json",
+            "sha256": "4c11f96726443996fcece3f8fd18084ffe19c02f4deac102b811cd5aa5c90513"
+          },
+          {
+            "bytes": 46651,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0106/receipt.json",
+            "sha256": "0163ba38993d341f4de3746529e5c2968d36f0658b5f9cd4e454a8e4b72434f7"
+          },
+          {
+            "bytes": 46627,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0107/receipt.json",
+            "sha256": "3deea6aa2665d5257706077443cd040c91cd08a7c46af13299fcebeacbd13b6e"
+          },
+          {
+            "bytes": 46667,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0108/receipt.json",
+            "sha256": "136d216e8c2cf3a5dcff446d4fa56c22d6e87c327df34d9a2252d82d2c895ac1"
+          },
+          {
+            "bytes": 46667,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0109/receipt.json",
+            "sha256": "0e37e095e1882b6adfa0f153b51800d61404c0484f6de1fac1680b93f67fa84c"
+          },
+          {
+            "bytes": 157844,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0110/receipt.json",
+            "sha256": "6c564adcae3becb77b1248a0a3fc5c81e55994c39c794ec0b96479724b2bb0a2"
+          },
+          {
+            "bytes": 46664,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0111/receipt.json",
+            "sha256": "f99c5a113fe1fea90cebacd7496b7bfca383e899b2976d31dead63113a64b6f3"
+          },
+          {
+            "bytes": 46639,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0112/receipt.json",
+            "sha256": "fe7d1e042aa0917d443e7d6000da812788c2b4207eccd965f577ce9acd854607"
+          },
+          {
+            "bytes": 46640,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0113/receipt.json",
+            "sha256": "690ba8d97e74f09e98f8380cce62e28f7fd438132a3a8c47a257d0e6cf974764"
+          },
+          {
+            "bytes": 46646,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0114/receipt.json",
+            "sha256": "80f7039fa91fca2c21ea48826f6867cb4ce0352aaceb04d76703092257e335d5"
+          },
+          {
+            "bytes": 46660,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0115/receipt.json",
+            "sha256": "410fc53296fd68402f4b511bb055fcb54578238de02c1d104d2a6b31256eaa1a"
+          },
+          {
+            "bytes": 46668,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0116/receipt.json",
+            "sha256": "f973346091afae118d07620c19f5e8a604b78457123190b790e4aeb893e4bb0c"
+          },
+          {
+            "bytes": 46671,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0117/receipt.json",
+            "sha256": "015af2fc28dc051e90e4487b3950316e751919955b20f6749b67476ffd17bb83"
+          },
+          {
+            "bytes": 46670,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0118/receipt.json",
+            "sha256": "5d43e5688d3bc07e7da8caa2615c21c129804f67d9130b6283177a391e9f4ee2"
+          },
+          {
+            "bytes": 46651,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0119/receipt.json",
+            "sha256": "af0dac09f72478d36b6e17f105af2cc8f4036f12a350843277a6c7ad434553a4"
+          },
+          {
+            "bytes": 157941,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0120/receipt.json",
+            "sha256": "830bfd75e803c813d4a94d88e21b6de8a23af7ed67c30e6be593dd865d06d5ae"
+          },
+          {
+            "bytes": 46687,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0121/receipt.json",
+            "sha256": "38c8d10eca98d8376f242a11b9df7dd39a770b867123bdc24887e7f748816e90"
+          },
+          {
+            "bytes": 46663,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0122/receipt.json",
+            "sha256": "92b9fb30b5d6d5c43c92ac895151ed50881c6f713370d114ccb9ed6450abaa01"
+          },
+          {
+            "bytes": 46651,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0123/receipt.json",
+            "sha256": "9af4a3c7eb6061a1bed978e8351d9a4ee66342632e4f626b97ee78a39bdade35"
+          },
+          {
+            "bytes": 46690,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0124/receipt.json",
+            "sha256": "af3244bcf1e7e3bde98e164842af28ad099614b4345923e0309fd5d3601fe397"
+          },
+          {
+            "bytes": 46637,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0125/receipt.json",
+            "sha256": "09636532f4fd8d10fd459f4bf0e107110f3648165305e774f69cf5961fddb725"
+          },
+          {
+            "bytes": 46614,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0126/receipt.json",
+            "sha256": "a5c0e16201d5689c7297d78b175432507903479514b7984eda1fd39f3f38c66b"
+          },
+          {
+            "bytes": 46664,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0127/receipt.json",
+            "sha256": "9289fb216f92ab67a3fe26d23481dac0a96d822d05bbf6175864fda0fa35f408"
+          },
+          {
+            "bytes": 46657,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0128/receipt.json",
+            "sha256": "30cccc7b0a21ab07759210f7bf5f15b592159385e9bf21eeb9a9bf7d62cfcd7c"
+          },
+          {
+            "bytes": 46666,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0129/receipt.json",
+            "sha256": "b5e0ff357999fac0e1dc6caedd6e83eca6c6c72d8f354b0b316b466a774b53d7"
+          },
+          {
+            "bytes": 157844,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0130/receipt.json",
+            "sha256": "ab8f254569dd0a1a851e1413aefdf96cd99b66d4945248f9cdd9ebe20a679e71"
+          },
+          {
+            "bytes": 46662,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0131/receipt.json",
+            "sha256": "e72e30120c12dd57f1acdc2b65aa2024318b046cd4b26f1f7156123607a8416d"
+          },
+          {
+            "bytes": 46655,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0132/receipt.json",
+            "sha256": "65a1d47f0fccea2d49ae78ba732271ab6ca27ac5659c04c5a519e66ccec1d9c7"
+          },
+          {
+            "bytes": 46676,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0133/receipt.json",
+            "sha256": "a8883ce53659863df6b4ac38bf6a8c059b31e209ce3a4039e8b2bb0cc6c53a62"
+          },
+          {
+            "bytes": 46690,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0134/receipt.json",
+            "sha256": "38d516826a08a28c56d9a4e71c02ee9bb9a24e7fa9f4b65b45eb92c12c2ffdf4"
+          },
+          {
+            "bytes": 46665,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0135/receipt.json",
+            "sha256": "082a151d64825604f993f927d61e5df226c1c072a24aa277565ed4c8577b4806"
+          },
+          {
+            "bytes": 46675,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0136/receipt.json",
+            "sha256": "a2b080a2308dce947d045a6d5a46bc0c6eee779989f72a25cac41ae034d6c6e1"
+          },
+          {
+            "bytes": 46683,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0137/receipt.json",
+            "sha256": "19eb08949f7bdb95f2193740be2f248dffea5c870e4f8e61392b60e3a07f422c"
+          },
+          {
+            "bytes": 46705,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0138/receipt.json",
+            "sha256": "c6628b9be0abbaffce6f09d288354cd7354934a9ef2fb8699ecec28f9b6ba68b"
+          },
+          {
+            "bytes": 46649,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0139/receipt.json",
+            "sha256": "129d92e6bb28a6744d06e5c286f942178751b4668a52e0a402373d81bfaed866"
+          },
+          {
+            "bytes": 157897,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0140/receipt.json",
+            "sha256": "0781fd5e91e438f711d3e17da981ee243640f3ace95fe60ba32caaebbee9247d"
+          },
+          {
+            "bytes": 46673,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0141/receipt.json",
+            "sha256": "7b466dd897845a30d574ef06b5ed491774a085445bf8be8e4233f66de1083f24"
+          },
+          {
+            "bytes": 46653,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0142/receipt.json",
+            "sha256": "aa87d40c0948a626a602bb5c6217346a8a3fc1cc508c1eef0e72dd8f80b4aa52"
+          },
+          {
+            "bytes": 46645,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0143/receipt.json",
+            "sha256": "7153f10218315191850e7d4850d8df381152c080f13dc0d3a3fb90ac09f6f939"
+          },
+          {
+            "bytes": 46636,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0144/receipt.json",
+            "sha256": "07d551e3a972cd8d11bcffa9f153ce164bffa71718b7f06764cabb8983b7f0d6"
+          },
+          {
+            "bytes": 46630,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0145/receipt.json",
+            "sha256": "306a76bbf14e339cd8020051e158d05540320f18c472f49ece318849095b0150"
+          },
+          {
+            "bytes": 46641,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0146/receipt.json",
+            "sha256": "b26fda726f9907dc083af413e3f259b03dc31feac84ae479103affed868d823b"
+          },
+          {
+            "bytes": 46682,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0147/receipt.json",
+            "sha256": "2cceadab985a875e2b2981d5997e9c5d7fb269449b8055f97c96716fdc3847a6"
+          },
+          {
+            "bytes": 46639,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0148/receipt.json",
+            "sha256": "a955b318de4799f919d0c731277a4179748f82f144b94d6953e7327df8c85452"
+          },
+          {
+            "bytes": 46655,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0149/receipt.json",
+            "sha256": "b7994e1dd23dae9af7d964ef3bc2ac809f74a7e77a4165df5072e249dbef684c"
+          },
+          {
+            "bytes": 157967,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0150/receipt.json",
+            "sha256": "33422ca17cfbe7906443b5a6a631ad5e09c8162e3ea922a71c186ec3e3f68cc8"
+          },
+          {
+            "bytes": 46652,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0151/receipt.json",
+            "sha256": "2ce2b1ab8a05169249e6ee25810a1ec02bacb649baf8663de82d42370debca17"
+          },
+          {
+            "bytes": 46641,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0152/receipt.json",
+            "sha256": "46edf5a97937ecc535090fc945d22d0a16ce2b85a0ab917dfa5cde2f3c9b9faf"
+          },
+          {
+            "bytes": 46660,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0153/receipt.json",
+            "sha256": "6f26dc277bc29d47eedc19e2efb3da7b93f7df778c856089b2246e864a2251c1"
+          },
+          {
+            "bytes": 46643,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0154/receipt.json",
+            "sha256": "e33a8aacade69676419b109134f8011c86cc353b819740c557712a1ce0eafe9f"
+          },
+          {
+            "bytes": 46654,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0155/receipt.json",
+            "sha256": "c36c376b50e207db66cd66a2cd5c9206aa9ac876b0699ac19e40cec3e024dcc6"
+          },
+          {
+            "bytes": 46646,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0156/receipt.json",
+            "sha256": "195f88b6e1bfa90557983d81754657fc3b3c4c98408407e01a23f322a1e69045"
+          },
+          {
+            "bytes": 46615,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0157/receipt.json",
+            "sha256": "7458cb5259d34571fb1c8f74f16f6c1b9d2fe0916e668b4b40d714b5f54c2de3"
+          },
+          {
+            "bytes": 46624,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0158/receipt.json",
+            "sha256": "ab9b9cc411ac0ab0a4ba0c27cea2f0178e3c9fd64ddd362d4edb09cb5fb9e7c5"
+          },
+          {
+            "bytes": 46665,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0159/receipt.json",
+            "sha256": "6c5d94cfd5107e015ac74d4856402fb3089fb9098533616a736c8211bf8b444d"
+          },
+          {
+            "bytes": 157913,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0160/receipt.json",
+            "sha256": "9257b8d8b7925c456c4a41c68f62dde1647df708f5602034134f87b94d445384"
+          },
+          {
+            "bytes": 46689,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0161/receipt.json",
+            "sha256": "580dd76c9094fe0c8843124e5f9ba7ef8f2242f9d811dd7370fd0dd850c60784"
+          },
+          {
+            "bytes": 46670,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0162/receipt.json",
+            "sha256": "65279b9e7e5f00b25c23fbd3e65d3edb072634148dfdf5ee2e0132e34b7e6634"
+          },
+          {
+            "bytes": 46648,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0163/receipt.json",
+            "sha256": "6a54863e7992afddec176cbb678b01c9f72d967e09df10d7f1bc9e21a5ae8acd"
+          },
+          {
+            "bytes": 46658,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0164/receipt.json",
+            "sha256": "98152f06d5c89df47371b4b7b5939acf25f502290a87f868ed2e3129b5235dc3"
+          },
+          {
+            "bytes": 46664,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0165/receipt.json",
+            "sha256": "38bbc7de30e8b4e71599fc897fce59db350e580c6ee52b9f2c8509eef86dcf0b"
+          },
+          {
+            "bytes": 46625,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0166/receipt.json",
+            "sha256": "982c887028da7a80551f1791e526a64e8ae54275e185e916bb3c1aaae02d3653"
+          },
+          {
+            "bytes": 46628,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0167/receipt.json",
+            "sha256": "b0e926206fd30e43c814574b98e1aa2de4453fdf1bf5eddc0cd1c24163b75488"
+          },
+          {
+            "bytes": 46680,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0168/receipt.json",
+            "sha256": "f61098d5dd023a1c84b1a713a539e9556598be087eb79f5e508e694d44e1b909"
+          },
+          {
+            "bytes": 46639,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0169/receipt.json",
+            "sha256": "300d0fe168f94d09629e6158e4162e2255b6e9f7a71d2227385dbbaff4ece2c4"
+          },
+          {
+            "bytes": 157918,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0170/receipt.json",
+            "sha256": "81315b3d93b8f9adf2f05e1aaf34458d6e09b3272790e38aad7815643a00ce11"
+          },
+          {
+            "bytes": 46631,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0171/receipt.json",
+            "sha256": "d97b04dd723839ce45a33e0d61c80cae8f6c3076a4343016e4f1197187bbca0b"
+          },
+          {
+            "bytes": 46703,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0172/receipt.json",
+            "sha256": "7fe79824d9bf667d7375473deb05b86edf6ff9127215cffe21dcb97820200661"
+          },
+          {
+            "bytes": 46688,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0173/receipt.json",
+            "sha256": "d8e03541c48c5321969f24f932fc3d0cac7502c08b5d387db5c5011038083a72"
+          },
+          {
+            "bytes": 46657,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0174/receipt.json",
+            "sha256": "0cebca5dceb0641d1df47d4a24bb18d63ac015f235736119f575cf8537dffc7c"
+          },
+          {
+            "bytes": 46648,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0175/receipt.json",
+            "sha256": "1fba79ab0e3b5ce54298cd7c3c17a6d3a50e41b3c03c353bddb13d3dfeb63938"
+          },
+          {
+            "bytes": 46655,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0176/receipt.json",
+            "sha256": "2b860b896f0347821067865f8df03990716234d2c98c7a89b5cffd9332edd791"
+          },
+          {
+            "bytes": 46691,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0177/receipt.json",
+            "sha256": "f2b40432b5f50736695b26220b80228ca2d38e0b1bc3fa3598ed2cadc21885bd"
+          },
+          {
+            "bytes": 46681,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0178/receipt.json",
+            "sha256": "496fb9b2d2692ecdf868975e9e0fc1e286033c1d4768ee2560c1cd306bd2e606"
+          },
+          {
+            "bytes": 46672,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0179/receipt.json",
+            "sha256": "5607b7b3f9ddf6f30b9bb1257c2b70f864a506bebb1c0fb006b4014495acf92c"
+          },
+          {
+            "bytes": 157972,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0180/receipt.json",
+            "sha256": "1fc6734610b0af8702af77560fca30e2ec14ff2e751e25556be0fd7bf9ce482a"
+          },
+          {
+            "bytes": 46671,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0181/receipt.json",
+            "sha256": "9491ef98b42aad829a6ad7825804e35bd7fbf70968caac33c31ec2137e33b318"
+          },
+          {
+            "bytes": 46654,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0182/receipt.json",
+            "sha256": "1030f16a418f705f2c69dbcab9f1b033ada2e5cea679eeaa30a3ea6b67618f05"
+          },
+          {
+            "bytes": 46645,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0183/receipt.json",
+            "sha256": "311bc9b5540cfcb36acb0a1be6b8d4868f9ed961cabd8658032713f11c5314e3"
+          },
+          {
+            "bytes": 46656,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0184/receipt.json",
+            "sha256": "88b11708a62a8acb831b3507ceb2942c93931ccc1e0b502d8aef8717f573c7af"
+          },
+          {
+            "bytes": 46656,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0185/receipt.json",
+            "sha256": "9dc2dbc2231f309defea32fc8b34d9f0f4614887f916e4e5c8aa6691f7f83cb7"
+          },
+          {
+            "bytes": 46640,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0186/receipt.json",
+            "sha256": "95f66b71b441332e749df11e2769bebe3206f3f875ea15114f4e54a006314d47"
+          },
+          {
+            "bytes": 46696,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0187/receipt.json",
+            "sha256": "da7a90e8e577417691dc470d3d45c3d94b6d8a8d7d326be841bf139280102fd8"
+          },
+          {
+            "bytes": 46662,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0188/receipt.json",
+            "sha256": "61b9a19b51cfbc66d919698cf8a8c11e236c6b268fe6fa1e5499fea897739293"
+          },
+          {
+            "bytes": 46669,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0189/receipt.json",
+            "sha256": "d23b593b01b349f3d84f55c910077549c1c20e01e345ebe65bb18d2697019a03"
+          },
+          {
+            "bytes": 157959,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0190/receipt.json",
+            "sha256": "ce71e7f1fb84123ce18fc3ffbca1dd55f14b5ad7551c8749f15f3ae5715957ba"
+          },
+          {
+            "bytes": 46653,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0191/receipt.json",
+            "sha256": "cb6f5d96a6fe3bfa34f3a5b8a3773913ae1a3575a32c61bae60cf9ba04ac4e33"
+          },
+          {
+            "bytes": 46665,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0192/receipt.json",
+            "sha256": "a95d39642a6b040b1b80869bc921ef255b6117fd98c077b0ead8ebbb98755663"
+          },
+          {
+            "bytes": 46640,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0193/receipt.json",
+            "sha256": "38b79988c22fd2b06a3e969fa8b990b2cc7d9945d525a877c13f053f4baed0a7"
+          },
+          {
+            "bytes": 46665,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0194/receipt.json",
+            "sha256": "c453a547ca7aaa193aa64a72aa330da36bbdca7922d3a8c26d97eac43b0a4872"
+          },
+          {
+            "bytes": 46624,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0195/receipt.json",
+            "sha256": "8e66ae7676036096ced88ccbe1409ee358acad04c31c8d2c09c2762367e677d4"
+          },
+          {
+            "bytes": 46656,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0196/receipt.json",
+            "sha256": "87c643db948b31b7a9d8fb927f5aa451f05f66c77a686c646675f0d01e921bf0"
+          },
+          {
+            "bytes": 46653,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0197/receipt.json",
+            "sha256": "625dfd7deb2d322f773fdbaf348884f4ff4379d1419eda930fa67cd30107da51"
+          },
+          {
+            "bytes": 46649,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0198/receipt.json",
+            "sha256": "cb32243cb6ac4819c3e99a5dd564809f169b458b47dcdca4c592fbe90648b3ae"
+          },
+          {
+            "bytes": 46659,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0199/receipt.json",
+            "sha256": "9af565dd3145b0f8f1c392bfcd819bdd25d149b12965abead04dcc64f9284ae2"
+          },
+          {
+            "bytes": 157959,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/rounds/0200/receipt.json",
+            "sha256": "22ce47d94e1d9e8e7c265eeab934153679309e5c68e67c455599b4c6ca982a17"
+          }
+        ],
+        "run_manifest": {
+          "bytes": 95928,
+          "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/manifest.json",
+          "sha256": "41b8830bbd02dd244ff8817af40b4514b0121aaa48b92e53017314f83000a62a"
+        },
+        "selected_model": {
+          "bytes": 203132,
+          "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/selected/model.pt",
+          "sha256": "32404481fb3b5232a623eacdd6fef4c0c4c926813f786117e09f016d9f477e9a"
+        },
+        "selected_receipt": {
+          "bytes": 295,
+          "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed42/selected/receipt.json",
+          "sha256": "a26a210a3a6481368a35ee594dfe16b7ff51109b01720296b06f793958afc3f9"
+        }
+      },
+      "43": {
+        "completion": {
+          "bytes": 422,
+          "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/completed.json",
+          "sha256": "efccf29ff59ca21c5293b2d1f2788ca68e9b093c3ab2207706e84bb301be1665"
+        },
+        "round_receipts": [
+          {
+            "bytes": 110984,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0000/receipt.json",
+            "sha256": "f604468a9f8145ffecc27570a28b5fcdaf445395cdb156510a0128bda6315fa0"
+          },
+          {
+            "bytes": 46537,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0001/receipt.json",
+            "sha256": "74d8d5898a0087be654d78df3f07c80e25c1c18a46a4c391f3d4e39acb5e01eb"
+          },
+          {
+            "bytes": 46571,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0002/receipt.json",
+            "sha256": "03c096ecc87dba1edd5b80422bec20e715688a8be5f8d1773c0ca3739b0bef5f"
+          },
+          {
+            "bytes": 46508,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0003/receipt.json",
+            "sha256": "2a64292c349257a6d69804cd98482c9cc5976444b4c895af7fc8a4218540f138"
+          },
+          {
+            "bytes": 46543,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0004/receipt.json",
+            "sha256": "c4ab19fd250e015f90ba2400bd560b214089103e2a4fb8a65970665c65118f56"
+          },
+          {
+            "bytes": 46567,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0005/receipt.json",
+            "sha256": "3738bf12e422ce70092eeebb3b6b992717aa6d659cf9af754262a9719aee0980"
+          },
+          {
+            "bytes": 46558,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0006/receipt.json",
+            "sha256": "fb89902f7635d49a578db6c192e99b3601a91da85f5983a3f0c5dfaadf8dbfba"
+          },
+          {
+            "bytes": 46544,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0007/receipt.json",
+            "sha256": "c9e24df20f767f8820418cf64fb4e4c88ac6f40ef42ff79e54e2d71ccf8050d5"
+          },
+          {
+            "bytes": 46544,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0008/receipt.json",
+            "sha256": "bce26ae244bab10b67de83dad6ce011ddf710abd20027261c7a6208fd5cef9ca"
+          },
+          {
+            "bytes": 46567,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0009/receipt.json",
+            "sha256": "f9183a236961e23bc56ba6eb428adede0dcc91d754e38ae17e7bd6b56007e1de"
+          },
+          {
+            "bytes": 156937,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0010/receipt.json",
+            "sha256": "58db557ab0ed6967a71832359d45da0dae3e482e714b1692fbae4928cc983477"
+          },
+          {
+            "bytes": 46533,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0011/receipt.json",
+            "sha256": "ceec807e094418c186fa7d63378c81b05f4f5261058e4702e4f0264b0519e6a2"
+          },
+          {
+            "bytes": 46521,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0012/receipt.json",
+            "sha256": "62ea9a939823ab715c8840cc75554c614d9f237723ea708bbf809e069035d371"
+          },
+          {
+            "bytes": 46566,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0013/receipt.json",
+            "sha256": "0f9ad3f4964fdf810bb0c6e5ad921a46397fd651d13baf78fe70456aa39eefd2"
+          },
+          {
+            "bytes": 46541,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0014/receipt.json",
+            "sha256": "772a35ee81db7529942d0c3d9d1c8cf1b085b8040a243f64a97a72dbcbbfa1d0"
+          },
+          {
+            "bytes": 46577,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0015/receipt.json",
+            "sha256": "b5e343c29bb12980ff29e42afc329657c4d6cf35953d775e2d97e6db58adc7bf"
+          },
+          {
+            "bytes": 46567,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0016/receipt.json",
+            "sha256": "94edeb96be750de7e0f0fe66a62bfbeda59e8da423a7703993cbbc2d2477d711"
+          },
+          {
+            "bytes": 46568,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0017/receipt.json",
+            "sha256": "c72417c69cf1ea28c7290fccb9e5ad5fa3cfd3031bde8110d2e1bc1b29201105"
+          },
+          {
+            "bytes": 46539,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0018/receipt.json",
+            "sha256": "f26a475f39a44a1d680256131cbea732e4ccd8143d323bfc6eb77e8f3fb9c286"
+          },
+          {
+            "bytes": 46557,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0019/receipt.json",
+            "sha256": "18d678aa538750a84e319244784e664d1d8c0ecc8312656a788765d4f8b9d483"
+          },
+          {
+            "bytes": 156966,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0020/receipt.json",
+            "sha256": "8410d6815b8d22794af783a9798fd299c92949381b2349c7ca73fcc3d50e93cc"
+          },
+          {
+            "bytes": 46539,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0021/receipt.json",
+            "sha256": "5c3beca12f65584eeb70ad356655f0e2231b1bfab1001c552db54ded94e98ee8"
+          },
+          {
+            "bytes": 46538,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0022/receipt.json",
+            "sha256": "cb2c7ba6fc5017060c026b55be198c7d11b463d1a73ffedbaf6847cca359cd8a"
+          },
+          {
+            "bytes": 46533,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0023/receipt.json",
+            "sha256": "b6226850e23be34e5b43b3769b340e8381e2a06ab1986de0e1868834f2a1d24c"
+          },
+          {
+            "bytes": 46542,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0024/receipt.json",
+            "sha256": "1ece1715a405acf16bfb0ddc029fbc2421b15aadd8ded5ae3140d8d308839b39"
+          },
+          {
+            "bytes": 46550,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0025/receipt.json",
+            "sha256": "7fbbd5f2c9ba4f9d066a3b462a1c3184b73acbb6fef5df9af2f38b6a291f6f31"
+          },
+          {
+            "bytes": 46562,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0026/receipt.json",
+            "sha256": "aa6957e003cad868cca97557e9321ea4c58fb2bc237ee9d2b3578dfb03ebee4a"
+          },
+          {
+            "bytes": 46525,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0027/receipt.json",
+            "sha256": "84401bd1d6b82487564d20a12bf300597174d110b6a5f6ebb00b16b28be0d170"
+          },
+          {
+            "bytes": 46565,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0028/receipt.json",
+            "sha256": "9ab28e0c373d0c409b7d5af2a1d2141644a44a3ffa1e316ae52a34a1146707ab"
+          },
+          {
+            "bytes": 46526,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0029/receipt.json",
+            "sha256": "1b1140cf5d9d656f1abe9c03b532ab4d03d22fbbd191dbad93536e2031d12b4f"
+          },
+          {
+            "bytes": 156999,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0030/receipt.json",
+            "sha256": "fd9e9b7d6148dbac74bd6da3345023ee4b10c0a04dd91f097716821607ccc258"
+          },
+          {
+            "bytes": 46578,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0031/receipt.json",
+            "sha256": "7be4b09653018cbc25ffc585fbb71d7bdba47ad1303beccf247b244e8fc19ae1"
+          },
+          {
+            "bytes": 46588,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0032/receipt.json",
+            "sha256": "b73f10a440caf1ea7fbfda6ec68c5d69a0b3a742dc7ef11947d2a5f544d94ecf"
+          },
+          {
+            "bytes": 46541,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0033/receipt.json",
+            "sha256": "15eb6adf5f0c3893e6d7249e45a9b41b4c6f7585e8048857a1b8cf9f61ef69bc"
+          },
+          {
+            "bytes": 46539,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0034/receipt.json",
+            "sha256": "0ea140fef739ecf21239ae6cace62dcc489b373783ff1f7ed31d567ed741ffae"
+          },
+          {
+            "bytes": 46557,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0035/receipt.json",
+            "sha256": "7023f3202b24fed4d46b048b838bee36882f02d14233921592a76d0ab6d8d191"
+          },
+          {
+            "bytes": 46569,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0036/receipt.json",
+            "sha256": "6aea54b5cba97b41fa9f64e408e4bce8b62cfc6a55ebf81b880979c16277a034"
+          },
+          {
+            "bytes": 46548,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0037/receipt.json",
+            "sha256": "7ad9587165c737bf6bd4c8a5a8c5c6fe7846f0658a265bcd7c85d815667694dc"
+          },
+          {
+            "bytes": 46556,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0038/receipt.json",
+            "sha256": "626f5f422fdbeff6a85cd83a085d16154083c36f0da0732c6d542f57bd891cb9"
+          },
+          {
+            "bytes": 46565,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0039/receipt.json",
+            "sha256": "37c1c3260633cc8f3f8c928b6bbdf2871049e91a5660db3b8f0efb1a48e2fb00"
+          },
+          {
+            "bytes": 156907,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0040/receipt.json",
+            "sha256": "21787a39b2fbdf1cdb72f6d7670607b5280e9eeedd00836f8c76dc492bc963a8"
+          },
+          {
+            "bytes": 46587,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0041/receipt.json",
+            "sha256": "586966b0f626a44c7d90dbc2e1dff8eeb432fdc79418bea075e829d3043c3dc5"
+          },
+          {
+            "bytes": 46594,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0042/receipt.json",
+            "sha256": "83c956f64ad4f397b327cbbd40785e62d40521309d18e20783aa0262a1618736"
+          },
+          {
+            "bytes": 46577,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0043/receipt.json",
+            "sha256": "fb62ef59bfb1a943bd061059f8f1edb2b2a8e66a4299e22af61ed48a746386ec"
+          },
+          {
+            "bytes": 46616,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0044/receipt.json",
+            "sha256": "8bf1fe592a8c8e795983c60498075ad13651b6bf7c6072646b9b088cfa81c716"
+          },
+          {
+            "bytes": 46574,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0045/receipt.json",
+            "sha256": "1e7efabd828527f41bfe56e3ea56884b820f3ff06033abcd9301a71e206225d7"
+          },
+          {
+            "bytes": 46605,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0046/receipt.json",
+            "sha256": "c31a1c42d50650ac54c7da6f88c94100309019caea818034a9ea017d66b1dc84"
+          },
+          {
+            "bytes": 46635,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0047/receipt.json",
+            "sha256": "2ca3951af036460b167870670fd0f6ef09fd1b41b9b8c5055cb789f0ee5041e8"
+          },
+          {
+            "bytes": 46638,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0048/receipt.json",
+            "sha256": "e0bd6606ddb4a67c9d48b897204fde1b6dbd498c765ad9e887dff22ec8faba18"
+          },
+          {
+            "bytes": 46595,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0049/receipt.json",
+            "sha256": "5f9ca7ed14eeb907f6765651bfba5ef6baee857668b34cdf617bde4f33d24911"
+          },
+          {
+            "bytes": 156928,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0050/receipt.json",
+            "sha256": "d98059f81de88fa480f2f6ab478c01ae6b7dcdd36d60766df1a7b94cfb878df9"
+          },
+          {
+            "bytes": 46599,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0051/receipt.json",
+            "sha256": "269e623191dab9a8c11359565333630ce39c0b0987a60458f6ed035e34e47612"
+          },
+          {
+            "bytes": 46634,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0052/receipt.json",
+            "sha256": "99b93b7e95b46831c88598afa8849fced2aa0642667f979586af693ae5a1ab2e"
+          },
+          {
+            "bytes": 46621,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0053/receipt.json",
+            "sha256": "bdb3b61121e05ec077cbf955fbcceb8f9b899128c379993e2e6d410ba7a4e1d8"
+          },
+          {
+            "bytes": 46646,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0054/receipt.json",
+            "sha256": "4671bcace9645979e18a33b40a831bfbbfec6068e256ac10dcc4300ae94200ee"
+          },
+          {
+            "bytes": 46631,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0055/receipt.json",
+            "sha256": "4292079fdfcafbe3d4abab2927ff0a63e72e3a3e89344bb3e257370b7ea10612"
+          },
+          {
+            "bytes": 46663,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0056/receipt.json",
+            "sha256": "f4ca85913340bb4533720ae7b295b3b747d77ab7c7a591c1d8620fefc1a41139"
+          },
+          {
+            "bytes": 46591,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0057/receipt.json",
+            "sha256": "7b98d9fe9ab778ccbbb92cea6838c7a2f027a5232bb27e130346108e6587f077"
+          },
+          {
+            "bytes": 46658,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0058/receipt.json",
+            "sha256": "f0231840373158d594b4318dbfd4d6b43623fb7644582fa43d06cc2a2b351bad"
+          },
+          {
+            "bytes": 46627,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0059/receipt.json",
+            "sha256": "c3011d187f5c9f7aff10e5209988ed9f61053deeb5f38a1d2018513393bb43f2"
+          },
+          {
+            "bytes": 157012,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0060/receipt.json",
+            "sha256": "5197082ce016b5ee262261134422d46d8b61be245756b170d4017497297dee84"
+          },
+          {
+            "bytes": 46633,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0061/receipt.json",
+            "sha256": "a54ee86c52d46fec86264476c477e8d28a71a127ff139f71da7822fb1dccf16b"
+          },
+          {
+            "bytes": 46643,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0062/receipt.json",
+            "sha256": "89bb25441225f5a05c645d2dacbad0e1f852900936068ec25374d801576287d7"
+          },
+          {
+            "bytes": 46645,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0063/receipt.json",
+            "sha256": "d6a2fb8985e31ead7d7deaaa8a09daae07d7603f0aa37758ee12f70b0e1f0909"
+          },
+          {
+            "bytes": 46651,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0064/receipt.json",
+            "sha256": "736240a6ffb14eb7dcd06f80254de37a7b2273fe97a8f4e38b5f899518cdd6be"
+          },
+          {
+            "bytes": 46618,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0065/receipt.json",
+            "sha256": "169cfa143e3fe3649af2a88f9c0bd4e1e0fcadd069b9ede26f5e8dae4e04fdbc"
+          },
+          {
+            "bytes": 46654,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0066/receipt.json",
+            "sha256": "fe2755bdaeae446ffc9f69a82bbb194deb1f43b317f55b9bfe2e10d928e84981"
+          },
+          {
+            "bytes": 46687,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0067/receipt.json",
+            "sha256": "6a67b86aa027a86b79bc568d663760f816eebcefc0c8b6675ab48ace248ea11d"
+          },
+          {
+            "bytes": 46655,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0068/receipt.json",
+            "sha256": "7e1326d9b96a83e75e135265d477ac1515c6c2b4db361537f361ea13edca857b"
+          },
+          {
+            "bytes": 46667,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0069/receipt.json",
+            "sha256": "485487d303a4e2f247e8088726ebaa7dcf6c267d370f4342e16f06881bf9860e"
+          },
+          {
+            "bytes": 157248,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0070/receipt.json",
+            "sha256": "afc02842e7a52eeffa6bc9829569eae0386ece04412ead45a4cde90694a50c39"
+          },
+          {
+            "bytes": 46695,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0071/receipt.json",
+            "sha256": "ad57ee5391500c7ae79b04f0c3a432f72b8e1e56b87f64eb62c53f6e0e9f9287"
+          },
+          {
+            "bytes": 46657,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0072/receipt.json",
+            "sha256": "3110d6d2b06308c0477b2648d8effa609a8868744c192fc0d6baf4fceeff2565"
+          },
+          {
+            "bytes": 46643,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0073/receipt.json",
+            "sha256": "0e047967495747f7dd806e39b5242ef2d556c56ca3e1d5d8aed25169d8597eee"
+          },
+          {
+            "bytes": 46687,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0074/receipt.json",
+            "sha256": "67abcf6af8c486050709bc970982508632cde6c66d6bdefdc8773e8711cde7f2"
+          },
+          {
+            "bytes": 46636,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0075/receipt.json",
+            "sha256": "ffa230f2b1691348c990fe71cfee44bd77c9de496d0456abd5e31b57a1872767"
+          },
+          {
+            "bytes": 46683,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0076/receipt.json",
+            "sha256": "364c83404ddbcfc3d68ab8a1ad6ccc58f6090c67a333f2217bd28ffabf98a890"
+          },
+          {
+            "bytes": 46695,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0077/receipt.json",
+            "sha256": "954b8ef8c61942e8ed0a2f6727f820342d5f34668f6749fcf7b15c36b07025fe"
+          },
+          {
+            "bytes": 46674,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0078/receipt.json",
+            "sha256": "e62e1871f9d24ad862cc527c68e793380b0d5fd007275dc5ed7eaed18c1a333f"
+          },
+          {
+            "bytes": 46715,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0079/receipt.json",
+            "sha256": "b3d6ee8e1adfa1ba99d3c02177dbc40e4fc5ccd38a92ec291d854218cd2147db"
+          },
+          {
+            "bytes": 157531,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0080/receipt.json",
+            "sha256": "ff2d90db5ca7938dd991071ccdca6ab5e705321580850a93e53e5eda0d89e6c1"
+          },
+          {
+            "bytes": 46659,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0081/receipt.json",
+            "sha256": "97fb74e3a5c5845fe6c5d152359909e0f1ef36db43257c46477b6bfbbc4399aa"
+          },
+          {
+            "bytes": 46665,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0082/receipt.json",
+            "sha256": "60d1382c96b0a2ca5442b77ee4266bd3c6d85a1c65965a7eb3bc81c11a9d57ee"
+          },
+          {
+            "bytes": 46689,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0083/receipt.json",
+            "sha256": "11cda75feee169ad8404918ecb6703cd85393f14b60cb85b019ad018ba6351af"
+          },
+          {
+            "bytes": 46667,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0084/receipt.json",
+            "sha256": "66b1ae7bf8e6310b4fa431daa9508f5465a5b20870eb4a1f7ec10821a624cbfa"
+          },
+          {
+            "bytes": 46671,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0085/receipt.json",
+            "sha256": "ea9cdac3a735f34385122ff29e1379b5f473375730c64efa4d428b74ef2c8dd3"
+          },
+          {
+            "bytes": 46698,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0086/receipt.json",
+            "sha256": "76a420349d0f48940196dd60817514836266a6ef642c4d960c1978339f130e58"
+          },
+          {
+            "bytes": 46676,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0087/receipt.json",
+            "sha256": "71dd442050aa973cc358dfc978630756cdaffb3b17c442833029402f875b30a6"
+          },
+          {
+            "bytes": 46686,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0088/receipt.json",
+            "sha256": "2d3f4841a4dcf1d4afddf6f2896682b2d84dc1518317b991f837f27d249e57df"
+          },
+          {
+            "bytes": 46676,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0089/receipt.json",
+            "sha256": "82596ba1c0732839dbbdae84373650efa8c87a6f212d29e01d5d5a93d40375b2"
+          },
+          {
+            "bytes": 157688,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0090/receipt.json",
+            "sha256": "5f19de424dc7f2aadc5946caf1ca420e080b0628b3563a550c417436a87cbd59"
+          },
+          {
+            "bytes": 46699,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0091/receipt.json",
+            "sha256": "9bb6d26aba5686d9e43eb7f77aa34a17d44dcc9c1706c33d88ef914611a64888"
+          },
+          {
+            "bytes": 46658,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0092/receipt.json",
+            "sha256": "21ec0c007dfbd65459ef7241c52ab83b2c9616009eea7340228cd01c94572d40"
+          },
+          {
+            "bytes": 46677,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0093/receipt.json",
+            "sha256": "afd50e3cb442ee80da3aaa71a6d238050b96b66be32c11ae9d3a36a4d6327b79"
+          },
+          {
+            "bytes": 46658,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0094/receipt.json",
+            "sha256": "045512d46dd9dbbea98c0b96a514b87687ca79f91c6ea92a45f47473fbf86703"
+          },
+          {
+            "bytes": 46627,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0095/receipt.json",
+            "sha256": "a9ea3ef14d1bc6fd6085c7f85f84d3533b1e50caef6e73084da14b812474c164"
+          },
+          {
+            "bytes": 46639,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0096/receipt.json",
+            "sha256": "113d8b7aa17f11c612214f20ff89d2c528a9752bdbe072edd740167dca86611a"
+          },
+          {
+            "bytes": 46658,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0097/receipt.json",
+            "sha256": "fc3cce601a1d7b096028fd77ed06c238c643ca0fbb396c304230ec41ce7d04b9"
+          },
+          {
+            "bytes": 46652,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0098/receipt.json",
+            "sha256": "48e7f7e402fe2878e59d5205173b93f77e41c71ed22f105bb5414d4332c7e9fd"
+          },
+          {
+            "bytes": 46641,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0099/receipt.json",
+            "sha256": "503e5a6d169f149f5a4437301e0f49c893bb2a178044992eba179bac056fd245"
+          },
+          {
+            "bytes": 157780,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0100/receipt.json",
+            "sha256": "9f11d38e63466ce71fb4e235a7652695c42e6ec982fd1476e0341c831852cb8a"
+          },
+          {
+            "bytes": 46649,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0101/receipt.json",
+            "sha256": "e4a8d66cb8ffdaa1cb2a6eaae8022f29a466da5e37995dbf5902573fa3daf130"
+          },
+          {
+            "bytes": 46679,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0102/receipt.json",
+            "sha256": "e0351528d119dbd3083646f30817d6582f277011553443c3622b774a316fcf14"
+          },
+          {
+            "bytes": 46676,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0103/receipt.json",
+            "sha256": "70fc6a21b549c7ecc574fedc1802b9eb9ae4bf6400d3b37f978bdf50f218f501"
+          },
+          {
+            "bytes": 46683,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0104/receipt.json",
+            "sha256": "80ca1017d1c2ec239d559b4866eaf280df1d9382dfb4f58fb5e2d59254de8279"
+          },
+          {
+            "bytes": 46643,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0105/receipt.json",
+            "sha256": "8eecb8269e5dbfa72dfffe8b4de097dfa8c7161a8b6cdbbadf15ef7cf30c6bb2"
+          },
+          {
+            "bytes": 46665,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0106/receipt.json",
+            "sha256": "f06f884a481d212ff1c84d907f2d3ea14b70f1b293e9c035938dca815db8ea07"
+          },
+          {
+            "bytes": 46685,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0107/receipt.json",
+            "sha256": "0c56887238fe2b8dd91820ccc6ff9cfdf12d39d86ded4c744be91a8ad6d8c8d2"
+          },
+          {
+            "bytes": 46674,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0108/receipt.json",
+            "sha256": "f9fdb6dfdad8a315c7946c34f678d83f3dddbec00eaf0f5eaf2ca82c3d5b3abf"
+          },
+          {
+            "bytes": 46671,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0109/receipt.json",
+            "sha256": "3eba7b6136a4633f88ed9bbec16fd7cc1406a144f5b00f664a0f2f6f09029810"
+          },
+          {
+            "bytes": 157901,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0110/receipt.json",
+            "sha256": "da09e0b05c86da492c619e0d196420b16c68d73d361389fd694ec6505b2f1610"
+          },
+          {
+            "bytes": 46685,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0111/receipt.json",
+            "sha256": "0fd78554157f3f7e50a3d4897e0d407c1a8056208755c1b8c97a708feee97770"
+          },
+          {
+            "bytes": 46655,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0112/receipt.json",
+            "sha256": "6b90ad630d9508cfd7d69de69838125d75994e599b32148e8db2577120b0c234"
+          },
+          {
+            "bytes": 46650,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0113/receipt.json",
+            "sha256": "ebbf57fbcca34f38d5b9015222c952ed879ff9fe4b18c0e92154e03e87f7c5b9"
+          },
+          {
+            "bytes": 46676,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0114/receipt.json",
+            "sha256": "9655b3d592b03e9bfb8d939d0451b263ca96f862e1a297955753ea009d94bdac"
+          },
+          {
+            "bytes": 46677,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0115/receipt.json",
+            "sha256": "389dd3cef70b7be177efe98b4469c509004c4d492f13a606c91001f2ed1d7c7e"
+          },
+          {
+            "bytes": 46654,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0116/receipt.json",
+            "sha256": "226f53f3eb95e64d900bbd80ce92f5e5d2ec6b8192ea9808b9b28f07233345fc"
+          },
+          {
+            "bytes": 46708,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0117/receipt.json",
+            "sha256": "6e3d0edc36b5b0de742e3552abe83246f7417bb049fc65e6ddfa1068769fcdfe"
+          },
+          {
+            "bytes": 46678,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0118/receipt.json",
+            "sha256": "f5c08124ef0d3c504269f78f0284c3e993e1ec42d72482684603ad6e445b9586"
+          },
+          {
+            "bytes": 46674,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0119/receipt.json",
+            "sha256": "f5300260ae7b9ef747bb6d5db75703cab470dc90dec807cc74bbcb995d87d89e"
+          },
+          {
+            "bytes": 157943,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0120/receipt.json",
+            "sha256": "dd0649d78414e7d56bb459a73e0a4dd27195d17bd8bb2a84eda15e071657dbca"
+          },
+          {
+            "bytes": 46701,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0121/receipt.json",
+            "sha256": "a82ae4dcde2e232e389baade0b2659c1d0e4ebbdbf6982a16a320e8b4a1f6f8b"
+          },
+          {
+            "bytes": 46686,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0122/receipt.json",
+            "sha256": "d1c2c86f0fc13ce42ab46e4325083684f82e58ca551b909ad597ded820ace9df"
+          },
+          {
+            "bytes": 46655,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0123/receipt.json",
+            "sha256": "dd3c9c2add5600aa2883c9775c9c77f56ce74f79c73d2e41ecef637557ab56a7"
+          },
+          {
+            "bytes": 46661,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0124/receipt.json",
+            "sha256": "577833f100516b23e0d4c4852c7094b55d8525fd7517150b306634b14519420f"
+          },
+          {
+            "bytes": 46703,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0125/receipt.json",
+            "sha256": "15827616761a25b7941e7c538cec8034b0c3363ed523aa97bd1fd5ff6c05bc64"
+          },
+          {
+            "bytes": 46636,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0126/receipt.json",
+            "sha256": "c1e7d1546cd5b06e3837e9a91fdc253fce16743d0faafd183df552cfba3955e5"
+          },
+          {
+            "bytes": 46669,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0127/receipt.json",
+            "sha256": "7c48db1ca76b1963d5a6727e60c24da38414c165bfcc0acbf4e26c102789a8ae"
+          },
+          {
+            "bytes": 46685,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0128/receipt.json",
+            "sha256": "e14bef0ba4becfe83a98723e88ac7f0c4fb1ad00d25db99f528887f2b681af95"
+          },
+          {
+            "bytes": 46661,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0129/receipt.json",
+            "sha256": "6534021999cdd4a5c291101aced1d89b921c00ddb30a9b40a4882a89e2d3264a"
+          },
+          {
+            "bytes": 157963,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0130/receipt.json",
+            "sha256": "0dc0a32483f9541340b38fe64c00cbb5c6f8ee9c390cbab28615f18caac69e1a"
+          },
+          {
+            "bytes": 46671,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0131/receipt.json",
+            "sha256": "9b75e2d99d7b23ce45803ed2c7e95584309b10f025dadab0ff45774c8042403d"
+          },
+          {
+            "bytes": 46660,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0132/receipt.json",
+            "sha256": "df64f859dc1fb6e7bc2b6086e2501c308062ab3da3b0f99d0ac5140036c3e79b"
+          },
+          {
+            "bytes": 46669,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0133/receipt.json",
+            "sha256": "bdc76fdd219d1a098823c827cbfabb5c1c1f55cee529e3fc65587de77af254ca"
+          },
+          {
+            "bytes": 46672,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0134/receipt.json",
+            "sha256": "266ddd1a890453193e703f25fd03de10969b356f07e73643baff8f17a0563b88"
+          },
+          {
+            "bytes": 46675,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0135/receipt.json",
+            "sha256": "0fff5b5c18bce1f320f0cbecd8a7462b7c531a28baef4d3ac6c4c479fe22c4ec"
+          },
+          {
+            "bytes": 46647,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0136/receipt.json",
+            "sha256": "c334aad5e7a8ceb7b581f63f793de5e4a88945798c3ce6611239a89578a9ab7c"
+          },
+          {
+            "bytes": 46674,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0137/receipt.json",
+            "sha256": "f6d1de15629ab57d9c9947cc7919b43ab514f0c7c859fc80f1f2ce806f715767"
+          },
+          {
+            "bytes": 46677,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0138/receipt.json",
+            "sha256": "882c841e4d32ff029a8b844f1aad4e889a6ba14588821cf6ae333a736b6b7665"
+          },
+          {
+            "bytes": 46664,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0139/receipt.json",
+            "sha256": "215e54b709afb382d71a43dc6b69163cf369d9a54e592a0433fcd9bb5f9bf45f"
+          },
+          {
+            "bytes": 157955,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0140/receipt.json",
+            "sha256": "5a34115b5ef2220f50dd3ec22d5b59cc622743f29d410295128c542abe595750"
+          },
+          {
+            "bytes": 46676,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0141/receipt.json",
+            "sha256": "396d23c6950fdc8f96a548b485a50a98732c8318a2d869209819d2177a8df3e8"
+          },
+          {
+            "bytes": 46680,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0142/receipt.json",
+            "sha256": "81de7be96228e778a86b6de163f06b8009385af34ff6bfc055168ec35dd42ac7"
+          },
+          {
+            "bytes": 46686,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0143/receipt.json",
+            "sha256": "a462e8c3d9e7931376f1174b2d16cd9ca5593a6635f7dfdf1cc582143865bc28"
+          },
+          {
+            "bytes": 46653,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0144/receipt.json",
+            "sha256": "32fc801169d2e8a838860b616cc3b2f8274e30db838292ea67d5221402ff276d"
+          },
+          {
+            "bytes": 46689,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0145/receipt.json",
+            "sha256": "8a573a2465d7daa67a8d6f6695793560ddbac88df043f42f13cdbc0b03782e6c"
+          },
+          {
+            "bytes": 46673,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0146/receipt.json",
+            "sha256": "3e5317d06f7e4b2d967c81b97abb70bfb5e688dbce55de49d0992177c5fcf2d2"
+          },
+          {
+            "bytes": 46641,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0147/receipt.json",
+            "sha256": "8cad1aca430c6d92f7f003a62f175543427709e7cce2d7c2b78e36567d1919ad"
+          },
+          {
+            "bytes": 46631,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0148/receipt.json",
+            "sha256": "af67213b6a0d49616e3293d88c6287edeae9f80e026791a89d4977d3b8e828a5"
+          },
+          {
+            "bytes": 46647,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0149/receipt.json",
+            "sha256": "64b297e34855db035462c9497b66af6d71033abd98beff7082b1c875e9c71249"
+          },
+          {
+            "bytes": 157958,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0150/receipt.json",
+            "sha256": "4b49cdcc9eaec8357f96a12a8e8ed76e4c46ea499e1e8ca7b2b79a7e1f7ba6cc"
+          },
+          {
+            "bytes": 46663,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0151/receipt.json",
+            "sha256": "557affc83f1875bd67fdd46be66deb0b8e3f1253d365b83427de92e303699c82"
+          },
+          {
+            "bytes": 46655,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0152/receipt.json",
+            "sha256": "ad035b977e91ecd365a9e5b505d0782eab29fb244e3405bf5cf42044b43d3b0d"
+          },
+          {
+            "bytes": 46668,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0153/receipt.json",
+            "sha256": "bbbb6af84ce6a6dbc8fdd6970e75d60d3a028bca697fd9b4a38dc283024887b7"
+          },
+          {
+            "bytes": 46689,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0154/receipt.json",
+            "sha256": "2ad5dd93b7a55f88e9d5ee5eb6abdb6bd3010374b4e213547f84760eb6bd40e4"
+          },
+          {
+            "bytes": 46660,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0155/receipt.json",
+            "sha256": "99fcc5de7ad8237097f798980b9b091ff700185e727bad9e9e9b7d333030339a"
+          },
+          {
+            "bytes": 46689,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0156/receipt.json",
+            "sha256": "b313af0c57a05e358bceed73662df4287d2d44a449a53ccebb285074d05b6105"
+          },
+          {
+            "bytes": 46688,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0157/receipt.json",
+            "sha256": "08504cd6a26db12ac40496df74d46bb8d39880a4a952f82f65c1fee77167cbc3"
+          },
+          {
+            "bytes": 46684,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0158/receipt.json",
+            "sha256": "e9bd49fbdf90b090885cc7a15ea4741220cc5cb62e4058c2c45c8b23f3eb951e"
+          },
+          {
+            "bytes": 46699,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0159/receipt.json",
+            "sha256": "c54a5d9e23cc6a4bc8ed7d6d49e40e287eed46b2919f190bf1fba1a2afa2f41c"
+          },
+          {
+            "bytes": 158001,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0160/receipt.json",
+            "sha256": "b983137d67e69e1dadf088199fa11b44052631fb2914f382dcc04aac84005a43"
+          },
+          {
+            "bytes": 46709,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0161/receipt.json",
+            "sha256": "c470469b4f5f933fb56a1f11a925338bd74aab18e7dee15fe0aeab85246f8e23"
+          },
+          {
+            "bytes": 46668,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0162/receipt.json",
+            "sha256": "11143a403f7ff6dce39739b03f9e9be12224b266f3131d26bdf295313a756128"
+          },
+          {
+            "bytes": 46715,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0163/receipt.json",
+            "sha256": "8fe88d490b8a0ee753db8731ae09c343b0d5a3af55f2fe5f3fa8e3317281a91b"
+          },
+          {
+            "bytes": 46727,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0164/receipt.json",
+            "sha256": "a23d55f51e694b1262f5b2b76ff4733896bae963284e07257b691ad9bb0bbd4d"
+          },
+          {
+            "bytes": 46699,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0165/receipt.json",
+            "sha256": "cae0ec913eec596686fe51afa1ce8994f6691ee713761d20f80e477a1f0aeefe"
+          },
+          {
+            "bytes": 46706,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0166/receipt.json",
+            "sha256": "272bdd3fd43cec87c04fd8823c409dc502512d94cf7afad98ade7eca0a435498"
+          },
+          {
+            "bytes": 46671,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0167/receipt.json",
+            "sha256": "6d8012ffb2d52857472d85c68f22b00754a434642490a7b610566f465c38bdfa"
+          },
+          {
+            "bytes": 46659,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0168/receipt.json",
+            "sha256": "142ff701f94a89a4119cb32185bb547cb0df86c6c192775969b9c67539d91aaf"
+          },
+          {
+            "bytes": 46681,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0169/receipt.json",
+            "sha256": "7638fe47b125eb19c9ccf43c53e529dd07091052ac156d94c3177f9ddef32e58"
+          },
+          {
+            "bytes": 158006,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0170/receipt.json",
+            "sha256": "4a12bef7eea6c34904cace1d884be6be2b4365d6a230e1e395b5f29ec2229efb"
+          },
+          {
+            "bytes": 46664,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0171/receipt.json",
+            "sha256": "a08fb04d365801a68b0e30458aeabdcb7859a5b5ec79253f4772ff42aba3445a"
+          },
+          {
+            "bytes": 46672,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0172/receipt.json",
+            "sha256": "012c9e5037987b79553486da5e3c46519c2c0ec6e29923126a99967ea5cc2167"
+          },
+          {
+            "bytes": 46635,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0173/receipt.json",
+            "sha256": "9d5db9bc851dabd23dd606881edd3c7204d159ecdf09173d4c359298a01edcb6"
+          },
+          {
+            "bytes": 46663,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0174/receipt.json",
+            "sha256": "90be0e2704da1ce923676b65ee89b8d0215567fa8e6affd2b1de19d7946e1bc5"
+          },
+          {
+            "bytes": 46675,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0175/receipt.json",
+            "sha256": "4e8597f5fce92c0cfa43d01cbcb19f3ef72df18af8a1be69dc8e476d385aeadc"
+          },
+          {
+            "bytes": 46683,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0176/receipt.json",
+            "sha256": "9453fa0dfb518ff4acd63b93eef33ed8c391797c40388d7fe7fe553442df8158"
+          },
+          {
+            "bytes": 46685,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0177/receipt.json",
+            "sha256": "9a1a1cf1bb2bd5b16a28aa7cd84989b824898504d8a998e5bb909ada788411a3"
+          },
+          {
+            "bytes": 46696,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0178/receipt.json",
+            "sha256": "c95bbd82a138484661650dcf65b83f96698a53af7f65571c142b32dc3b046580"
+          },
+          {
+            "bytes": 46733,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0179/receipt.json",
+            "sha256": "0869f0e0549d439103d3f816045b6f5f5c8cc9c25b716b8ef660cc19e606c220"
+          },
+          {
+            "bytes": 158050,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0180/receipt.json",
+            "sha256": "f1d6107d28bcddc5728b4b6bbab035e91de5002c0a81363eccd67f75bd6dbdd9"
+          },
+          {
+            "bytes": 46710,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0181/receipt.json",
+            "sha256": "7facfeaefe7d16f6ee29485684112bb541a9952865fcadf379582c969e96416b"
+          },
+          {
+            "bytes": 46690,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0182/receipt.json",
+            "sha256": "3318741d2c34c50289457391a3992d90336dba3e0237e33d71634c15c5939a82"
+          },
+          {
+            "bytes": 46689,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0183/receipt.json",
+            "sha256": "0b19ecfa3209fbb0892ca431cd30b0721d935f2006286ce438adee7a56c87537"
+          },
+          {
+            "bytes": 46693,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0184/receipt.json",
+            "sha256": "02806256c87156717fd70d40c1639cb15be0048b4be1c54b0ee34dee30933e54"
+          },
+          {
+            "bytes": 46699,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0185/receipt.json",
+            "sha256": "1c6d4d99aa12b1540addcb5c0521f558a5baa435ee3799b8f8df26b92d8048f1"
+          },
+          {
+            "bytes": 46710,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0186/receipt.json",
+            "sha256": "c9f9720872cb9f87600e297a4ee0fb124769d0f719134b80d108db1e7f9b0139"
+          },
+          {
+            "bytes": 46665,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0187/receipt.json",
+            "sha256": "5f2bc13152870bc872e8448196375198f87f061a4cdf2a7523aa5870f5e1ed01"
+          },
+          {
+            "bytes": 46639,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0188/receipt.json",
+            "sha256": "2381fe2d5d04fc6d05ad385edd088523fe110f22bf0f1dabbd6343a76ba83f80"
+          },
+          {
+            "bytes": 46685,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0189/receipt.json",
+            "sha256": "4399efbcd69cae1cee77ff5f1766e56cf8e33b0e0dee97630d7a941837d1f74c"
+          },
+          {
+            "bytes": 158011,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0190/receipt.json",
+            "sha256": "40212eef0f4db453c3863e3b484274007a5c668f3ab333979b153425c63dcb97"
+          },
+          {
+            "bytes": 46669,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0191/receipt.json",
+            "sha256": "0c073d49fa6f4aac0bb2b6b8d1f559c8fc5cce52e9387909c6c31b4ee1f46fc6"
+          },
+          {
+            "bytes": 46664,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0192/receipt.json",
+            "sha256": "0af02370aedb9a7774c62878af9e686236b311a47dd440b2aa125c383fab86c9"
+          },
+          {
+            "bytes": 46678,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0193/receipt.json",
+            "sha256": "e1e7649402a371e6f34530d9c0e9bc06da1c55433b757cc6c85cc038723c96fd"
+          },
+          {
+            "bytes": 46683,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0194/receipt.json",
+            "sha256": "341394f28f86ee60f82ed5d7012bd4aa479b76b9697e404ccd9bb1999540302b"
+          },
+          {
+            "bytes": 46683,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0195/receipt.json",
+            "sha256": "ca56ec90019e8dccdbd2d74616805e3b6b2f7fda961e3fbd47c3b86771d3d442"
+          },
+          {
+            "bytes": 46683,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0196/receipt.json",
+            "sha256": "2937159437ff0a7b57f7882d4d0289599a7373e046c2d8c35f7fbcfe9c75817c"
+          },
+          {
+            "bytes": 46674,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0197/receipt.json",
+            "sha256": "dae3155d10e9c9b6dbf1f261a5fe5036457ff107ab09316d599e5d717fddaaf1"
+          },
+          {
+            "bytes": 46706,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0198/receipt.json",
+            "sha256": "32521f8af6159e63479e19bb6ad7a6c54f6fcc1fe0fa3e6d533ed15ad3b9ee5b"
+          },
+          {
+            "bytes": 46697,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0199/receipt.json",
+            "sha256": "ac4ab8da3d8a4f413ba18cec005de4f05d949c2aa91a69552ef3fc486173a92f"
+          },
+          {
+            "bytes": 158026,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/rounds/0200/receipt.json",
+            "sha256": "979b51b23e216fe100b02bf0a07ac6bda7a397eb018f4385763ce9453ef341c6"
+          }
+        ],
+        "run_manifest": {
+          "bytes": 95928,
+          "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/manifest.json",
+          "sha256": "745a84302804d5be04086fcd84fe9c80cf0a4d1b1eb030b40dcff3de71c35a51"
+        },
+        "selected_model": {
+          "bytes": 203132,
+          "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/selected/model.pt",
+          "sha256": "10ede81d13650122abff5978a432127cd91643b3ea8e2706c28619042de5cf7d"
+        },
+        "selected_receipt": {
+          "bytes": 296,
+          "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed43/selected/receipt.json",
+          "sha256": "ce5142b260d29df1abaa69913d70fd98fc9a933006e9b6d0439b94b7c525a920"
+        }
+      },
+      "44": {
+        "completion": {
+          "bytes": 422,
+          "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/completed.json",
+          "sha256": "dcd0eecc49382d52faefcd6aac2f832fc4b90b10a474ee88f654867eefef7726"
+        },
+        "round_receipts": [
+          {
+            "bytes": 110971,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0000/receipt.json",
+            "sha256": "1cfdda8fc219fee6aa709c7d6fa6826c7d244e74a46aaafa723a540923c8cf7a"
+          },
+          {
+            "bytes": 46562,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0001/receipt.json",
+            "sha256": "5f33740aa71a21f5537368eeab3142c83a0cd02e97b5ae56bf888ea3f961baf0"
+          },
+          {
+            "bytes": 46561,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0002/receipt.json",
+            "sha256": "33c0223e9d290baefbe9a157dccd618388cbc7241d40edbaa7bf114bb9cbb459"
+          },
+          {
+            "bytes": 46574,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0003/receipt.json",
+            "sha256": "c3bd41219a5fc55b2ca3b58807ee4a5f9d7db6e220f9b764c7e30b84c652b2ef"
+          },
+          {
+            "bytes": 46562,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0004/receipt.json",
+            "sha256": "f813ed0bf7ffbaf7a313ac03c266cbe7f0698c043af30a3275793b654f57b8ab"
+          },
+          {
+            "bytes": 46514,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0005/receipt.json",
+            "sha256": "2b5a30514ac4f69c831472e603e31149372ceb5624fe654c52b6ce62a548484e"
+          },
+          {
+            "bytes": 46496,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0006/receipt.json",
+            "sha256": "25c3ac7fe9e5b45a3cfbe0f4218823d09fc9cb6f122974bbb9e8d77f138d4684"
+          },
+          {
+            "bytes": 46505,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0007/receipt.json",
+            "sha256": "21a4b2c71fd210b28a3b03618b5b7325ad0c2d46a4c3d94ecd7bbdc199883d4e"
+          },
+          {
+            "bytes": 46536,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0008/receipt.json",
+            "sha256": "cd7301dcddfbe3ef51df003faf69e744df83ff9aa9061e7354a8a2d54fc851fa"
+          },
+          {
+            "bytes": 46522,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0009/receipt.json",
+            "sha256": "e60dcad0dcced732087265144f838dadfa10633df5ad7abf0f38f39beef6d679"
+          },
+          {
+            "bytes": 156906,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0010/receipt.json",
+            "sha256": "e2448c6e69a7c8a3ea52e8f10804d3cd288a556c6d10a6b92b75463f34ab3d1c"
+          },
+          {
+            "bytes": 46537,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0011/receipt.json",
+            "sha256": "0e99dd0fdd69c5478a3cbc36aa20c146bd401e1eb11de584ae62329bc2198c36"
+          },
+          {
+            "bytes": 46515,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0012/receipt.json",
+            "sha256": "040085e22155e2ec68bb575648dfc0d8c7d479523ac103ff6a7ea3f0407b23a9"
+          },
+          {
+            "bytes": 46558,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0013/receipt.json",
+            "sha256": "a9ba950fb746190f1cdc0a13e75194796416eaef1ed90bddab9b38bd09ca275e"
+          },
+          {
+            "bytes": 46575,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0014/receipt.json",
+            "sha256": "503d7c1e06af518a4e40a63672c89f040cb1ad3aed54f1d3ac128afc7ea34177"
+          },
+          {
+            "bytes": 46561,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0015/receipt.json",
+            "sha256": "856b6e24e85bfc6c9f3ecbf349485284ed47e4f4f1ee502cef8032f96cb26b07"
+          },
+          {
+            "bytes": 46576,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0016/receipt.json",
+            "sha256": "0e0e5cdf42e7641d936fb4cdbfb94a64272464249c0f907246d1cbcc62f33d11"
+          },
+          {
+            "bytes": 46563,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0017/receipt.json",
+            "sha256": "f8f6893ca0ebcdae24b5f3fd7957cf3a92189ab5fb8fb9ba0279f1fb2238275d"
+          },
+          {
+            "bytes": 46543,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0018/receipt.json",
+            "sha256": "122896ad3076e2abb5c130a001352a6df896695008b171abdf1cf54715e592bf"
+          },
+          {
+            "bytes": 46600,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0019/receipt.json",
+            "sha256": "b1cc7658ec4a1a65510a6e486a179db78f4dca17bdb796170179ed01e66aa23d"
+          },
+          {
+            "bytes": 156922,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0020/receipt.json",
+            "sha256": "ddc0d79a71579eebc4f508b7d3d74809e2e1f7eba015d63ef8a1289902662624"
+          },
+          {
+            "bytes": 46605,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0021/receipt.json",
+            "sha256": "a1582ac0a8a4b9f4c859b0375827224d38b753b77943dc56b21cefe8b91b4b2f"
+          },
+          {
+            "bytes": 46607,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0022/receipt.json",
+            "sha256": "d089fe36bf3b4150c55806e2e7ac4c1ba79945f69348dab63b0d3a74a63954f0"
+          },
+          {
+            "bytes": 46571,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0023/receipt.json",
+            "sha256": "47b9d0c895e9ac8434d31af0cb0161e3be40bd9c9e29a7558de38587e9626679"
+          },
+          {
+            "bytes": 46595,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0024/receipt.json",
+            "sha256": "1bea618fbfebd861a8d5991a464c4762f7bcd56107d44580fb27f0d408b257f7"
+          },
+          {
+            "bytes": 46578,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0025/receipt.json",
+            "sha256": "5bce0ea9ebd4117f7401694b61b36f634c088471f980d013202954761d0057dc"
+          },
+          {
+            "bytes": 46587,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0026/receipt.json",
+            "sha256": "dc149ab0a90b0239d1db5851b913c6974abe0ad48641c3dac1379198d39b0498"
+          },
+          {
+            "bytes": 46514,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0027/receipt.json",
+            "sha256": "f8b1774523cf00d6c1abcdb4f889800f016cb4dd7aba8c56db3f93ebdc285e35"
+          },
+          {
+            "bytes": 46538,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0028/receipt.json",
+            "sha256": "0440aa8eda445f211ae1cf7fd5e53864598b610c53a57200143326603fde9d66"
+          },
+          {
+            "bytes": 46540,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0029/receipt.json",
+            "sha256": "734364032958b5b921f9f00b848fce57da2a7d73bcba955e5879360f769d47e8"
+          },
+          {
+            "bytes": 156864,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0030/receipt.json",
+            "sha256": "2357baff7561a03d0c4408a7f9e445a4d890543f90b7399bccd3c84d70871a69"
+          },
+          {
+            "bytes": 46514,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0031/receipt.json",
+            "sha256": "4d04a428d37725129a198b4e090dfa2784e50d7ff3b8ffb734b69d35a0a40a95"
+          },
+          {
+            "bytes": 46551,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0032/receipt.json",
+            "sha256": "ac016fca8755e6afa3b53e70223f702c0912a609984ad4568cf4f2c2f684834c"
+          },
+          {
+            "bytes": 46570,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0033/receipt.json",
+            "sha256": "475a75ecc7130ecac88a00381eda6d3f1d2dd07415b1e5fe2e54b6c19e3f3eb4"
+          },
+          {
+            "bytes": 46572,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0034/receipt.json",
+            "sha256": "5a282f80554b366ffab22eb1e5303b9591d3a448133d44de2c7b80f7b44d8cef"
+          },
+          {
+            "bytes": 46575,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0035/receipt.json",
+            "sha256": "8af54a00b87b8a5047858709ae9436a3f40aa613847f9e66ecbfd831b0362515"
+          },
+          {
+            "bytes": 46606,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0036/receipt.json",
+            "sha256": "5a62784639c60f51e45ce696649398ecee6234415415e760df9b24a289eb4e28"
+          },
+          {
+            "bytes": 46595,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0037/receipt.json",
+            "sha256": "69caa3eae386a7c99dd08c0451619f79790b2345dbfb77dbc3291e9c2179d16f"
+          },
+          {
+            "bytes": 46586,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0038/receipt.json",
+            "sha256": "1e405430f42b1fa57e0c2fa97ef69cec02cdcd3b55135e9cd1903f07fa50add1"
+          },
+          {
+            "bytes": 46564,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0039/receipt.json",
+            "sha256": "f8d417f50bb28ca0e079e8f71aadce26e10a4272c6babffe5aaf50714d7db46e"
+          },
+          {
+            "bytes": 156805,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0040/receipt.json",
+            "sha256": "90e57d4e38373e99a23d0f0e86d5b32ecf83c8cda4685c186d2db0fcd477ac6d"
+          },
+          {
+            "bytes": 46620,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0041/receipt.json",
+            "sha256": "051656f73eb1bc358afac116cf58cb2b6d5106632725912135edab50ebf1ed37"
+          },
+          {
+            "bytes": 46640,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0042/receipt.json",
+            "sha256": "2e56f206f35890a7823a27385a27aa6de8579a3d04fe78953407734efe025fb1"
+          },
+          {
+            "bytes": 46616,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0043/receipt.json",
+            "sha256": "186e614fb3b40bef2f52eeac9914d962ad16e43972135e2c6951d89e4a9d3ab0"
+          },
+          {
+            "bytes": 46599,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0044/receipt.json",
+            "sha256": "df0927aa3353cfd29d10543751d68b2934cd7097a03e1356fbb527e7a4a5fa11"
+          },
+          {
+            "bytes": 46593,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0045/receipt.json",
+            "sha256": "6c30dc297b2bfd4cf3107c12110442de307b6a36996fd06be32a0cd25c8eed4d"
+          },
+          {
+            "bytes": 46643,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0046/receipt.json",
+            "sha256": "f5cfabe959a59f231844a971e58164bf924487f79402f24b491e702405ad82bc"
+          },
+          {
+            "bytes": 46602,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0047/receipt.json",
+            "sha256": "1300b71cd29a7dc689837930754dbd38f2872a095526073df6aa83fe152a2a5c"
+          },
+          {
+            "bytes": 46589,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0048/receipt.json",
+            "sha256": "cfcdc9d5b66ac344f868928a491f705e520b0470836783915c5a966c4aebaca0"
+          },
+          {
+            "bytes": 46551,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0049/receipt.json",
+            "sha256": "e5c1544ab767678aafc688149cb56ff7816e184a2f4f8119a649421689b61d2c"
+          },
+          {
+            "bytes": 156783,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0050/receipt.json",
+            "sha256": "5683b2169441df1ade875a0b56ffbca1bb2f3031e2ef1c73e0b719e691f3d114"
+          },
+          {
+            "bytes": 46626,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0051/receipt.json",
+            "sha256": "e59cc71a10189e4a776b65a3ed4b432126293686ce75c442ab1e37815f9e9dd7"
+          },
+          {
+            "bytes": 46604,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0052/receipt.json",
+            "sha256": "0020c2fb50ba0c60301cb91b79d26d214f1e5f6d47695bf48261a49f433d5de8"
+          },
+          {
+            "bytes": 46564,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0053/receipt.json",
+            "sha256": "38bff1301865f1e7206760aa22c971d2bdb2625c4295ef0045516aec7a789274"
+          },
+          {
+            "bytes": 46605,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0054/receipt.json",
+            "sha256": "6871c5701fb245d8bc41b9165273017ebccc4f11c980924f9940d86dfcf84afc"
+          },
+          {
+            "bytes": 46592,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0055/receipt.json",
+            "sha256": "e32af53bf491b19ca7385f6e1e77c5ba54d76d7276adeb35ec32a4edefd26819"
+          },
+          {
+            "bytes": 46644,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0056/receipt.json",
+            "sha256": "4f31140ab1b5a5fd59b6e49384b7cd9513542348cdf7f0b917ba9e8ce16e7e51"
+          },
+          {
+            "bytes": 46660,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0057/receipt.json",
+            "sha256": "62cbe9b807e2677d61884af96dee2f82c94cc35fb159bb584a7022679ace7990"
+          },
+          {
+            "bytes": 46666,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0058/receipt.json",
+            "sha256": "9433cb6d252150e7018b6c080be252dfab1950db1137cd61c9e12d3ec99c6c43"
+          },
+          {
+            "bytes": 46655,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0059/receipt.json",
+            "sha256": "f95d260681c48152aa577d1a117e902db7c7a1c78726f3f785953e6f93c975ec"
+          },
+          {
+            "bytes": 156868,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0060/receipt.json",
+            "sha256": "0d598ae656c767ff42de9f25d24cdf4e806fad409e9dccd7515014dd8224826f"
+          },
+          {
+            "bytes": 46655,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0061/receipt.json",
+            "sha256": "9859b1448b0c9ca8b2e40af88015a634c575a2e74b768c4ac0c71517c023f5cb"
+          },
+          {
+            "bytes": 46671,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0062/receipt.json",
+            "sha256": "72b4a8ebb88efc89e8b7db9b61a958502deceaa8b6a1c58d9761eb1f324a7060"
+          },
+          {
+            "bytes": 46690,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0063/receipt.json",
+            "sha256": "f28f1df6892132816de662508b572f9f51322586009a2254149294f4e824628a"
+          },
+          {
+            "bytes": 46647,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0064/receipt.json",
+            "sha256": "ee10e61e9bc063df7bdd435c298df5e895ac3529f062e2df612a0f94d7899990"
+          },
+          {
+            "bytes": 46692,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0065/receipt.json",
+            "sha256": "49d8716cc0005b88bea8c1cfdddef82326cf8d271593e35886d97b64319aef2a"
+          },
+          {
+            "bytes": 46677,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0066/receipt.json",
+            "sha256": "8d7c15439ec82d396fa55d7c7cbc1ab97b0dbfb2c2429d5a8e6f1b8b7f2b1f2a"
+          },
+          {
+            "bytes": 46671,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0067/receipt.json",
+            "sha256": "1351bcfb49f5137a40f9b9851db596f4f7eb0d96d0529aa6c5d7b94bf4122c78"
+          },
+          {
+            "bytes": 46657,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0068/receipt.json",
+            "sha256": "9c5d401d76eccdc19fbc049c6524d2e500eb2c991a213a1af0490fc40f29fdf2"
+          },
+          {
+            "bytes": 46647,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0069/receipt.json",
+            "sha256": "47aac7ac8b94a7fa0a7ae6be47d8ecf07dcdd1cf32205742d62d33d687edc297"
+          },
+          {
+            "bytes": 157146,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0070/receipt.json",
+            "sha256": "40c889fc2b4e80e01ee6dbacc2c3af08624b32f963b9db22a97d452f52312c78"
+          },
+          {
+            "bytes": 46627,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0071/receipt.json",
+            "sha256": "365abbbd16d6d04518307a24ef88a442f12d1b11954c98fab46a5a003bb70288"
+          },
+          {
+            "bytes": 46637,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0072/receipt.json",
+            "sha256": "6290a473c9507d6b8ec73d07c442faef119af801a0dbf30b6c46916d68dfd242"
+          },
+          {
+            "bytes": 46678,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0073/receipt.json",
+            "sha256": "73ed0ba8ca7790daaefecb417a7c189d0148c716a38df28d7afd23f9320cf189"
+          },
+          {
+            "bytes": 46633,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0074/receipt.json",
+            "sha256": "bb2547efb36da5de43b27c8169ef5251b44df13085950f353e396df285fdecbc"
+          },
+          {
+            "bytes": 46717,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0075/receipt.json",
+            "sha256": "e232c5f0c4057bbb8c17b5b0960d7c03b9c3b61d3c9be1153018784319c4bbbf"
+          },
+          {
+            "bytes": 46707,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0076/receipt.json",
+            "sha256": "098c69b3c9617f15761a69dddbdd66602c99db3a1a123576cf3ffe9352123542"
+          },
+          {
+            "bytes": 46694,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0077/receipt.json",
+            "sha256": "975810635e1f6343c34561e8503c4d0490bab3eb5aa0b3fffbf1b35f7cf01625"
+          },
+          {
+            "bytes": 46690,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0078/receipt.json",
+            "sha256": "6b09b254e8f984c17eb787f9aa0a9988fbadd4ce6c23f76dce52e3e02d1c4e03"
+          },
+          {
+            "bytes": 46732,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0079/receipt.json",
+            "sha256": "434fc05356b5e395990e17ee9e79f98d14ecd03d633d94f4ccc7b1d6dd73ba81"
+          },
+          {
+            "bytes": 157532,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0080/receipt.json",
+            "sha256": "d19a7de4c8434c774b6e44eaf3b05ff379715db6172c660b0178f69821c1e896"
+          },
+          {
+            "bytes": 46680,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0081/receipt.json",
+            "sha256": "d5529a85be0b2a07d834b507d5838d26ad4ad8051abb72b885b5d4ebd4d152bd"
+          },
+          {
+            "bytes": 46723,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0082/receipt.json",
+            "sha256": "38f7733267021bc7a56a41db0fd516c500e19c8a9f624db141782b9572f39005"
+          },
+          {
+            "bytes": 46745,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0083/receipt.json",
+            "sha256": "f8c3cc6846a72b448d5d127a64bd27dc512402a125a6515e72055cf58c29f1de"
+          },
+          {
+            "bytes": 46713,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0084/receipt.json",
+            "sha256": "18721ed713f1b4a66bf1e74d2af03dfc468e4d6e91475b9f2549b482d1eca14f"
+          },
+          {
+            "bytes": 46747,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0085/receipt.json",
+            "sha256": "057802d7ef4de83eb632d81958ebf75d4808e523492c0896e0f1aa50b75bcd97"
+          },
+          {
+            "bytes": 46705,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0086/receipt.json",
+            "sha256": "5957f86aec6ed8a6d9047823c27eef76e68da975f75f1527f81c32ee5830ce42"
+          },
+          {
+            "bytes": 46737,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0087/receipt.json",
+            "sha256": "8ae26a19b982334c45102347894deef2d1711a0985c0240f702b257bffaafe70"
+          },
+          {
+            "bytes": 46681,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0088/receipt.json",
+            "sha256": "a8e1622e10b3ed536102d49bdff91dde58904ce6bf40b17c22b332adc6a1662e"
+          },
+          {
+            "bytes": 46664,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0089/receipt.json",
+            "sha256": "2e718d093b81f0084537cbba43eb412d782f593394fb7862a6337f3a7bfd604f"
+          },
+          {
+            "bytes": 157692,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0090/receipt.json",
+            "sha256": "3e59fe2ebd33063d38c6f6fa9953592f0763929088600d6b3442f36ee4c679a4"
+          },
+          {
+            "bytes": 46672,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0091/receipt.json",
+            "sha256": "a5721b1fc7a55de83af7f1d4ea4b1ffb2db38e3851e81bd70821f36041238ed9"
+          },
+          {
+            "bytes": 46658,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0092/receipt.json",
+            "sha256": "81d6462f5b6b0210ecb79d93562eaa3b7a9ea9c5c37cc7fc4c37b74928f0ec7e"
+          },
+          {
+            "bytes": 46657,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0093/receipt.json",
+            "sha256": "bb73875b0abe676e740d1bfcb53e356deabcace294c1a8e51da816edb73daddd"
+          },
+          {
+            "bytes": 46655,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0094/receipt.json",
+            "sha256": "398c4a93c68d027bcf62ef8383cc207cb67f3999696329f0da7913d967475540"
+          },
+          {
+            "bytes": 46690,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0095/receipt.json",
+            "sha256": "9979cb9ac1a293e4899eb39e3043d4e8759db4feb61da0897f501d4f4c52c951"
+          },
+          {
+            "bytes": 46691,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0096/receipt.json",
+            "sha256": "03e19826c2c39e7091e8a30db2cbf5b075e59363242db12b8e0098d3ad983d3e"
+          },
+          {
+            "bytes": 46682,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0097/receipt.json",
+            "sha256": "a225876a0db458e81707c82bb60709ed5583e7d5eb06b317126fb8dffe8fe595"
+          },
+          {
+            "bytes": 46717,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0098/receipt.json",
+            "sha256": "68da95b75babcb5115f570b8ae98c538963bb65933b7aa2d2f256a4a310eace1"
+          },
+          {
+            "bytes": 46650,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0099/receipt.json",
+            "sha256": "7811648b9de2342ba2c07d9b5e63f634cb9145cfc0e941761686181688451e85"
+          },
+          {
+            "bytes": 157878,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0100/receipt.json",
+            "sha256": "84fef1c9236e40b088b1334ea3d37f0cb8f012d17b464628e188d6197b27d7fb"
+          },
+          {
+            "bytes": 46667,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0101/receipt.json",
+            "sha256": "56f1fcded8afd60ceb68f9c8be2201ce02cb8978f75c77e9e4dbcf4aba9a5930"
+          },
+          {
+            "bytes": 46695,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0102/receipt.json",
+            "sha256": "9a8b6a69ee83cbded01172c2cb082ee19ecf510bbc706a1ac91fd7a5542615a7"
+          },
+          {
+            "bytes": 46740,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0103/receipt.json",
+            "sha256": "e7bcafcbb75ce5bf84f1e33fd5d8378f54c494d37710970b05cb41b7194805ee"
+          },
+          {
+            "bytes": 46693,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0104/receipt.json",
+            "sha256": "1aae98551dc78d4a1488eb5951bd4572c70e3cee09d8be58cd203a02a4d73360"
+          },
+          {
+            "bytes": 46720,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0105/receipt.json",
+            "sha256": "93ae565ddf975c66b2543cc6efdfa37678c7fb5715581410e39616306b434ba2"
+          },
+          {
+            "bytes": 46705,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0106/receipt.json",
+            "sha256": "cb5589aeb81ecdf869b42310c2c201587f29bb5d6c25f6a042aacd044a0c75c1"
+          },
+          {
+            "bytes": 46680,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0107/receipt.json",
+            "sha256": "7b4995c524e073dfcc209c5801905e171f8855083216a0de13dbd5f86e9ac1ab"
+          },
+          {
+            "bytes": 46662,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0108/receipt.json",
+            "sha256": "6a09259839176642db24ebcfbd6bb678d84b453a4afbe9725db68b34dcbc52cd"
+          },
+          {
+            "bytes": 46633,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0109/receipt.json",
+            "sha256": "ca2d8197e3de98385b250897a78480cea91580c2a4bc283a8f13229e3731690f"
+          },
+          {
+            "bytes": 157879,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0110/receipt.json",
+            "sha256": "ec106037b5f4dc12f61e3a85830fe90c8251d034859dce696f83585e521b47c2"
+          },
+          {
+            "bytes": 46662,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0111/receipt.json",
+            "sha256": "17bc8cde7e29919f5b76551e4d5d70501ffca298f2697348e146743d9d179d13"
+          },
+          {
+            "bytes": 46644,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0112/receipt.json",
+            "sha256": "12dfb907d488f1b8435b5565d95caa87629434885396a417f8420ff28e6a5c10"
+          },
+          {
+            "bytes": 46688,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0113/receipt.json",
+            "sha256": "9ff9974f46a2455d1b248635f7157e9cb78600e5804727b7cd35b6368fdeecdd"
+          },
+          {
+            "bytes": 46692,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0114/receipt.json",
+            "sha256": "8abeee3be7e02c6b9e53359396dab6769b98fa1eb22474a05d1fb3c005fdfe57"
+          },
+          {
+            "bytes": 46637,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0115/receipt.json",
+            "sha256": "457d7873043e7cdadb20269b61f40e1425209fa9baed9973ce83c410151a46d2"
+          },
+          {
+            "bytes": 46672,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0116/receipt.json",
+            "sha256": "66157d245ad1423988ba73453b3a8f2377fbd315c1659de29616d09e83ff0bfd"
+          },
+          {
+            "bytes": 46722,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0117/receipt.json",
+            "sha256": "a7ed0d16e1fd8fcd673bcad7cc1977617949ddd394710e72fd11fba0e8b2f19d"
+          },
+          {
+            "bytes": 46716,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0118/receipt.json",
+            "sha256": "3a0f7e24af3ba930c99fed537270681e040b7061a75bd87da224ede09d1cc3d9"
+          },
+          {
+            "bytes": 46720,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0119/receipt.json",
+            "sha256": "f67f86feed051ef13a93c2844344c7769b90a21738ba0d7deffe12d2738a781b"
+          },
+          {
+            "bytes": 157972,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0120/receipt.json",
+            "sha256": "a95e8f09b05292520fb1e3e6b9e171ab2afa93b4b3cf153744bad23c157b78a8"
+          },
+          {
+            "bytes": 46688,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0121/receipt.json",
+            "sha256": "93fbe71def38b4111bf0d27d493e1a8a9e9b4ddfc94e0d7bd6eb03fb8c1b7ebd"
+          },
+          {
+            "bytes": 46700,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0122/receipt.json",
+            "sha256": "fee6d6e26c15b4241999fa4ae328f2dcfff0b9a0864933c7bc777303fb2024cb"
+          },
+          {
+            "bytes": 46713,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0123/receipt.json",
+            "sha256": "142e05f4d5166832bd8e12af42c0b84340a7a03f8be495c2294c5d0074542a45"
+          },
+          {
+            "bytes": 46697,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0124/receipt.json",
+            "sha256": "f96f855fae66132a4a9f7e65762561bae6dc142f946135558120f9b883086cdd"
+          },
+          {
+            "bytes": 46711,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0125/receipt.json",
+            "sha256": "48cb39db91b4d2a00c4a10e4db4b4ed3bd72eb764ac6a32e570ab49c3ff21f05"
+          },
+          {
+            "bytes": 46681,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0126/receipt.json",
+            "sha256": "41d5db579e99aea53f2371e4e6c164c9bdab4fee1c8d60b507f5940651ffa9e8"
+          },
+          {
+            "bytes": 46719,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0127/receipt.json",
+            "sha256": "a6b245d3037ebc274b6aba2e495f33b4db6a2419b8c3b4d75a452557541d8b75"
+          },
+          {
+            "bytes": 46666,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0128/receipt.json",
+            "sha256": "17a2fd0a639f4c001bf5b574ea8177ae9b6645fbafedcc0154cbce822a2422b1"
+          },
+          {
+            "bytes": 46660,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0129/receipt.json",
+            "sha256": "153984345a096ad522cb2b205546bb0477b0e1d2db74f98e36958fcf1955536a"
+          },
+          {
+            "bytes": 157881,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0130/receipt.json",
+            "sha256": "027cbf4d15f706f6aaba5cce79fa03d5ff822710513482fe63785ac08db92ea4"
+          },
+          {
+            "bytes": 46660,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0131/receipt.json",
+            "sha256": "fed129f0d4dcece6cd2aa609f4bcbde32fa7aa91bf7ce26aa7ea9fb8d8224390"
+          },
+          {
+            "bytes": 46670,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0132/receipt.json",
+            "sha256": "1283d2b06aef929add3b4858ee1da1f6070a101db14c20c2baef24433d957fe1"
+          },
+          {
+            "bytes": 46663,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0133/receipt.json",
+            "sha256": "21e8ae21389dd70da2f97eb29b6ce1bac4923cbe43eef6b72446deedab3b0579"
+          },
+          {
+            "bytes": 46649,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0134/receipt.json",
+            "sha256": "a5317f20f4dcc74c0a1d899903f9b5822ada59b9ab57264cd45756b51372946c"
+          },
+          {
+            "bytes": 46672,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0135/receipt.json",
+            "sha256": "bbb659d52658f55c6141ce808e3893f8505a2ef64917e6c63b78268021b43347"
+          },
+          {
+            "bytes": 46660,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0136/receipt.json",
+            "sha256": "91db02509fdf2f08ad431790b0677ad742b0c4e294c9919f3008d73385851826"
+          },
+          {
+            "bytes": 46698,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0137/receipt.json",
+            "sha256": "3f5d5fb7a74c592f881dce02c9e8dd2beb03fb5f132d9eb55855cb76081167f2"
+          },
+          {
+            "bytes": 46670,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0138/receipt.json",
+            "sha256": "3f407d7a2630fb6e9ea203f7184de8f6e956d977eccc4f86ec24ffafc7d6cdb2"
+          },
+          {
+            "bytes": 46651,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0139/receipt.json",
+            "sha256": "22a5420521a33fdb58ebb19cdc5e0f47b380e709dc624041021d964b5d8e9c34"
+          },
+          {
+            "bytes": 157845,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0140/receipt.json",
+            "sha256": "28f22145aa651ae143fc716707da71d4fed542de0319245c0389e32d5373e155"
+          },
+          {
+            "bytes": 46709,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0141/receipt.json",
+            "sha256": "fd7d02b8b76ee312e15ab25a1995c98ed5135dee66c380a638b200d8754643d1"
+          },
+          {
+            "bytes": 46688,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0142/receipt.json",
+            "sha256": "79a238f14a3a81acc2c71ae53a14d0c5a7f40797ad69285b114986f5ab4156e1"
+          },
+          {
+            "bytes": 46700,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0143/receipt.json",
+            "sha256": "7cf1deb11cd6b778f71fe89b6096c930f1b8a5646831092e42d0cd232e0e37b5"
+          },
+          {
+            "bytes": 46694,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0144/receipt.json",
+            "sha256": "9e73bc5b42f6492cde25bac17451a75a3bf20328c72e81f8defc933d94a168c5"
+          },
+          {
+            "bytes": 46713,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0145/receipt.json",
+            "sha256": "badd9f4a51df5a71bfa46fe4223cde2064d752096b0144c07c78405a400f335c"
+          },
+          {
+            "bytes": 46680,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0146/receipt.json",
+            "sha256": "6e6f82b5e1c97935c25dcccaf07fa8f0230d40b3038ea180e45828fe8f2ca31b"
+          },
+          {
+            "bytes": 46691,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0147/receipt.json",
+            "sha256": "f90451d329f0d4cf7094b9587ab4934f5fc0923c57b173f96d506c27fc41f3bf"
+          },
+          {
+            "bytes": 46714,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0148/receipt.json",
+            "sha256": "3003d541e2de887925d0d23a39da0cfe0c9dbd93e253fe0442b6257897c6f2ee"
+          },
+          {
+            "bytes": 46660,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0149/receipt.json",
+            "sha256": "7dd50bd0ce1a09cb94b0251c3552454835c906ca0a184442463fd9527ab56d34"
+          },
+          {
+            "bytes": 157852,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0150/receipt.json",
+            "sha256": "c0f617202e22f9ac6b3b1d77f9f89312a91479873dd0c2fd4f740bdeef9b2e4c"
+          },
+          {
+            "bytes": 46668,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0151/receipt.json",
+            "sha256": "1405b7a5715f3fcbc2d213edd5354d2303fda7319981c9b85087dd68ff55cd32"
+          },
+          {
+            "bytes": 46672,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0152/receipt.json",
+            "sha256": "d991299b8b96ecda4d8a344e78e685dd10ef6f9e90e7aa48dcb3b0448f6c7427"
+          },
+          {
+            "bytes": 46632,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0153/receipt.json",
+            "sha256": "0e153ed7a0fe3d61f01104182127e57d58a3f59a7132e3b2a5b9f8ffdf342fc9"
+          },
+          {
+            "bytes": 46670,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0154/receipt.json",
+            "sha256": "2257d25acad1eb19e8a4836fb0b165a04aa3c67ee59a3bb74d7aee432987266e"
+          },
+          {
+            "bytes": 46645,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0155/receipt.json",
+            "sha256": "892029102684db0b4397c8658dab558cf8501cffea5acbb800c10b300353be84"
+          },
+          {
+            "bytes": 46670,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0156/receipt.json",
+            "sha256": "b5475185b82148e5f279f445355e188941099855bfb99e25f78a99e1eb8f30eb"
+          },
+          {
+            "bytes": 46688,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0157/receipt.json",
+            "sha256": "9fdd507843cb718470ab1927a3d0c669cd2eb5c29d1591da5b87c982b0e18896"
+          },
+          {
+            "bytes": 46702,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0158/receipt.json",
+            "sha256": "5bc432b0886652b5d9f219c82ed4765271ddb9d88f96153949582726060fc860"
+          },
+          {
+            "bytes": 46724,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0159/receipt.json",
+            "sha256": "dd846b8d6d23798e53166f2b400e296494683ea9993fab1fb450b6cce2bbb8ce"
+          },
+          {
+            "bytes": 157845,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0160/receipt.json",
+            "sha256": "e3f92a98ce0b5480fee29a18a409f95b05b4ddd8a85a94ccd00b5518567cc7d5"
+          },
+          {
+            "bytes": 46748,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0161/receipt.json",
+            "sha256": "cd4c8c077a5438eb2af9f0ace0abae85dc41d215215414d77f900220430d313f"
+          },
+          {
+            "bytes": 46716,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0162/receipt.json",
+            "sha256": "82fbf7f9a856b4e0ee134521e12b33b34a595baa540aecf881aeaf4ae5d5d8fd"
+          },
+          {
+            "bytes": 46674,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0163/receipt.json",
+            "sha256": "27232becb12d706cf146c68b9fe156773ebf8ec0ee8f30c35ef951bef1546362"
+          },
+          {
+            "bytes": 46710,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0164/receipt.json",
+            "sha256": "ba5b6ef1e0621ea524e88525df579194296d9e635056431a65c249a18ea09ebb"
+          },
+          {
+            "bytes": 46711,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0165/receipt.json",
+            "sha256": "538bf2e7f8c43e161e70c91f60fbe08db29902f197f0a2bc6558911949bc0ce9"
+          },
+          {
+            "bytes": 46687,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0166/receipt.json",
+            "sha256": "834e35f2bd4597dac21f987838e4094bfeef241204a44ae8544cff6e73624724"
+          },
+          {
+            "bytes": 46742,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0167/receipt.json",
+            "sha256": "a93615b0f17f5753f69329f2899c051219ae87f79fa6a81417698f23ee5b5fd9"
+          },
+          {
+            "bytes": 46749,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0168/receipt.json",
+            "sha256": "5ef41e2f787933d2aa43a5d513bab99a6f60da8a9656ba22ea7e0efc364aa0dd"
+          },
+          {
+            "bytes": 46716,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0169/receipt.json",
+            "sha256": "512915091c72fe08654b310620f1dfbf8e2434011814e4ea3a1f4e58972eebc3"
+          },
+          {
+            "bytes": 157924,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0170/receipt.json",
+            "sha256": "97d11ead50d243d1361225639c339233829375df11604050ef8ded5dc84256b3"
+          },
+          {
+            "bytes": 46677,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0171/receipt.json",
+            "sha256": "d46a0e39ef663bf46c641734f1c49e151623ea0349f610060fb23bcc27b8d98b"
+          },
+          {
+            "bytes": 46678,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0172/receipt.json",
+            "sha256": "b02a5795910858ffcb34f487e7909ededcf77e103e61b0d6d8a83cd976a8c4c2"
+          },
+          {
+            "bytes": 46647,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0173/receipt.json",
+            "sha256": "2700d295241df8cd8742e65f5c3c13e2de086bca05b536b471e4f5d772be90d4"
+          },
+          {
+            "bytes": 46664,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0174/receipt.json",
+            "sha256": "66423dd00c4334e30c6c02ff3e99b74386171dd6e5ac296744c34eff50656b57"
+          },
+          {
+            "bytes": 46636,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0175/receipt.json",
+            "sha256": "479ea3b23e2157b5267bed3b01e2d6331f4c5cb9fa986eebe1928fd413142e51"
+          },
+          {
+            "bytes": 46690,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0176/receipt.json",
+            "sha256": "3b84dcd19c4bb2149c63e4bc769d75c774a18526f6ba24958257d5e171772e73"
+          },
+          {
+            "bytes": 46687,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0177/receipt.json",
+            "sha256": "ecf077ee4beca669244a208ca37355ed83684ddee2a196430e9065282c9adfd5"
+          },
+          {
+            "bytes": 46667,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0178/receipt.json",
+            "sha256": "c7459cddb7675618047eaf1da8d5cdc540f50b133793b9c70e1e0493d1f5ec1f"
+          },
+          {
+            "bytes": 46670,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0179/receipt.json",
+            "sha256": "6e65d08e623d2bf86083bf57d26635911b05b45687055e4b72719cc3d86c13cd"
+          },
+          {
+            "bytes": 157899,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0180/receipt.json",
+            "sha256": "bdd416e3c3acaa18ada3b173c73826eaee4f83e87d8bcadec9638a824c4051d7"
+          },
+          {
+            "bytes": 46692,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0181/receipt.json",
+            "sha256": "584ab5352f5ae4457e5cd4154a264cd4b3bae1a12eeac6d6173ef080d8e27bda"
+          },
+          {
+            "bytes": 46714,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0182/receipt.json",
+            "sha256": "f32f60896a61db1d6c0aef1cde662e0078f6235c6146a89566863640fdbfbc4d"
+          },
+          {
+            "bytes": 46730,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0183/receipt.json",
+            "sha256": "160e408b2d36b05a8dee4abfabbfb052a94504f73a640b6c438d1d5085cd75d7"
+          },
+          {
+            "bytes": 46686,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0184/receipt.json",
+            "sha256": "2bf8eced4cfcdf45f15f8efb7777abad958bf11353bef50cfecb15d8944dc1e6"
+          },
+          {
+            "bytes": 46724,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0185/receipt.json",
+            "sha256": "8f9a7df9142138fa90001e848fcb90513bb8dc7878e624aad83306c07259fe6d"
+          },
+          {
+            "bytes": 46696,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0186/receipt.json",
+            "sha256": "a5584e966a69d86f3413b843edb095ecb3067cbc67d02d0f51d7c25fd23f63b5"
+          },
+          {
+            "bytes": 46686,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0187/receipt.json",
+            "sha256": "58a79e6fab2d86b6f92b72332b49cb58519492a0c6063492c61759aa7148fd2c"
+          },
+          {
+            "bytes": 46683,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0188/receipt.json",
+            "sha256": "a7e70663cbc81bb77050381c11046721ce915193ab77716a01a1f0849da2cba2"
+          },
+          {
+            "bytes": 46702,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0189/receipt.json",
+            "sha256": "2e4dbbe9ba3982eb00c3db4e8b95dc5f7cf404850166c909ba6f7d1ba8bf1ee9"
+          },
+          {
+            "bytes": 157970,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0190/receipt.json",
+            "sha256": "f48efe60f3197dd8767032b125a40513ea362bf24e1cd924e8cb6e2d18a96815"
+          },
+          {
+            "bytes": 46747,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0191/receipt.json",
+            "sha256": "efb5aebdd3045032edd66e699829b0d98f6110b84745586a817b39e5f4a34644"
+          },
+          {
+            "bytes": 46708,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0192/receipt.json",
+            "sha256": "b24c0b63011ab897d8ba38dd3cc885b0f71a754881480c9d08112fd91fe5d3eb"
+          },
+          {
+            "bytes": 46647,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0193/receipt.json",
+            "sha256": "3ae06c78e14086ab6caaaf9e211b20055a027a4a1151566245e128ab7a067648"
+          },
+          {
+            "bytes": 46659,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0194/receipt.json",
+            "sha256": "21138f351402df664de950c2c1e6776b32a55a7a6a5fa645cb63bea63f2ef3f2"
+          },
+          {
+            "bytes": 46643,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0195/receipt.json",
+            "sha256": "e647cc183d636d70b7dc95c536d1a19fafee0ea773561a0ab33d5b8fe8cca454"
+          },
+          {
+            "bytes": 46637,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0196/receipt.json",
+            "sha256": "d864012297259d86baeeb0b31bf0b04cd39597483fb8bf64c005454fd3dc99cf"
+          },
+          {
+            "bytes": 46653,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0197/receipt.json",
+            "sha256": "326f70f925cc226af35b821ea57391c591b69f575a33625b6802e6b2cce08d99"
+          },
+          {
+            "bytes": 46670,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0198/receipt.json",
+            "sha256": "2547858f5be00c2e774a8785ace18777f93a77920707efc0bca0c5b767229613"
+          },
+          {
+            "bytes": 46661,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0199/receipt.json",
+            "sha256": "cdf8ca46c5a7783f8d4549697e93332a3ad93b4b75bf22b15766c72689822c6b"
+          },
+          {
+            "bytes": 157954,
+            "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/rounds/0200/receipt.json",
+            "sha256": "97cca6c0852bae315e2ba17cfd09d5fa70658a505f4785778215fa071cd2ad53"
+          }
+        ],
+        "run_manifest": {
+          "bytes": 95928,
+          "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/manifest.json",
+          "sha256": "a22682c1f2b33b3082a07de1731bc8ffba89fd0c2893722d2a18a3f526c73332"
+        },
+        "selected_model": {
+          "bytes": 203132,
+          "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/selected/model.pt",
+          "sha256": "63e2591445aaa629a5901c1d37f699b7b11a81b9142db7d5e40f79d34aeea9d3"
+        },
+        "selected_receipt": {
+          "bytes": 296,
+          "path": "output/experiments/b1_no_ff/real_fedavg_training_v2/runs/seed44/selected/receipt.json",
+          "sha256": "a2bc30c1457551e138c908dfe8540555339dc608bedaaf6336afc94a844e18f4"
+        }
+      }
+    },
+    "selection_lock": {
+      "bytes": 52677,
+      "path": "output/march_window_audit/b1_model_selection_lock_v1/selection_lock.json",
+      "sha256": "ceb3f469e84fb4beb1de5fc34cef70d1cc626fbc4ae5b96711ce1a8c3e67ebc4"
+    }
+  },
+  "scaler_lock": "output/march_window_audit/b1_scaler_approval_and_lock_v1/locked_scaler/lock.json",
+  "scaler_lock_sha256": "110dc33f4528771fb986a57319ce2c40a9b0334633c8c3fbef2dbf1176df0c96",
+  "schema": "b1.centralized.control.config.v2",
+  "semantic_reproduction": "UNKNOWN",
+  "settings": {
+    "aggregation": "none_continuing_central_model",
+    "batch_size": 128,
+    "blocks": 200,
+    "clients": 979,
+    "clients_per_round": 98,
+    "drop_last": false,
+    "embedding_size": 8,
+    "evaluation_batch_size": 1024,
+    "features": 14,
+    "hidden_size": 64,
+    "history": 36,
+    "horizon": 6,
+    "layers": 2,
+    "learning_rate": 0.01,
+    "local_epochs": 1,
+    "momentum": 0.0,
+    "num_threads": 1,
+    "outputs": 2,
+    "residual": false,
+    "rounds": 200,
+    "schedule": "exact_B1_FedAvg_client_batch_replay",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "selection": "earliest_strict_minimum_joint_standardized_RMSE_sqrt_J",
+    "validation_every": 10,
+    "weight_decay": 0.0
+  },
+  "sources": {
+    "src/b1_bridge_scaling_v1.py": {
+      "bytes": 8852,
+      "sha256": "bea97b160e54467946a0da22d95381289c86979915b5341486bc459a2f6f7d06"
+    },
+    "src/b1_centralized_sgd_runner_v1.py": {
+      "bytes": 30435,
+      "sha256": "1c8c4dd74b287fdf01a6b2c1dbaecc8c1c7f74e3dc3140c57530cfaca16db27e"
+    },
+    "src/b1_centralized_sgd_runner_v2.py": {
+      "bytes": 13820,
+      "sha256": "f98216270555467db5ee02445830f44c2e5535b3d9b40f70927bfce559152a1e"
+    },
+    "src/b1_device_adapter_v1.py": {
+      "bytes": 5678,
+      "sha256": "1ea54bf7b173d2e9ee06d9f4250552bd34ea67b3d1883eb4c59da7e88cf7c4ee"
+    },
+    "src/b1_fedavg_orchestration_v1.py": {
+      "bytes": 18225,
+      "sha256": "456b65ae1e79cf5456eea661c4cbd1d0eb5f6addb00b8ee723ce3817e22eef1e"
+    },
+    "src/b1_model_adapter_v1.py": {
+      "bytes": 8152,
+      "sha256": "1336041595752e7694c53256884d7e3acfbd6ae0c0c8072a60e49235ea3d7410"
+    },
+    "src/b1_preparation_execution_v1.py": {
+      "bytes": 31209,
+      "sha256": "173063f65df8482ae942d1cbcdcb06668e2d2e864063d1ef20a98174dd943240"
+    },
+    "src/b1_preparation_io_v1.py": {
+      "bytes": 8365,
+      "sha256": "93ed6f56e16fc319155b10914567e0d440d40d0feccbecee905a6204f9813c82"
+    },
+    "src/b1_production_data_v1.py": {
+      "bytes": 11481,
+      "sha256": "38397c40f52694f773b3277d18de383ce25ab9ee639169695d69c67241b1e354"
+    },
+    "src/b1_production_io_v1.py": {
+      "bytes": 9182,
+      "sha256": "4cccc28fc8fb2d888772db9a32bf9c47582996aa52d12255b2aaacf838991172"
+    },
+    "src/b1_raw_window_producer_v1.py": {
+      "bytes": 25351,
+      "sha256": "479a35c72b68c72abe65418bda59fd1c407bf62e94ac9c2fe32719e2615b04e6"
+    },
+    "src/b1_real_data_bridge_v1.py": {
+      "bytes": 16299,
+      "sha256": "74d9d3f9f1d9e0e41f49043606036897a3f1e92e6418a4f71e9fe4bb9c53baa3"
+    },
+    "src/b1_real_fedavg_runner_v1.py": {
+      "bytes": 36535,
+      "sha256": "7b095fdf07bea23358f13c6cf2f351e1ce8b29a8e813b08e69cc5b5925b29c7c"
+    },
+    "src/b1_scaler_acceptance_v1.py": {
+      "bytes": 9519,
+      "sha256": "73331b408ed8ae445fa24fac19fbae309f62d497c906bcca6e60603b28577216"
+    },
+    "src/b1_target_scaling_v1.py": {
+      "bytes": 3203,
+      "sha256": "62076bcc3810c9abd63fc3dee18999a5a18a8c93932fa635930a1aece222b6d6"
+    },
+    "src/b1_target_validation_v1.py": {
+      "bytes": 1343,
+      "sha256": "389183e51e098c246179e90bc15940211c787a5c7cae7b4b55d00197007031f6"
+    },
+    "src/history_data_v4.py": {
+      "bytes": 13842,
+      "sha256": "dff15362b1b5cc5d78e1cf40918f089790b88cf14b7fa5f5ee86a1de6a18ca0c"
+    },
+    "src/model.py": {
+      "bytes": 1530,
+      "sha256": "d6cc3265a41258152389d85ae382cf2286527494129302f049b12205e358aaad"
+    },
+    "src/multinode.py": {
+      "bytes": 18883,
+      "sha256": "bd6e8d1d26af4603f01f950d91c707ede4bc0996c17ead1d35205825c8b01ee5"
+    },
+    "src/phase1_3/config.py": {
+      "bytes": 4758,
+      "sha256": "25859b8722b93088c6f819a34747884d06b174c93682d1eb785b963047bf1cdb"
+    },
+    "src/phase1_3/schema.py": {
+      "bytes": 1557,
+      "sha256": "a9d1d468e5da4113ad962798e27db75d3ec264c627ca5213fc68015d7764d93e"
+    },
+    "src/phase2_multioutput/contracts.py": {
+      "bytes": 11511,
+      "sha256": "abc4db869fe7884573402329356106bf8889b68c7be816f14a498078659996a9"
+    },
+    "src/preprocess.py": {
+      "bytes": 21581,
+      "sha256": "a0567a07f8cef60f7df85e03da34646c0a47ef97a465680fdb021701c6918d64"
+    }
+  }
+}

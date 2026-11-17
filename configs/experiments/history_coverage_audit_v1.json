@@ -1,0 +1,158 @@
+{
+  "audit_name": "T1.1 History-Length Coverage Audit",
+  "version": 1,
+  "history_steps": [
+    6,
+    36,
+    144
+  ],
+  "history_hours": [
+    1.0,
+    6.0,
+    24.0
+  ],
+  "horizon_steps": 6,
+  "horizon_minutes": 60,
+  "resample_minutes": 10,
+  "feature_names": [
+    "power_kw",
+    "cpu_user",
+    "cpu_system",
+    "cpu_idle",
+    "cpu_wio",
+    "memory_used_fraction",
+    "inlet_temperature_mean_c",
+    "outdoor_temperature_c",
+    "outdoor_humidity_percent",
+    "hour_sin",
+    "hour_cos",
+    "week_sin",
+    "week_cos",
+    "node_index"
+  ],
+  "weather": "masked",
+  "weather_mask_indices": [
+    7,
+    8
+  ],
+  "target_name": "next_hour_mean_node_it_power_watts",
+  "target_units": "W",
+  "policies": [
+    "no_fill",
+    "ff10",
+    "ff20",
+    "ff30"
+  ],
+  "gap_limits_bins": [
+    1,
+    2,
+    3
+  ],
+  "chronological_cuts": {
+    "train_end_val_start": "2022-02-11T07:10:00+00:00",
+    "val_end_test_start": "2022-02-20T03:30:00+00:00"
+  },
+  "grid_start_utc": "2022-01-01T00:00:00+00:00",
+  "grid_end_exclusive_utc": "2022-03-01T00:00:00+00:00",
+  "training_eligibility": {
+    "minimum_days": 7,
+    "minimum_windows": 1024
+  },
+  "reading_limits": {
+    "arrow_batch_rows": 262144,
+    "max_node_rows": 2000000,
+    "max_shard_rows": 20000000,
+    "nodes_per_shard": 32
+  },
+  "reference_contract_sha256": "24b2224ea9a7e1f255faf6357ffe7a3536fcbcfd90ab8b73179798349736b722",
+  "reference_counts": {
+    "test": 75566,
+    "train": 4506133,
+    "val": 199670
+  },
+  "reference_node_count": 979,
+  "raw_files": [
+    {
+      "path": "year_month=22-01/plugin=ipmi_pub/metric=total_power/a_0.parquet",
+      "sha256": "27af2caa0296f25b8b8307f8999c42c5ef8ee938f58e2e930f8eedf101adbeac"
+    },
+    {
+      "path": "year_month=22-02/plugin=ipmi_pub/metric=total_power/a_0.parquet",
+      "sha256": "ab39ec6d86bc056ba21bfd558ff0939dc37e272bcee85748e1a6320ed10fb273"
+    },
+    {
+      "path": "year_month=22-01/plugin=ipmi_pub/metric=ambient/a_0.parquet",
+      "sha256": "bdeb1db9afc58446cb0385668091d18a0db6d45f22943abc65f02332ae8c16ff"
+    },
+    {
+      "path": "year_month=22-02/plugin=ipmi_pub/metric=ambient/a_0.parquet",
+      "sha256": "e841bb0ee461658826fee1199710e55eb014c6d5e62c1546ae72afbcdf99d166"
+    },
+    {
+      "path": "year_month=22-01/plugin=ganglia_pub/metric=cpu_user/a_0.parquet",
+      "sha256": "a9a710f54ef400931971abcec0818a56aabc3c8543582da7091a5a41c156d5e0"
+    },
+    {
+      "path": "year_month=22-02/plugin=ganglia_pub/metric=cpu_user/a_0.parquet",
+      "sha256": "8818d067aa955cc03ea7367e9ad31013c693bd1d65e8bb1e06e5937bada8ff5e"
+    },
+    {
+      "path": "year_month=22-01/plugin=ganglia_pub/metric=cpu_system/a_0.parquet",
+      "sha256": "b925f86c425f3e7c367919590a8fb513f04e462b056ff15e69410c4f4bbe37de"
+    },
+    {
+      "path": "year_month=22-02/plugin=ganglia_pub/metric=cpu_system/a_0.parquet",
+      "sha256": "1efce13565eb45bfe5c5cb648b37d3f9f7bcf49ea54af0c586000bde6ba93821"
+    },
+    {
+      "path": "year_month=22-01/plugin=ganglia_pub/metric=cpu_idle/a_0.parquet",
+      "sha256": "c13d9fc5e174f5ace7c6ca5013d048b68094f4304732c2e03934554dfdb232ca"
+    },
+    {
+      "path": "year_month=22-02/plugin=ganglia_pub/metric=cpu_idle/a_0.parquet",
+      "sha256": "7cd4f78115f639d6302a5e2e3d695ce31f65e4444e8550f92bd2bc26d95a45fb"
+    },
+    {
+      "path": "year_month=22-01/plugin=ganglia_pub/metric=cpu_wio/a_0.parquet",
+      "sha256": "1548c5e3a8248e557b84199d46642ce8d72e18de0f5309045b9a75b1f2390b18"
+    },
+    {
+      "path": "year_month=22-02/plugin=ganglia_pub/metric=cpu_wio/a_0.parquet",
+      "sha256": "a2c3d082d985b98b5bf2778e8e66c43f1d5fb8266ef6730dad36273fab5cf0a2"
+    },
+    {
+      "path": "year_month=22-01/plugin=ganglia_pub/metric=mem_free/a_0.parquet",
+      "sha256": "c53a78bcbaed4690262154ec35768511c35702e87f04c414f26c92fbeb3b895b"
+    },
+    {
+      "path": "year_month=22-02/plugin=ganglia_pub/metric=mem_free/a_0.parquet",
+      "sha256": "a560bc502e42bd5f9d1d560c7c99e547fd6495f6ce5ec53057300194ebe3427f"
+    },
+    {
+      "path": "year_month=22-01/plugin=ganglia_pub/metric=mem_total/a_0.parquet",
+      "sha256": "7920fc77828a6866e2795aaf3e929a8e65150ce7675dbc7b61be27132e5073c0"
+    },
+    {
+      "path": "year_month=22-02/plugin=ganglia_pub/metric=mem_total/a_0.parquet",
+      "sha256": "a0458d15ba040c506264570570a2c1ddd2bb83550133c52ce0032f8114266a76"
+    },
+    {
+      "path": "year_month=22-01/plugin=weather_pub/metric=temp/a_0.parquet",
+      "sha256": "a786b5171a0a44a2452611f61a086d431fa9048be52dbe5e0dc6a274308d1ac4"
+    },
+    {
+      "path": "year_month=22-02/plugin=weather_pub/metric=temp/a_0.parquet",
+      "sha256": "7ce236ebdbcdcc6c0a11f625bfc8bc7421d9d508722d3a8f857df2c58720e19a"
+    },
+    {
+      "path": "year_month=22-01/plugin=weather_pub/metric=humidity/a_0.parquet",
+      "sha256": "a7a6c35a0bd6c0fb92e58f7d9a6d2c25d8ddaa010680f226a0079f0fbecc9fed"
+    },
+    {
+      "path": "year_month=22-02/plugin=weather_pub/metric=humidity/a_0.parquet",
+      "sha256": "b8b7eabd256f288b389de46aa73fe4c89e87978f017a6ff2f59e5d95135afaad"
+    }
+  ],
+  "raw_data_dir": "data/extracted/b067a6ea8a820f12dbab8ee65f0d3fb862e3f6ea0a8646614d09247f7c71b357",
+  "reference_data_dir": "output/experiments/v1/frozen"
+}
