@@ -1,0 +1,12 @@
+flowchart LR
+  X["Input B × H × 14"] --> N["Numeric channels 0–12"]
+  X --> I["Original node ordinal, slot 13"]
+  I --> E["979 × 8 node embedding"]
+  N --> C["Concatenate numeric and embedding at each step"]
+  E --> C
+  C --> G["GRU, hidden 64; B1/T4 two layers"]
+  G --> H["Final recurrent state"]
+  H --> B["B1 direct Linear 64→2; no residual"]
+  B --> Y["Power W and recorded IPMI ambient °C"]
+  H --> T["T4 direct Linear 64→1; standardized residual"]
+  T --> A["Inverse residual + last observed power"]

@@ -1,0 +1,13 @@
+evaluation_period,framework,n_windows,n_nodes,pooled_mae_w,pooled_rmse_w,macro_mae_w,macro_rmse_w,delta_mae_vs_pers_w,delta_rmse_vs_pers_w,delta_mae_vs_hist_w,delta_rmse_vs_hist_w,nodes_beating_pers_count,nodes_beating_pers_pct,audit_status
+Canonical T1 Test,Persistence Baseline (P[t-1]),243138,978,33.07,64.05,33.35,60.09,0.00,0.00,+0.42,+5.80,—,—,AUDITED_BASELINE
+Canonical T1 Test,Historical Frozen 6h Baseline (T1/T2),243138,978,32.65,58.24,33.28,54.83,-0.42,-5.80,0.00,0.00,609.0,62.7%,HISTORICAL_LOCKED
+Canonical T1 Test,"FedAvg-GRU-T4 (Residual L1, 2-Layer)",243138,978,24.81 ± 0.04,57.55 ± 0.03,25.224 ± 0.03,52.60 ± 0.04,-8.25,-6.49,-7.84,-0.69,898.3,91.9%,PASS (AUDITED)
+Canonical T1 Test,"Centralized-GRU-T4 (Residual L1, 2-Layer)",243138,978,23.99 ± 0.23,56.91 ± 0.22,24.366 ± 0.19,51.97 ± 0.19,-9.08,-7.14,-8.66,-1.34,923.7,94.4%,PASS (AUDITED)
+Q1 Extended Temporal Evaluation [Overlapping],Persistence Baseline (P[t-1]),3609285,979,40.44,85.17,40.29,83.51,0.00,0.00,-2.14,+8.37,—,—,AUDITED_BASELINE
+Q1 Extended Temporal Evaluation [Overlapping],Historical Frozen 6h Baseline (T1/T2),3609285,979,42.58,76.80,40.06,72.50,+2.14,-8.37,0.00,0.00,457.0,46.7%,HISTORICAL_LOCKED
+Q1 Extended Temporal Evaluation [Overlapping],"FedAvg-GRU-T4 (Residual L1, 2-Layer)",3609285,979,33.97 ± 0.12,77.93 ± 0.16,33.856 ± 0.12,76.53 ± 0.14,-6.47,-7.24,-8.61,+1.13,959.7,98.0%,PASS (AUDITED)
+Q1 Extended Temporal Evaluation [Overlapping],"Centralized-GRU-T4 (Residual L1, 2-Layer)",3609285,979,33.06 ± 0.18,77.64 ± 0.39,32.946 ± 0.18,76.22 ± 0.37,-7.38,-7.53,-9.52,+0.84,959.3,98.0%,PASS (AUDITED)
+March Temporal Evaluation [Overlapping],Persistence Baseline (P[t-1]),2229042,976,45.29,94.11,45.17,91.78,0.00,0.00,-1.61,+10.14,—,—,AUDITED_BASELINE
+March Temporal Evaluation [Overlapping],Historical Frozen 6h Baseline (T1/T2),2229042,976,46.90,83.97,43.68,79.28,+1.61,-10.14,0.00,0.00,457.0,46.7%,HISTORICAL_LOCKED
+March Temporal Evaluation [Overlapping],"FedAvg-GRU-T4 (Residual L1, 2-Layer)",2229042,976,38.28 ± 0.17,85.74 ± 0.23,38.199 ± 0.17,83.82 ± 0.20,-7.01,-8.36,-8.62,+1.77,953.7,97.7%,PASS (AUDITED)
+March Temporal Evaluation [Overlapping],"Centralized-GRU-T4 (Residual L1, 2-Layer)",2229042,976,37.34 ± 0.21,85.52 ± 0.53,37.249 ± 0.21,83.57 ± 0.49,-7.95,-8.59,-9.56,+1.55,957.3,98.1%,PASS (AUDITED)

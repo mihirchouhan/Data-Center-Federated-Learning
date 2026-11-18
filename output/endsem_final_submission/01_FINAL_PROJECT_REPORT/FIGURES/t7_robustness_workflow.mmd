@@ -1,0 +1,10 @@
+flowchart TD
+  A["Frozen T4 seed42/43/44 models"] --> I["Stress inference in completed T7 study"]
+  X["Saved eligible origins and operational histories"] --> M["Fixed per-condition synthetic loss mask"]
+  M --> F["Causal fill up to 3 bins"]
+  F --> Z["Unfillable input: standardized training mean"]
+  Z --> I
+  Y["Observed future targets; never masked"] --> C["Condition-specific pooled and node errors"]
+  I --> C
+  C --> R["This task: read stored results and verify summaries"]
+  R -.-> P["Future action-response design; not executed"]
